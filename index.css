@@ -1,0 +1,24 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./src/images/background-desktop.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 5vw;
+    background-color: black;
+}
+
+.header__container {
+    margin: 0px auto;
+    padding: 0.5vw 0px;
+    width: 90vw;
+    height: 4vw;
+}
