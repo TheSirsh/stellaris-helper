@@ -1,14 +1,17 @@
 {
   "0": {  
-  "name": ""
+    "name": "Species Traits"
   },
   "1": {
-      "name": ""
+    "name": "Government Civics"
   },
   "2":{
-    "name": ""
+    "name": "Leaders Traits"
   },
   "3":{
-    "name": ""
+    "name": "Planet modifiers"
+  }, 
+  "4": {
+    "name": "Other"
   }
 }

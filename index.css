@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Orbitron";
+    src: url("./src/fonts/Orbitron.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .body {
     margin: 0px;
     padding: 0px;
@@ -6,10 +13,14 @@
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
+    font-family: "Orbitron";
 }
 
 .header {
-    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
     padding: 0px;
     width: 100vw;
     height: 5vw;
@@ -17,8 +28,35 @@
 }
 
 .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0px auto;
     padding: 0.5vw 0px;
     width: 90vw;
     height: 4vw;
+}
+
+.header__logo {
+    display: block;
+    width: 10vw;
+    height: 4vw;
+    cursor: pointer;
+}
+
+.header__logo:hover {
+    box-shadow: 0px 0px 0.5vw white;
+}
+
+.header__cell {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.header__cell:hover {
+    box-shadow: 0px 0px 0.5vw white;
 }
