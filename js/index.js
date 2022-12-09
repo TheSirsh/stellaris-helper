@@ -1,3 +1,5 @@
+import * as
+
 var headerContent = {
     "0": {
         "name": "Species Traits"
@@ -33,3 +35,16 @@ for (var i = 0; i < Object.keys(headerContent).length; i++) {
     headerCell.textContent = headerContent[i].name;
     headerContainer.append(headerCell);
 }
+var mainSection = document.createElement("section");
+mainSection.classList.add("main-section");
+body === null || body === void 0 ? void 0 : body.append(mainSection);
+var mainSectionContainer = document.createElement("div");
+mainSectionContainer.classList.add("main-section__container");
+mainSection.append(mainSectionContainer);
+var mainSectionTitle = document.createElement("h2");
+mainSectionTitle.classList.add("main-section__title");
+mainSectionTitle.textContent = "Species Traits Prefernce";
+mainSectionContainer.append(mainSectionTitle);
+var ad = document.createElement("img");
+ad.src = "../icons/climate-preference-traits/arid.png";
+body === null || body === void 0 ? void 0 : body.append(ad);

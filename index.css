@@ -53,10 +53,40 @@
     padding: 0px;
     list-style: none;
     color: white;
-    font-size: 15px;
+    font-size: 1vw;
     cursor: pointer;
 }
 
 .header__cell:hover {
     box-shadow: 0px 0px 0.5vw white;
+}
+
+.main-section {
+    width: 90vw;
+    height: 40vw;
+    margin: 1vw auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-section__container {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-section__title {
+    margin: 0.5vw auto;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.main-section__workedplace {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
 }
