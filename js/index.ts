@@ -1,5 +1,6 @@
 import * as headerContent from "../src/json/header.json";
 import * as mainSectionContent from "../src/json/main-section-text.json";
+import * as speciesTraitPrefernce from "../src/json/species-traits-preference.json"
 
 const body: Element | null = document.querySelector(".body");
 
@@ -40,3 +41,20 @@ mainSectionContainer.append(mainSectionTitle);
 const mainSectionWorkedPlace: HTMLElement = document.createElement("div");
 mainSectionWorkedPlace.classList.add("main-section__workedplace");
 mainSectionContainer.append(mainSectionWorkedPlace);
+
+for (let i = 0; i < Object.keys(speciesTraitPrefernce).length; i++) {
+  const traitContainer: HTMLElement = document.createElement("div");
+  traitContainer.classList.add("workedplace__trait-container");
+  mainSectionWorkedPlace.append(traitContainer);
+
+    const traitContainerImage: HTMLImageElement = document.createElement("img");
+    traitContainerImage.classList.add("workedplace__trait-container-image");
+    traitContainerImage.src = speciesTraitPrefernce[i].icon;
+    traitContainerImage.alt = speciesTraitPrefernce[i].nameEN;
+    traitContainer.append(traitContainerImage)
+
+    const traitContainerName: HTMLElement = document.createElement("span");
+    traitContainerName.classList.add("workedplace__trait-container-name");
+    traitContainerName.textContent = speciesTraitPrefernce[i].nameEN;
+    traitContainer.append(traitContainerName)
+}

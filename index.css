@@ -82,11 +82,30 @@
 }
 
 .main-section__workedplace {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
     width: 100%;
-    height: auto;
+    height: 35vw;
     margin: 0px;
     padding: 0px;
+}
+
+.workedplace__trait-container {
+    display: flex;
+    width: 20vw;
+    height: 3vw;
+    margin: 0.5vw;
+}
+
+.workedplace__trait-container-image {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+}
+
+.workedplace__trait-container-name {
+    display: block;
+    align-self: center;
+    height: auto;
 }
