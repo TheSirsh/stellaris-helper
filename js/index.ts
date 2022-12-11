@@ -1,9 +1,10 @@
 import { mainSectionContent } from "../src/js/main-section-text.js";
 import { speciesTraitPrefernce } from "../src/js/species-traits-preference.js";
 import { createHeader } from "../src/js/header.js";
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../src/js/create-functions.js"
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../src/js/create-functions.js";
+import { createFooter } from "../src/js/footer.js"
 
-const body: Element | null = document.querySelector(".body");
+const body: Element = document.querySelector(".body");
 createHeader();
 
 const mainSection = createNewSimpleElement("section", "main-section", body);
@@ -23,4 +24,4 @@ for (let i = 0; i < Object.keys(speciesTraitPrefernce).length; i++) {
     const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, speciesTraitPrefernce[i].nameEN)
 }
 
-
+createFooter();
