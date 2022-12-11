@@ -1,4 +1,4 @@
-{
+const speciesTraitPrefernce: object = {
   "0": {
     "trait": "trait_pc_arid_preference",
     "icon": "../src/icons/climate-preference-traits/arid.png",
@@ -102,3 +102,5 @@
     "nameRU": "Реликтовый мир"
   }
 }
+
+export {speciesTraitPrefernce}

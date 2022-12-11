@@ -1,4 +1,4 @@
-{
+const headerContent: object = {
   "0": {  
     "name": "Species Traits"
   },
@@ -15,3 +15,5 @@
     "name": "Other"
   }
 }
+
+export {headerContent}

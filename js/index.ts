@@ -1,6 +1,6 @@
-import * as headerContent from "../src/json/header.json";
-import * as mainSectionContent from "../src/json/main-section-text.json";
-import * as speciesTraitPrefernce from "../src/json/species-traits-preference.json"
+import {headerContent} from "../src/js/header.js";
+import {mainSectionContent} from "../src/js/main-section-text.js";
+import {speciesTraitPrefernce} from "../src/js/species-traits-preference.js";
 
 const body: Element | null = document.querySelector(".body");
 
@@ -35,7 +35,7 @@ mainSection.append(mainSectionContainer);
 
 const mainSectionTitle: HTMLElement = document.createElement("h2");
 mainSectionTitle.classList.add("main-section__title");
-mainSectionTitle.textContent = mainSectionContent.title;
+mainSectionTitle.textContent = mainSectionContent[0].title;
 mainSectionContainer.append(mainSectionTitle);
 
 const mainSectionWorkedPlace: HTMLElement = document.createElement("div");
