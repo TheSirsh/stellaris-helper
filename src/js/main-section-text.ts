@@ -1,6 +1,7 @@
 const mainSectionContent: Object = {
   "0": {
-    "title" : "Species Traits Prefernce"
+    "title" : "Species Traits",
+    "subtitle" : "Choose Species Climate Prefernce Trait"
   }
 }
 

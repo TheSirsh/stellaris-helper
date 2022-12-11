@@ -1,19 +1,15 @@
-const headerContent: object = {
-  "0": {  
-    "name": "Species Traits"
-  },
-  "1": {
-    "name": "Government Civics"
-  },
-  "2":{
-    "name": "Leaders Traits"
-  },
-  "3":{
-    "name": "Planet modifiers"
-  }, 
-  "4": {
-    "name": "Other"
-  }
+import { headerContent } from "../../src/js/header-content.js";
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../src/js/create-functions.js"
+
+function createHeader(): void {
+
+  const body: Element | null = document.querySelector(".body");
+    const header = createNewSimpleElement("header", "header", body);
+      const headerContainer = createNewSimpleElement("ol", "header__container", header);
+        const headerLogo = createNewImageElement("header__logo", headerContainer, "./src/images/header-logo.png", "Stellaris");
+        for (let i = 0; i < Object.keys(headerContent).length; i++) {
+          const headerCell = createNewTextElement("li", "header__cell", headerContainer, headerContent[i].name);
+        }
 }
 
-export {headerContent}
+export {createHeader}

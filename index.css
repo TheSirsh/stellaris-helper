@@ -81,20 +81,25 @@
     text-align: center;
 }
 
+.main-section__subtitle {
+    margin: 0.5vw auto;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
 .main-section__workedplace {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-    width: 100%;
-    height: 35vw;
-    margin: 0px;
+    grid-template-columns: repeat(3, 1fr);    
+    width: 90%;
+    height: 20vw;
+    margin: 0px auto;
     padding: 0px;
 }
 
 .workedplace__trait-container {
     display: flex;
     width: 20vw;
-    height: 3vw;
+    height: 2.5vw;
     margin: 0.5vw;
 }
 
