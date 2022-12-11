@@ -1,8 +1,8 @@
-import { mainSectionContent } from "../src/js/main-section-text.js";
-import { speciesTraitPrefernce } from "../src/js/species-traits-preference.js";
-import { createHeader } from "../src/js/header.js";
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../src/js/create-functions.js";
-import { createFooter } from "../src/js/footer.js"
+import { mainSectionContent } from "./src/scripts/main-section-text.js";
+import { speciesTraitPrefernce } from "./src/scripts/species-traits-preference.js";
+import { createHeader } from "./src/scripts/header.js";
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./src/scripts/create-functions.js";
+import { createFooter } from "./src/scripts/footer.js"
 
 const body: Element = document.querySelector(".body");
 createHeader();

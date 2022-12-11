@@ -1,5 +1,5 @@
-import { footerContent } from "../../src/js/footer-content.js";
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../src/js/create-functions.js";
+import { footerContent } from "./footer-content.js";
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js";
 
 function createFooter(): void {
   const body = document.querySelector(".body");

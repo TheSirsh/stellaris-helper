@@ -1,5 +1,5 @@
-import { headerContent } from "../../src/js/header-content.js";
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../src/js/create-functions.js"
+import { headerContent } from "./header-content.js";
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js"
 
 function createHeader(): void {
 

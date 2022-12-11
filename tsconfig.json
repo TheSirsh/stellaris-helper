@@ -5,7 +5,7 @@
     "watch": true,
   },
   "include": [
-    "js/*",
-    "src/js/*"
-  ]
+    "src/scripts/*",
+    "index.ts"  
+]
 }
