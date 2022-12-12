@@ -109,6 +109,7 @@
     width: 20vw;
     height: 2.5vw;
     margin: 0.5vw;
+    cursor: pointer;
 }
 
 .workedplace__trait-container-image {
