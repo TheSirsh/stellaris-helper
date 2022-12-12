@@ -89,6 +89,7 @@
 
 .main-section__workedplace {
     display: flex;
+    justify-content: space-between;
     width: 90%;
     height: auto;
     margin: 0px auto;
@@ -100,7 +101,6 @@
     flex-direction: column;
     width: 40%;
     height: auto;
-    margin: 0px auto;
     padding: 0px;
 }
 
@@ -121,6 +121,30 @@
     display: block;
     align-self: center;
     height: auto;
+}
+
+.main-section__trait-descr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.trait-descr__title {
+    margin: 0.5vw auto;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.trait-descr__image {
+    display: block;
+    width: 15vw;
+    height: 15vw;
+}
+
+.trait-descr__planet {
+    font-size: 1vw;
+    text-align:justify;
 }
 
 .footer {
