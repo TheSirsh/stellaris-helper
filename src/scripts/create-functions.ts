@@ -1,7 +1,7 @@
 function createNewSimpleElement(elementName: string, className: string, parent: HTMLElement | Element): HTMLElement  {
   let newEl: HTMLElement = document.createElement(`${elementName}`);
   newEl.classList.add(`${className}`);
-  parent.append(newEl)
+  parent.append(newEl);
   return newEl
 }
 

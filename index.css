@@ -46,7 +46,7 @@
 }
 
 .header__logo:hover {
-    box-shadow: 0px 0px 0.5vw white;
+    box-shadow: 0px 0px 0.5vw #ffffff;
 }
 
 .header__cell {
@@ -66,7 +66,7 @@
     width: 90vw;
     height: auto;
     margin: 1vw auto;
-    background-color: #3F888F;
+    background-color: #3f888f;
     opacity: 0.9;
     color: white;
     border: 0.25vw solid #58b698;
@@ -179,7 +179,7 @@
     padding: 0px;
     width: 100vw;
     height: 5vw;
-    background-color: #3F888F;
+    background-color: #3f888f;
     border-top: 0.25vw solid #58b698;
 }
 
@@ -201,5 +201,5 @@
 }
 
 .footer__cell:hover {
-    box-shadow: 0px 0px 0.5vw white;
+    box-shadow: 0px 0px 0.5vw #ffffff;
 }

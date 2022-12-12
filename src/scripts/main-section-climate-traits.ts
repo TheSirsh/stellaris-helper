@@ -1,7 +1,7 @@
 import { mainSectionContent } from "./main-section-text.js";
 import { speciesTraitPrefernce } from "./species-traits-preference.js";
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js";
-import { selectClimateTrait } from "./climate-trait-selector.js"
+import { selectClimateTrait } from "./climate-trait-selector.js";
 
 function createMainSectionClimateTrait(): void {  
   const mainSection = document.querySelector(".main-section");
@@ -18,7 +18,7 @@ function createMainSectionClimateTrait(): void {
         for (let i = 0; i < Object.keys(speciesTraitPrefernce).length; i++) {
           const traitContainer = createNewSimpleElement("li", "workedplace__trait-container", mainSectionTraitList);
             const traitContainerImage = createNewImageElement("workedplace__trait-container-image", traitContainer, speciesTraitPrefernce[i].icon, speciesTraitPrefernce[i].nameEN);
-            const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, speciesTraitPrefernce[i].nameEN)
+            const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, speciesTraitPrefernce[i].nameEN);
         }
   
       const mainSectionTraitDescription = createNewSimpleElement("div", "main-section__trait-descr", mainSectionWorkedPlace);

@@ -14,7 +14,6 @@ function selectClimateTrait(i: number): void {
   traitDescriptionImage.src = speciesTraitPrefernce[i].image;
   traitDescriptionImage.alt = speciesTraitPrefernce[i].nameEN;
   traitDescriptionPlanet.textContent = speciesTraitPrefernce[i].descrEN;
-  
 }
 
 export {selectClimateTrait}
