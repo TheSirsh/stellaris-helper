@@ -24,7 +24,8 @@
     padding: 0px;
     width: 100vw;
     height: 5vw;
-    background-color: black;
+    background-color: #3F888F;
+    border-bottom: 0.25vw solid #58b698;
 }
 
 .header__container {
@@ -65,7 +66,11 @@
     width: 90vw;
     height: auto;
     margin: 1vw auto;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #3F888F;
+    opacity: 0.9;
+    color: white;
+    border: 0.25vw solid #58b698;
+    border-radius: 1vw;
 }
 
 .main-section__container {
@@ -106,16 +111,29 @@
 
 .workedplace__trait-container {
     display: flex;
-    width: 20vw;
-    height: 2.5vw;
+    align-items: center;
+    width: 25vw;
+    height: 3.5vw;
     margin: 0.5vw;
     cursor: pointer;
+    border: 0.25vw solid #58b698;
+    border-radius: 1vw;
+}
+
+.workedplace__trait-container:hover {
+    background-color: #58b698;
+    color: black;
+}
+
+.workedplace__trait-container_active {
+    background-color: #58b698;
+    color: black;
 }
 
 .workedplace__trait-container-image {
     width: 3vw;
     height: 3vw;
-    margin-right: 1vw;
+    margin: 0px 1vw;
 }
 
 .workedplace__trait-container-name {
@@ -141,11 +159,16 @@
     display: block;
     width: 15vw;
     height: 15vw;
+    border: 0.25vw solid #58b698;
+    border-radius: 50%;
 }
 
 .trait-descr__planet {
     font-size: 1vw;
-    text-align:justify;
+    text-align: justify;
+    border: 0.25vw solid #58b698;
+    padding: 1vw;
+    border-radius: 1vw;
 }
 
 .footer {
@@ -156,7 +179,8 @@
     padding: 0px;
     width: 100vw;
     height: 5vw;
-    background-color: black;
+    background-color: #3F888F;
+    border-top: 0.25vw solid #58b698;
 }
 
 .footer__container {

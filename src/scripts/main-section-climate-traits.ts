@@ -30,7 +30,8 @@ function createMainSectionClimateTrait(): void {
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void{
-      selectClimateTrait(i)
+      selectClimateTrait(i);
+      elem.classList.toggle("workedplace__trait-container_active");
     })
   })
 }
