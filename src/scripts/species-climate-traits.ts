@@ -1,4 +1,4 @@
-const speciesTraitPrefernce: object = {
+const speciesClimateTraits: object = {
   "0": {
     "trait": "trait_pc_arid_preference",
     "icon": "../src/icons/climate-preference-traits/arid.png",
@@ -137,4 +137,4 @@ const speciesTraitPrefernce: object = {
   }
 }
 
-export {speciesTraitPrefernce}
+export { speciesClimateTraits }

@@ -1,4 +1,4 @@
-import {speciesTraitPrefernce} from "../scripts/species-traits-preference.js"
+import { speciesClimateTraits } from "./species-climate-traits.js"
 
 function selectClimateTrait(i: number): void { 
 
@@ -10,10 +10,10 @@ function selectClimateTrait(i: number): void {
     traitActive.classList.remove("workedplace__trait-container_active");
   }
 
-  traitDescriptionTitle.textContent = speciesTraitPrefernce[i].nameEN;
-  traitDescriptionImage.src = speciesTraitPrefernce[i].image;
-  traitDescriptionImage.alt = speciesTraitPrefernce[i].nameEN;
-  traitDescriptionPlanet.textContent = speciesTraitPrefernce[i].descrEN;
+  traitDescriptionTitle.textContent = speciesClimateTraits[i].nameEN;
+  traitDescriptionImage.src = speciesClimateTraits[i].image;
+  traitDescriptionImage.alt = speciesClimateTraits[i].nameEN;
+  traitDescriptionPlanet.textContent = speciesClimateTraits[i].descrEN;
 }
 
 export {selectClimateTrait}

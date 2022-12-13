@@ -7,7 +7,8 @@ const mainSectionContent: Object = {
     "titleEN": "Choose your trait",
     "image": "../src/images/planets/shroud.png",
     "nameEN": "shroud",
-    "planetDecr": "Choose your planet"
+    "planetDecrEN": "Choose your planet",
+    "buttonEN": "Next"
   }
 }
 
