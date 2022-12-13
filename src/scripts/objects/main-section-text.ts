@@ -12,7 +12,11 @@ const mainSectionContent: Object = {
   },
   "2": {
     "titleEN" : "Species Traits",
-    "subtitleEN" : "Choose Species Trait"
+    "subtitleEN" : "Choose Species Traits"
+  },
+  "3": {
+    "titleEN" : "Choose your trait",
+    "traitDecrEN": "Choose your trait"
   }
 }
 

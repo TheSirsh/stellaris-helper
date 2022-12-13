@@ -1,7 +1,7 @@
 const speciesBiologicalTraits: object = {
   "0": {
     "trait": "trait_adaptive",
-    "icon": "../src/icons/traits-spicies-initial/adaptive.png",
+    "icon": "../src/icons/initial-traits/adaptive.png",
     "nameEN": "Adaptive",
     "nameRU": "",
     "number1": "+10%",
@@ -10,7 +10,7 @@ const speciesBiologicalTraits: object = {
   },
   "1": {
     "trait": "trait_extremely_adaptive",
-    "icon": "../src/icons/traits-spicies-initial/extremely-adaptive.png",
+    "icon": "../src/icons/initial-traits/extremely-adaptive.png",
     "nameEN": "Extremely Adaptive",
     "nameRU": "",
     "number1": "+20%",
@@ -19,7 +19,7 @@ const speciesBiologicalTraits: object = {
   },
   "2": {
     "trait": "trait_agrarian",
-    "icon": "../src/icons/traits-spicies-initial/agrarian.png",
+    "icon": "../src/icons/initial-traits/agrarian.png",
     "nameEN": "Agrarian",
     "nameRU": "",
     "number1": "+15%",
@@ -28,7 +28,7 @@ const speciesBiologicalTraits: object = {
   },
   "3": {
     "trait": "trait_charismatic",
-    "icon": "../src/icons/traits-spicies-initial/charismatic.png",
+    "icon": "../src/icons/initial-traits/charismatic.png",
     "nameEN": "Charismatic",
     "nameRU": "",
     "number1": "+20%",
@@ -37,7 +37,7 @@ const speciesBiologicalTraits: object = {
   },
   "4": {
     "trait": "trait_communal",
-    "icon": "../src/icons/traits-spicies-initial/communal.png",
+    "icon": "../src/icons/initial-traits/communal.png",
     "nameEN": "Communal",
     "nameRU": "",
     "number1": "-10%",
@@ -46,7 +46,7 @@ const speciesBiologicalTraits: object = {
   },
   "5": {
     "trait": "trait_conformists",
-    "icon": "../src/icons/traits-spicies-initial/conformists.png",
+    "icon": "../src/icons/initial-traits/conformists.png",
     "nameEN": "Conformists",
     "nameRU": "",
     "number1": "+30%",
@@ -55,7 +55,7 @@ const speciesBiologicalTraits: object = {
   },
   "6": {
     "trait": "trait_conservational",
-    "icon": "../src/icons/traits-spicies-initial/conservationalists.png",
+    "icon": "../src/icons/initial-traits/conservationist.png",
     "nameEN": "Conservationist",
     "nameRU": "",
     "number1": "−10%",
@@ -64,7 +64,7 @@ const speciesBiologicalTraits: object = {
   },
   "7": {
     "trait": "trait_docile",
-    "icon": "../src/icons/traits-spicies-initial/docile.png",
+    "icon": "../src/icons/initial-traits/docile.png",
     "nameEN": "Docile",
     "nameRU": "",
     "number1": "−10%",
@@ -73,7 +73,7 @@ const speciesBiologicalTraits: object = {
   },
   "8": {
     "trait": "trait_enduring",
-    "icon": "../src/icons/traits-spicies-initial/enduring.png",
+    "icon": "../src/icons/initial-traits/enduring.png",
     "nameEN": "Enduring",
     "nameRU": "",
     "number1": "+20",
@@ -82,7 +82,7 @@ const speciesBiologicalTraits: object = {
   },
   "9": {
     "trait": "trait_venerable",
-    "icon": "../src/icons/traits-spicies-initial/venerable.png",
+    "icon": "../src/icons/initial-traits/venerable.png",
     "nameEN": "Venerable",
     "nameRU": "",
     "number1": "+80",
@@ -91,7 +91,7 @@ const speciesBiologicalTraits: object = {
   },
   "10": {
     "trait": "trait_industrious",
-    "icon": "../src/icons/traits-spicies-initial/industrious.png",
+    "icon": "../src/icons/initial-traits/industrious.png",
     "nameEN": "Industrious",
     "nameRU": "",
     "number1": "+15%",
@@ -100,7 +100,7 @@ const speciesBiologicalTraits: object = {
   },
   "11": {
     "trait": "trait_ingenious",
-    "icon": "../src/icons/traits-spicies-initial/ingenious.png",
+    "icon": "../src/icons/initial-traits/ingenious.png",
     "nameEN": "Ingenious",
     "nameRU": "",
     "number1": "+15%",
@@ -109,7 +109,7 @@ const speciesBiologicalTraits: object = {
   },
   "12": {
     "trait": "trait_intelligent",
-    "icon": "../src/icons/traits-spicies-initial/intelligent.png",
+    "icon": "../src/icons/initial-traits/intelligent.png",
     "nameEN": "Intelligent",
     "nameRU": "",
     "number1": "+10%",
@@ -118,7 +118,7 @@ const speciesBiologicalTraits: object = {
   },
   "13": {
     "trait": "trait_natural_engineers",
-    "icon": "../src/icons/traits-spicies-initial/natural-engineers.png",
+    "icon": "../src/icons/initial-traits/natural-engineers.png",
     "nameEN": "Natural Engineers",
     "nameRU": "",
     "number1": "+15%",
@@ -127,7 +127,7 @@ const speciesBiologicalTraits: object = {
   },
   "14": {
     "trait": "trait_natural_physicists",
-    "icon": "../src/icons/traits-spicies-initial/natural-physicists.png",
+    "icon": "../src/icons/initial-traits/natural-physicists.png",
     "nameEN": "Natural Physicists",
     "nameRU": "",
     "number1": "+15%",
@@ -136,7 +136,7 @@ const speciesBiologicalTraits: object = {
   },
   "15": {
     "trait": "trait_natural_sociologists",
-    "icon": "../src/icons/traits-spicies-initial/natural-sociologists.png",
+    "icon": "../src/icons/initial-traits/natural-sociologists.png",
     "nameEN": "Natural Sociologists",
     "nameRU": "",
     "number1": "+15%",
@@ -145,7 +145,7 @@ const speciesBiologicalTraits: object = {
   },
   "16": {
     "trait": "trait_nomadic",
-    "icon": "../src/icons/traits-spicies-initial/nomadic.png",
+    "icon": "../src/icons/initial-traits/nomadic.png",
     "nameEN": "Nomadic",
     "nameRU": "",
     "number1": "+15%",
@@ -157,7 +157,7 @@ const speciesBiologicalTraits: object = {
   },
   "17": {
     "trait": "trait_quick_learners",
-    "icon": "../src/icons/traits-spicies-initial/quick-learners.png",
+    "icon": "../src/icons/initial-traits/quick-learners.png",
     "nameEN": "Quick Learners",
     "nameRU": "",
     "number1": "+25%",
@@ -166,7 +166,7 @@ const speciesBiologicalTraits: object = {
   },
   "18": {
     "trait": "trait_rapid_breeders",
-    "icon": "../src/icons/traits-spicies-initial/rapid-breeders.png",
+    "icon": "../src/icons/initial-traits/rapid-breeders.png",
     "nameEN": "Rapid Breeders",
     "nameRU": "",
     "number1": "+10%",
@@ -175,7 +175,7 @@ const speciesBiologicalTraits: object = {
   },
   "19": {
     "trait": "trait_resilient",
-    "icon": "../src/icons/traits-spicies-initial/resilient.png",
+    "icon": "../src/icons/initial-traits/resilient.png",
     "nameEN": "Resilient",
     "nameRU": "",
     "number1": "+50%",
@@ -184,7 +184,7 @@ const speciesBiologicalTraits: object = {
   },
   "20": {
     "trait": "trait_strong",
-    "icon": "../src/icons/traits-spicies-initial/strong.png",
+    "icon": "../src/icons/initial-traits/strong.png",
     "nameEN": "Strong",
     "nameRU": "",
     "number1": "+20%",
@@ -196,7 +196,7 @@ const speciesBiologicalTraits: object = {
   },
   "21": {
     "trait": "trait_very_strong",
-    "icon": "../src/icons/traits-spicies-initial/very-strong.png",
+    "icon": "../src/icons/initial-traits/very-strong.png",
     "nameEN": "Very Strong",
     "nameRU": "",
     "number1": "+40%",
@@ -208,7 +208,7 @@ const speciesBiologicalTraits: object = {
   },
   "22": {
     "trait": "trait_talented",
-    "icon": "../src/icons/traits-spicies-initial/talented.png",
+    "icon": "../src/icons/initial-traits/talented.png",
     "nameEN": "Talented",
     "nameRU": "",
     "number1": "+1",
@@ -217,7 +217,7 @@ const speciesBiologicalTraits: object = {
   },
   "23": {
     "trait": "trait_thrifty",
-    "icon": "../src/icons/traits-spicies-initial/thrifty.png",
+    "icon": "../src/icons/initial-traits/thrifty.png",
     "nameEN": "Thrifty",
     "nameRU": "",
     "number1": "+25%",
@@ -226,7 +226,7 @@ const speciesBiologicalTraits: object = {
   },
   "24": {
     "trait": "trait_traditional",
-    "icon": "../src/icons/traits-spicies-initial/traditional.png",
+    "icon": "../src/icons/initial-traits/traditional.png",
     "nameEN": "Traditional",
     "nameRU": "",
     "number1": "+10%",
@@ -234,3 +234,5 @@ const speciesBiologicalTraits: object = {
     "text1RU": ""
   }
 }
+
+export { speciesBiologicalTraits }

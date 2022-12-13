@@ -1,5 +1,5 @@
-import { mainSectionContent } from "./main-section-text.js";
-import { speciesClimateTraits } from "./species-climate-traits.js";
+import { mainSectionContent } from "./objects/main-section-text.js";
+import { speciesClimateTraits } from "./objects/species-climate-traits.js";
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js";
 import { selectClimateTrait } from "./climate-trait-selector.js";
 import { nextTraitStage } from "./main-section-next-trait-stage.js";
