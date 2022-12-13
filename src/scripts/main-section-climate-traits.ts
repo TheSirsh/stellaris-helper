@@ -34,6 +34,7 @@ function createMainSectionClimateTrait(): void {
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void{
       selectClimateTrait(i);
+      localStorage.setItem("climate", speciesClimateTraits[i].trait)
       elem.classList.toggle("workedplace__trait-container_active");
       traitDescriptionButton.classList.add("trait-descr__button_active");
       traitDescriptionButton.addEventListener("click", nextTraitStage);
