@@ -9,6 +9,10 @@ const mainSectionContent: Object = {
     "nameEN": "shroud",
     "planetDecrEN": "Choose your planet",
     "buttonEN": "Next"
+  },
+  "2": {
+    "titleEN" : "Species Traits",
+    "subtitleEN" : "Choose Species Trait"
   }
 }
 
