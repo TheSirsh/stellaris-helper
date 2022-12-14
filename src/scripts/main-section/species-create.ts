@@ -1,6 +1,7 @@
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
 import { mainSectionContent } from "../objects/main-section-text.js";
-import { species, speciesTraits } from "../objects/species.js";
+import { species } from "../objects/species.js";
+import { selectSpecies } from "./species-selector.js";
 
 function createSpecies(): void {
 const container: HTMLElement = document.querySelector(".main-section__container")!;
@@ -21,20 +22,13 @@ const mainSectionContainer = createNewSimpleElement("div", "main-section__contai
       const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, species[i].nameEN);
   }
 
-  const speciesContainerArr = document.querySelectorAll(".workedplace__trait-container");
+  const speciesContainerArr
+   = document.querySelectorAll(".workedplace__trait-container");
 
   speciesContainerArr.forEach(function(elem: Element, i: number) {
-    elem.addEventListener("click", function(): void{
-      const mainSectionTraitList: HTMLElement | null = document.querySelector(".main-section__species-list");
-      if (mainSectionTraitList) { mainSectionTraitList.remove() }
-      if (i !== 0) {
-        const mainSectionTraitList = createNewSimpleElement("ul", "main-section__species-list", mainSectionWorkedPlace);
-        for (let i = 0; i < Object.keys(speciesTraits).length; i++) {
-          const traitContainer = createNewSimpleElement("li", "workedplace__trait-container", mainSectionTraitList);
-          const traitContainerImage = createNewImageElement("workedplace__trait-container-image", traitContainer, speciesTraits[i].icon, speciesTraits[i].nameEN);
-            const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, speciesTraits[i].nameEN);
-              }
-       }
+    elem.addEventListener("click", function(): void {
+      speciesContainerArr[i].classList.toggle(".workedplace__trait-container_active")
+      selectSpecies(i)
     })
   })
 

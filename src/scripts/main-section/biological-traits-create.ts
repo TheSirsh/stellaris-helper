@@ -28,9 +28,9 @@ function nextTraitStage():void {
   const traitContainerArr = document.querySelectorAll(".workedplace__trait-container");
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
-    elem.addEventListener("click", function(): void{
+    elem.addEventListener("click", function(): void {
+      traitContainerArr[i].classList.toggle("workedplace__trait-container_active")
       selectBiologicalTrait(i);
-      traitContainerArr[i].classList.toggle("workedplace__trait-container_active");
     })
   })
 }

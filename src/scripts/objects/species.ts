@@ -16,7 +16,7 @@ const species: object = {
     }
 }
 
-const speciesTraits: object = {
+const speciesTraitsNotHiveMind: object = {
   "0": {
     "nameEN": "Psionic",
     "nameRU": "",
@@ -31,27 +31,30 @@ const speciesTraits: object = {
     "nameEN": "Cybernetic",
     "nameRU": "",
     "icon": "../src/icons/species/cybernetic.png"
-  },
-  "3": {
+  }
+}
+
+const speciesTraitsBiological: object = {
+  "0": {
     "nameEN": "Botanical",
     "nameRU": "",
     "icon": "../src/icons/species/botanical.png"
   },
-  "4": {
+  "1": {
     "nameEN": "Lithoid",
     "nameRU": "",
     "icon": "../src/icons/species/lithoid.png"
   },
-  "5": {
+  "2": {
     "nameEN": "Toxic",
     "nameRU": "",
     "icon": "../src/icons/species/toxic.png"
   },
-  "6": {
+  "3": {
     "nameEN": "Aquatic",
     "nameRU": "",
     "icon": "../src/icons/species/aquatic.png"
   }
 }
 
-export { species, speciesTraits }
+export { species, speciesTraitsNotHiveMind, speciesTraitsBiological}
