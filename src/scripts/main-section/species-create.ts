@@ -22,13 +22,12 @@ const mainSectionContainer = createNewSimpleElement("div", "main-section__contai
       const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, species[i].nameEN);
   }
 
-  const speciesContainerArr
-   = document.querySelectorAll(".workedplace__trait-container");
+  const speciesContainerArr: NodeListOf<HTMLElement> | null = document.querySelectorAll(".workedplace__trait-container");
 
   speciesContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
-      speciesContainerArr[i].classList.toggle(".workedplace__trait-container_active")
       selectSpecies(i)
+      speciesContainerArr[i].classList.toggle("workedplace__trait-container_active")
     })
   })
 
