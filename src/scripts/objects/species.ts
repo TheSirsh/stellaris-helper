@@ -22,7 +22,7 @@ const species: object = {
       ]
     },
     "2": {
-      "trait": "",
+      "trait": "NOTVALUEABLE-biological",
       "nameEN": "Not Hive-Minded",
       "nameRU": "",
       "icon": "../src/icons/species/not-hive-mind.png",
@@ -71,7 +71,7 @@ const speciesTraitsNotHiveMind: object = {
 
 const speciesTraitsBiological: object = {
   "0": {
-    "trait": "",
+    "trait": "NOTVALUEABLE-botanical",
     "nameEN": "Botanical",
     "nameRU": "",
     "icon": "../src/icons/species/botanical.png",
@@ -94,12 +94,12 @@ const speciesTraitsBiological: object = {
     ]
   },
   "2": {
-    "trait": "",
+    "trait": "NOTVALUEABLE-toxic",
     "nameEN": "Toxic",
     "nameRU": "",
     "icon": "../src/icons/species/toxic.png",
     "traits" : [
-      ["", "Additional Traits are Available"]
+      ["empty", "", "Additional Traits are Available"]
     ]
   },
   "3": {

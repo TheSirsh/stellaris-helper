@@ -1,6 +1,7 @@
 import { species, speciesTraitsNotHiveMind, speciesTraitsBiological} from "../../objects/species.js"
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
-import { selectSpeciesNotHM } from "../species/species-selector-nothm.js"
+import { selectSpeciesNotHM } from "../species/species-selector-nothm.js";
+import { selectSpeciesBio } from "../species/species-selector-bio.js"
 
 function selectSpecies(i: number): void {
 
@@ -35,11 +36,21 @@ function selectSpecies(i: number): void {
       
     const speciesTraitlistAdditional = createNewSimpleElement("ul", "species__traitlist_additional", speciesTraitBlock);
     for (let i = 0; i < Object.keys(speciesTraitsBiological).length; i++) {
-      const traitContainer = createNewSimpleElement("li", "species__container", speciesTraitlistAdditional);
+      const traitContainer = createNewSimpleElement("li", "species__container_bio", speciesTraitlistAdditional);
         const traitContainerImage = createNewImageElement("species__container-image", traitContainer, speciesTraitsBiological[i].icon, speciesTraitsBiological[i].nameEN);
         const traitContainerName = createNewTextElement("span", "species__container-name", traitContainer, speciesTraitsBiological[i].nameEN);
     }
-  }
+
+    const speciesTraitBio: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species__container_bio");
+    speciesTraitBio.forEach(function(elem: Element, n: number) {
+      elem.addEventListener("click", function(): void {
+        selectSpeciesBio(n);
+        localStorage.setItem("bio", speciesTraitsBiological[n].trait);
+        speciesTraitBio[n].classList.toggle("species__container_bio_active");
+
+      })
+    })
+}
 
   const speciesDescriptionTitle: HTMLElement = document.querySelector(".species__descr-title");
   speciesDescriptionTitle.textContent = species[i].nameEN;

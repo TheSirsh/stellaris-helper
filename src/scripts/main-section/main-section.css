@@ -1,6 +1,7 @@
 .main-section {
   width: 90vw;
   height: auto;
+  min-height: 35vw;
   margin: 1vw auto;
   background-color: #3f888f;
   opacity: 0.9;
@@ -27,4 +28,3 @@
   font-size: 1.5vw;
   text-align: center;
 }
-

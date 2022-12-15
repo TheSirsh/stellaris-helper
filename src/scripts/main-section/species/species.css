@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  height: auto;
+  height: 30vw;
   margin: 0px auto;
   padding: 0px;
 }
@@ -21,7 +21,8 @@
 }
 
 .species__container,
-.species__container_not {
+.species__container_not,
+.species__container_bio {
   display: flex;
   align-items: center;
   width: 30%;
@@ -33,14 +34,16 @@
 }
 
 .species__container_active,
-.species__container_not_active {
+.species__container_not_active,
+.species__container_bio_active {
   background-color: #58b698;
   border: 0.25vw solid darkgreen;
   color: black;
 }
 
 .species__container:hover,
-.species__container_not:hover {
+.species__container_not:hover,
+.species__container_bio:hover {
   background-color: #58b698;
   color: black;
 }
@@ -68,7 +71,10 @@
 
 .species__descr-block {
   display: flex;
+  height: 90%;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 30%;
 }
 
@@ -90,4 +96,29 @@
 
 .red {
   color: red;
+}
+
+.species__button,
+.species__button_active {
+  text-align: center;
+  font-size: 1.5vw;
+  width: 9vw;
+  height: 2vw;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.species__button {
+  border: 0.25vw solid red;
+  cursor: no-drop;
+}
+
+.species__button_active {
+  border: 0.25vw solid #58b698;
+  cursor: pointer;
+}
+
+.species__button:hover {
+  background-color: #58b698;
+  color: black;
 }

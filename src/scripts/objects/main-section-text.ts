@@ -1,17 +1,9 @@
 const mainSectionContent: Object = {
-  "0" : {
-    "titleEN": "Species",
-    "subtitleEN" : "Choose Species"
-  },
-  "1" : {
-    "titleEN": "Species",
-    "subtitleEN" : "Choose Species"
-  },
-  "2": {
+  "1": {
     "titleEN" : "Species Traits",
     "subtitleEN" : "Choose Species Climate Prefernce Trait"
   },
-  "3": {
+  "2": {
     "titleEN": "Choose your trait",
     "image": "../src/images/planets/shroud.png",
     "nameEN": "shroud",
