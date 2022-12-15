@@ -3,22 +3,26 @@ const mainSectionContent: Object = {
     "titleEN": "Species",
     "subtitleEN" : "Choose Species"
   },
-  "1": {
+  "1" : {
+    "titleEN": "Species",
+    "subtitleEN" : "Choose Species"
+  },
+  "2": {
     "titleEN" : "Species Traits",
     "subtitleEN" : "Choose Species Climate Prefernce Trait"
   },
-  "2": {
+  "3": {
     "titleEN": "Choose your trait",
     "image": "../src/images/planets/shroud.png",
     "nameEN": "shroud",
     "planetDecrEN": "Choose your planet",
     "buttonEN": "Next"
   },
-  "3": {
+  "4": {
     "titleEN" : "Species Traits",
     "subtitleEN" : "Choose Species Traits"
   },
-  "4": {
+  "5": {
     "titleEN" : "Choose your trait",
     "traitDecrEN": "Choose your trait"
   }

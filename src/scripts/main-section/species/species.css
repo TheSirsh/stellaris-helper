@@ -1,6 +1,5 @@
 .species-workedplace {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   width: 90%;
   height: auto;
@@ -62,4 +61,30 @@
   width: 100%;
   height: auto;
   padding: 0px;
+}
+
+.species__descr-block {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.species__descr-title {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5vw
+}
+
+.species__descr-text{
+  text-align: justify;
+  width: 100%;
+  font-size: 1vw
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
 }
