@@ -1,0 +1,30 @@
+.main-section {
+  width: 90vw;
+  height: auto;
+  margin: 1vw auto;
+  background-color: #3f888f;
+  opacity: 0.9;
+  color: white;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+}
+
+.main-section__container {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-section__title {
+  margin: 0.5vw auto;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.main-section__subtitle {
+  margin: 0.5vw auto;
+  font-size: 1.5vw;
+  text-align: center;
+}
+

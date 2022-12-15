@@ -1,5 +1,5 @@
-import { speciesBiologicalTraits } from "../objects/species-initial-traits.js";
-import { createNewTextElement } from "../create-functions.js";
+import { speciesBiologicalTraits } from "../../objects/species-initial-traits.js";
+import { createNewTextElement } from "../../create-functions.js";
 
 function selectBiologicalTrait(i: number): void { 
 

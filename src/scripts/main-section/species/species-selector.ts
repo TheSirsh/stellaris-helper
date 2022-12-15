@@ -1,5 +1,5 @@
-import { speciesTraitsNotHiveMind, speciesTraitsBiological} from "../objects/species.js";
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
+import { speciesTraitsNotHiveMind, speciesTraitsBiological} from "../../objects/species.js"
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
 
 function selectSpecies(i: number): void {
   const speciesActive: HTMLElement | null = document.querySelector(".workedplace__trait-container_active");

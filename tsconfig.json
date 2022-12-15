@@ -11,5 +11,5 @@
     "src/scripts/header/*",
     "src/scripts/footer/*",
     "src/scripts/main-section/*"
-  ]
+, "src/scripts/main-section/species/species-create.ts", "src/scripts/main-section/biological-traits/biological-trait-selector.ts", "src/scripts/main-section/climate-traits/climate-trait-selector.ts"  ]
 }

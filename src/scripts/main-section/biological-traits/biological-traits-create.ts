@@ -1,6 +1,6 @@
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
-import { mainSectionContent } from "../objects/main-section-text.js";
-import { speciesBiologicalTraits } from "../objects/species-initial-traits.js"
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
+import { mainSectionContent } from "../../objects/main-section-text.js";
+import { speciesBiologicalTraits } from "../../objects/species-initial-traits.js"
 import { selectBiologicalTrait } from "./biological-trait-selector.js"
 
 function nextTraitStage():void {

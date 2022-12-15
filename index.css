@@ -1,3 +1,7 @@
+@import url("/src/scripts/footer/footer.css");
+@import url("/src/scripts/header/header.css");
+@import url("/src/scripts/main-section/main-section.css");
+
 @font-face {
     font-family: "Orbitron";
     src: url("./src/fonts/Orbitron.ttf");
@@ -14,82 +18,6 @@
     width: 100vw;
     height: 100vh;
     font-family: "Orbitron";
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px auto;
-    padding: 0px;
-    width: 100vw;
-    height: 5vw;
-    background-color: #3F888F;
-    border-bottom: 0.25vw solid #58b698;
-}
-
-.header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px auto;
-    padding: 0.5vw 0px;
-    width: 90vw;
-    height: 4vw;
-}
-
-.header__logo {
-    display: block;
-    width: 10vw;
-    height: 4vw;
-    cursor: pointer;
-}
-
-.header__logo:hover {
-    box-shadow: 0px 0px 0.5vw #ffffff;
-}
-
-.header__cell {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    color: white;
-    font-size: 1vw;
-    cursor: pointer;
-}
-
-.header__cell:hover {
-    box-shadow: 0px 0px 0.5vw white;
-}
-
-.main-section {
-    width: 90vw;
-    height: auto;
-    margin: 1vw auto;
-    background-color: #3f888f;
-    opacity: 0.9;
-    color: white;
-    border: 0.25vw solid #58b698;
-    border-radius: 1vw;
-}
-
-.main-section__container {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
-}
-
-.main-section__title {
-    margin: 0.5vw auto;
-    font-size: 2vw;
-    text-align: center;
-}
-
-.main-section__subtitle {
-    margin: 0.5vw auto;
-    font-size: 1.5vw;
-    text-align: center;
 }
 
 .main-section__workedplace {
@@ -237,37 +165,4 @@
 
 .white {
     color: white;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px auto;
-    padding: 0px;
-    width: 100vw;
-    height: 5vw;
-    background-color: #3f888f;
-    border-top: 0.25vw solid #58b698;
-}
-
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px auto;
-    padding: 0.5vw 0px;
-    width: 50vw;
-    height: 4vw;
-}
-
-.footer__cell {
-    display: block;
-    width: 4vw;
-    height: 3vw;
-    cursor: pointer;
-}
-
-.footer__cell:hover {
-    box-shadow: 0px 0px 0.5vw #ffffff;
 }

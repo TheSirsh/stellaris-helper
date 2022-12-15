@@ -1,6 +1,6 @@
 import { headerContent } from "../objects/header-content.js";
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
-import { createSpecies } from "../main-section/species-create.js"
+import { createSpecies } from "../main-section/species/species-create.js"
 
 function createHeader(): void {
 

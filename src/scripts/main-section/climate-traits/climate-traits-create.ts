@@ -1,8 +1,8 @@
-import { mainSectionContent } from "../objects/main-section-text.js";
-import { speciesClimateTraits } from "../objects/species-climate-traits.js";
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
-import { selectClimateTrait } from "./climate-trait-selector.js";
-import { nextTraitStage } from "./biological-traits-create.js";
+import { mainSectionContent } from "../../objects/main-section-text.js";
+import { speciesClimateTraits } from "../../objects/species-climate-traits.js";
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
+import { selectClimateTrait } from "./climate-trait-selector.js"
+import { nextTraitStage } from "../biological-traits/biological-traits-create.js"
 
 function createMainSectionClimateTrait(): void {  
   const mainSection: HTMLElement = document.querySelector(".main-section")!;

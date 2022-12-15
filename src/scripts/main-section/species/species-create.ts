@@ -1,6 +1,6 @@
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
-import { mainSectionContent } from "../objects/main-section-text.js";
-import { species } from "../objects/species.js";
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
+import { mainSectionContent } from "../../objects/main-section-text.js";
+import { species } from "../../objects/species.js";
 import { selectSpecies } from "./species-selector.js";
 
 function createSpecies(): void {
@@ -26,14 +26,10 @@ const mainSectionContainer = createNewSimpleElement("div", "main-section__contai
 
   speciesContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
-      selectSpecies(i)
-      speciesContainerArr[i].classList.toggle("workedplace__trait-container_active")
+      selectSpecies(i);
+      speciesContainerArr[i].classList.toggle("workedplace__trait-container_active");
     })
   })
-
-
-
-
 }
 
 export { createSpecies }
