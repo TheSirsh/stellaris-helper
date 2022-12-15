@@ -33,7 +33,7 @@ const mainSectionContainer = createNewSimpleElement("div", "main-section__contai
   })
 
   const speciesDescriptionBlock = createNewSimpleElement("div", "species__descr-block", speciesWorkedPlace);
-    const speciesDescriptionTitle = createNewTextElement("h3", "species__descr-title", speciesDescriptionBlock, mainSectionContent[1].titleEN);
+    const speciesDescriptionTitle = createNewTextElement("h3", "species__descr-title", speciesDescriptionBlock, mainSectionContent[1].subtitleEN);
     const speciesDescriptionText = createNewTextElement("p", "species__descr-text", speciesDescriptionBlock, mainSectionContent[1].subtitleEN);
 }
 

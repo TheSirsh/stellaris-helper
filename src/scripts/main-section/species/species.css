@@ -20,7 +20,8 @@
   padding: 0px;
 }
 
-.species__container {
+.species__container,
+.species__container_not {
   display: flex;
   align-items: center;
   width: 30%;
@@ -31,13 +32,15 @@
   border-radius: 1vw;
 }
 
-.species__container_active {
+.species__container_active,
+.species__container_not_active {
   background-color: #58b698;
   border: 0.25vw solid darkgreen;
   color: black;
 }
 
-.species__container:hover {
+.species__container:hover,
+.species__container_not:hover {
   background-color: #58b698;
   color: black;
 }

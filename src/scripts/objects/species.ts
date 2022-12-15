@@ -1,5 +1,6 @@
 const species: object = {
   "0": {
+    "trait": "trait_machine_unit",
     "nameEN": "Machine",
     "nameRU": "",
     "icon": "../src/icons/species/machine.png",
@@ -10,6 +11,7 @@ const species: object = {
     ]
     },
     "1": {
+      "trait": "trait_hive_mind",
       "nameEN": "Hive-Mind",
       "nameRU": "",
       "icon": "../src/icons/species/hive-mind.png",
@@ -20,6 +22,7 @@ const species: object = {
       ]
     },
     "2": {
+      "trait": "",
       "nameEN": "Not Hive-Minded",
       "nameRU": "",
       "icon": "../src/icons/species/not-hive-mind.png",
@@ -31,6 +34,7 @@ const species: object = {
 
 const speciesTraitsNotHiveMind: object = {
   "0": {
+    "trait": "trait_psionic",
     "nameEN": "Psionic",
     "nameRU": "",
     "icon": "../src/icons/species/psionic.png",
@@ -42,6 +46,7 @@ const speciesTraitsNotHiveMind: object = {
     ]
   },
   "1": {
+    "trait": "trait_latent_psionic",
     "nameEN": "Latent Psionic",
     "nameRU": "",
     "icon": "../src/icons/species/latent-psionic.png",
@@ -52,6 +57,7 @@ const speciesTraitsNotHiveMind: object = {
     ]
   },
   "2": {
+    "trait": "trait_cybernetic",
     "nameEN": "Cybernetic",
     "nameRU": "",
     "icon": "../src/icons/species/cybernetic.png",
@@ -65,6 +71,7 @@ const speciesTraitsNotHiveMind: object = {
 
 const speciesTraitsBiological: object = {
   "0": {
+    "trait": "",
     "nameEN": "Botanical",
     "nameRU": "",
     "icon": "../src/icons/species/botanical.png",
@@ -73,6 +80,7 @@ const speciesTraitsBiological: object = {
     ]
   },
   "1": {
+    "trait": "trait_lithoid",
     "nameEN": "Lithoid",
     "nameRU": "",
     "icon": "../src/icons/species/lithoid.png",
@@ -86,6 +94,7 @@ const speciesTraitsBiological: object = {
     ]
   },
   "2": {
+    "trait": "",
     "nameEN": "Toxic",
     "nameRU": "",
     "icon": "../src/icons/species/toxic.png",
@@ -94,6 +103,7 @@ const speciesTraitsBiological: object = {
     ]
   },
   "3": {
+    "trait": "trait_aquatic",
     "nameEN": "Aquatic",
     "nameRU": "",
     "icon": "../src/icons/species/aquatic.png",

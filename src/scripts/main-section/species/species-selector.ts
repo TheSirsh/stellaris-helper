@@ -1,9 +1,11 @@
 import { species, speciesTraitsNotHiveMind, speciesTraitsBiological} from "../../objects/species.js"
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
+import { selectSpeciesNotHM } from "../species/species-selector-nothm.js"
 
 function selectSpecies(i: number): void {
-  const speciesActive: HTMLElement | null = document.querySelector(".species__container_active");
-  if (speciesActive) { speciesActive.classList.toggle("species__container_active"); }
+
+    const speciesActive: HTMLElement | null = document.querySelector(".species__container_active");
+    if (speciesActive) { speciesActive.classList.toggle("species__container_active"); }
 
   const speciesTraitlistAdditional: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species__traitlist_additional");
   if (speciesTraitlistAdditional) { speciesTraitlistAdditional.forEach(element => {element.remove()}); }
@@ -14,12 +16,23 @@ function selectSpecies(i: number): void {
     if (i !== 1 ) {
       const speciesTraitlistAdditional = createNewSimpleElement("ul", "species__traitlist_additional", speciesTraitBlock);
       for (let i = 0; i < Object.keys(speciesTraitsNotHiveMind).length; i++) {
-        const traitContainer = createNewSimpleElement("li", "species__container", speciesTraitlistAdditional);
+        const traitContainer = createNewSimpleElement("li", "species__container_not", speciesTraitlistAdditional);
           const traitContainerImage = createNewImageElement("species__container-image", traitContainer, speciesTraitsNotHiveMind[i].icon, speciesTraitsNotHiveMind[i].nameEN);
           const traitContainerName = createNewTextElement("span", "species__container-name", traitContainer, speciesTraitsNotHiveMind[i].nameEN);
       }
+
+      const speciesTraitNotHM: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species__container_not");
+
+      speciesTraitNotHM.forEach(function(elem: Element, n: number) {
+        elem.addEventListener("click", function(): void {
+          selectSpeciesNotHM(n);
+          localStorage.setItem("origin", speciesTraitsNotHiveMind[n].trait);
+          speciesTraitNotHM[n].classList.toggle("species__container_not_active");
+
+        })
+      })
     }
-    
+      
     const speciesTraitlistAdditional = createNewSimpleElement("ul", "species__traitlist_additional", speciesTraitBlock);
     for (let i = 0; i < Object.keys(speciesTraitsBiological).length; i++) {
       const traitContainer = createNewSimpleElement("li", "species__container", speciesTraitlistAdditional);
