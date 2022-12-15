@@ -2,29 +2,29 @@ import { speciesTraitsNotHiveMind, speciesTraitsBiological} from "../../objects/
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
 
 function selectSpecies(i: number): void {
-  const speciesActive: HTMLElement | null = document.querySelector(".workedplace__trait-container_active");
-  if (speciesActive) { speciesActive.classList.toggle("workedplace__trait-container_active"); }
+  const speciesActive: HTMLElement | null = document.querySelector(".species__container_active");
+  if (speciesActive) { speciesActive.classList.toggle("species__container_active"); }
 
-  const mainSectionTraitList: NodeListOf<HTMLElement> | null = document.querySelectorAll(".main-section__species-list");
-  if (mainSectionTraitList) { mainSectionTraitList.forEach(element => {element.remove()}); }
+  const speciesTraitlistAdditional: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species__traitlist_additional");
+  if (speciesTraitlistAdditional) { speciesTraitlistAdditional.forEach(element => {element.remove()}); }
   
   if (i !== 0) {
-    const mainSectionWorkedPlace: HTMLElement = document.querySelector(".main-section__workedplace_species");
+    const speciesTraitBlock: HTMLElement = document.querySelector(".species__traitlist-block");
 
     if (i !== 1 ) {
-      const mainSectionTraitList = createNewSimpleElement("ul", "main-section__species-list", mainSectionWorkedPlace);
+      const speciesTraitlistAdditional = createNewSimpleElement("ul", "species__traitlist_additional", speciesTraitBlock);
       for (let i = 0; i < Object.keys(speciesTraitsNotHiveMind).length; i++) {
-        const traitContainer = createNewSimpleElement("li", "workedplace__trait-container", mainSectionTraitList);
-          const traitContainerImage = createNewImageElement("workedplace__trait-container-image", traitContainer, speciesTraitsNotHiveMind[i].icon, speciesTraitsNotHiveMind[i].nameEN);
-          const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, speciesTraitsNotHiveMind[i].nameEN);
+        const traitContainer = createNewSimpleElement("li", "species__container", speciesTraitlistAdditional);
+          const traitContainerImage = createNewImageElement("species__container-image", traitContainer, speciesTraitsNotHiveMind[i].icon, speciesTraitsNotHiveMind[i].nameEN);
+          const traitContainerName = createNewTextElement("span", "species__container-name", traitContainer, speciesTraitsNotHiveMind[i].nameEN);
       }
     }
     
-    const mainSectionTraitList = createNewSimpleElement("ul", "main-section__species-list", mainSectionWorkedPlace);
+    const speciesTraitlistAdditional = createNewSimpleElement("ul", "species__traitlist_additional", speciesTraitBlock);
     for (let i = 0; i < Object.keys(speciesTraitsBiological).length; i++) {
-      const traitContainer = createNewSimpleElement("li", "workedplace__trait-container", mainSectionTraitList);
-        const traitContainerImage = createNewImageElement("workedplace__trait-container-image", traitContainer, speciesTraitsBiological[i].icon, speciesTraitsBiological[i].nameEN);
-        const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, speciesTraitsBiological[i].nameEN);
+      const traitContainer = createNewSimpleElement("li", "species__container", speciesTraitlistAdditional);
+        const traitContainerImage = createNewImageElement("species__container-image", traitContainer, speciesTraitsBiological[i].icon, speciesTraitsBiological[i].nameEN);
+        const traitContainerName = createNewTextElement("span", "species__container-name", traitContainer, speciesTraitsBiological[i].nameEN);
     }
   }
 }

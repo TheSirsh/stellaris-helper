@@ -1,6 +1,7 @@
 @import url("/src/scripts/footer/footer.css");
 @import url("/src/scripts/header/header.css");
 @import url("/src/scripts/main-section/main-section.css");
+@import url("src/scripts/main-section/species/species.css");
 
 @font-face {
     font-family: "Orbitron";
@@ -26,31 +27,6 @@
     width: 90%;
     height: auto;
     margin: 0px auto;
-    padding: 0px;
-}
-
-.main-section__workedplace_species {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 90%;
-    height: auto;
-    margin: 0px auto;
-    padding: 0px;
-}
-
-.main-section__species {
-    display: flex;
-    width: 80%;
-    height: auto;
-    padding: 0px;
-}
-
-.main-section__species-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    height: auto;
     padding: 0px;
 }
 

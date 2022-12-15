@@ -1,0 +1,65 @@
+.species-workedplace {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.species__traitlist-block {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.species__traitlist_origin {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+.species__container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 3.5vw;
+  margin: 0.5vw;
+  cursor: pointer;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+}
+
+.species__container_active {
+  background-color: #58b698;
+  border: 0.25vw solid darkgreen;
+  color: black;
+}
+
+.species__container:hover {
+  background-color: #58b698;
+  color: black;
+}
+
+.species__container-image {
+  width: 3vw;
+  height: 3vw;
+  margin: 0px 1vw;
+}
+
+.species__container-name {
+  display: block;
+  align-self: center;
+  height: auto;
+}
+
+.species__traitlist_additional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
