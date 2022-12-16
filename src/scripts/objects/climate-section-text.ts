@@ -1,11 +1,19 @@
-const climateSectionText: object = {
+import { IMainText } from "../interface.js"
+
+const climateSectionText: IMainText = {
   titleEN : "Species Traits",
-  subtitleEN : "Choose Species Climate Prefernce Trait",
+  titleRU: "",
+  subtitleEN: "Choose Species Climate Prefernce Trait",
+  subtitleRU: "",
   descriptionBlockTitleEN: "Choose your trait",
+  descriptionBlockTitleRU: "",
+  descriptionBlockTextEN: "Choose your planet",
+  descriptionBlockTextRU: "",
+  buttonEN: "Traits =>",
+  buttonRU: "",
   image: "../src/images/planets/shroud.png",
   imageAltEN: "shroud",
-  descriptionBlockTextEN: "Choose your planet",
-  buttonEN: "Traits =>"
+  imageAltRU: "",
 }
 
 export { climateSectionText }

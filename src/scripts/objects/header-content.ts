@@ -1,19 +1,26 @@
-const headerContent: object = {
-  "0": {  
-    "name": "Species Traits"
+import { IHeader } from "../interface.js"
+
+const headerContent: Array<IHeader> = [
+  {  
+    nameEN: "Species Traits",
+    nameRU: "",
   },
-  "1": {
-    "name": "Government Civics"
+  {
+    nameEN: "Government Civics",
+    nameRU: "",
   },
-  "2":{
-    "name": "Leaders Traits"
+  {
+    nameEN: "Leaders Traits",
+    nameRU: "",
   },
-  "3":{
-    "name": "Planet modifiers"
+  {
+    nameEN: "Planet modifiers",
+    nameRU: "",
   }, 
-  "4": {
-    "name": "Other"
+  {
+    nameEN: "Other",
+    nameRU: "",
   }
-}
+]
 
 export {headerContent}

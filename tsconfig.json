@@ -1,15 +1,19 @@
 {
   "compilerOptions": {
     "target": "ES6",
+    "module": "ES6",
     "outDir": "dist",
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
     "watch": true,
   },
   "include": [
+    "./src/scripts",
     "index.ts",
-    "src/scripts/*",
-    "src/scripts/objects/*",
-    "src/scripts/header/*",
-    "src/scripts/footer/*",
-    "src/scripts/main-section/*"
-, "src/scripts/main-section/species/species-create.ts", "src/scripts/main-section/biological-traits/biological-trait-selector.ts", "src/scripts/main-section/climate-traits/climate-trait-selector.ts"  ]
+  ],
+  "exclude": [
+    "index.css",
+    "README.md",
+  ]
 }

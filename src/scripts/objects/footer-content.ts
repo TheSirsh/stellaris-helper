@@ -1,16 +1,21 @@
-const footerContent: object = {
-  "0": {  
-    "name": "GitHub",
-    "src": "../../src/icons/footer/github.svg"
+import { IFooter } from "../interface.js"
+
+const footerContent: Array<IFooter> = [
+  {  
+    nameEN: "GitHub",
+    nameRU: "",
+    src: "../../src/icons/footer/github.svg"
   },
-  "1": {
-    "name": "Paradox",
-    "src": "../../src/icons/footer/paradox.svg"
+  {
+    nameEN: "Paradox",
+    nameRU: "",
+    src: "../../src/icons/footer/paradox.svg"
   },
-  "2":{
-    "name": "Stellaris Wiki",
-    "src": "../../src/icons/footer/stellaris-wiki.png"
+  {
+    nameEN: "Stellaris Wiki",
+    nameRU: "",
+    src: "../../src/icons/footer/stellaris-wiki.png"
   }
-}
+]
 
 export {footerContent}
