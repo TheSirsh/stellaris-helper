@@ -9,7 +9,7 @@ function createHeader(): void {
       const headerContainer = createNewSimpleElement("ol", "header__container", header);
         const headerLogo = createNewImageElement("header__logo", headerContainer, "./src/images/header-logo.png", "Stellaris");
         for (let i = 0; i < Object.keys(headerContent).length; i++) {
-          const headerCell = createNewTextElement("li", "header__cell", headerContainer, headerContent[i].name);
+          const headerCell = createNewTextElement("li", "header__cell", headerContainer, headerContent[i].nameEN);
           if (i === 0) {
             headerCell.addEventListener("click", createSpecies);
           }

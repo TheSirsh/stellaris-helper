@@ -7,8 +7,8 @@ function nextTraitStage() {
     container.remove();
     const mainSection = document.querySelector(".main-section");
     const mainSectionContainer = createNewSimpleElement("div", "main-section__container", mainSection);
-    const mainSectionTitle = createNewTextElement("h2", "main-section__title", mainSectionContainer, mainSectionContent[3].titleEN);
-    const mainSectionSubTitle = createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, mainSectionContent[3].subtitleEN);
+    const mainSectionTitle = createNewTextElement("h2", "main-section__title", mainSectionContainer, mainSectionContent.titleEN);
+    const mainSectionSubTitle = createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, mainSectionContent.subtitleEN);
     const mainSectionWorkedPlace = createNewSimpleElement("div", "main-section__workedplace", mainSectionContainer);
     const mainSectionTraitList = createNewSimpleElement("ol", "main-section__traitlist", mainSectionWorkedPlace);
     for (let i = 0; i < Object.keys(speciesBiologicalTraits).length; i++) {
@@ -17,8 +17,8 @@ function nextTraitStage() {
         const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, speciesBiologicalTraits[i].nameEN);
     }
     const mainSectionTraitDescription = createNewSimpleElement("div", "main-section__trait-descr", mainSectionWorkedPlace);
-    const traitDescriptionTitle = createNewTextElement("h3", "trait-descr__title", mainSectionTraitDescription, mainSectionContent[4].titleEN);
-    const traitDescriptionTrait = createNewTextElement("p", "trait-descr__trait", mainSectionTraitDescription, mainSectionContent[4].traitDecrEN);
+    const traitDescriptionTitle = createNewTextElement("h3", "trait-descr__title", mainSectionTraitDescription, mainSectionContent.descriptionBlockTitleEN);
+    const traitDescriptionTrait = createNewTextElement("p", "trait-descr__trait", mainSectionTraitDescription, mainSectionContent.descriptionBlockTextEN);
     const traitContainerArr = document.querySelectorAll(".workedplace__trait-container");
     traitContainerArr.forEach(function (elem, i) {
         elem.addEventListener("click", function () {

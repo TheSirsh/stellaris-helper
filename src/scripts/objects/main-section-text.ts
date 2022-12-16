@@ -1,12 +1,16 @@
-const mainSectionContent: Object = {
-  "4": {
-    "titleEN" : "Species Traits",
-    "subtitleEN" : "Choose Species Traits"
-  },
-  "5": {
-    "titleEN" : "Choose your trait",
-    "traitDecrEN": "Choose your trait"
-  }
+import { IMainText } from "../interface.js"
+
+const mainSectionContent: IMainText = {
+  titleEN : "Species Traits",
+  titleRU: "",
+  subtitleEN : "Choose Species Traits",
+  subtitleRU: "",
+  descriptionBlockTitleEN: "Choose your trait",
+  descriptionBlockTitleRU : "",
+  descriptionBlockTextEN: "Choose your trait",
+  descriptionBlockTextRU : "",
+  buttonEN: "",
+  buttonRU: "",
 }
 
-export {mainSectionContent}
+export { mainSectionContent }
