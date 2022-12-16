@@ -3,10 +3,10 @@ import { createNewTextElement } from "../../create-functions.js";
 
 function selectBiologicalTrait(i: number): void { 
 
-  const traitDescriptionTitle: HTMLElement = document.querySelector(".trait-descr__title")!;
+  const traitDescriptionTitle: HTMLElement = document.querySelector(".biological__descr-title")!;
   traitDescriptionTitle.textContent = speciesBiologicalTraits[i].nameEN;
   
-    const traitDescriptionTrait: HTMLElement = document.querySelector(".trait-descr__trait")!;
+    const traitDescriptionTrait: HTMLElement = document.querySelector(".biological__descr-text")!;
     traitDescriptionTrait.textContent = "";
       const traitDescriptionNumber = createNewTextElement("span", "green", traitDescriptionTrait, speciesBiologicalTraits[i].number1);
       const traitDescriptionDescr = createNewTextElement("span", "white", traitDescriptionTrait, speciesBiologicalTraits[i].text1EN);

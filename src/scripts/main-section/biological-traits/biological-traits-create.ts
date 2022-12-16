@@ -13,23 +13,23 @@ function nextTraitStage():void {
     const mainSectionTitle = createNewTextElement("h2", "main-section__title", mainSectionContainer, mainSectionContent.titleEN);
     const mainSectionSubTitle = createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, mainSectionContent.subtitleEN);
 
-    const mainSectionWorkedPlace = createNewSimpleElement("div", "main-section__workedplace", mainSectionContainer);
-      const mainSectionTraitList = createNewSimpleElement("ol", "main-section__traitlist", mainSectionWorkedPlace);
+    const mainSectionWorkedPlace = createNewSimpleElement("div", "biological__workedplace", mainSectionContainer);
+      const mainSectionTraitList = createNewSimpleElement("ul", "biological__traitlist", mainSectionWorkedPlace);
         for (let i = 0; i < Object.keys(speciesBiologicalTraits).length; i++) {
-          const traitContainer = createNewSimpleElement("li", "workedplace__trait-container", mainSectionTraitList);
-            const traitContainerImage = createNewImageElement("workedplace__trait-container-image", traitContainer, speciesBiologicalTraits[i].icon, speciesBiologicalTraits[i].nameEN);
-            const traitContainerName = createNewTextElement("span", "workedplace__trait-container-name", traitContainer, speciesBiologicalTraits[i].nameEN);
+          const traitContainer = createNewSimpleElement("li", "biological__trait-container", mainSectionTraitList);
+            const traitContainerImage = createNewImageElement("biological__trait-container-image", traitContainer, speciesBiologicalTraits[i].icon, speciesBiologicalTraits[i].nameEN);
+            const traitContainerName = createNewTextElement("span", "biological__trait-container-name", traitContainer, speciesBiologicalTraits[i].nameEN);
         }
 
-      const mainSectionTraitDescription = createNewSimpleElement("div", "main-section__trait-descr", mainSectionWorkedPlace);
-        const traitDescriptionTitle = createNewTextElement("h3", "trait-descr__title", mainSectionTraitDescription, mainSectionContent.descriptionBlockTitleEN);
-        const traitDescriptionTrait = createNewTextElement("p", "trait-descr__trait", mainSectionTraitDescription, mainSectionContent.descriptionBlockTextEN);
+      const mainSectionTraitDescription = createNewSimpleElement("div", "biological__descr-block", mainSectionWorkedPlace);
+        const traitDescriptionTitle = createNewTextElement("h3", "biological__descr-title", mainSectionTraitDescription, mainSectionContent.descriptionBlockTitleEN);
+        const traitDescriptionTrait = createNewTextElement("p", "biological__descr-text", mainSectionTraitDescription, mainSectionContent.descriptionBlockTextEN);
 
-  const traitContainerArr = document.querySelectorAll(".workedplace__trait-container");
+  const traitContainerArr = document.querySelectorAll(".biological__trait-container");
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
-      traitContainerArr[i].classList.toggle("workedplace__trait-container_active")
+      traitContainerArr[i].classList.toggle("biological__trait-container_active")
       selectBiologicalTrait(i);
     })
   })
