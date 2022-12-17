@@ -1,6 +1,6 @@
-import { ISpecies } from "../interface.js"
+import { ITraits } from "../interface.js"
 
-const species: Array<ISpecies> = [
+const species: Array<ITraits> = [
   {
     trait: "trait_machine_unit",
     nameEN: "Machine",
@@ -34,7 +34,7 @@ const species: Array<ISpecies> = [
     }
   ]
 
-const speciesTraitsNotHiveMind: Array<ISpecies> = [
+const speciesTraitsNotHiveMind: Array<ITraits> = [
   {
     trait: "trait_psionic",
     nameEN: "Psionic",
@@ -71,7 +71,7 @@ const speciesTraitsNotHiveMind: Array<ISpecies> = [
   }
 ]
 
-const speciesTraitsBiological: Array<ISpecies> = [
+const speciesTraitsBiological: Array<ITraits> = [
   {
     trait: "NOTVALUEABLE-botanical",
     nameEN: "Botanical",

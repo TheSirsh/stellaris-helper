@@ -1,665 +1,612 @@
-import { IBiological } from "../interface.js"
+import { ITraits } from "../interface.js"
 
-const speciesBiologicalTraits: Array<IBiological> = [
+const speciesBiologicalTraits: Array<ITraits> = [
   {
     trait: "trait_adaptive",
     icon: "../src/icons/initial-traits/adaptive.png",
     nameEN: "Adaptive",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Habitability",
-    text1RU: ""
+    traits: [
+      ["good", "+10%", "Habitability",],
+    ],
   },
   {
     trait: "trait_extremely_adaptive",
     icon: "../src/icons/initial-traits/extremely-adaptive.png",
     nameEN: "Extremely Adaptive",
     nameRU: "",
-    number1: "+20%",
-    text1EN: "Habitability",
-    text1RU: ""
+    traits: [
+      ["good", "+20%", "Habitability",]
+    ],
   },
   {
     trait: "trait_agrarian",
     icon: "../src/icons/initial-traits/agrarian.png",
     nameEN: "Agrarian",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Food from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+15%", "Food from Jobs",],
+    ],
   },
   {
     trait: "trait_charismatic",
     icon: "../src/icons/initial-traits/charismatic.png",
     nameEN: "Charismatic",
     nameRU: "",
-    number1: "+20%",
-    text1EN: "Amenities from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+20%", "Amenities from Jobs",],
+    ],
   },
   {
     trait: "trait_communal",
     icon: "../src/icons/initial-traits/communal.png",
     nameEN: "Communal",
     nameRU: "",
-    number1: "-10%",
-    text1EN: "Pop Housing Usage",
-    text1RU: ""
+    traits: [
+      ["good", "-10%", "Pop Housing Usage",],
+    ],
   },
   {
     trait: "trait_conformists",
     icon: "../src/icons/initial-traits/conformists.png",
     nameEN: "Conformists",
     nameRU: "",
-    number1: "+30%",
-    text1EN: "Governing Ethics Attraction",
-    text1RU: ""
+    traits: [
+      ["good", "+30%", "Governing Ethics Attraction",],
+    ],
   },
   {
     trait: "trait_conservational",
     icon: "../src/icons/initial-traits/conservationist.png",
     nameEN: "Conservationist",
     nameRU: "",
-    number1: "−10%",
-    text1EN: "Pop consumer goods upkeep",
-    text1RU: ""
+    traits: [
+      ["good", "−10%", "Pop consumer goods upkeep",],
+    ],
   },
   {
     trait: "trait_docile",
     icon: "../src/icons/initial-traits/docile.png",
     nameEN: "Docile",
     nameRU: "",
-    number1: "−10%",
-    text1EN: "Empire Size from Pops",
-    text1RU: ""
+    traits: [
+      ["good", "−10%", "Empire Size from Pops",],
+    ],
   },
   {
     trait: "trait_enduring",
     icon: "../src/icons/initial-traits/enduring.png",
     nameEN: "Enduring",
     nameRU: "",
-    number1: "+20",
-    text1EN: "years Leader Lifespan",
-    text1RU: ""
+    traits: [
+      ["good", "+20", "years Leader Lifespan",],
+    ],
   },
   {
     trait: "trait_venerable",
     icon: "../src/icons/initial-traits/venerable.png",
     nameEN: "Venerable",
     nameRU: "",
-    number1: "+80",
-    text1EN: "years Leader Lifespan",
-    text1RU: ""
+    traits: [
+      ["good", "+80", "years Leader Lifespan",],
+    ],
   },
   {
     trait: "trait_industrious",
     icon: "../src/icons/initial-traits/industrious.png",
     nameEN: "Industrious",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Minerals from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+15%", "Minerals from Jobs",],
+    ],
   },
   {
     trait: "trait_ingenious",
     icon: "../src/icons/initial-traits/ingenious.png",
     nameEN: "Ingenious",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Energy Credits from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+15%", "Energy Credits from Jobs",],
+    ],
   },
   {
     trait: "trait_intelligent",
     icon: "../src/icons/initial-traits/intelligent.png",
     nameEN: "Intelligent",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Research from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+10%", "Research from Jobs",],
+    ],
   },
   {
     trait: "trait_natural_engineers",
     icon: "../src/icons/initial-traits/natural-engineers.png",
     nameEN: "Natural Engineers",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Engineering Research from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+15%", "Engineering Research from Jobs",],
+    ],
   },
   {
     trait: "trait_natural_physicists",
     icon: "../src/icons/initial-traits/natural-physicists.png",
     nameEN: "Natural Physicists",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Physics Research from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+15%", "Physics Research from Jobs",],
+    ],
   },
   {
     trait: "trait_natural_sociologists",
     icon: "../src/icons/initial-traits/natural-sociologists.png",
     nameEN: "Natural Sociologists",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Society Research from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+15%", "Society Research from Jobs",],
+    ],
   },
   {
     trait: "trait_nomadic",
     icon: "../src/icons/initial-traits/nomadic.png",
     nameEN: "Nomadic",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Pop growth from immigration",
-    text1RU: "",
-    number2: "-25%",
-    text2EN: "Resettlement Cost",
-    text2RU: "",
+    traits: [
+      ["good", "+15%", "Pop growth from immigration",],
+      ["good", "-25%", "Resettlement Cost",],
+    ],
   },
   {
     trait: "trait_quick_learners",
     icon: "../src/icons/initial-traits/quick-learners.png",
     nameEN: "Quick Learners",
     nameRU: "",
-    number1: "+25%",
-    text1EN: "Leader Experience Gain",
-    text1RU: ""
+    traits: [
+      ["good", "+25%", "Leader Experience Gain",],
+    ],
   },
   {
     trait: "trait_rapid_breeders",
     icon: "../src/icons/initial-traits/rapid-breeders.png",
     nameEN: "Rapid Breeders",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Growth Speed",
-    text1RU: ""
+    traits: [
+      ["good", "+10%", "Growth Speed",],
+    ],
   },
   {
     trait: "trait_resilient",
     icon: "../src/icons/initial-traits/resilient.png",
     nameEN: "Resilient",
     nameRU: "",
-    number1: "+50%",
-    text1EN: "Defense Army Damage",
-    text1RU: ""
+    traits: [
+      ["good", "+50%", "Defense Army Damage",],
+    ],
   },
   {
     trait: "trait_strong",
     icon: "../src/icons/initial-traits/strong.png",
     nameEN: "Strong",
     nameRU: "",
-    number1: "+20%",
-    text1EN: "Army Damage",
-    text1RU: "",
-    number2: "+2.5%",
-    text2EN: "Worker and Menial Drone Pop Resource Output",
-    text2RU: "",
+    traits: [
+      ["good", "+20%", "Army Damage"],
+      ["good", "+2.5%", "Worker and Menial Drone Pop Resource Output",],
+    ],
   },
   {
     trait: "trait_very_strong",
     icon: "../src/icons/initial-traits/very-strong.png",
     nameEN: "Very Strong",
     nameRU: "",
-    number1: "+40%",
-    text1EN: "Army Damage",
-    text1RU: "",
-    number2: "+5%",
-    text2EN: "Worker and Menial Drone Pop Resource Output",
-    text2RU: "",
+    traits: [
+      ["good", "+40%", "Army Damage",],
+      ["good", "+5%", "Worker and Menial Drone Pop Resource Output",],
+    ],
   },
   {
     trait: "trait_talented",
     icon: "../src/icons/initial-traits/talented.png",
     nameEN: "Talented",
     nameRU: "",
-    number1: "+1",
-    text1EN: "Leader Level Cap",
-    text1RU: ""
+    traits: [
+      ["good", "+1", "Leader Level Cap",],
+    ],
   },
   {
     trait: "trait_thrifty",
     icon: "../src/icons/initial-traits/thrifty.png",
     nameEN: "Thrifty",
     nameRU: "",
-    number1: "+25%",
-    text1EN: "Trade value from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+25%", "Trade value from Jobs",],
+    ],
   },
   {
     trait: "trait_traditional",
     icon: "../src/icons/initial-traits/traditional.png",
     nameEN: "Traditional",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Unity from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+10%", "Unity from Jobs",],
+    ],
   }
 ]
 
-const speciesBotanicalTraits: Array<IBiological> = [
+const speciesBotanicalTraits: Array<ITraits> = [
   {
     trait: "trait_plantoid_phototrophic",
     icon: "../src/icons/initial-traits/plantoid-phototrophic.png",
     nameEN: "Phototrophic",
     nameRU: "",
-    number1: "",
-    text1EN: "Replaces half of the Food upkeep with Energy",
-    text1RU: ""
+    traits: [
+      ["empty", "", "Replaces half of the Food upkeep with Energy"],
+    ],
   },
   {
     trait: "trait_plantoid_radiotrophic",
     icon: "../src/icons/initial-traits/plantoid-radiotrophic.png",
     nameEN: "Radiotrophic",
     nameRU: "",
-    number1: "",
-    text1EN: "Replaces half of the Food or Minerals upkeep with Energy",
-    text1RU: "",
-    number2: "",
-    text2EN: "No Energy upkeep on Tomb Worlds",
-    text2RU: "",
-    number3: "+10%",
-    text3EN: "Tomb World Pop Growth Speed",
-    text3RU: "",
-    number4: "+0.02",
-    text4EN: "Monthly Organic Pop Assembly per Pop",
-    text4RU: "",
+    traits: [
+      ["empty", "", "Replaces half of the Food or Minerals upkeep with Energy"],
+      ["empty", "", "No Energy upkeep on Tomb Worlds"],
+      ["good", "+10%", "Tomb World Pop Growth Speed",],
+      ["good", "+0.02", "Monthly Organic Pop Assembly per Pop",],
+    ],
   },
   {
     trait: "trait_plantoid_budding",
     icon: "../src/icons/initial-traits/plantoid-budding.png",
     nameEN: "Budding",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Unity from Jobs",
-    text1RU: ""
+    traits: [
+      ["good", "+10%", "Unity from Jobs",],
+    ],
   },
 ]
 
-const speciesLithoidTraits: Array<IBiological> = [
+const speciesLithoidTraits: Array<ITraits> = [
   {
     trait: "trait_lithoid_gaseous_byproducts",
     icon: "../src/icons/initial-traits/lithoid-gaseous-byproducts.png",
     nameEN: "Gaseous Byproducts",
     nameRU: "",
-    number1: "+0.01",
-    text1EN: "Monthly Exotic Gases per Pop",
-    text1RU: ""
+    traits: [
+      ["good", "+0.01", "Monthly Exotic Gases per Pop",],
+    ],
   },
   {
     trait: "trait_lithoid_scintillating",
     icon: "../src/icons/initial-traits/lithoid-scintillating.png",
     nameEN: "Scintillating Skin",
     nameRU: "",
-    number1: "+0.01",
-    text1EN: "Monthly Rare Crystals per Pop",
-    text1RU: ""
+    traits: [
+      ["good", "+0.01", "Monthly Rare Crystals per Pop",],
+    ],
   },
   {
     trait: "trait_lithoid_volatile_excretions",
     icon: "../src/icons/initial-traits/lithoid-volatile-excretions.png",
     nameEN: "Volatile Excretions",
     nameRU: "",
-    number1: "+0.01",
-    text1EN: "Monthly Volatile Motes per Pop",
-    text1RU: ""
+    traits: [
+      ["good", "+0.01", "Monthly Volatile Motes per Pop",],
+    ],
   },
   {
     trait: "trait_lithoid_budding",
     icon: "../src/icons/initial-traits/lithoid-budding.png",
     nameEN: "Crystallization",
     nameRU: "",
-    number1: "+0.02",
-    text1EN: "Monthly Organic Pop Assembly per Pop",
-    text1RU: ""
+    traits: [
+      ["good", "+0.02", "Monthly Organic Pop Assembly per Pop",],
+    ],
   },
 ]
 
-const speciesToxicTraits: Array<IBiological> = [
+const speciesToxicTraits: Array<ITraits> = [
   {
     trait: "trait_incubator",
     icon: "../src/icons/initial-traits/toxic-incubator.png",
     nameEN: "Incubators",
     nameRU: "",
-    number1: "+1%",
-    text1EN: "Pop Growth Speed per pops below 37 (max +30%)",
-    text1RU: "",
-    number2: "-1%",
-    text2EN: "Pop Growth Speed per pops above 37 (max −10%)",
-    text2RU: "",
+    traits: [
+      ["good", "+1%", "Pop Growth Speed per pops below 37 (max +30%)",],
+      ["bad", "-1%", "Pop Growth Speed per pops above 37 (max −10%)",]
+    ],
   },
   {
     trait: "trait_noxious",
     icon: "../src/icons/initial-traits/toxic-noxious.png",
     nameEN: "Noxious",
     nameRU: "",
-    number1: "+0.02",
-    text1EN: "Happiness per non-Noxious Pop",
-    text1RU: "",
-    number2: "+5%",
-    text2EN: "Happiness",
-    text2RU: "",
-    number3: "+50%",
-    text3EN: "Army Damage",
-    text3RU: "",
-    number4: "+30%",
-    text4EN: "Species Minimum Habitability",
-    text4RU: "",
-    number5: "−30%",
-    text5EN: "Species Habitability Cap",
-    text5RU: "",
-    number6: "+10%",
-    text6EN: "Pop Housing Usage",
-    text6RU: "",
-    number7: "−0.01",
-    text7EN: "Happiness per Noxious Pop",
-    text7RU: "",
+    traits: [
+      ["good", "+0.02", "Happiness per non-Noxious Pop",],
+      ["good", "+5%", "Happiness",],
+      ["good", "+50%", "Army Damage",],
+      ["good", "+30%", "Species Minimum Habitability",],
+      ["bad", "−30%", "Species Habitability Cap",],
+      ["bad", "+10%", "Pop Housing Usage",],
+      ["bad", "−0.01", "Happiness per Noxious Pop",],
+    ],
   },
   {
     trait: "trait_inorganic_breath",
     icon: "../src/icons/initial-traits/toxic-inorganic-breath.png",
     nameEN: "Inorganic Breath",
     nameRU: "",
-    number1: "+0.02",
-    text1EN: "Monthly Exotic Gases per Pop",
-    text1RU: "",
-    number2: "+50%",
-    text2EN: "Pop Upkeep",
-    text2RU: "",
+    traits: [
+      ["good", "+0.02", "Monthly Exotic Gases per Pop",],
+      ["bad", "+50%", "Pop Upkeep",],
+    ],
   },
 ]
 
-const speciesCyborgTraits: Array<IBiological> = [
+const speciesCyborgTraits: Array<ITraits> = [
   {
     trait: "trait_cyborg_double_jointed",
     icon: "../src/icons/initial-traits/cyborg-double-jointed.png",
     nameEN: "Double Jointed",
     nameRU: "",
-    number1: "−10%",
-    text1EN: "Pop Housing Usage",
-    text1RU: "",
-    number2: "+15%",
-    text2EN: "Pop Growth from Immigration",
-    text2RU: "",
-    number3: "−25%",
-    text3EN: "Resettlement Cost",
-    text3RU: "",
-    number4: "+0.3",
-    text4EN: "Energy Upkeep",
-    text4RU: "",
+    traits: [
+      ["good", "+15%", "Pop Growth from Immigration",],
+      ["good", "−25%", "Resettlement Cost",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
   {
     trait: "trait_cyborg_durable",
     icon: "../src/icons/initial-traits/cyborg-durable.png",
     nameEN: "Durable",
     nameRU: "",
-    number1: "–0.5",
-    text1EN: "Pop Amenities Usage",
-    text1RU: "",
-    number2: "+0.3",
-    text2EN: "Energy Upkeep",
-    text2RU: "",
+    traits: [
+      ["good", "–0.5", "Pop Amenities Usage",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
   {
     trait: "trait_cyborg_efficient_processors",
     icon: "../src/icons/initial-traits/cyborg-efficient-processors.png",
     nameEN: "Efficient Processors",
     nameRU: "",
-    number1: "+5%",
-    text1EN: "Resources from Jobs",
-    text1RU: "",
-    number2: "+0.3",
-    text2EN: "Energy Upkeep",
-    text2RU: "",
+    traits: [
+      ["good", "+5%", "Resources from Jobs",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
   {
     trait: "trait_cyborg_enhanced_memory",
     icon: "../src/icons/initial-traits/cyborg-enhanced-memory.png",
     nameEN: "Enhanced Memory",
     nameRU: "",
-    number1: "+2",
-    text1EN: "Leader Level Cap",
-    text1RU: "",
-    number2: "+0.3",
-    text2EN: "Energy Upkeep",
-    text2RU: "",
+    traits: [
+      ["good", "+2", "Leader Level Cap",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
   {
     trait: "trait_cyborg_harvesters",
     icon: "../src/icons/initial-traits/cyborg-harvesters.png",
     nameEN: "Harvesters",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Food from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+10%", "Food from Jobs",],
+    ],
   },
   {
     trait: "trait_cyborg_learning_algorithms",
     icon: "../src/icons/initial-traits/cyborg-learning-algorithms.png",
     nameEN: "Learning Algorithms",
     nameRU: "",
-    number1: "+25%",
-    text1EN: "Leader Experience Gain",
-    text1RU: "",
-    number2: "+1",
-    text2EN: "Leader Level Cap",
-    text2RU: "",
-    number3: "+0.3",
-    text3EN: "Energy Upkeep",
-    text3RU: "",
+    traits: [
+      ["good", "+25%", "Leader Experience Gain",],
+      ["good", "+1", "Leader Level Cap",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
   {
     trait: "trait_cyborg_logic_engines",
     icon: "../src/icons/initial-traits/cyborg-logic-engines.png",
     nameEN: "Logic Engines",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Research from Jobs",
-    text1RU: "",
-    number2: "+0.3",
-    text2EN: "Energy Upkeep",
-    text2RU: "",
+    traits: [
+      ["good", "+10%", "Research from Jobs",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
   {
     trait: "trait_cyborg_loyalty_circuits",
     icon: "../src/icons/initial-traits/cyborg-loyalty-circuits.png",
     nameEN: "Loyalty Circuits",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Happiness",
-    text1RU: "",
-    number2: "+0.3",
-    text2EN: "Energy Upkeep",
-    text2RU: "",
+    traits: [
+      ["good", "+10%", "Happiness",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
   {
     trait: "trait_cyborg_power_drills",
     icon: "../src/icons/initial-traits/cyborg-power-drills.png",
     nameEN: "Power Drills",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Minerals from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+10%", "Minerals from Jobs",],
+    ],
   },
   {
     trait: "trait_cyborg_streamlined_protocols",
     icon: "../src/icons/initial-traits/cyborg-streamlined-protocols.png",
     nameEN: "Streamlined Protocols",
     nameRU: "",
-    number1: "–10%",
-    text1EN: "Empire Size from Pops",
-    text1RU: "",
-    number2: "+0.3",
-    text2EN: "Energy Upkeep",
-    text2RU: "",
+    traits: [
+      ["good", "–10%", "Empire Size from Pops",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
   {
     trait: "trait_cyborg_superconductive",
     icon: "../src/icons/initial-traits/cyborg-superconductive.png",
     nameEN: "Superconductive",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Energy Credits from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+10%", "Energy Credits from Jobs",],
+    ],
   },
   {
     trait: "trait_cyborg_trading_algorithms",
     icon: "../src/icons/initial-traits/cyborg-trading-algorithms.png",
     nameEN: "Trading Algorithms",
     nameRU: "",
-    number1: "+25%",
-    text1EN: "Trade Value from Jobs",
-    text1RU: "",
-    number2: "+0.3",
-    text2EN: "Energy Upkeep",
-    text2RU: "",
+    traits: [
+      ["good", "+25%", "Trade Value from Jobs",],
+      ["bad", "+0.3", "Energy Upkeep",],
+    ],
   },
 ]
 
-const speciesRobotTraits: Array<IBiological> = [
+const speciesRobotTraits: Array<ITraits> = [
   {
     trait: "trait_robot_double_jointed",
     icon: "../src/icons/initial-traits/robot-double-jointed.png",
     nameEN: "Double Jointed",
     nameRU: "",
-    number1: "−10%",
-    text1EN: "Pop Housing Usage",
-    text1RU: "",
+    traits: [
+      ["good", "−10%", "Pop Housing Usage",],
+    ],
   },
   {
     trait: "trait_robot_durable",
     icon: "../src/icons/initial-traits/robot-durable.png",
     nameEN: "Durable",
     nameRU: "",
-    number1: "–10%",
-    text1EN: "Robot Upkeep",
-    text1RU: "",
+    traits: [
+      ["good", "–10%", "Robot Upkeep",],
+    ],
   },
   {
     trait: "trait_robot_efficient_processors",
     icon: "../src/icons/initial-traits/robot-efficient-processors.png",
     nameEN: "Efficient Processors",
     nameRU: "",
-    number1: "+5%",
-    text1EN: "Resources from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+5%", "Resources from Jobs",],
+    ],
   },
   {
     trait: "trait_robot_emotion_emulators",
     icon: "../src/icons/initial-traits/robot-emotion-emulators.png",
     nameEN: "Emotion Emulators",
     nameRU: "",
-    number1: "+20%",
-    text1EN: "Amenities from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+20%", "Amenities from Jobs",],
+    ],
   },
   {
     trait: "trait_robot_enhanced_memory",
     icon: "../src/icons/initial-traits/robot-enhanced-memory.png",
     nameEN: "Enhanced Memory",
     nameRU: "",
-    number1: "+2",
-    text1EN: "Leader Level Cap",
-    text1RU: "",
+    traits: [
+      ["good", "+2", "Leader Level Cap",],
+    ],
   },
   {
     trait: "trait_robot_harvesters",
     icon: "../src/icons/initial-traits/robot-harvesters.png",
     nameEN: "Harvesters",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Food from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+15%", "Food from Jobs",],
+    ],
   },
   {
     trait: "trait_robot_learning_algorithms",
     icon: "../src/icons/initial-traits/robot-learning-algorithms.png",
     nameEN: "Learning Algorithms",
     nameRU: "",
-    number1: "+25%",
-    text1EN: "Leader Experience Gain",
-    text1RU: "",
+    traits: [
+      ["good", "+25%", "Leader Experience Gain",],
+    ],
   },
   {
     trait: "trait_robot_logic_engines",
     icon: "../src/icons/initial-traits/robot-logic-engines.png",
     nameEN: "Logic Engines",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Research from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+10%", "Research from Jobs",],
+    ],
   },
   {
     trait: "trait_robot_loyalty_circuits",
     icon: "../src/icons/initial-traits/robot-loyalty-circuits.png",
     nameEN: "Loyalty Circuits",
     nameRU: "",
-    number1: "+10%",
-    text1EN: "Happiness",
-    text1RU: "",
+    traits: [
+      ["good", "+10%", "Happiness",],
+    ],
   },
   {
     trait: "trait_robot_mass_produced",
     icon: "../src/icons/initial-traits/robot-mass-produced.png",
     nameEN: "Mass-Produced",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Pop Assembly Speed",
-    text1RU: "",
+    traits: [
+      ["good", "+15%", "Pop Assembly Speed",],
+    ],
   },
   {
     trait: "trait_robot_power_drills",
     icon: "../src/icons/initial-traits/robot-power-drills.png",
     nameEN: "Power Drills",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Minerals from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+15%", "Minerals from Jobs",],
+    ],
   },
   {
     trait: "trait_robot_propaganda_machines",
     icon: "../src/icons/initial-traits/robot-propaganda-machines.png",
     nameEN: "Propaganda Machines",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Unity from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+15%", "Unity from Jobs",],
+    ],
   },
   {
     trait: "trait_robot_recycled",
     icon: "../src/icons/initial-traits/robot-recycled.png",
     nameEN: "Recycled",
     nameRU: "",
-    number1: "–20%",
-    text1EN: "Pop Assembly Cost",
-    text1RU: "",
+    traits: [
+      ["good", "–20%", "Pop Assembly Cost",],
+    ],
   },
   {
     trait: "trait_robot_streamlined_protocols",
     icon: "../src/icons/initial-traits/robot-streamlined-protocols.png",
     nameEN: "Streamlined Protocols",
     nameRU: "",
-    number1: "–10%",
-    text1EN: "Empire Size from Pops",
-    text1RU: "",
+    traits: [
+      ["good", "–10%", "Empire Size from Pops",],
+    ],
   },
   {
     trait: "trait_robot_superconductive",
     icon: "../src/icons/initial-traits/robot-superconductive.png",
     nameEN: "Superconductive",
     nameRU: "",
-    number1: "+15%",
-    text1EN: "Energy Credits from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+15%", "Energy Credits from Jobs",],
+    ],
   },
   {
     trait: "trait_robot_trading_algorithms",
     icon: "../src/icons/initial-traits/robot-trading-algorithms.png",
     nameEN: "Trading Algorithms",
     nameRU: "",
-    number1: "+25%",
-    text1EN: "Trade Value from Jobs",
-    text1RU: "",
+    traits: [
+      ["good", "+25%", "Trade Value from Jobs",],
+    ],
   },
 ]
 

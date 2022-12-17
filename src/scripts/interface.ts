@@ -28,40 +28,12 @@ interface IClimate {
   descrEN: string,
 }
 
-interface ISpecies {
+interface ITraits {
   trait: string,
+  icon: string,
   nameEN: string,
   nameRU: string,
-  icon: string,
   traits : Array<Array<string>>,
-}
-
-interface IBiological {
-    trait: string,
-    icon: string,
-    nameEN: string,
-    nameRU: string,
-    number1: string,
-    text1EN: string,
-    text1RU: string,
-    number2?: string,
-    text2EN?: string,
-    text2RU?: string,
-    number3?: string,
-    text3EN?: string,
-    text3RU?: string,
-    number4?: string,
-    text4EN?: string,
-    text4RU?: string,
-    number5?: string,
-    text5EN?: string,
-    text5RU?: string,
-    number6?: string,
-    text6EN?: string,
-    text6RU?: string,
-    number7?: string,
-    text7EN?: string,
-    text7RU?: string,
 }
 
 interface IFooter {
@@ -70,4 +42,4 @@ interface IFooter {
   src: string,
 }
 
-export { IHeader, IMainText, ISpecies, IClimate, IBiological, IFooter }
+export { IHeader, IMainText, IClimate, ITraits, IFooter }
