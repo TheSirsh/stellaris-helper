@@ -53,6 +53,15 @@ interface IBiological {
     number4?: string,
     text4EN?: string,
     text4RU?: string,
+    number5?: string,
+    text5EN?: string,
+    text5RU?: string,
+    number6?: string,
+    text6EN?: string,
+    text6RU?: string,
+    number7?: string,
+    text7EN?: string,
+    text7RU?: string,
 }
 
 interface IFooter {
