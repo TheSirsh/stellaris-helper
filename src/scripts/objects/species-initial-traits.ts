@@ -276,11 +276,43 @@ const speciesBotanicalTraits: Array<IBiological> = [
   },
 ]
 
+const speciesLithoidTraits: Array<IBiological> = [
+  {
+    trait: "trait_lithoid_gaseous_byproducts",
+    icon: "../src/icons/initial-traits/lithoid-gaseous-byproducts.png",
+    nameEN: "Gaseous Byproducts",
+    nameRU: "",
+    number1: "+0.01",
+    text1EN: "Monthly Exotic Gases per Pop",
+    text1RU: ""
+  },
+  {
+    trait: "trait_lithoid_scintillating",
+    icon: "../src/icons/initial-traits/lithoid-scintillating.png",
+    nameEN: "Scintillating Skin",
+    nameRU: "",
+    number1: "+0.01",
+    text1EN: "Monthly Rare Crystals per Pop",
+    text1RU: ""
+  },
+  {
+    trait: "trait_lithoid_volatile_excretions",
+    icon: "../src/icons/initial-traits/lithoid-volatile-excretions.png",
+    nameEN: "Volatile Excretions",
+    nameRU: "",
+    number1: "+0.01",
+    text1EN: "Monthly Volatile Motes per Pop",
+    text1RU: ""
+  },
+  {
+    trait: "trait_lithoid_budding",
+    icon: "../src/icons/initial-traits/lithoid-budding.png",
+    nameEN: "Crystallization",
+    nameRU: "",
+    number1: "+0.02",
+    text1EN: "Monthly Organic Pop Assembly per Pop",
+    text1RU: ""
+  },
+]
 
-
-
-
-
-
-
-export { speciesBiologicalTraits, speciesBotanicalTraits }
+export { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits }
