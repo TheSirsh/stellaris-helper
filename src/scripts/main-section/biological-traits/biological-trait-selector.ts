@@ -8,13 +8,14 @@ function selectBiologicalTrait(i: number): void {
   
     const traitDescriptionTrait: HTMLElement = document.querySelector(".biological__descr-text")!;
     traitDescriptionTrait.textContent = "";
-      const traitDescriptionNumber = createNewTextElement("span", "green", traitDescriptionTrait, speciesBiologicalTraits[i].number1);
-      const traitDescriptionDescr = createNewTextElement("span", "white", traitDescriptionTrait, speciesBiologicalTraits[i].text1EN);
-      if (speciesBiologicalTraits[i].number2) {
-        traitDescriptionTrait.innerHTML += "<br\/>"
-        const traitDescriptionNumber = createNewTextElement("span", "green", traitDescriptionTrait, speciesBiologicalTraits[i].number2);
-        const traitDescriptionDescr = createNewTextElement("span", "white", traitDescriptionTrait, speciesBiologicalTraits[i].text2EN);
-        }
+    for (let j = 0; j < speciesBiologicalTraits[i].traits.length; j++) {
+      if (speciesBiologicalTraits[i].traits[j][0] === "bad") {
+        const traitDescriptionNumber = createNewTextElement("span", "red", traitDescriptionTrait, speciesBiologicalTraits[i].traits[j][1]);
+      } else if (speciesBiologicalTraits[i].traits[j][0] === "good") {
+        const traitDescriptionNumber = createNewTextElement("span", "green", traitDescriptionTrait, speciesBiologicalTraits[i].traits[j][1]);
+      }
+      traitDescriptionTrait.innerHTML += " " + speciesBiologicalTraits[i].traits[j][2]
+    }
 }
 
 export { selectBiologicalTrait }
