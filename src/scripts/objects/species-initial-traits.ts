@@ -237,4 +237,50 @@ const speciesBiologicalTraits: Array<IBiological> = [
   }
 ]
 
-export { speciesBiologicalTraits }
+const speciesBotanicalTraits: Array<IBiological> = [
+  {
+    trait: "trait_plantoid_phototrophic",
+    icon: "../src/icons/initial-traits/plantoid-phototrophic.png",
+    nameEN: "Phototrophic",
+    nameRU: "",
+    number1: "",
+    text1EN: "Replaces half of the Food upkeep with Energy",
+    text1RU: ""
+  },
+  {
+    trait: "trait_plantoid_radiotrophic",
+    icon: "../src/icons/initial-traits/plantoid-radiotrophic.png",
+    nameEN: "Radiotrophic",
+    nameRU: "",
+    number1: "",
+    text1EN: "Replaces half of the Food or Minerals upkeep with Energy",
+    text1RU: "",
+    number2: "",
+    text2EN: "No Energy upkeep on Tomb Worlds",
+    text2RU: "",
+    number3: "+10%",
+    text3EN: "Tomb World Pop Growth Speed",
+    text3RU: "",
+    number4: "+0.02",
+    text4EN: "Monthly Organic Pop Assembly per Pop",
+    text4RU: "",
+  },
+  {
+    trait: "trait_plantoid_budding",
+    icon: "../src/icons/initial-traits/plantoid-budding.png",
+    nameEN: "Budding",
+    nameRU: "",
+    number1: "+10%",
+    text1EN: "Unity from Jobs",
+    text1RU: ""
+  },
+]
+
+
+
+
+
+
+
+
+export { speciesBiologicalTraits, speciesBotanicalTraits }
