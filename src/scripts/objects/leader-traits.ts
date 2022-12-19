@@ -453,4 +453,15 @@ const leaderRulerHiveMind: Array<ITraits> = [
   },
 ]
 
-export { leaderRulerBiological }
+const leaderRulerSynthitic: Array<ITraits> = [
+  {
+    trait: "leader_trait_ruler_machine_intelligence",
+    icon: "../src/icons/leader-traits/machine-intelligence.png",
+    nameEN: "Chosen One",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+    ],
+  },
+]
+export { leaderRulerBiological, leaderRulerHiveMind }
