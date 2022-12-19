@@ -741,15 +741,6 @@ const leaderGovernorBiological: Array<ITraits> = [
 
 const leaderGovernorHiveMind: Array<ITraits> = [
   {
-    trait: "leader_trait_ruler_chosen",
-    icon: "../src/icons/leader-traits/hive-mind.png",
-    nameEN: "Hive Mind",
-    nameRU: "",
-    traits: [
-      ["empty", "", "Immortal",],
-    ],
-  },
-  {
     trait: "leader_trait_governor_gray",
     icon: "../src/icons/leader-traits/governor-nanite-entity.png",
     nameEN: "Nanite Entity",
@@ -975,8 +966,180 @@ const leaderGovernorHiveMind: Array<ITraits> = [
   },
 ]
 
+const leaderGovernorSynthitic: Array<ITraits> = [
+  {
+    trait: "leader_trait_governor_synthetic",
+    icon: "../src/icons/leader-traits/chosen-composer.png",
+    nameEN: "Synthetic",
+    nameRU: "",
+    traits: [
+      ["good", "+5%", "Worker resource output",],
+    ],
+  },
+  {
+    trait: "leader_trait_governor_gray",
+    icon: "../src/icons/leader-traits/governor-nanite-entity.png",
+    nameEN: "Nanite Entity",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+      ["good", "−40%", "Building cost",],
+      ["good", "+40%", "Planet Build Speed",],
+      ["good", "+15%", "Energy from Jobs",],
+      ["good", "+15%", "Minerals from Jobs",],
+      ["good", "−40%", "Clear blocker cost",],
+      ["good", "+40%", "Clear blocker speed",],
+    ],
+  },
+  {
+    trait: "leader_trait_flexible_programming",
+    icon: "../src/icons/leader-traits/adaptable.png",
+    nameEN: "Flexible Programming",
+    nameRU: "",
+    traits: [
+      ["good", "+25%", "Leader experience gain",],
+    ],
+  },
+  {
+    trait: "leader_trait_newboot",
+    icon: "../src/icons/leader-traits/newboot.png",
+    nameEN: "Newboot",
+    nameRU: "",
+    traits: [
+      ["good", "-50%", "Leader cost",],
+      ["good", "-50%", "Leader upkeep",],
+    ],
+  },
+  {
+    trait: "leader_trait_architectural_interest",
+    icon: "../src/icons/leader-traits/governor-architectural-interest.png",
+    nameEN: "Architectural Interest",
+    nameRU: "",
+    traits: [
+      ["good", "-10%", "Building cost",],
+      ["good", "-10%", "District cost",],
+      ["good", "+10%", "Planet Build Speed",],
+    ],
+  },
+  {
+    trait: "leader_trait_warbot_tinkerer",
+    icon: "../src/icons/leader-traits/governor-warbot-tinkerer.png",
+    nameEN: "Warbot Tinkerer",
+    nameRU: "",
+    traits: [
+      ["good", "+20%", "Army Build Speed",],
+      ["good", "-20%", "Army cost",],
+      ["good", "+20%", "Defense Army damage",],
+    ],
+  },
+  {
+    trait: "leader_trait_amplifier",
+    icon: "../src/icons/leader-traits/governor-amplifier.png",
+    nameEN: "Mindfulness",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Unity from Administrators",],
+    ],
+  },
+  {
+    trait: "leader_trait_bulldozer",
+    icon: "../src/icons/leader-traits/governor-bulldozer.png",
+    nameEN: "Bulldozer",
+    nameRU: "",
+    traits: [
+      ["good", "-25%", "Clear blocker cost",],
+      ["good", "+25%", "Clear blocker speed",],
+    ],
+  },
+  {
+    trait: "leader_trait_analytical",
+    icon: "../src/icons/leader-traits/governor-analitical.png",
+    nameEN: "Analytical",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Research from Jobs",],
+    ],
+  },
+  {
+    trait: "leader_trait_ai_aided_design",
+    icon: "../src/icons/leader-traits/governor-ai-aided-design.png",
+    nameEN: "Ai-Aided Design",
+    nameRU: "",
+    traits: [
+      ["good", "+20%", "Shipyard Build Speed",],
+      ["good", "-10%", "Shipyard Build cost",],
+    ],
+  },
+  {
+    trait: "leader_trait_righteous",
+    icon: "../src/icons/leader-traits/governor-righteous.png",
+    nameEN: "Righteous",
+    nameRU: "",
+    traits: [
+      ["good", "-25", "Crime",],
+    ],
+  },
+  {
+    trait: "leader_trait_enclave_trader",
+    icon: "../src/icons/leader-traits/governor-enclave-trader.png",
+    nameEN: "Enclave Trader",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Trade Value",],
+    ],
+  },
+  {
+    trait: "leader_trait_nuumismatic_priest",
+    icon: "../src/icons/leader-traits/governor-nuumismatic-priest.png",
+    nameEN: "Merchant of Numa",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Trade Value",],
+      ["good", "-10%", "Pop consumer goods upkeep",],
+    ],
+  },
+  {
+    trait: "leader_trait_waste_management_specialist",
+    icon: "../src/icons/leader-traits/governor-waste-management-specialist.png",
+    nameEN: "Waste Management Specialist",
+    nameRU: "",
+    traits: [
+      ["good", "-10%", "Building Upkeep",],
+    ],
+  },
+  {
+    trait: "leader_trait_prospectorium_extractor",
+    icon: "../src/icons/leader-traits/chosenone.png",
+    nameEN: "Prospectorium Extractor",
+    nameRU: "",
+    traits: [
+      ["good", "+20%", "Energy Credits from Jobs",],
+      ["good", "+20%", "Minerals from Jobs",],
+      ["good", "+20%", "Alloys from Jobs",],
+    ],
+  },
+  {
+    trait: "leader_trait_prospectorium_optimizer",
+    icon: "../src/icons/leader-traits/chosenone.png",
+    nameEN: "Prospectorium Optimizer",
+    nameRU: "",
+    traits: [
+      ["good", "-15%", "Upkeep from Pop jobs",],
+    ],
+  },
+  {
+    trait: "leader_trait_prospectorium_refiner",
+    icon: "../src/icons/leader-traits/chosenone.png",
+    nameEN: "Prospectorium Refiner",
+    nameRU: "",
+    traits: [
+      ["good", "+25%", "Chemist Output",],
+      ["good", "+25%", "Gas Refiner Output",],
+      ["good", "+25%", "Translucer Output",],
+    ],
+  },
+]
 
 
 
-
-export { leaderRulerBiological, leaderRulerHiveMind, leaderRulerSynthitic, leaderGovernorBiological, }
+export { leaderRulerBiological, leaderRulerHiveMind, leaderRulerSynthitic, leaderGovernorBiological, leaderGovernorHiveMind, }
