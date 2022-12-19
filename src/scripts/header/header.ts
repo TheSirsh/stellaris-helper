@@ -1,6 +1,6 @@
 import { headerContent } from "../objects/header-content.js";
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
-import { createMainSectionClimateTrait } from "../main-section/climate-traits-create.js"
+import { createSpecies } from "../main-section/species-create.js"
 
 function createHeader(): void {
 
@@ -11,7 +11,7 @@ function createHeader(): void {
         for (let i = 0; i < Object.keys(headerContent).length; i++) {
           const headerCell = createNewTextElement("li", "header__cell", headerContainer, headerContent[i].name);
           if (i === 0) {
-            headerCell.addEventListener("click", createMainSectionClimateTrait);
+            headerCell.addEventListener("click", createSpecies);
           }
         }
 }

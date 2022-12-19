@@ -10,8 +10,8 @@ function createMainSectionClimateTrait(): void {
   container.remove();
 
   const mainSectionContainer = createNewSimpleElement("div", "main-section__container", mainSection);
-    const mainSectionTitle = createNewTextElement("h2", "main-section__title", mainSectionContainer, mainSectionContent[0].titleEN);
-    const mainSectionSubTitle = createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, mainSectionContent[0].subtitleEN);
+    const mainSectionTitle = createNewTextElement("h2", "main-section__title", mainSectionContainer, mainSectionContent[1].titleEN);
+    const mainSectionSubTitle = createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, mainSectionContent[1].subtitleEN);
   
     const mainSectionWorkedPlace = createNewSimpleElement("div", "main-section__workedplace", mainSectionContainer);
       const mainSectionTraitList = createNewSimpleElement("ol", "main-section__traitlist", mainSectionWorkedPlace);
@@ -23,10 +23,10 @@ function createMainSectionClimateTrait(): void {
         }
   
       const mainSectionTraitDescription = createNewSimpleElement("div", "main-section__trait-descr", mainSectionWorkedPlace);
-        const traitDescriptionTitle = createNewTextElement("h3", "trait-descr__title", mainSectionTraitDescription, mainSectionContent[1].titleEN);
-        const traitDescriptionImage = createNewImageElement("trait-descr__image", mainSectionTraitDescription, mainSectionContent[1].image, mainSectionContent[1].nameEN);
-        const traitDescriptionPlanet = createNewTextElement("p", "trait-descr__planet", mainSectionTraitDescription, mainSectionContent[1].planetDecrEN);
-        const traitDescriptionButton = createNewTextElement("div", "trait-descr__button", mainSectionTraitDescription, mainSectionContent[1].buttonEN)
+        const traitDescriptionTitle = createNewTextElement("h3", "trait-descr__title", mainSectionTraitDescription, mainSectionContent[2].titleEN);
+        const traitDescriptionImage = createNewImageElement("trait-descr__image", mainSectionTraitDescription, mainSectionContent[2].image, mainSectionContent[2].nameEN);
+        const traitDescriptionPlanet = createNewTextElement("p", "trait-descr__planet", mainSectionTraitDescription, mainSectionContent[2].planetDecrEN);
+        const traitDescriptionButton = createNewTextElement("div", "trait-descr__button", mainSectionTraitDescription, mainSectionContent[2].buttonEN)
       
 
   const traitContainerArr = document.querySelectorAll(".workedplace__trait-container");
