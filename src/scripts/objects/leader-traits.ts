@@ -59,7 +59,7 @@ const leaderRulerBiological: Array<ITraits> = [
     ],
   },
   {
-    trait: "trait_ruler_charismatic",
+    trait: "trait_ruler_cyborg",
     icon: "../src/icons/leader-traits/cyborg.png",
     nameEN: "Cyborg",
     nameRU: "",
@@ -70,7 +70,7 @@ const leaderRulerBiological: Array<ITraits> = [
     ],
   },
   {
-    trait: "trait_ruler_charismatic",
+    trait: "leader_trait_ruler_erudite",
     icon: "../src/icons/leader-traits/erudite.png",
     nameEN: "Erudite",
     nameRU: "",
@@ -79,7 +79,7 @@ const leaderRulerBiological: Array<ITraits> = [
     ],
   },
   {
-    trait: "trait_ruler_charismatic",
+    trait: "leader_trait_ruler_brainslug",
     icon: "../src/icons/leader-traits/brain-slug.png",
     nameEN: "Brain Slug Host",
     nameRU: "",
@@ -339,6 +339,116 @@ const leaderRulerBiological: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "−20%", "Battleship Build cost",],
+    ],
+  },
+]
+
+const leaderRulerHiveMind: Array<ITraits> = [
+  {
+    trait: "leader_trait_ruler_chosen",
+    icon: "../src/icons/leader-traits/chosen-one.png",
+    nameEN: "Hive Mind",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_chosen",
+    icon: "../src/icons/leader-traits/chosen-one.png",
+    nameEN: "Chosen One",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+      ["good", "+20%", "Governing ethics attraction",],
+      ["good", "+1", "Monthly Influence",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_composer_chosen",
+    icon: "../src/icons/leader-traits/chosen-composer.png",
+    nameEN: "Chosen of the Composer",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+      ["good", "+50", "Years leader lifespan",],
+      ["good", "+30%", "Leader experience gain",],
+      ["good", "+1", "Leader level cap",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_instrument_chosen",
+    icon: "../src/icons/leader-traits/chosen-instrument.png",
+    nameEN: "Chosen of the Instrument",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+      ["good", "+10%", "Happiness",],
+      ["good", "+10%", "Trade Value",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_eater_chosen",
+    icon: "../src/icons/leader-traits/chosen-eater.png",
+    nameEN: "Chosen of the Eater",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+      ["good", "+15%", "Ship build speed",],
+      ["good", "-10%", "Ship upkeep",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_whisperers_chosen",
+    icon: "../src/icons/leader-traits/chosen-whisperers.png",
+    nameEN: "Chosen of the Whisperers",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+      ["good", "+1", "Monthly Influence",],
+      ["good", "+1", "Encryption",],
+      ["good", "−15%", "Operation cost",],
+    ],
+  },
+  {
+    trait: "trait_ruler_cyborg",
+    icon: "../src/icons/leader-traits/cyborg.png",
+    nameEN: "Cyborg",
+    nameRU: "",
+    traits: [
+      ["good", "−25%", "Building upkeep",],
+      ["good", "−25%", "District upkeep",],
+      ["good", "−5%", "Empire size from Districts",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_erudite",
+    icon: "../src/icons/leader-traits/erudite.png",
+    nameEN: "Erudite",
+    nameRU: "",
+    traits: [
+      ["good", "+1", "Research alternatives",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_brainslug",
+    icon: "../src/icons/leader-traits/brain-slug.png",
+    nameEN: "Brain Slug Host",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Research from Jobs",],
+      ["good", "+10%", "Naval Capacity",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_great_khan",
+    icon: "../src/icons/leader-traits/great-khan.png",
+    nameEN: "The Great Khan",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+      ["good", "+25%", "Army Morale",],
+      ["good", "+10%", "Ship weapons damage",],
     ],
   },
 ]
