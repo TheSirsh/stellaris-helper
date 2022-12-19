@@ -1,6 +1,6 @@
 const mainSectionContent: Object = {
   "0" : {
-    "titleEN": "Spicies",
+    "titleEN": "Species",
     "subtitleEN" : "Choose Species"
   },
   "1": {

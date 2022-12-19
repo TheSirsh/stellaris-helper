@@ -101,6 +101,31 @@
     padding: 0px;
 }
 
+.main-section__workedplace_species {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.main-section__species {
+    display: flex;
+    width: 80%;
+    height: auto;
+    padding: 0px;
+}
+
+.main-section__species-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    padding: 0px;
+}
+
 .main-section__traitlist {
     display: flex;
     flex-direction: column;
