@@ -1,6 +1,6 @@
-import { headerContent } from "./objects/header-content.js";
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js";
-import { createMainSectionClimateTrait } from "./main-section-climate-traits.js"
+import { headerContent } from "../objects/header-content.js";
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
+import { createMainSectionClimateTrait } from "../main-section/climate-traits-create.js"
 
 function createHeader(): void {
 

@@ -1,13 +1,13 @@
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js";
-import { mainSectionContent } from "./objects/main-section-text.js";
-import { speciesBiologicalTraits } from "./objects/species-initial-traits.js"
-import { selectInitialTrait } from "./initial-trait-selector.js"
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
+import { mainSectionContent } from "../objects/main-section-text.js";
+import { speciesBiologicalTraits } from "../objects/species-initial-traits.js"
+import { selectBiologicalTrait } from "./biological-trait-selector.js"
 
 function nextTraitStage():void {
-  const container: HTMLElement = document.querySelector(".main-section__container");
+  const container: HTMLElement = document.querySelector(".main-section__container")!;
   container.remove();
 
-  const mainSection = document.querySelector(".main-section");
+  const mainSection: HTMLElement = document.querySelector(".main-section")!;
 
   const mainSectionContainer = createNewSimpleElement("div", "main-section__container", mainSection);
     const mainSectionTitle = createNewTextElement("h2", "main-section__title", mainSectionContainer, mainSectionContent[2].titleEN);
@@ -29,11 +29,10 @@ function nextTraitStage():void {
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void{
-      selectInitialTrait(i);
+      selectBiologicalTrait(i);
       traitContainerArr[i].classList.toggle("workedplace__trait-container_active");
     })
   })
-
 }
 
 export { nextTraitStage }

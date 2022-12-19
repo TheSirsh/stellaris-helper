@@ -7,6 +7,9 @@
   "include": [
     "index.ts",
     "src/scripts/*",
-    "src/scripts/objects/*"
+    "src/scripts/objects/*",
+    "src/scripts/header/*",
+    "src/scripts/footer/*",
+    "src/scripts/main-section/*"
   ]
 }

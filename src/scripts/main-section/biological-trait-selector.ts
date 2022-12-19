@@ -1,12 +1,12 @@
-import { speciesBiologicalTraits } from "./objects/species-initial-traits.js";
-import { createNewTextElement } from "./create-functions.js";
+import { speciesBiologicalTraits } from "../objects/species-initial-traits.js";
+import { createNewTextElement } from "../create-functions.js";
 
-function selectInitialTrait(i: number): void { 
+function selectBiologicalTrait(i: number): void { 
 
-  const traitDescriptionTitle: HTMLElement = document.querySelector(".trait-descr__title");
+  const traitDescriptionTitle: HTMLElement = document.querySelector(".trait-descr__title")!;
   traitDescriptionTitle.textContent = speciesBiologicalTraits[i].nameEN;
   
-    const traitDescriptionTrait: HTMLElement = document.querySelector(".trait-descr__trait");
+    const traitDescriptionTrait: HTMLElement = document.querySelector(".trait-descr__trait")!;
     traitDescriptionTrait.textContent = "";
       const traitDescriptionNumber = createNewTextElement("span", "green", traitDescriptionTrait, speciesBiologicalTraits[i].number1);
       const traitDescriptionDescr = createNewTextElement("span", "white", traitDescriptionTrait, speciesBiologicalTraits[i].text1EN);
@@ -17,4 +17,4 @@ function selectInitialTrait(i: number): void {
         }
 }
 
-export { selectInitialTrait }
+export { selectBiologicalTrait }

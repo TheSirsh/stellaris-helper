@@ -1,4 +1,4 @@
-import { speciesClimateTraits } from "./objects/species-climate-traits.js"
+import { speciesClimateTraits } from "../objects/species-climate-traits.js"
 
 function selectClimateTrait(i: number): void { 
 

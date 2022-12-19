@@ -1,12 +1,12 @@
-import { mainSectionContent } from "./objects/main-section-text.js";
-import { speciesClimateTraits } from "./objects/species-climate-traits.js";
-import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js";
+import { mainSectionContent } from "../objects/main-section-text.js";
+import { speciesClimateTraits } from "../objects/species-climate-traits.js";
+import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
 import { selectClimateTrait } from "./climate-trait-selector.js";
-import { nextTraitStage } from "./main-section-next-trait-stage.js";
+import { nextTraitStage } from "./biological-traits-create.js";
 
 function createMainSectionClimateTrait(): void {  
-  const mainSection = document.querySelector(".main-section");
-  const container: HTMLElement = document.querySelector(".main-section__container");
+  const mainSection: HTMLElement = document.querySelector(".main-section")!;
+  const container: HTMLElement = document.querySelector(".main-section__container")!;
   container.remove();
 
   const mainSectionContainer = createNewSimpleElement("div", "main-section__container", mainSection);
