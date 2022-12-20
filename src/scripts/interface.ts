@@ -35,6 +35,7 @@ interface ITraits {
   nameEN: string,
   nameRU: string,
   traits : Array<Array<string>>,
+  exclude?: Array<string>,
 }
 
 interface IFooter {

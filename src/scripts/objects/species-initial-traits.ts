@@ -9,6 +9,10 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+10%", "Habitability",],
     ],
+    exclude: [
+      "trait_extremely_adaptive",
+      "trait_nonadaptive",
+    ],
   },
   {
     trait: "trait_extremely_adaptive",
@@ -16,7 +20,11 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameEN: "Extremely Adaptive",
     nameRU: "",
     traits: [
-      ["good", "+20%", "Habitability",]
+      ["good", "+20%", "Habitability",],
+    ],
+    exclude: [
+      "trait_adaptive",
+      "trait_nonadaptive",
     ],
   },
   {
@@ -36,6 +44,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+20%", "Amenities from Jobs",],
     ],
+    exclude: [
+      "trait_repugnant",
+    ],
   },
   {
     trait: "trait_communal",
@@ -44,6 +55,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "-10%", "Pop Housing Usage",],
+    ],
+    exclude: [
+      "trait_solitary",
     ],
   },
   {
@@ -54,6 +68,10 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+30%", "Governing Ethics Attraction",],
     ],
+    exclude: [
+      "trait_deviants",
+      "trait_hive_mind",
+    ],
   },
   {
     trait: "trait_conservational",
@@ -62,6 +80,10 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "−10%", "Pop consumer goods upkeep",],
+    ],
+    exclude: [
+      "trait_wasteful",
+      "trait_hive_mind",
     ],
   },
   {
@@ -72,6 +94,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "−10%", "Empire Size from Pops",],
     ],
+    exclude: [
+      "trait_unruly",
+    ],
   },
   {
     trait: "trait_enduring",
@@ -81,6 +106,10 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+20", "years Leader Lifespan",],
     ],
+    exclude: [
+      "trait_venerable",
+      "trait_fleeting",
+    ],
   },
   {
     trait: "trait_venerable",
@@ -89,6 +118,10 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+80", "years Leader Lifespan",],
+    ],
+    exclude: [
+      "trait_enduring",
+      "trait_fleeting",
     ],
   },
   {
@@ -154,6 +187,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
       ["good", "+15%", "Pop growth from immigration",],
       ["good", "-25%", "Resettlement Cost",],
     ],
+    exclude: [
+      "trait_sedentary",
+    ],
   },
   {
     trait: "trait_quick_learners",
@@ -163,6 +199,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+25%", "Leader Experience Gain",],
     ],
+    exclude: [
+      "trait_slow_learners"
+    ],
   },
   {
     trait: "trait_rapid_breeders",
@@ -171,6 +210,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+10%", "Growth Speed",],
+    ],
+    exclude: [
+      "trait_slow_breeders",
     ],
   },
   {
@@ -191,6 +233,10 @@ const speciesBiologicalTraits: Array<ITraits> = [
       ["good", "+20%", "Army Damage"],
       ["good", "+2.5%", "Worker and Menial Drone Pop Resource Output",],
     ],
+    exclude: [
+      "trait_very_strong",
+      "trait_weak",
+    ],
   },
   {
     trait: "trait_very_strong",
@@ -200,6 +246,10 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+40%", "Army Damage",],
       ["good", "+5%", "Worker and Menial Drone Pop Resource Output",],
+    ],
+    exclude: [
+      "trait_strong",
+      "trait_weak",
     ],
   },
   {
@@ -228,6 +278,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+10%", "Unity from Jobs",],
     ],
+    exclude: [
+      "trait_quarrelsome"
+    ]
   }
 ]
 
