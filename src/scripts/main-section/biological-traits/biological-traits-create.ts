@@ -1,6 +1,7 @@
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
+import { ITraits } from "../../interface";
 import { mainSectionContent } from "../../objects/main-section-text.js";
-import { speciesBiologicalTraits } from "../../objects/species-initial-traits.js"
+import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesToxicTraits, speciesCyborgTraits, speciesRobotTraits } from "../../objects/species-initial-traits.js"
 import { selectBiologicalTrait } from "./biological-trait-selector.js"
 
 function nextTraitStage():void {
@@ -9,17 +10,22 @@ function nextTraitStage():void {
 
   const mainSection: HTMLElement = document.querySelector(".main-section")!;
 
+  let selectedSpecies = speciesRobotTraits;
+  if (localStorage.getItem("species") != "trait_machine_unit") {
+    selectedSpecies = speciesBiologicalTraits;
+  }
+
   const mainSectionContainer = createNewSimpleElement("div", "main-section__container", mainSection);
     const mainSectionTitle = createNewTextElement("h2", "main-section__title", mainSectionContainer, mainSectionContent.titleEN);
     const mainSectionSubTitle = createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, mainSectionContent.subtitleEN);
 
     const mainSectionWorkedPlace = createNewSimpleElement("div", "biological__workedplace", mainSectionContainer);
       const mainSectionTraitList = createNewSimpleElement("ul", "biological__traitlist", mainSectionWorkedPlace);
-        for (let i = 0; i < Object.keys(speciesBiologicalTraits).length; i++) {
+        for (let i = 0; i < Object.keys(selectedSpecies).length; i++) {
           const traitContainer = createNewSimpleElement("li", "biological__trait-container", mainSectionTraitList);
-          traitContainer.classList.add(`${speciesBiologicalTraits[i].trait}`)
-            const traitContainerImage = createNewImageElement("biological__trait-container-image", traitContainer, speciesBiologicalTraits[i].icon, speciesBiologicalTraits[i].nameEN);
-            const traitContainerName = createNewTextElement("span", "biological__trait-container-name", traitContainer, speciesBiologicalTraits[i].nameEN);
+          traitContainer.classList.add(`${selectedSpecies[i].trait}`)
+            const traitContainerImage = createNewImageElement("biological__trait-container-image", traitContainer, selectedSpecies[i].icon, selectedSpecies[i].nameEN);
+            const traitContainerName = createNewTextElement("span", "biological__trait-container-name", traitContainer, selectedSpecies[i].nameEN);
         }
 
       const mainSectionTraitDescription = createNewSimpleElement("div", "biological__descr-block", mainSectionWorkedPlace);

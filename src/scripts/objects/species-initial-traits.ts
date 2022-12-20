@@ -535,7 +535,7 @@ const speciesRobotTraits: Array<ITraits> = [
     nameEN: "Bulky",
     nameRU: "",
     traits: [
-      ["bad", "+0%", "Pop Housing Usage",],
+      ["bad", "+10%", "Pop Housing Usage",],
     ],
     exclude: [
       "trait_robot_double_jointed"
