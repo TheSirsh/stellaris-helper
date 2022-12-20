@@ -525,6 +525,21 @@ const speciesRobotTraits: Array<ITraits> = [
     traits: [
       ["good", "−10%", "Pop Housing Usage",],
     ],
+    exclude: [
+      "trait_bulky"
+    ]
+  },
+  {
+    trait: "trait_robot_bulky",
+    icon: "../src/icons/initial-traits/robot-bulky.png",
+    nameEN: "Bulky",
+    nameRU: "",
+    traits: [
+      ["bad", "+0%", "Pop Housing Usage",],
+    ],
+    exclude: [
+      "trait_robot_double_jointed"
+    ]
   },
   {
     trait: "trait_robot_durable",
@@ -533,6 +548,21 @@ const speciesRobotTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "–10%", "Robot Upkeep",],
+    ],
+    exclude: [
+      "trait_robot_high_maintenance"
+    ],
+  },
+  {
+    trait: "trait_robot_high_maintenance",
+    icon: "../src/icons/initial-traits/robot-high-maintenance.png",
+    nameEN: "High Maintenance",
+    nameRU: "",
+    traits: [
+      ["bad", "+10%", "Robot Upkeep",],
+    ],
+    exclude: [
+      "trait_robot_durable",
     ],
   },
   {
@@ -551,6 +581,21 @@ const speciesRobotTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+20%", "Amenities from Jobs",],
+    ],
+    exclude: [
+      "trait_robot_uncanny",
+    ],
+  },
+  {
+    trait: "trait_robot_uncanny",
+    icon: "../src/icons/initial-traits/robot-uncanny.png",
+    nameEN: "Uncanny",
+    nameRU: "",
+    traits: [
+      ["bad", "-20%", "Amenities from Jobs",],
+    ],
+    exclude: [
+      "trait_robot_emotion_emulators",
     ],
   },
   {
@@ -579,8 +624,23 @@ const speciesRobotTraits: Array<ITraits> = [
     traits: [
       ["good", "+25%", "Leader Experience Gain",],
     ],
+    exclude: [
+      "trait_robot_repurposed_hardware"
+    ],
   },
   {
+    trait: "trait_robot_repurposed_hardware",
+    icon: "../src/icons/initial-traits/robot-repurposed-hardware.png",
+    nameEN: "Repurposed Hardware",
+    nameRU: "",
+    traits: [
+      ["bad", "-25%", "Leader Experience Gain",],
+    ],
+    exclude: [
+      "trait_robot_learning_algorithms",
+    ],
+  },
+{
     trait: "trait_robot_logic_engines",
     icon: "../src/icons/initial-traits/robot-logic-engines.png",
     nameEN: "Logic Engines",
@@ -605,6 +665,21 @@ const speciesRobotTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+15%", "Pop Assembly Speed",],
+    ],
+    exclude: [
+      "trait_robot_custom_made",
+    ],
+  },
+  {
+    trait: "trait_robot_custom_made",
+    icon: "../src/icons/initial-traits/robot-custom-made.png",
+    nameEN: "Custom-Made",
+    nameRU: "",
+    traits: [
+      ["bad", "-15%", "Pop Assembly Speed",],
+    ],
+    exclude: [
+      "trait_robot_mass_produced",
     ],
   },
   {
@@ -633,6 +708,21 @@ const speciesRobotTraits: Array<ITraits> = [
     traits: [
       ["good", "–20%", "Pop Assembly Cost",],
     ],
+    exclude: [
+      "trait_robot_luxurious",
+    ],
+  },
+  {
+    trait: "trait_robot_luxurious",
+    icon: "../src/icons/initial-traits/robot-luxurious.png",
+    nameEN: "Luxurious",
+    nameRU: "",
+    traits: [
+      ["bad", "+20%", "Pop Assembly Cost",],
+    ],
+    exclude: [
+      "trait_robot_recycled",
+    ],
   },
   {
     trait: "trait_robot_streamlined_protocols",
@@ -641,6 +731,21 @@ const speciesRobotTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "–10%", "Empire Size from Pops",],
+    ],
+    exclude: [
+      "trait_robot_high_bandwidth",
+    ],
+  },
+  {
+    trait: "trait_robot_high_bandwidth",
+    icon: "../src/icons/initial-traits/robot-high-bandwidth.png",
+    nameEN: "Streamlined Protocols",
+    nameRU: "",
+    traits: [
+      ["bad", "+10%", "Empire Size from Pops",],
+    ],
+    exclude: [
+      "trait_robot_streamlined_protocols",
     ],
   },
   {
