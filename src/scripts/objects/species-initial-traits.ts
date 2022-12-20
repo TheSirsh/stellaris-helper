@@ -12,6 +12,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     exclude: [
       "trait_extremely_adaptive",
       "trait_nonadaptive",
+      "trait_robust",
+      "trait_adaptive_lithoid",
+      "trait_lithoid",
     ],
   },
   {
@@ -25,6 +28,25 @@ const speciesBiologicalTraits: Array<ITraits> = [
     exclude: [
       "trait_adaptive",
       "trait_nonadaptive",
+      "trait_robust",
+      "trait_adaptive_lithoid",
+      "trait_lithoid,"
+    ],
+  },
+  {
+    trait: "trait_nonadaptive",
+    icon: "../src/icons/initial-traits/nonadaptive.png",
+    nameEN: "Nonadaptive",
+    nameRU: "",
+    traits: [
+      ["bad", "-10%", "Habitability",],
+    ],
+    exclude: [
+      "trait_adaptive",
+      "trait_extremely_adaptive",
+      "trait_robust",
+      "trait_adaptive_lithoid",
+      "trait_lithoid,"
     ],
   },
   {
@@ -34,6 +56,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+15%", "Food from Jobs",],
+    ],
+    exclude: [
+      "trait_lithoid",
     ],
   },
   {
@@ -49,6 +74,18 @@ const speciesBiologicalTraits: Array<ITraits> = [
     ],
   },
   {
+    trait: "trait_repugnant",
+    icon: "../src/icons/initial-traits/repugnant.png",
+    nameEN: "Repugnant",
+    nameRU: "",
+    traits: [
+      ["bad", "-20%", "Amenities from Jobs",],
+    ],
+    exclude: [
+      "trait_charismatic",
+    ],
+  },
+  {
     trait: "trait_communal",
     icon: "../src/icons/initial-traits/communal.png",
     nameEN: "Communal",
@@ -58,6 +95,18 @@ const speciesBiologicalTraits: Array<ITraits> = [
     ],
     exclude: [
       "trait_solitary",
+    ],
+  },
+  {
+    trait: "trait_solitary",
+    icon: "../src/icons/initial-traits/solitary.png",
+    nameEN: "Solitary",
+    nameRU: "",
+    traits: [
+      ["bad", "+10%", "Pop Housing Usage",],
+    ],
+    exclude: [
+      "trait_communal",
     ],
   },
   {
@@ -71,6 +120,21 @@ const speciesBiologicalTraits: Array<ITraits> = [
     exclude: [
       "trait_deviants",
       "trait_hive_mind",
+      "trait_machine_unit",
+    ],
+  },
+  {
+    trait: "trait_deviants",
+    icon: "../src/icons/initial-traits/deviants.png",
+    nameEN: "Deviants",
+    nameRU: "",
+    traits: [
+      ["bad", "-15%", "Governing Ethics Attraction",],
+    ],
+    exclude: [
+      "trait_conformists",
+      "trait_hive_mind",
+      "trait_machine_unit",
     ],
   },
   {
@@ -87,6 +151,19 @@ const speciesBiologicalTraits: Array<ITraits> = [
     ],
   },
   {
+    trait: "trait_wasteful",
+    icon: "../src/icons/initial-traits/wasteful.png",
+    nameEN: "Wasteful",
+    nameRU: "",
+    traits: [
+      ["bad", "+10%", "Pop consumer goods upkeep",],
+    ],
+    exclude: [
+      "trait_conservational",
+      "trait_hive_mind",
+    ],
+  },
+  {
     trait: "trait_docile",
     icon: "../src/icons/initial-traits/docile.png",
     nameEN: "Docile",
@@ -96,6 +173,18 @@ const speciesBiologicalTraits: Array<ITraits> = [
     ],
     exclude: [
       "trait_unruly",
+    ],
+  },
+  {
+    trait: "trait_unruly",
+    icon: "../src/icons/initial-traits/unruly.png",
+    nameEN: "Unruly",
+    nameRU: "",
+    traits: [
+      ["bad", "+10%", "Empire Size from Pops",],
+    ],
+    exclude: [
+      "trait_docile",
     ],
   },
   {
@@ -109,6 +198,7 @@ const speciesBiologicalTraits: Array<ITraits> = [
     exclude: [
       "trait_venerable",
       "trait_fleeting",
+      "trait_fleeting_lithoid",
     ],
   },
   {
@@ -122,6 +212,36 @@ const speciesBiologicalTraits: Array<ITraits> = [
     exclude: [
       "trait_enduring",
       "trait_fleeting",
+      "trait_fleeting_lithoid",
+
+    ],
+  },
+  {
+    trait: "trait_fleeting",
+    icon: "../src/icons/initial-traits/fleeting.png",
+    nameEN: "Fleeting",
+    nameRU: "",
+    traits: [
+      ["bad", "-10", "years Leader Lifespan if Biological",],
+    ],
+    exclude: [
+      "trait_enduring",
+      "trait_venerable",
+      "trait_fleeting_lithoid",
+    ],
+  },
+  {
+    trait: "trait_fleeting",
+    icon: "../src/icons/initial-traits/fleeting.png",
+    nameEN: "Fleeting",
+    nameRU: "",
+    traits: [
+      ["bad", "-25", "years Leader Lifespan if Lithoid",],
+    ],
+    exclude: [
+      "trait_enduring",
+      "trait_venerable",
+      "trait_fleeting_lithoid",
     ],
   },
   {
@@ -150,6 +270,11 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+10%", "Research from Jobs",],
     ],
+    exclude: [
+      "trait_nerve_stapled",
+      "trait_erudite",
+      "trait_enigmatic_intelligence_poor",
+    ],
   },
   {
     trait: "trait_natural_engineers",
@@ -158,6 +283,11 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+15%", "Engineering Research from Jobs",],
+    ],
+    exclude: [
+      "trait_natural_physicists",
+      "trait_natural_sociologists",
+      "trait_nerve_stapled",
     ],
   },
   {
@@ -168,6 +298,11 @@ const speciesBiologicalTraits: Array<ITraits> = [
     traits: [
       ["good", "+15%", "Physics Research from Jobs",],
     ],
+    exclude: [
+      "trait_natural_engineers",
+      "trait_natural_sociologists",
+      "trait_nerve_stapled",
+    ],
   },
   {
     trait: "trait_natural_sociologists",
@@ -176,6 +311,11 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+15%", "Society Research from Jobs",],
+    ],
+    exclude: [
+      "trait_natural_physicists",
+      "trait_natural_engineers",
+      "trait_nerve_stapled",
     ],
   },
   {
@@ -192,6 +332,19 @@ const speciesBiologicalTraits: Array<ITraits> = [
     ],
   },
   {
+    trait: "trait_sedentary",
+    icon: "../src/icons/initial-traits/sedentary.png",
+    nameEN: "Sedentary",
+    nameRU: "",
+    traits: [
+      ["bad", "-15%", "Pop growth from immigration",],
+      ["bad", "+25%", "Resettlement Cost",],
+    ],
+    exclude: [
+      "trait_nomadic",
+    ],
+  },
+  {
     trait: "trait_quick_learners",
     icon: "../src/icons/initial-traits/quick-learners.png",
     nameEN: "Quick Learners",
@@ -204,6 +357,19 @@ const speciesBiologicalTraits: Array<ITraits> = [
     ],
   },
   {
+    trait: "trait_slow_learners",
+    icon: "../src/icons/initial-traits/slow-learners.png",
+    nameEN: "Slow Learners",
+    nameRU: "",
+    traits: [
+      ["bad", "-25%", "Leader Experience Gain",],
+    ],
+    exclude: [
+      "trait_quick_learners",
+      "trait_enigmatic_intelligence",
+    ],
+  },
+  {
     trait: "trait_rapid_breeders",
     icon: "../src/icons/initial-traits/rapid-breeders.png",
     nameEN: "Rapid Breeders",
@@ -213,6 +379,32 @@ const speciesBiologicalTraits: Array<ITraits> = [
     ],
     exclude: [
       "trait_slow_breeders",
+      "trait_fertile",
+      "trait_rapid_breeders_lithoid",
+      "trait_plantoid_budding",
+      "trait_lithoid_budding",
+      "trait_vat_grown",
+      "trait_tiyanki",
+      "trait_lithoid",
+    ],
+  },
+  {
+    trait: "trait_slow_breeders",
+    icon: "../src/icons/initial-traits/slow-breeders.png",
+    nameEN: "Slow Breeders",
+    nameRU: "",
+    traits: [
+      ["bad", "-10%", "Growth Speed",],
+    ],
+    exclude: [
+      "trait_rapid_breeders",
+      "trait_fertile",
+      "trait_rapid_breeders_lithoid",
+      "trait_plantoid_budding",
+      "trait_lithoid_budding",
+      "trait_vat_grown",
+      "trait_tiyanki",
+      "trait_lithoid",
     ],
   },
   {
@@ -253,12 +445,29 @@ const speciesBiologicalTraits: Array<ITraits> = [
     ],
   },
   {
+    trait: "trait_weak",
+    icon: "../src/icons/initial-traits/weak.png",
+    nameEN: "Very Strong",
+    nameRU: "",
+    traits: [
+      ["bad", "-20%", "Army Damage",],
+      ["bad", "-2.5%", "Worker and Menial Drone Pop Resource Output",],
+    ],
+    exclude: [
+      "trait_strong",
+      "trait_very_strong",
+    ],
+  },
+  {
     trait: "trait_talented",
     icon: "../src/icons/initial-traits/talented.png",
     nameEN: "Talented",
     nameRU: "",
     traits: [
       ["good", "+1", "Leader Level Cap",],
+    ],
+    exclude: [
+      "trait_talented",
     ],
   },
   {
@@ -268,6 +477,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+25%", "Trade value from Jobs",],
+    ],
+    exclude: [
+      "trait_hive_mind",
     ],
   },
   {
@@ -279,9 +491,31 @@ const speciesBiologicalTraits: Array<ITraits> = [
       ["good", "+10%", "Unity from Jobs",],
     ],
     exclude: [
-      "trait_quarrelsome"
+      "trait_quarrelsome",
     ]
-  }
+  },
+  {
+    trait: "trait_quarrelsome",
+    icon: "../src/icons/initial-traits/quarrelsome.png",
+    nameEN: "Quarrelsome",
+    nameRU: "",
+    traits: [
+      ["bad", "-10%", "Unity from Jobs",],
+    ],
+    exclude: [
+      "trait_traditional",
+    ]
+  },
+  {
+    trait: "trait_decadent",
+    icon: "../src/icons/initial-traits/decadent.png",
+    nameEN: "Decadent",
+    nameRU: "",
+    traits: [
+      ["bad", "-10%", "Worker Happiness",],
+      ["bad", "-10%", "Slave Happiness",],
+    ],
+  },
 ]
 
 const speciesBotanicalTraits: Array<ITraits> = [
