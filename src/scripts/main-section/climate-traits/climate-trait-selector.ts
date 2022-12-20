@@ -1,6 +1,6 @@
-import { speciesClimateTraits } from "../../objects/species-climate-traits.js"
+import { IClimate } from "../../interface";
 
-function selectClimateTrait(i: number): void { 
+function selectClimateTrait(i: number, arr: Array<IClimate>): void { 
 
   const traitDescriptionTitle: HTMLElement = document.querySelector(".climate__descr-title");
   const traitDescriptionImage: HTMLImageElement = document.querySelector(".climate__descr-image");
@@ -10,10 +10,10 @@ function selectClimateTrait(i: number): void {
     traitActive.classList.remove("climate__trait-container_active");
   }
 
-  traitDescriptionTitle.textContent = speciesClimateTraits[i].nameEN;
-  traitDescriptionImage.src = speciesClimateTraits[i].image;
-  traitDescriptionImage.alt = speciesClimateTraits[i].nameEN;
-  traitDescriptionPlanet.textContent = speciesClimateTraits[i].descrEN;
+  traitDescriptionTitle.textContent = arr[i].nameEN;
+  traitDescriptionImage.src = arr[i].image;
+  traitDescriptionImage.alt = arr[i].nameEN;
+  traitDescriptionPlanet.textContent = arr[i].descrEN;
 }
 
 export {selectClimateTrait}
