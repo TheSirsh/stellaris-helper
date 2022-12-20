@@ -17,6 +17,7 @@ function nextTraitStage():void {
       const mainSectionTraitList = createNewSimpleElement("ul", "biological__traitlist", mainSectionWorkedPlace);
         for (let i = 0; i < Object.keys(speciesBiologicalTraits).length; i++) {
           const traitContainer = createNewSimpleElement("li", "biological__trait-container", mainSectionTraitList);
+          traitContainer.classList.add(`${speciesBiologicalTraits[i].trait}`)
             const traitContainerImage = createNewImageElement("biological__trait-container-image", traitContainer, speciesBiologicalTraits[i].icon, speciesBiologicalTraits[i].nameEN);
             const traitContainerName = createNewTextElement("span", "biological__trait-container-name", traitContainer, speciesBiologicalTraits[i].nameEN);
         }

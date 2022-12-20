@@ -47,7 +47,6 @@ function selectSpecies(i: number): void {
         selectSpeciesBio(n);
         localStorage.setItem("bio", speciesTraitsBiological[n].trait);
         speciesTraitBio[n].classList.toggle("species__container_bio_active");
-
       })
     })
 }
