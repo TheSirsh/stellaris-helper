@@ -126,14 +126,14 @@ const leaderGovernorBiological: Array<ITraits> = [
     ],
   },
   {
-  trait: "leader_trait_dragonbane",
-  icon: "../src/icons/leader-traits/dragonbane.png",
-  nameEN: "Dragonbane",
-  nameRU: "",
-  traits: [
-    ["good", "+25%", "Leader Leader experience gain",],
-    ["good", "+1", "Leader Level Cap",],
-  ],
+    trait: "leader_trait_dragonbane",
+    icon: "../src/icons/leader-traits/dragonbane.png",
+    nameEN: "Dragonbane",
+    nameRU: "",
+    traits: [
+      ["good", "+25%", "Leader experience gain",],
+      ["good", "+1", "Leader Level Cap",],
+    ],
   },
   {
     trait: "leader_trait_agrarian_upbringing",
