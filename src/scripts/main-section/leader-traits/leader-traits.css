@@ -1,0 +1,122 @@
+.leader__workedplace {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.leader__traitlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  height: auto;
+  padding: 0px;
+}
+
+.leader__trait-container {
+  display: flex;
+  align-items: center;
+  width: 20vw;
+  height: 3.5vw;
+  margin: 0.5vw;
+  cursor: pointer;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+}
+
+.leader__trait-container:hover {
+  background-color: #58b698;
+  color: black;
+}
+
+.leader__trait-container_active {
+  background-color: #58b698;
+  color: black;
+}
+
+.leader__trait-container-image {
+  width: 3vw;
+  height: 3vw;
+  margin: 0px 1vw;
+}
+
+.leader__trait-container-name {
+  display: block;
+  align-self: center;
+  height: auto;
+}
+
+.leader__descr-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.leader__descr-title {
+  margin: 0.5vw auto;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.leader__descr-image {
+  display: block;
+  width: 15vw;
+  height: 15vw;
+  border: 0.25vw solid #58b698;
+  border-radius: 50%;
+}
+
+.leader__descr-planet {
+  font-size: 1vw;
+  text-align: justify;
+  border: 0.25vw solid #58b698;
+  width: 100%;
+  height: auto;
+  min-height: 5vw;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.leader__button {
+  font-size: 1.5vw;
+  text-align: center;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+  padding: 1vw;
+  width: auto;
+  height: 2vw;
+  cursor: pointer;
+  color: red;
+}
+
+.leader__button_active {
+  color: white
+}
+
+.leader__button:hover {
+  background-color: #58b698;
+}
+
+.leader__descr__trait {
+  background-color: black;
+  padding: 1vw;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+}
+
+.green {
+  color: green;
+  padding-right: 0.5vw;
+}
+
+.red {
+  color: red;
+  padding-right: 0.5vw;
+}
+
+.white {
+  color: white;
+}

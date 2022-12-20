@@ -32,7 +32,7 @@ const species: Array<ITraits> = [
         ["empty", "", "Additional Traits are Available"]
       ]
     }
-  ]
+]
 
 const speciesTraitsNotHiveMind: Array<ITraits> = [
   {
