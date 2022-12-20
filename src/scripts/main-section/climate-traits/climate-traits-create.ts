@@ -4,21 +4,12 @@ import { createNewSimpleElement, createNewTextElement, createNewImageElement } f
 import { selectClimateTrait } from "./climate-trait-selector.js"
 import { nextTraitStage } from "../biological-traits/biological-traits-create.js"
 import { IClimate } from "../../interface";
+import { createValidArray } from "../../create-valid-array-function.js";
 
 function createMainSectionClimateTrait(): void { 
-  
-  let validPlanet: Array<IClimate> = [];
-  for (let i = 0; i < speciesClimateTraits.length; i++) {
-    if (speciesClimateTraits[i].exclude == undefined) { validPlanet.push(speciesClimateTraits[i]); } 
-      else {
-        let isValid: Boolean = true;
-        for (let j = 0; j < speciesClimateTraits[i].exclude.length; j++) {
-          if (speciesClimateTraits[i].exclude[j] === localStorage.getItem("species")) { isValid = false; } 
-        }
-        if (isValid === true) { validPlanet.push(speciesClimateTraits[i]); }
-      }
-  }
 
+  let validPlanet: Array<IClimate> = createValidArray(speciesClimateTraits, "species");
+  
   const mainSection: HTMLElement = document.querySelector(".main-section")!;
   const container: HTMLElement = document.querySelector(".main-section__container")!;
   container.remove();

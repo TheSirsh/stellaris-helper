@@ -227,6 +227,7 @@ const speciesBiologicalTraits: Array<ITraits> = [
     exclude: [
       "trait_enduring",
       "trait_venerable",
+      "trait_lithoid",
       "trait_fleeting_lithoid",
     ],
   },
