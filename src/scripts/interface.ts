@@ -19,22 +19,14 @@ interface IMainText {
   imageAltRU?: string,
 }
 
-interface IClimate {
-  trait: string,
-  icon: string,
-  image: string,
-  nameEN: string,
-  nameRU: string,
-  descrEN: string,
-  exclude?: Array<string>,
-}
-
 interface ITraits {
   trait: string,
   icon: string,
+  image?: string,
   nameEN: string,
   nameRU: string,
-  traits : Array<Array<string>>,
+  descrEN?: string,
+  traits? : Array<Array<string>>,
   exclude?: Array<string>,
 }
 
@@ -44,4 +36,4 @@ interface IFooter {
   src: string,
 }
 
-export { IHeader, IMainText, IClimate, ITraits, IFooter }
+export { IHeader, IMainText, ITraits, IFooter }

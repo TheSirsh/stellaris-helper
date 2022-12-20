@@ -1,8 +1,8 @@
-import { IClimate } from "./interface";
+import { ITraits } from "./interface";
 
-function createValidArray(arr: Array<IClimate>, checkStr: string): Array<IClimate> {
+function createValidArray(arr: Array<ITraits>, checkStr: string): Array<ITraits> {
 
-  let newArray: Array<IClimate> = [];
+  let newArray: Array<ITraits> = [];
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].exclude == undefined) { newArray.push(arr[i]); } 

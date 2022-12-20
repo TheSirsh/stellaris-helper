@@ -3,12 +3,12 @@ import { speciesClimateTraits } from "../../objects/species-climate-traits.js";
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
 import { selectClimateTrait } from "./climate-trait-selector.js"
 import { nextTraitStage } from "../biological-traits/biological-traits-create.js"
-import { IClimate } from "../../interface";
+import { ITraits } from "../../interface";
 import { createValidArray } from "../../create-valid-array-function.js";
 
 function createMainSectionClimateTrait(): void { 
 
-  let validPlanet: Array<IClimate> = createValidArray(speciesClimateTraits, "species");
+  let validPlanet: Array<ITraits> = createValidArray(speciesClimateTraits, "species");
   
   const mainSection: HTMLElement = document.querySelector(".main-section")!;
   const container: HTMLElement = document.querySelector(".main-section__container")!;

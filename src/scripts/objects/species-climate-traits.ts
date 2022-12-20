@@ -1,6 +1,6 @@
-import { IClimate } from "../interface.js";
+import { ITraits } from "../interface.js";
 
-const speciesClimateTraits: Array<IClimate> = [
+const speciesClimateTraits: Array<ITraits> = [
   {
     trait: "trait_pc_arid_preference",
     icon: "../src/icons/climate-preference-traits/arid.png",
