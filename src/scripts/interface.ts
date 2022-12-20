@@ -26,6 +26,7 @@ interface IClimate {
   nameEN: string,
   nameRU: string,
   descrEN: string,
+  exclude?: Array<string>,
 }
 
 interface ITraits {

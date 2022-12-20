@@ -1,6 +1,6 @@
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
 import { leaders, } from "../../objects/leader.js";
-import { createLeaderTraits } from "./leader-traits-create";
+import { createLeaderTraits } from "./leader-traits-create.js";
 
 function selectSpecies(i: number): void {
 

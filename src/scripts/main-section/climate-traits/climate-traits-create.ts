@@ -14,13 +14,29 @@ function createMainSectionClimateTrait(): void {
     const mainSectionSubTitle = createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, climateSectionText["subtitleEN"]);
   
     const mainSectionWorkedPlace = createNewSimpleElement("div", "climate__workedplace", mainSectionContainer);
-      const mainSectionTraitList = createNewSimpleElement("ol", "climate__traitlist", mainSectionWorkedPlace);
+      const mainSectionTraitList = createNewSimpleElement("ul", "climate__traitlist", mainSectionWorkedPlace);
   
-        for (let i = 0; i < Object.keys(speciesClimateTraits).length; i++) {
-          const traitContainer = createNewSimpleElement("li", "climate__trait-container", mainSectionTraitList);
+        for (let i = 0; i < speciesClimateTraits.length; i++) {
+          let isValid: Boolean;
+          if (speciesClimateTraits[i].exclude == undefined) {
+            isValid = true;
+          } else {
+            for (let j = 0; j < speciesClimateTraits[i].exclude.length; j++) {
+              if (speciesClimateTraits[i].exclude[j] === localStorage.getItem("species")) {
+                isValid = false;
+                break;
+              } else {
+                isValid = true;
+              }
+            }
+          }
+          if (isValid) {
+            const traitContainer = createNewSimpleElement("li", "climate__trait-container", mainSectionTraitList);
             const traitContainerImage = createNewImageElement("climate__trait-container-image", traitContainer, speciesClimateTraits[i].icon, speciesClimateTraits[i].nameEN);
             const traitContainerName = createNewTextElement("span", "climate__trait-container-name", traitContainer, speciesClimateTraits[i].nameEN);
+          }
         }
+          
   
       const mainSectionTraitDescription = createNewSimpleElement("div", "climate__descr-block", mainSectionWorkedPlace);
         const traitDescriptionTitle = createNewTextElement("h3", "climate__descr-title", mainSectionTraitDescription, climateSectionText["descriptionBlockTitleEN"]);
