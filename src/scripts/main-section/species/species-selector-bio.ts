@@ -5,7 +5,6 @@ function selectSpeciesBio(i: number): void {
   const speciesActiveBio: HTMLElement | null = document.querySelector(".species__container_bio_active");
   if (speciesActiveBio) {speciesActiveBio.classList.toggle("species__container_bio_active")}
 
-
 const speciesDescriptionTitle: HTMLElement = document.querySelector(".species__descr-title");
 speciesDescriptionTitle.textContent = speciesTraitsBiological[i].nameEN;
 const speciesDescriptionText: HTMLElement = document.querySelector(".species__descr-text");

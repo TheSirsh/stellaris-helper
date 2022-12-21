@@ -44,7 +44,7 @@ function selectSpecies(i: number): void {
     const speciesTraitBio: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species__container_bio");
     speciesTraitBio.forEach(function(elem: Element, n: number) {
       elem.addEventListener("click", function(): void {
-        selectSpeciesBio(n);
+        selectSpeciesBio(n, );
         localStorage.setItem("bio", speciesTraitsBiological[n].trait);
         speciesTraitBio[n].classList.toggle("species__container_bio_active");
       })

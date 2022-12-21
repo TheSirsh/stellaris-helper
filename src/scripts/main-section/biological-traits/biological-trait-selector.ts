@@ -11,14 +11,23 @@ function selectBiologicalTrait(i: number, arr: Array<ITraits>): void {
     for (let j = 0; j < traitActive.length; j++) {
       for (let k = 0; k < arr[i].exclude.length; k++) {
         if (traitActive[j].classList.contains(`${arr[i].exclude[k]}`)) {
-          console.log(traitActive[j].classList.contains(`${arr[i].exclude[k]}`))
           traitActive[j].classList.remove("biological__trait-container_active")
         }
       }
     }
   }
 
-   const traitDescriptionTrait: HTMLElement = document.querySelector(".biological__descr-text")!;
+  const notActiveArr: NodeListOf<HTMLElement> = document.querySelectorAll(".biological__trait-container");
+  notActiveArr.forEach(function(elem) {
+    if (arr[i].exclude !== undefined) {
+      for (let j = 0; j < arr[i].exclude.length; j++) {
+        if (elem.classList.contains(`${arr[i].exclude[j]}`))
+        elem.classList.toggle("red");
+      }
+    }
+  })
+
+  const traitDescriptionTrait: HTMLElement = document.querySelector(".biological__descr-text")!;
   traitDescriptionTrait.textContent = "";
   for (let j = 0; j < arr[i].traits.length; j++) {
     if (arr[i].traits[j][0] === "bad") {
