@@ -561,6 +561,31 @@ const speciesLithoidTraits: Array<ITraits> = [
     traits: [
       ["good", "+0.01", "Monthly Exotic Gases per Pop",],
     ],
+    exclude: [
+      "trait_lithoid_volatile_excretions",
+      "trait_lithoid_scintillating",
+      "trait_advanced_gaseous_byproducts",
+      "trait_advanced_scintillating",
+      "trait_advanced_volatile_excretions",
+      "trait_drake_scaled",
+    ],
+  },
+  {
+    trait: "trait_lithoid_gaseous_byproducts",
+    icon: "../src/icons/initial-traits/lithoid-gaseous-byproducts.png",
+    nameEN: "Gaseous Byproducts",
+    nameRU: "",
+    traits: [
+      ["good", "+0.01", "Monthly Exotic Gases per Pop",],
+    ],
+    exclude: [
+      "trait_lithoid_gaseous_byproducts",
+      "trait_lithoid_scintillating",
+      "trait_lithoid_volatile_excretions",
+      "trait_advanced_volatile_excretions",
+      "trait_advanced_scintillating",
+      "trait_drake_scaled",
+    ],
   },
   {
     trait: "trait_lithoid_scintillating",
@@ -569,6 +594,31 @@ const speciesLithoidTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+0.01", "Monthly Rare Crystals per Pop",],
+    ],
+    exclude: [
+      "trait_lithoid_volatile_excretions",
+      "trait_lithoid_gaseous_byproducts",
+      "trait_advanced_gaseous_byproducts",
+      "trait_advanced_scintillating",
+      "trait_advanced_volatile_excretions",
+      "trait_drake_scaled",
+    ],
+  },
+  {
+    trait: "trait_advanced_scintillating",
+    icon: "../src/icons/initial-traits/lithoid-scintillating.png",
+    nameEN: "Scintillating Skin",
+    nameRU: "",
+    traits: [
+      ["good", "+0.01", "Monthly Rare Crystals per Pop",],
+    ],
+    exclude: [
+      "trait_lithoid_gaseous_byproducts",
+      "trait_lithoid_scintillating",
+      "trait_lithoid_volatile_excretions",
+      "trait_advanced_volatile_excretions",
+      "trait_advanced_gaseous_byproducts",
+      "trait_drake_scaled",
     ],
   },
   {
@@ -579,6 +629,31 @@ const speciesLithoidTraits: Array<ITraits> = [
     traits: [
       ["good", "+0.01", "Monthly Volatile Motes per Pop",],
     ],
+    exclude: [
+      "trait_lithoid_gaseous_byproducts",
+      "trait_lithoid_scintillating",
+      "trait_advanced_gaseous_byproducts",
+      "trait_advanced_scintillating",
+      "trait_advanced_volatile_excretions",
+      "trait_drake_scaled",
+    ],
+  },
+  {
+    trait: "trait_advanced_volatile_excretions",
+    icon: "../src/icons/initial-traits/lithoid-volatile-excretions.png",
+    nameEN: "Volatile Excretions",
+    nameRU: "",
+    traits: [
+      ["good", "+0.01", "Monthly Volatile Motes per Pop",],
+    ],
+    exclude: [
+      "trait_lithoid_gaseous_byproducts",
+      "trait_lithoid_scintillating",
+      "trait_lithoid_volatile_excretions",
+      "trait_advanced_gaseous_byproducts",
+      "trait_advanced_scintillating",
+      "trait_drake_scaled",
+    ],
   },
   {
     trait: "trait_lithoid_budding",
@@ -587,6 +662,38 @@ const speciesLithoidTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+0.02", "Monthly Organic Pop Assembly per Pop",],
+    ],
+  },
+  {
+    trait: "trait_adaptive_lithoid",
+    icon: "../src/icons/initial-traits/.png",
+    nameEN: "",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "pop_environment_tolerance",],
+    ],
+    exclude: [
+      "trait_nonadaptive",
+      "trait_extremely_adaptive",
+      "trait_robust",
+      "trait_adaptive",
+    ],
+  },
+  {
+    trait: "trait_rapid_breeders_lithoid",
+    icon: "../src/icons/initial-traits/.png",
+    nameEN: "",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "pop_growth_speed",],
+    ],
+    exclude: [
+      "trait_slow_breeders",
+      "trait_rapid_breeders",
+      "trait_fertile",
+      "trait_plantoid_budding",
+      "trait_lithoid_budding",
+      "trait_tiyanki"
     ],
   },
 ]
