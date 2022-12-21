@@ -9,6 +9,7 @@ import { createValidArray } from "../../create-valid-array-function.js";
 function createMainSectionClimateTrait(): void { 
 
   let validPlanet: Array<ITraits> = createValidArray(speciesClimateTraits, "species");
+  if (localStorage.getItem("bio") !== undefined) {validPlanet = createValidArray(speciesClimateTraits, "bio")}
   
   const mainSection: HTMLElement = document.querySelector(".main-section")!;
   const container: HTMLElement = document.querySelector(".main-section__container")!;
