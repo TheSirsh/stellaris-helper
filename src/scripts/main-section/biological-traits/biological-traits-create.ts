@@ -7,9 +7,23 @@ import { createValidArray } from "../../create-valid-array-function.js";
 
 function nextTraitStage():void {
 
-  let selectedSpecies: Array<ITraits>;
-  if (localStorage.getItem("species") === "trait_machine_unit") {selectedSpecies = speciesRobotTraits}
-    else {selectedSpecies = createValidArray(speciesBiologicalTraits, "species")}
+  let selectedSpecies: Array<ITraits> = [];
+  if (localStorage.getItem("species") === "trait_machine_unit") { selectedSpecies = speciesRobotTraits }
+  else if (localStorage.getItem("species") === "trait_hive_mind") { selectedSpecies = createValidArray(speciesBiologicalTraits, "species")}
+  else {selectedSpecies = speciesBiologicalTraits}
+
+  if (localStorage.getItem("origin") === "trait_cybernetic") {
+    selectedSpecies = createValidArray(speciesBiologicalTraits, "origin")
+    selectedSpecies = selectedSpecies.concat(speciesCyborgTraits)
+  }
+
+  let validTraits: Array<ITraits> = [];
+  if (localStorage.getItem("bio") === "trait_lithoid") {
+    validTraits = createValidArray(selectedSpecies, "bio");
+    validTraits = validTraits.concat(speciesLithoidTraits);
+  } else if (localStorage.getItem("bio") === "NOTVALUEABLE-botanical") {
+    validTraits = validTraits.concat(speciesBotanicalTraits);
+  } else { validTraits = selectedSpecies }
 
   const container: HTMLElement = document.querySelector(".main-section__container")!;
   container.remove();
@@ -22,11 +36,11 @@ function nextTraitStage():void {
 
     const mainSectionWorkedPlace = createNewSimpleElement("div", "biological__workedplace", mainSectionContainer);
       const mainSectionTraitList = createNewSimpleElement("ul", "biological__traitlist", mainSectionWorkedPlace);
-        for (let i = 0; i < Object.keys(selectedSpecies).length; i++) {
+        for (let i = 0; i < validTraits.length; i++) {
           const traitContainer = createNewSimpleElement("li", "biological__trait-container", mainSectionTraitList);
-          traitContainer.classList.add(`${selectedSpecies[i].trait}`)
-            const traitContainerImage = createNewImageElement("biological__trait-container-image", traitContainer, selectedSpecies[i].icon, selectedSpecies[i].nameEN);
-            const traitContainerName = createNewTextElement("span", "biological__trait-container-name", traitContainer, selectedSpecies[i].nameEN);
+          traitContainer.classList.add(`${validTraits[i].trait}`)
+            const traitContainerImage = createNewImageElement("biological__trait-container-image", traitContainer, validTraits[i].icon, validTraits[i].nameEN);
+            const traitContainerName = createNewTextElement("span", "biological__trait-container-name", traitContainer, validTraits[i].nameEN);
         }
 
       const mainSectionTraitDescription = createNewSimpleElement("div", "biological__descr-block", mainSectionWorkedPlace);
@@ -38,7 +52,7 @@ function nextTraitStage():void {
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
       traitContainerArr[i].classList.toggle("biological__trait-container_active")
-      selectBiologicalTrait(i);
+      selectBiologicalTrait(i, validTraits);
     })
   })
 }

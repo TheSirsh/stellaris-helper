@@ -1,7 +1,8 @@
 import { createHeader } from "./src/scripts/header/header.js";
 import { createNewSimpleElement} from "./src/scripts/create-functions.js";
-import { createFooter } from "./src/scripts/footer/footer.js"
+import { createFooter } from "./src/scripts/footer/footer.js";
 
+localStorage.clear();
 const body: Element = document.querySelector(".body");
 createHeader();
 
