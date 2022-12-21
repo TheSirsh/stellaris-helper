@@ -7,23 +7,22 @@ import { createValidArray } from "../../create-valid-array-function.js";
 
 function nextTraitStage():void {
 
-  let selectedSpecies: Array<ITraits> = [];
-  if (localStorage.getItem("species") === "trait_machine_unit") { selectedSpecies = speciesRobotTraits }
-  else if (localStorage.getItem("species") === "trait_hive_mind") { selectedSpecies = createValidArray(speciesBiologicalTraits, "species")}
-  else {selectedSpecies = speciesBiologicalTraits}
+  let validTraits: Array<ITraits> = [];
+  if (localStorage.getItem("species") === "trait_machine_unit") { validTraits = speciesRobotTraits }
+  else if (localStorage.getItem("species") === "trait_hive_mind") { validTraits = createValidArray(speciesBiologicalTraits, "species")}
+  else {validTraits = speciesBiologicalTraits}
 
   if (localStorage.getItem("origin") === "trait_cybernetic") {
-    selectedSpecies = createValidArray(speciesBiologicalTraits, "origin")
-    selectedSpecies = selectedSpecies.concat(speciesCyborgTraits)
+    validTraits = createValidArray(speciesBiologicalTraits, "origin")
+    validTraits = validTraits.concat(speciesCyborgTraits)
   }
 
-  let validTraits: Array<ITraits> = [];
   if (localStorage.getItem("bio") === "trait_lithoid") {
-    validTraits = createValidArray(selectedSpecies, "bio");
+    validTraits = createValidArray(validTraits, "bio");
     validTraits = validTraits.concat(speciesLithoidTraits);
   } else if (localStorage.getItem("bio") === "NOTVALUEABLE-botanical") {
     validTraits = validTraits.concat(speciesBotanicalTraits);
-  } else { validTraits = selectedSpecies }
+  }
 
   const container: HTMLElement = document.querySelector(".main-section__container")!;
   container.remove();
