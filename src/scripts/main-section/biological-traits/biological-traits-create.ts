@@ -2,18 +2,19 @@ import { createNewSimpleElement, createNewTextElement, createNewImageElement } f
 import { ITraits } from "../../interface";
 import { mainSectionContent } from "../../objects/main-section-text.js";
 import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesToxicTraits, speciesCyborgTraits, speciesRobotTraits } from "../../objects/species-initial-traits.js"
-import { selectBiologicalTrait } from "./biological-trait-selector.js"
+import { selectBiologicalTrait } from "./biological-trait-selector.js";
+import { createValidArray } from "../../create-valid-array-function.js";
 
 function nextTraitStage():void {
+
+  let selectedSpecies: Array<ITraits>;
+  if (localStorage.getItem("species") === "trait_machine_unit") {selectedSpecies = speciesRobotTraits}
+    else {selectedSpecies = createValidArray(speciesBiologicalTraits, "species")}
+
   const container: HTMLElement = document.querySelector(".main-section__container")!;
   container.remove();
 
   const mainSection: HTMLElement = document.querySelector(".main-section")!;
-
-  let selectedSpecies = speciesRobotTraits;
-  if (localStorage.getItem("species") != "trait_machine_unit") {
-    selectedSpecies = speciesBiologicalTraits;
-  }
 
   const mainSectionContainer = createNewSimpleElement("div", "main-section__container", mainSection);
     const mainSectionTitle = createNewTextElement("h2", "main-section__title", mainSectionContainer, mainSectionContent.titleEN);
