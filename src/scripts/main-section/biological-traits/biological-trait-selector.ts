@@ -1,7 +1,7 @@
 import { createNewTextElement } from "../../create-functions.js";
 import { ITraits } from "../../interface";
 
-function selectBiologicalTrait(i: number, arr: Array<ITraits>): void { 
+function selectBiologicalTrait(i: number, arr: Array<ITraits>, active: boolean): void { 
 
   const traitDescriptionTitle: HTMLElement = document.querySelector(".biological__descr-title")!;
   traitDescriptionTitle.textContent = arr[i].nameEN;
@@ -22,7 +22,8 @@ function selectBiologicalTrait(i: number, arr: Array<ITraits>): void {
     if (arr[i].exclude !== undefined) {
       for (let j = 0; j < arr[i].exclude.length; j++) {
         if (elem.classList.contains(`${arr[i].exclude[j]}`))
-        elem.classList.toggle("red");
+          if (active) {elem.classList.remove("red");} 
+            else { elem.classList.add("red"); }
       }
     }
   })
@@ -35,7 +36,7 @@ function selectBiologicalTrait(i: number, arr: Array<ITraits>): void {
     } else if (arr[i].traits[j][0] === "good") {
        const traitDescriptionNumber = createNewTextElement("span", "green", traitDescriptionTrait, arr[i].traits[j][1]);
     }
-    traitDescriptionTrait.innerHTML += " " + arr[i].traits[j][2] + "<br>"
+    traitDescriptionTrait.innerHTML += " " + arr[i].traits[j][2] + "<br>";
   }
 }
 

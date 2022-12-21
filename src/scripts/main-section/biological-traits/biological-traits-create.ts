@@ -50,8 +50,16 @@ function nextTraitStage():void {
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
-      traitContainerArr[i].classList.toggle("biological__trait-container_active")
-      selectBiologicalTrait(i, validTraits);
+      traitContainerArr[i].classList.remove("red");
+      let isActive: boolean;
+      if (traitContainerArr[i].classList.contains("biological__trait-container_active")) {
+        isActive = true;
+        traitContainerArr[i].classList.remove("biological__trait-container_active");
+      } else {
+        isActive = false;
+        traitContainerArr[i].classList.add("biological__trait-container_active");
+      }
+      selectBiologicalTrait(i, validTraits, isActive);
     })
   })
 }
