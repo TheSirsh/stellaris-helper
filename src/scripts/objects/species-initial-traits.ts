@@ -528,6 +528,32 @@ const speciesBotanicalTraits: Array<ITraits> = [
     traits: [
       ["empty", "", "Replaces half of the Food upkeep with Energy"],
     ],
+    exclude: [
+      "trait_plantoid_radiotrophic",
+      "trait_lithoid_radiotrophic",
+      "trait_advanced_phototrophic",
+      "trait_advanced_radiotrophic",
+      "trait_harvested_radiotrophic",
+      "trait_voidling",
+      "trait_cave_dweller",
+    ],
+  },
+  {
+    trait: "trait_advanced_phototrophic",
+    icon: "../src/icons/initial-traits/plantoid-phototrophic.png",
+    nameEN: "Phototrophic",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Replaces half of the Food upkeep with Energy"],
+    ],
+    exclude: [
+      "trait_plantoid_phototrophic",
+      "trait_plantoid_radiotrophic",
+      "trait_advanced_radiotrophic",
+      "trait_harvested_radiotrophic",
+      "trait_voidling",
+      "trait_cave_dweller",
+    ],
   },
   {
     trait: "trait_plantoid_radiotrophic",
@@ -540,6 +566,33 @@ const speciesBotanicalTraits: Array<ITraits> = [
       ["good", "+10%", "Tomb World Pop Growth Speed",],
       ["good", "+0.02", "Monthly Organic Pop Assembly per Pop",],
     ],
+    exclude: [
+      "trait_plantoid_phototrophic",
+      "trait_lithoid_radiotrophic",
+      "trait_advanced_phototrophic",
+      "trait_advanced_radiotrophic",
+      "trait_harvested_radiotrophic",
+      "trait_voidling",
+    ],
+  },
+  {
+    trait: "trait_plantoid_radiotrophic",
+    icon: "../src/icons/initial-traits/plantoid-radiotrophic.png",
+    nameEN: "Radiotrophic",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Replaces half of the Food or Minerals upkeep with Energy"],
+      ["empty", "", "No Energy upkeep on Tomb Worlds"],
+      ["good", "+10%", "Tomb World Pop Growth Speed",],
+      ["good", "+0.02", "Monthly Organic Pop Assembly per Pop",],
+    ],
+    exclude: [
+      "trait_plantoid_phototrophic",
+      "trait_plantoid_radiotrophic",
+      "trait_advanced_phototrophic",
+      "trait_harvested_radiotrophic",
+      "trait_voidling",
+    ],
   },
   {
     trait: "trait_plantoid_budding",
@@ -548,6 +601,36 @@ const speciesBotanicalTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+10%", "Unity from Jobs",],
+    ],
+    exclude: [
+      "trait_slow_breeders",
+      "trait_rapid_breeders",
+      "trait_rapid_breeders_lithoid",
+      "trait_necrophage",
+      "trait_clone_soldier_infertile",
+      "trait_clone_soldier_infertile_full_potential",
+      "trait_lithoid_budding",
+      "trait_advanced_budding",
+      "trait_tiyanki",
+    ],
+  },
+  {
+    trait: "trait_plantoid_budding",
+    icon: "../src/icons/initial-traits/plantoid-budding.png",
+    nameEN: "Budding",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Unity from Jobs",],
+    ],
+    exclude: [
+      "trait_slow_breeders",
+      "trait_rapid_breeders",
+      "trait_necrophage",
+      "trait_clone_soldier_infertile",
+      "trait_clone_soldier_infertile_full_potential",
+      "trait_plantoid_budding",
+      "trait_lithoid_budding",
+      "trait_tiyanki",
     ],
   },
 ]
