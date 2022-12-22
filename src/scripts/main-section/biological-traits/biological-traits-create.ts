@@ -1,7 +1,7 @@
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
 import { ITraits } from "../../interface";
 import { mainSectionContent } from "../../objects/main-section-text.js";
-import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesToxicTraits, speciesCyborgTraits, speciesRobotTraits } from "../../objects/species-initial-traits.js"
+import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesCyborgTraits, speciesRobotTraits } from "../../objects/species-initial-traits.js"
 import { selectBiologicalTrait } from "./biological-trait-selector.js";
 import { createValidArray } from "../../create-valid-array-function.js";
 

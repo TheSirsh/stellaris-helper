@@ -96,15 +96,6 @@ const speciesTraitsBiological: Array<ITraits> = [
     ]
   },
   {
-    trait: "NOTVALUEABLE-toxic",
-    nameEN: "Toxic",
-    nameRU: "",
-    icon: "../src/icons/species/toxic.png",
-    traits : [
-      ["empty", "", "Additional Traits are Available"]
-    ]
-  },
-  {
     trait: "trait_aquatic",
     nameEN: "Aquatic",
     nameRU: "",

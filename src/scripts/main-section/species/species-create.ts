@@ -7,6 +7,7 @@ import { createMainSectionClimateTrait } from "../climate-traits/climate-traits-
 function createSpecies(): void {
 const container: HTMLElement = document.querySelector(".main-section__container")!;
 container.remove();
+localStorage.clear();
 
 const mainSection: HTMLElement = document.querySelector(".main-section")!;
 

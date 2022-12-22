@@ -5,6 +5,7 @@ import { leaderScientistBiological, leaderScientistHiveMind } from "../../object
 import { ITraits } from "../../interface";
 
 function createLeader(): void {
+  localStorage.clear();
 
 
 //const speciesTraitlistAdditional = createNewSimpleElement("ul", "species__traitlist_additional", speciesTraitBlock);
