@@ -34,7 +34,7 @@ const species: Array<ITraits> = [
     }
 ]
 
-const speciesTraitsNotHiveMind: Array<ITraits> = [
+const speciesTraitsBiological: Array<ITraits> = [
   {
     trait: "trait_psionic",
     nameEN: "Psionic",
@@ -71,7 +71,7 @@ const speciesTraitsNotHiveMind: Array<ITraits> = [
   }
 ]
 
-const speciesTraitsBiological: Array<ITraits> = [
+const speciesTraitsHimeMind: Array<ITraits> = [
   {
     trait: "NOTVALUEABLE-botanical",
     nameEN: "Botanical",
@@ -111,4 +111,4 @@ const speciesTraitsBiological: Array<ITraits> = [
   }
 ]
 
-export { species, speciesTraitsNotHiveMind, speciesTraitsBiological}
+export { species, speciesTraitsBiological, speciesTraitsHimeMind}

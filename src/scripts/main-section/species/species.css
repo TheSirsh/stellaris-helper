@@ -1,4 +1,4 @@
-.species-workedplace {
+.species__workedplace {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -13,16 +13,19 @@
   width: 60%;
 }
 
-.species__traitlist_origin {
+.species__traitlist,
+.species-bio__traitlist,
+.species-hm__traitlist {
   display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
   padding: 0px;
 }
 
-.species__container,
-.species__container_not,
-.species__container_bio {
+.species__trait-container,
+.species-bio__trait-container,
+.species-hm__trait-container {
   display: flex;
   align-items: center;
   width: 30%;
@@ -33,41 +36,37 @@
   border-radius: 1vw;
 }
 
-.species__container_active,
-.species__container_not_active,
-.species__container_bio_active {
+.species__trait-container_active,
+.species-bio__trait-container_active,
+.species-hm__trait-container_active {
   background-color: #58b698;
   border: 0.25vw solid darkgreen;
   color: black;
 }
 
-.species__container:hover,
-.species__container_not:hover,
-.species__container_bio:hover {
+.species__trait-container:hover,
+.species-bio__trait-container:hover,
+.species-hm__trait-container:hover {
   background-color: #58b698;
   color: black;
 }
 
-.species__container-image {
+.species__trait-container-image,
+.species-bio__trait-container-image,
+.species-hm__trait-container-image {
   width: 3vw;
   height: 3vw;
   margin: 0px 1vw;
 }
 
-.species__container-name {
+.species__trait-container-name,
+.species-bio__trait-container-name,
+.species-hm__trait-container-name {
   display: block;
   align-self: center;
   height: auto;
 }
 
-.species__traitlist_additional {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  padding: 0px;
-}
 
 .species__descr-block {
   display: flex;
