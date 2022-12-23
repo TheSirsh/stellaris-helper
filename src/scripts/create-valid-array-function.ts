@@ -1,17 +1,17 @@
 import { ITraits } from "./interface";
 
-function createValidArray(arr: Array<ITraits>, checkStr: string): Array<ITraits> {
+function createValidArray(checkingArray: Array<ITraits>, checkStr: string): Array<ITraits> {
 
   let newArray: Array<ITraits> = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].exclude == undefined) { newArray.push(arr[i]); } 
+  for (let i = 0; i < checkingArray.length; i++) {
+    if (checkingArray[i].exclude == undefined) { newArray.push(checkingArray[i]); } 
       else {
         let isValid: Boolean = true;
-        for (let j = 0; j < arr[i].exclude.length; j++) {
-          if (arr[i].exclude[j] === localStorage.getItem(`${checkStr}`)) { isValid = false; } 
+        for (let j = 0; j < checkingArray[i].exclude.length; j++) {
+          if (checkingArray[i].exclude[j] === localStorage.getItem(`${checkStr}`)) { isValid = false; } 
         }
-        if (isValid === true) { newArray.push(arr[i]); }
+        if (isValid === true) { newArray.push(checkingArray[i]); }
       }
   }
   return newArray

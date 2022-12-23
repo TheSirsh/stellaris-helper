@@ -15,14 +15,14 @@ function createWorkedPlace(cssClass: string, workedplaceText: IMainText): void {
   createNewSimpleElement("div", `${cssClass}__workedplace`, mainSectionContainer);
 }
 
-function createTraitList(appendPlace: HTMLElement, arr: Array<ITraits>, cssClass: string): void {
+function createTraitList(parentElemnet: HTMLElement, arrayOfTraits: Array<ITraits>, cssClass: string): void {
 
-  const mainSectionTraitList = createNewSimpleElement("ul", `${cssClass}__traitlist`, appendPlace);
-  for (let i = 0; i < arr.length; i++) {
+  const mainSectionTraitList = createNewSimpleElement("ul", `${cssClass}__traitlist`, parentElemnet);
+  for (let i = 0; i < arrayOfTraits.length; i++) {
     const traitContainer = createNewSimpleElement("li", `${cssClass}__trait-container`, mainSectionTraitList);
-    traitContainer.classList.add(`${arr[i].trait}`)
-      createNewImageElement(`${cssClass}__trait-container-image`, traitContainer, arr[i].icon, arr[i].nameEN);
-      createNewTextElement("span", `${cssClass}__trait-container-name`, traitContainer, arr[i].nameEN);
+    traitContainer.classList.add(`${arrayOfTraits[i].trait}`)
+      createNewImageElement(`${cssClass}__trait-container-image`, traitContainer, arrayOfTraits[i].icon, arrayOfTraits[i].nameEN);
+      createNewTextElement("span", `${cssClass}__trait-container-name`, traitContainer, arrayOfTraits[i].nameEN);
   }
 }
 

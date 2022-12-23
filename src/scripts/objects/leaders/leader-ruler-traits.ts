@@ -1,4 +1,4 @@
-import { ITraits } from "../interface";
+import { ITraits } from "../../interface";
 
 const leaderRulerBiological: Array<ITraits> = [
   {

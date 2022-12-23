@@ -7,29 +7,31 @@ import { createWorkedPlace, createTraitList, createDescrBlock } from "../../crea
 
 function createSpecies(): void {
 
-createWorkedPlace("species", speciesSectionText);
-const workedplace = document.querySelector(".species__workedplace");
+  createWorkedPlace("species", speciesSectionText);
+  const workedplace = document.querySelector(".species__workedplace");
 
-const traitlistBlock = createNewSimpleElement("div", "species__traitlist-block", workedplace)
+  const traitlistBlock = createNewSimpleElement("div", "species__traitlist-block", workedplace)
 
-createTraitList(traitlistBlock, species, "species");
-createDescrBlock("species", speciesSectionText)
+  createTraitList(traitlistBlock, species, "species");
+  createDescrBlock("species", speciesSectionText);
 
+  const speciesContainerArr: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species__trait-container");
 
-    const speciesContainerArr: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species__trait-container");
-    speciesContainerArr.forEach(function(elem: Element, i: number) {
-      elem.addEventListener("click", function(): void {
-        localStorage.setItem("species", species[i].trait);
-        const speciesButton = document.querySelector(".species__button");
-        if (speciesButton) {
-          speciesButton.classList.remove("species__button");
-          speciesButton.classList.add("species__button_active");
-          speciesButton.addEventListener("click", createMainSectionClimateTrait);
-        }
-        selectSpecies(i);
-        speciesContainerArr[i].classList.toggle("species__trait-container_active");
-      })
+  speciesContainerArr.forEach(function(elem: Element, i: number) {
+    elem.addEventListener("click", function(): void {
+      localStorage.setItem("species", species[i].trait);
+      speciesContainerArr[i].classList.toggle("species__trait-container_active");
+
+      selectSpecies(i);
+
+      const speciesButton = document.querySelector(".species__button");
+      if (speciesButton) {
+        speciesButton.classList.remove("species__button");
+        speciesButton.classList.add("species__button_active");
+        speciesButton.addEventListener("click", createMainSectionClimateTrait);
+      }
     })
-  }
+  })
+}
 
 export { createSpecies }

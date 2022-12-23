@@ -7,10 +7,16 @@
   padding: 0px;
 }
 
+.leader__traitlist-block {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
 .leader__traitlist {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 65%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: auto;
   padding: 0px;
 }

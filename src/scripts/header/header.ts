@@ -1,7 +1,7 @@
 import { headerContent } from "../objects/header-content.js";
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
 import { createSpecies } from "../main-section/species/species-create.js";
-import { createLeaderTraits } from "../main-section/leader-traits/leader-traits-create.js"
+import { createLeader } from "../main-section/leader-traits/leader-create.js"
 
 function createHeader(): void {
 
@@ -15,7 +15,7 @@ function createHeader(): void {
             headerCell.addEventListener("click", createSpecies);
           }
           if (i === 2)
-          headerCell.addEventListener("click", createLeaderTraits);
+          headerCell.addEventListener("click", createLeader);
         }
 }
 

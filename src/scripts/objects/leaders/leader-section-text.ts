@@ -1,4 +1,4 @@
-import { IMainText } from "../interface.js"
+import { IMainText } from "../../interface.js"
 
 const leaderSectionText: IMainText = {
   titleEN : "Leader Traits",

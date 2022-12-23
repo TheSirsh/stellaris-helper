@@ -19,15 +19,16 @@ function selectSpecies(i: number): void {
 
     if (i !== 1 ) {
 
-      createTraitList(speciesTraitBlock, speciesTraitsBiological, "species-bio")
+      createTraitList(speciesTraitBlock, speciesTraitsBiological, "species-bio");
 
       const speciesTraitNotHM: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species-bio__trait-container");
 
       speciesTraitNotHM.forEach(function(elem: Element, n: number) {
         elem.addEventListener("click", function(): void {
-          selectSpeciesNotHM(n);
           localStorage.setItem("origin", speciesTraitsBiological[n].trait);
-          speciesTraitNotHM[n].classList.toggle("species-bio__trait-container_active");
+          elem.classList.toggle("species-bio__trait-container_active");
+
+          selectSpeciesNotHM(n);
         })
       })
     }
@@ -37,9 +38,10 @@ function selectSpecies(i: number): void {
     const speciesTraitBio: NodeListOf<HTMLElement> | null = document.querySelectorAll(".species-hm__trait-container");
     speciesTraitBio.forEach(function(elem: Element, n: number) {
       elem.addEventListener("click", function(): void {
-        selectSpeciesBio(n);
         localStorage.setItem("bio", speciesTraitsHimeMind[n].trait);
         speciesTraitBio[n].classList.toggle("species-hm__trait-container_active");
+
+        selectSpeciesBio(n);
       })
     })
   }
