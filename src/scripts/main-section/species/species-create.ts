@@ -19,10 +19,9 @@ function createSpecies(): void {
 
   speciesContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
+      selectSpecies(i);
       localStorage.setItem("species", species[i].trait);
       speciesContainerArr[i].classList.toggle("species__trait-container_active");
-
-      selectSpecies(i);
 
       const speciesButton = document.querySelector(".species__button");
       if (speciesButton) {

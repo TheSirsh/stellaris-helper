@@ -19,10 +19,9 @@ function createMainSectionClimateTrait(): void {
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void{
+      selectClimateTrait(i, validPlanet);
       localStorage.setItem("climate", validPlanet[i].trait);
       elem.classList.toggle("climate__trait-container_active");
-
-      selectClimateTrait(i, validPlanet);
 
       const traitDescriptionButton: HTMLElement = document.querySelector(".climate__button");
       if (traitDescriptionButton) {

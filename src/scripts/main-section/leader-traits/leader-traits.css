@@ -13,6 +13,7 @@
   width: 60%;
 }
 
+.leader-species__traitlist,
 .leader__traitlist {
   display: flex;
   justify-content: center;
@@ -21,6 +22,7 @@
   padding: 0px;
 }
 
+.leader-species__trait-container,
 .leader__trait-container {
   display: flex;
   align-items: center;
@@ -32,22 +34,26 @@
   border-radius: 1vw;
 }
 
+.leader-species__trait-container:hover,
 .leader__trait-container:hover {
   background-color: #58b698;
   color: black;
 }
 
+.leader-species__trait-container_active,
 .leader__trait-container_active {
   background-color: #58b698;
   color: black;
 }
 
+.leader-species__trait-container-image,
 .leader__trait-container-image {
   width: 3vw;
   height: 3vw;
   margin: 0px 1vw;
 }
 
+.leader-species__trait-container-name,
 .leader__trait-container-name {
   display: block;
   align-self: center;
