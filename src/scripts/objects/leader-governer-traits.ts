@@ -17,6 +17,23 @@ const leaderGovernorBiological: Array<ITraits> = [
     ],
   },
   {
+    trait: "leader_trait_governor_psionic",
+    icon: "../src/icons/leader-traits/psionic.png",
+    nameEN: "Psychic",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Unity from Jobs",],
+    ],
+    exclude: [
+      "leader_trait_governor_cyborg",
+      "leader_trait_governor_synthetic",
+      "leader_trait_governor_chosen",
+      "leader_trait_governor_composer_chosen",
+      "leader_trait_governor_eater_chosen",
+      "leader_trait_governor_instrument_chosen",
+    ]
+  },
+  {
     trait: "leader_trait_governor_chosen",
     icon: "../src/icons/leader-traits/chosen-one.png",
     nameEN: "Chosen One",
@@ -25,6 +42,14 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["empty", "", "Immortal",],
       ["good", "+10", "Stability",],
       ["good", "+20%", "Unity from Jobs",],
+    ],
+    exclude: [
+      "leader_trait_governor_cyborg",
+      "leader_trait_governor_synthetic",
+      "leader_trait_governor_psionic",
+      "leader_trait_governor_composer_chosen",
+      "leader_trait_governor_eater_chosen",
+      "leader_trait_governor_instrument_chosen",
     ],
   },
   {
@@ -37,6 +62,14 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["good", "+5%", "Pop growth speedn",],
       ["good", "+5%", "Resources from Jobs",],
     ],
+    exclude: [
+      "leader_trait_governor_cyborg",
+      "leader_trait_governor_synthetic",
+      "leader_trait_governor_psionic",
+      "leader_trait_governor_chosen",
+      "leader_trait_governor_eater_chosen",
+      "leader_trait_governor_instrument_chosen",
+    ],
   },
   {
     trait: "leader_trait_governor_eater_chosen",
@@ -47,6 +80,14 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["empty", "", "Immortal",],
       ["good", "+25%", "Ship build speed",],
       ["good", "-15%", "Ship build cost",],
+    ],
+    exclude: [
+      "leader_trait_governor_cyborg",
+      "leader_trait_governor_synthetic",
+      "leader_trait_governor_psionic",
+      "leader_trait_governor_chosen",
+      "leader_trait_governor_composer_chosen",
+      "leader_trait_governor_instrument_chosen",
     ],
   },
   {
@@ -59,6 +100,14 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["good", "+30%", "Slave resource output",],
       ["good", "+5", "Stability",],
     ],
+    exclude: [
+      "leader_trait_governor_cyborg",
+      "leader_trait_governor_synthetic",
+      "leader_trait_governor_psionic",
+      "leader_trait_governor_chosen",
+      "leader_trait_governor_eater_chosen",
+      "leader_trait_governor_composer_chosen",
+    ],
   },
   {
     trait: "leader_trait_governor_cyborg",
@@ -67,6 +116,14 @@ const leaderGovernorBiological: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "−10%", "Pop upkeep",],
+    ],
+    exclude: [
+      "leader_trait_governor_synthetic",
+      "leader_trait_governor_psionic",
+      "leader_trait_governor_chosen",
+      "leader_trait_governor_eater_chosen",
+      "leader_trait_governor_composer_chosen",
+      "leader_trait_governor_instrument_chosen",
     ],
   },
   {
@@ -96,6 +153,21 @@ const leaderGovernorBiological: Array<ITraits> = [
     traits: [
       ["good", "+25%", "Leader experience gain",],
     ],
+    exclude: [
+      "leader_trait_stubborn",
+    ],
+  },
+  {
+    trait: "leader_trait_stubborn",
+    icon: "../src/icons/leader-traits/stubborn.png",
+    nameEN: "Stubborn",
+    nameRU: "",
+    traits: [
+      ["bad", "-25%", "Leader experience gain",],
+    ],
+    exclude: [
+      "leader_trait_adaptable",
+    ],
   },
   {
     trait: "leader_trait_eager",
@@ -114,6 +186,21 @@ const leaderGovernorBiological: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+25", "Leader lifespan",],
+    ],
+    exclude: [
+      "leader_trait_substance_abuser",
+    ],
+  },
+  {
+    trait: "leader_trait_resilient",
+    icon: "../src/icons/leader-traits/substance-abuser.png",
+    nameEN: "Substance Abuser",
+    nameRU: "",
+    traits: [
+      ["bad", "-20", "Leader lifespan",],
+    ],
+    exclude: [
+      "leader_trait_resilient",
     ],
   },
   {
@@ -221,6 +308,21 @@ const leaderGovernorBiological: Array<ITraits> = [
     traits: [
       ["good", "-25", "Crime",],
     ],
+    exclude: [
+      "leader_trait_corrupt",
+    ],
+  },
+  {
+    trait: "leader_trait_corrupt",
+    icon: "../src/icons/leader-traits/governor-corrupt.png",
+    nameEN: "Corrupt",
+    nameRU: "",
+    traits: [
+      ["good", "+25", "Crime",],
+    ],
+    exclude: [
+  "leader_trait_righteous"
+    ]
   },
   {
     trait: "leader_trait_enclave_trader",
