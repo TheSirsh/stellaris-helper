@@ -154,6 +154,7 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["good", "+25%", "Leader experience gain",],
     ],
     exclude: [
+      "leader_trait_hive_mind",
       "leader_trait_stubborn",
     ],
   },
@@ -166,6 +167,7 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["bad", "-25%", "Leader experience gain",],
     ],
     exclude: [
+      "leader_trait_hive_mind",
       "leader_trait_adaptable",
     ],
   },
@@ -178,6 +180,9 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["good", "-50%", "Leader cost",],
       ["good", "-50%", "Leader upkeep",],
     ],
+    exclude: [
+      "leader_trait_hive_mind",
+    ],
   },
   {
     trait: "leader_trait_resilient",
@@ -188,6 +193,7 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["good", "+25", "Leader lifespan",],
     ],
     exclude: [
+      "leader_trait_hive_mind",
       "leader_trait_substance_abuser",
     ],
   },
@@ -200,6 +206,7 @@ const leaderGovernorBiological: Array<ITraits> = [
       ["bad", "-20", "Leader lifespan",],
     ],
     exclude: [
+      "leader_trait_hive_mind",
       "leader_trait_resilient",
     ],
   },
@@ -220,6 +227,9 @@ const leaderGovernorBiological: Array<ITraits> = [
     traits: [
       ["good", "+25%", "Leader experience gain",],
       ["good", "+1", "Leader Level Cap",],
+    ],
+    exclude: [
+      "leader_trait_hive_mind",
     ],
   },
   {

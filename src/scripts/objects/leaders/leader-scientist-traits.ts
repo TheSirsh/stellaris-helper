@@ -151,6 +151,71 @@ const leaderScientistBiological: Array<ITraits> = [
     ],
   },
   {
+    trait: "leader_trait_adaptable",
+    icon: "../src/icons/leader-traits/adaptable.png",
+    nameEN: "Adaptable",
+    nameRU: "",
+    traits: [
+      ["good", "+25%", "Leader experience gain",],
+    ],
+    exclude: [
+      "leader_trait_hive_mind",
+      "leader_trait_stubborn",
+    ],
+  },
+  {
+    trait: "leader_trait_stubborn",
+    icon: "../src/icons/leader-traits/stubborn.png",
+    nameEN: "Stubborn",
+    nameRU: "",
+    traits: [
+      ["bad", "-25%", "Leader experience gain",],
+    ],
+    exclude: [
+      "leader_trait_hive_mind",
+      "leader_trait_adaptable",
+    ],
+  },
+  {
+    trait: "leader_trait_eager",
+    icon: "../src/icons/leader-traits/eager.png",
+    nameEN: "Eager",
+    nameRU: "",
+    traits: [
+      ["good", "-50%", "Leader cost",],
+      ["good", "-50%", "Leader upkeep",],
+    ],
+    exclude: [
+      "leader_trait_hive_mind",
+    ],
+  },
+  {
+    trait: "leader_trait_resilient",
+    icon: "../src/icons/leader-traits/resilient.png",
+    nameEN: "Resilient",
+    nameRU: "",
+    traits: [
+      ["good", "+25", "Leader lifespan",],
+    ],
+    exclude: [
+      "leader_trait_hive_mind",
+      "leader_trait_substance_abuser",
+    ],
+  },
+  {
+    trait: "leader_trait_substance_abuser",
+    icon: "../src/icons/leader-traits/substance-abuser.png",
+    nameEN: "Substance Abuser",
+    nameRU: "",
+    traits: [
+      ["bad", "-20", "Leader lifespan",],
+    ],
+    exclude: [
+      "leader_trait_hive_mind",
+      "leader_trait_resilient",
+    ],
+  },
+  {
     trait: "leader_trait_shroud_age",
     icon: "../src/icons/leader-traits/adaptable.png",
     nameEN: "Increased Lifespan",
@@ -167,6 +232,9 @@ const leaderScientistBiological: Array<ITraits> = [
     traits: [
       ["good", "+25%", "Leader experience gain",],
       ["good", "+1", "Leader Level Cap",],
+    ],
+    exclude: [
+      "leader_trait_hive_mind",
     ],
   },
   {
@@ -1050,4 +1118,4 @@ const leaderScientistSynthitic: Array<ITraits> = [
   },
 ]
 
-export { leaderScientistBiological,  }
+export { leaderScientistBiological, leaderScientistSynthitic, }
