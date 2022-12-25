@@ -2,6 +2,25 @@ import { ITraits } from "../../interface";
 
 const leaderRulerBiological: Array<ITraits> = [
   {
+    trait: "leader_trait_ruler_hive_mind",
+    icon: "../src/icons/leader-traits/hive-mind.png",
+    nameEN: "Hive Mind",
+    nameRU: "",
+    traits: [
+      ["empty", "", "Immortal",],
+    ],
+  },
+  {
+    trait: "leader_trait_ruler_psionic",
+    icon: "../src/icons/leader-traits/psionic.png",
+    nameEN: "Psychic",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Governing ethics attraction",],
+      ["good", "+0.5", "Monthly Influence",],
+    ],
+  },
+  {
     trait: "leader_trait_ruler_chosen",
     icon: "../src/icons/leader-traits/chosen-one.png",
     nameEN: "Chosen One",
@@ -109,6 +128,18 @@ const leaderRulerBiological: Array<ITraits> = [
     ],
   },
   {
+    trait: "trait_ruler_champion_of_the_people",
+    icon: "../src/icons/leader-traits/ruler-champion-of-the-people.png",
+    nameEN: "Champion of the People",
+    nameRU: "",
+    traits: [
+      ["good", "+5%", "Happiness",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
+  },
+  {
     trait: "trait_ruler_architectural_sense",
     icon: "../src/icons/leader-traits/ruler-architectural-sense.png",
     nameEN: "Architectural Sense",
@@ -117,6 +148,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "−10%", "Building cost",],
       ["good", "−10%", "District cost",],
       ["good", "−10%", "Planet building speed",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
     ],
   },
   {
@@ -128,6 +162,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "−10%", "Edict upkeep",],
       ["good", "+20", "Edict Fund",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_deep_connections",
@@ -136,6 +173,9 @@ const leaderRulerBiological: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+1", "Monthly Influence",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
     ],
   },
   {
@@ -147,6 +187,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "−15%", "Outpost Build cost",],
       ["good", "−15%", "Starbase Influence cost",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_explorer",
@@ -156,6 +199,9 @@ const leaderRulerBiological: Array<ITraits> = [
     traits: [
       ["good", "−25%", "Science Ship Build cost",],
       ["good", "+33%", "Anomaly Research Speed",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
     ],
   },
   {
@@ -167,6 +213,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "+1", "Leader Skill Levels",],
       ["good", "+20%", "Leader experience gain",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_fertility_preacher",
@@ -177,6 +226,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "+10%", "Food from Jobs",],
       ["good", "+5%", "Pop Growth Speed",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "leader_trait_fleet_organizer",
@@ -185,6 +237,23 @@ const leaderRulerBiological: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+15%", "Naval Capacity",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+      "leader_trait_nervous",
+    ],
+  },
+  {
+    trait: "leader_trait_nervous",
+    icon: "../src/icons/leader-traits/ruler_nervous.png",
+    nameEN: "Nervous",
+    nameRU: "",
+    traits: [
+      ["good", "", "",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+      "leader_trait_fleet_organizer",
     ],
   },
   {
@@ -196,6 +265,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "−10%", "Starbase Upgrade cost",],
       ["good", "−33%", "Defense Platform Build cost",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_from_the_ranks",
@@ -205,6 +277,9 @@ const leaderRulerBiological: Array<ITraits> = [
     traits: [
       ["good", "+20%", "Army morale",],
       ["good", "+33%", "Army experience gain",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
     ],
   },
   {
@@ -216,6 +291,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "−35%", "Colony Ship Build cost",],
       ["good", "+25%", "Colony Development Speed",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_home_in_the_sky",
@@ -226,6 +304,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "−20%", "Starbase Module Build cost",],
       ["good", "−10%", "Starbase Upgrade cost",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_industrialist",
@@ -235,6 +316,9 @@ const leaderRulerBiological: Array<ITraits> = [
     traits: [
       ["good", "+10%", "Empire Mineral Production",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_investor",
@@ -243,6 +327,9 @@ const leaderRulerBiological: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+10%", "Trade Value",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
     ],
   },
   {
@@ -254,6 +341,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "−5%", "Ship Upkeep",],
       ["good", "−10%", "Army upkeep",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_military_pioneer",
@@ -263,6 +353,9 @@ const leaderRulerBiological: Array<ITraits> = [
     traits: [
       ["good", "−10%", "Ship Upgrade cost",],
       ["good", "−10%", "Shipyard Build cost",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
     ],
   },
   {
@@ -274,6 +367,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "+50%", "Army Build Speed",],
       ["good", "−20%", "Army cost",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "leader_trait_reformer",
@@ -282,6 +378,9 @@ const leaderRulerBiological: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+10%", " Monthly Unity",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
     ],
   },
   {
@@ -293,6 +392,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "+10%", "Mining Station Output",],
       ["good", "−25%", "Mining Station Build cost",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_warlike",
@@ -302,6 +404,9 @@ const leaderRulerBiological: Array<ITraits> = [
     traits: [
       ["good", "+5%", "Ship weapons damage",],
       ["good", "+10%", "Army damage",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
     ],
   },
   {
@@ -313,6 +418,9 @@ const leaderRulerBiological: Array<ITraits> = [
       ["good", "+25%", "Terraforming Speed",],
       ["good", "−15%", "Clear blocker cost",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+    ],
   },
   {
     trait: "trait_ruler_corvette_focus",
@@ -321,6 +429,12 @@ const leaderRulerBiological: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "−20%", "Corvette Build cost",],
+    ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+      "trait_ruler_destroyer_focus",
+      "trait_ruler_cruiser_focus",
+      "trait_ruler_battleship_focus",
     ],
   },
   {
@@ -331,6 +445,12 @@ const leaderRulerBiological: Array<ITraits> = [
     traits: [
       ["good", "−20%", "Destroyer Build cost",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+      "trait_ruler_corvette_focus",
+      "trait_ruler_cruiser_focus",
+      "trait_ruler_battleship_focus",
+    ],
   },
   {
     trait: "trait_ruler_cruiser_focus",
@@ -340,6 +460,12 @@ const leaderRulerBiological: Array<ITraits> = [
     traits: [
       ["good", "−20%", "Cruiser Build cost",],
     ],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+      "trait_ruler_corvette_focus",
+      "trait_ruler_destroyer_focus",
+      "trait_ruler_battleship_focus",
+    ]
   },
   {
     trait: "trait_ruler_battleship_focus",
@@ -349,115 +475,11 @@ const leaderRulerBiological: Array<ITraits> = [
     traits: [
       ["good", "−20%", "Battleship Build cost",],
     ],
-  },
-]
-
-const leaderRulerHiveMind: Array<ITraits> = [
-  {
-    trait: "leader_trait_ruler_hive_mind",
-    icon: "../src/icons/leader-traits/hive-mind.png",
-    nameEN: "Hive Mind",
-    nameRU: "",
-    traits: [
-      ["empty", "", "Immortal",],
-    ],
-  },
-  {
-    trait: "leader_trait_ruler_chosen",
-    icon: "../src/icons/leader-traits/chosen-one.png",
-    nameEN: "Chosen One",
-    nameRU: "",
-    traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+20%", "Governing ethics attraction",],
-      ["good", "+1", "Monthly Influence",],
-    ],
-  },
-  {
-    trait: "leader_trait_ruler_composer_chosen",
-    icon: "../src/icons/leader-traits/chosen-composer.png",
-    nameEN: "Chosen of the Composer",
-    nameRU: "",
-    traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+50", "Years leader lifespan",],
-      ["good", "+30%", "Leader experience gain",],
-      ["good", "+1", "Leader level cap",],
-    ],
-  },
-  {
-    trait: "leader_trait_ruler_instrument_chosen",
-    icon: "../src/icons/leader-traits/chosen-instrument.png",
-    nameEN: "Chosen of the Instrument",
-    nameRU: "",
-    traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+10%", "Happiness",],
-      ["good", "+10%", "Trade Value",],
-    ],
-  },
-  {
-    trait: "leader_trait_ruler_eater_chosen",
-    icon: "../src/icons/leader-traits/chosen-eater.png",
-    nameEN: "Chosen of the Eater",
-    nameRU: "",
-    traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+15%", "Ship build speed",],
-      ["good", "-10%", "Ship upkeep",],
-    ],
-  },
-  {
-    trait: "leader_trait_ruler_whisperers_chosen",
-    icon: "../src/icons/leader-traits/chosen-whisperers.png",
-    nameEN: "Chosen of the Whisperers",
-    nameRU: "",
-    traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+1", "Monthly Influence",],
-      ["good", "+1", "Encryption",],
-      ["good", "−15%", "Operation cost",],
-    ],
-  },
-  {
-    trait: "trait_ruler_cyborg",
-    icon: "../src/icons/leader-traits/cyborg.png",
-    nameEN: "Cyborg",
-    nameRU: "",
-    traits: [
-      ["good", "−25%", "Building upkeep",],
-      ["good", "−25%", "District upkeep",],
-      ["good", "−5%", "Empire size from Districts",],
-    ],
-  },
-  {
-    trait: "leader_trait_ruler_erudite",
-    icon: "../src/icons/leader-traits/erudite.png",
-    nameEN: "Erudite",
-    nameRU: "",
-    traits: [
-      ["good", "+1", "Research alternatives",],
-    ],
-  },
-  {
-    trait: "leader_trait_ruler_brainslug",
-    icon: "../src/icons/leader-traits/brain-slug.png",
-    nameEN: "Brain Slug Host",
-    nameRU: "",
-    traits: [
-      ["good", "+10%", "Research from Jobs",],
-      ["good", "+10%", "Naval Capacity",],
-    ],
-  },
-  {
-    trait: "leader_trait_ruler_great_khan",
-    icon: "../src/icons/leader-traits/great-khan.png",
-    nameEN: "The Great Khan",
-    nameRU: "",
-    traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+25%", "Army Morale",],
-      ["good", "+10%", "Ship weapons damage",],
+    exclude: [
+      "leader_trait_ruler_hive_mind",
+      "trait_ruler_corvette_focus",
+      "trait_ruler_destroyer_focus",
+      "trait_ruler_cruiser_focus",
     ],
   },
 ]
@@ -474,4 +496,4 @@ const leaderRulerSynthitic: Array<ITraits> = [
   },
 ]
 
-export { leaderRulerBiological, leaderRulerHiveMind, leaderRulerSynthitic, }
+export { leaderRulerBiological, leaderRulerSynthitic, }
