@@ -309,4 +309,73 @@ const leaderGeneralBiological: Array<ITraits> = [
   },
 ]
 
-export { leaderGeneralBiological, }
+const leaderGeneralSynthitic: Array<ITraits> = [
+  {
+    trait: "leader_trait_general_synthetic",
+    icon: "../src/icons/leader-traits/synthetic.png",
+    nameEN: "Synthetic",
+    nameRU: "",
+    traits: [
+      ["good", "+5%", "Army damage",],
+      ["neutral", "+10%", "Army collateral damage",],
+    ],
+  },
+  {
+    trait: "leader_trait_parts_cannibalizer",
+    icon: "../src/icons/leader-traits/general-parts-cannibalizer.png",
+    nameEN: "Parts Cannibalizer",
+    nameRU: "",
+    traits: [
+      ["good", "-20%", "Army upkeep",],
+    ],
+  },
+  {
+    trait: "leader_trait_butcher",
+    icon: "../src/icons/leader-traits/general-butcher.png",
+    nameEN: "Butcher",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Army damage",],
+      ["neutral", "+33%", "Army collateral damage",],
+    ],
+    exclude: [
+      "leader_trait_armchair_commander",
+      "leader_trait_restrained",
+    ],
+  },
+  {
+    trait: "leader_trait_demoralizer",
+    icon: "../src/icons/leader-traits/general-demoralizer.png",
+    nameEN: "Demoralizer",
+    nameRU: "",
+    traits: [
+      ["good", "+30%", "Army morale damage",],
+    ],
+    exclude: [
+      "leader_trait_erratic_morality_core",
+    ],
+  },
+  {
+    trait: "leader_trait_erratic_morality_core",
+    icon: "../src/icons/leader-traits/general-erratic-morality-core.png",
+    nameEN: "Armchair Commander",
+    nameRU: "",
+    traits: [
+      ["bad", "-10%", "Army damage",],
+    ],
+    exclude: [
+      "leader_trait_demoralizer",
+    ],
+  },
+  {
+    trait: "leader_trait_general_mercenary_warrior",
+    icon: "../src/icons/leader-traits/general-mercanary-warrior.png",
+    nameEN: "Mercenary Warrior",
+    nameRU: "",
+    traits: [
+      ["good", "+10%", "Army damage",],
+    ],
+  },
+]
+
+export { leaderGeneralBiological, leaderGeneralSynthitic, }
