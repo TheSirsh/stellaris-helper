@@ -321,6 +321,40 @@ const leaderGeneralSynthitic: Array<ITraits> = [
     ],
   },
   {
+    trait: "leader_trait_flexible_programming",
+    icon: "../src/icons/leader-traits/flexible-programming.png",
+    nameEN: "Flexible Programming",
+    nameRU: "",
+    traits: [
+      ["good", "+25%", "Leader experience gain",],
+    ],
+    exclude: [
+      "leader_trait_rigid_programming",
+    ],
+  },
+  {
+    trait: "leader_trait_rigid_programming",
+    icon: "../src/icons/leader-traits/rigid-programming.png",
+    nameEN: "Flexible Programming",
+    nameRU: "",
+    traits: [
+      ["good", "-25%", "Leader experience gain",],
+    ],
+    exclude: [
+      "leader_trait_flexible_programming",
+    ],
+  },
+  {
+    trait: "leader_trait_newboot",
+    icon: "../src/icons/leader-traits/newboot.png",
+    nameEN: "Newboot",
+    nameRU: "",
+    traits: [
+      ["good", "-50%", "Leader cost",],
+      ["good", "-50%", "Leader upkeep",],
+    ],
+  },
+  {
     trait: "leader_trait_parts_cannibalizer",
     icon: "../src/icons/leader-traits/general-parts-cannibalizer.png",
     nameEN: "Parts Cannibalizer",
