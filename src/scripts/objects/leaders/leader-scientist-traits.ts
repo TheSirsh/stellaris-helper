@@ -170,12 +170,27 @@ const leaderScientistBiological: Array<ITraits> = [
     ],
   },
   {
+    trait: "leader_trait_mindful",
+    icon: "../src/icons/leader-traits/careful.png",
+    nameEN: "Archaeologist",
+    nameRU: "",
+    traits: [
+      ["good", "+5%", "Anomaly Discovery Chance",],
+      ["bad", "-5%", "Archaeology Excavation Speed",],
+    ],
+    exclude: [
+      "leader_trait_carefree",
+      "leader_trait_meticulous",
+      "leader_trait_archaeologist_ancrel",
+      ]
+  },
+  {
     trait: "leader_trait_archaeologist_ancrel",
     icon: "../src/icons/leader-traits/scientist-archaeologist.png",
     nameEN: "Archaeologist",
     nameRU: "",
     traits: [
-      ["good", "+25%", "Archaeology Excavation Speed ",],
+      ["good", "+25%", "Archaeology Excavation Speed",],
     ],
     exclude: [
       "leader_trait_mindful",
@@ -202,6 +217,10 @@ const leaderScientistBiological: Array<ITraits> = [
     traits: [
       ["good", "+10%", "Anomaly Discovery Chance",],
     ],
+    exclude: [
+      "leader_trait_carefree",
+      "leader_trait_mindful",
+      ]
   },
   {
     trait: "leader_trait_roamer",
@@ -587,104 +606,79 @@ const leaderScientistBiological: Array<ITraits> = [
   },
 ]
 
-const leaderScientistHiveMind: Array<ITraits> = [
+const leaderScientistSynthitic: Array<ITraits> = [
   {
-    trait: "leader_trait_scientist_chosen",
-    icon: "../src/icons/leader-traits/chosen-one.png",
-    nameEN: "Chosen One",
+    trait: "leader_trait_scientist_synthetic",
+    icon: "../src/icons/leader-traits/synthetic.png",
+    nameEN: "Synthetic",
+    nameRU: "",
+    traits: [
+      ["good", "+5%", "Worker resource output",],
+    ],
+  },
+  {
+    trait: "leader_trait_governor_gray",
+    icon: "../src/icons/leader-traits/governor-nanite-entity.png",
+    nameEN: "Nanite Entity",
     nameRU: "",
     traits: [
       ["empty", "", "Immortal",],
-      ["good", "+20%", "Research speed",],
-      ["good", "+50%", "Survey speed",],
-      ["good", "+2", "Archaeology skill",],
+      ["good", "−40%", "Building cost",],
+      ["good", "+40%", "Planet Build Speed",],
+      ["good", "+15%", "Energy from Jobs",],
+      ["good", "+15%", "Minerals from Jobs",],
+      ["good", "−40%", "Clear blocker cost",],
+      ["good", "+40%", "Clear blocker speed",],
     ],
   },
   {
-    trait: "leader_trait_scientist_composer_chosen",
-    icon: "../src/icons/leader-traits/chosen-composer.png",
-    nameEN: "Chosen of the Composer",
+    trait: "leader_trait_flexible_programming",
+    icon: "../src/icons/leader-traits/flexible-programming.png",
+    nameEN: "Flexible Programming",
     nameRU: "",
     traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+15%", "Research speed",],
-      ["good", "+25%", "Survey speed",],
-      ["good", "+2", "Monthly exotic gases",],
-      ["good", "+2", "Monthly rare crystals",],
-      ["good", "+2", "Monthly volatile motes",],
+      ["good", "+25%", "Leader experience gain",],
+    ],
+    exclude: [
+      "leader_trait_rigid_programming",
     ],
   },
   {
-    trait: "leader_trait_scientist_instrument_chosen",
-    icon: "../src/icons/leader-traits/chosen-instrument.png",
-    nameEN: "Chosen of the Instrument",
+    trait: "leader_trait_rigid_programming",
+    icon: "../src/icons/leader-traits/rigid-programming.png",
+    nameEN: "Flexible Programming",
     nameRU: "",
     traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+15%", "Research speed",],
-      ["good", "+2", "Monthly zro",],
+      ["good", "-25%", "Leader experience gain",],
+    ],
+    exclude: [
+      "leader_trait_flexible_programming",
     ],
   },
   {
-    trait: "leader_trait_scientist_whisperers_chosen",
-    icon: "../src/icons/leader-traits/chosen-whisperers.png",
-    nameEN: "Chosen of the Whisperers",
+    trait: "leader_trait_newboot",
+    icon: "../src/icons/leader-traits/newboot.png",
+    nameEN: "Newboot",
     nameRU: "",
     traits: [
-      ["empty", "", "Immortal",],
-      ["good", "+15%", "Research speed",],
-      ["good", "+50", "Anomaly discovery chance",],
-      ["good", "+3", "Archaeology skill",],
+      ["good", "-50%", "Leader cost",],
+      ["good", "-50%", "Leader upkeep",],
     ],
   },
   {
-    trait: "leader_trait_curator",
-    icon: "../src/icons/leader-traits/scientist-curator.png",
-    nameEN: "Curator",
+    trait: "leader_trait_mindful",
+    icon: "../src/icons/leader-traits/careful.png",
+    nameEN: "Archaeologist",
     nameRU: "",
     traits: [
-      ["good", "+15%", "Research speed",],
-      ["good", "+25%", "Survey Speed",],
-      ["empty", "", "Improved draw chance for rare technologies",],
+      ["good", "+5%", "Anomaly Discovery Chance",],
+      ["bad", "-5%", "Archaeology Excavation Speed",],
     ],
-  },
-  {
-    trait: "leader_trait_scientist_cyborg",
-    icon: "../src/icons/leader-traits/cyborg.png",
-    nameEN: "Cyborg",
-    nameRU: "",
-    traits: [
-      ["good", "+5%", "Research speed",],
-    ],
-  },
-  {
-    trait: "leader_trait_scientist_erudite",
-    icon: "../src/icons/leader-traits/erudite.png",
-    nameEN: "Erudite",
-    nameRU: "",
-    traits: [
-      ["good", "+5%", "Research speed",],
-    ],
-  },
-  {
-    trait: "leader_trait_scientist_brainslug",
-    icon: "../src/icons/leader-traits/brain-slug.png",
-    nameEN: "Brain Slug Host",
-    nameRU: "",
-    traits: [
-      ["good", "+10%", "Research speed",],
-      ["good", "+15%", "Survey Speed",],
-      ["good", "+15%", "Anomaly Research Speed",],
-    ],
-  },
-  {
-    trait: "leader_trait_shroud_age",
-    icon: "../src/icons/leader-traits/adaptable.png",
-    nameEN: "Increased Lifespan",
-    nameRU: "",
-    traits: [
-      ["good", "+40", "Leader lifespan",],
-    ],
+    exclude: [
+      "leader_trait_carefree",
+      "leader_trait_meticulous",
+      "leader_trait_archaeologist_ancrel",
+      ]
   },
   {
     trait: "leader_trait_archaeologist_ancrel",
@@ -694,6 +688,9 @@ const leaderScientistHiveMind: Array<ITraits> = [
     traits: [
       ["good", "+25%", "Archaeology Excavation Speed",],
     ],
+    exclude: [
+      "leader_trait_mindful",
+    ]
   },
   {
     trait: "leader_trait_carefree",
@@ -702,6 +699,10 @@ const leaderScientistHiveMind: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+35%", "Anomaly Research Speed",],
+    ],
+    exclude: [
+      "leader_trait_meticulous",
+      "leader_trait_mindful",
     ],
   },
   {
@@ -712,11 +713,15 @@ const leaderScientistHiveMind: Array<ITraits> = [
     traits: [
       ["good", "+10%", "Anomaly Discovery Chance",],
     ],
+    exclude: [
+      "leader_trait_carefree",
+      "leader_trait_mindful",
+      ]
   },
   {
-    trait: "leader_trait_roamer",
+    trait: "leader_trait_cataloger",
     icon: "../src/icons/leader-traits/scientist-roamer.png",
-    nameEN: "Roamer",
+    nameEN: "Cataloguer",
     nameRU: "",
     traits: [
       ["good", "+25%", "Survey Speed",],
@@ -740,6 +745,16 @@ const leaderScientistHiveMind: Array<ITraits> = [
     traits: [
       ["good", "+10%", "Research Speed",],
       ["empty", "", "Improved draw chance for rare technologies",],
+    ],
+  },
+  {
+    trait: "leader_trait_paranoid",
+    icon: "../src/icons/leader-traits/scientist-paranoid.png",
+    nameEN: "Paranoid",
+    nameRU: "",
+    traits: [
+      ["bad", "-5%", "Research Speed",],
+      ["bad", "-10%", "Anomaly Research Speed",],
     ],
   },
   {
@@ -792,113 +807,247 @@ const leaderScientistHiveMind: Array<ITraits> = [
     ],
   },
   {
-    trait: "leader_trait_scholarium_observer",
+    trait: "leader_trait_expertise_computing",
     icon: "../src/icons/leader-traits/scientist-scholarium-observer.png",
     nameEN: "Expertise: Computing",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Computing)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_military_theory",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_field_manipulation",
     icon: "../src/icons/leader-traits/scientist-field-manipulation.png",
     nameEN: "Expertise: Field Manipulation",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Field Manipulation)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_military_theory",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_particles",
     icon: "../src/icons/leader-traits/scientist-particles.png",
     nameEN: "Expertise: Particles",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Particles)",],
     ],
+    exclude :[
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_military_theory",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_biology",
     icon: "../src/icons/leader-traits/scientist-biology.png",
     nameEN: "Expertise: Biology",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Biology)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_military_theory",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_military_theory",
     icon: "../src/icons/leader-traits/scientist-military-theory.png",
     nameEN: "Expertise: Military Theory",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Military Theory)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_biology",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_new_worlds",
     icon: "../src/icons/leader-traits/scientist-new-worlds.png",
     nameEN: "Expertise: New Worlds",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (New Worlds)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_military_theory",
+    ]
   },
   {
-    trait: "111",
-    icon: "../src/icons/leader-traits/scientist-psionics.png",
-    nameEN: "Expertise: Psionics",
-    nameRU: "",
-    traits: [
-      ["good", "+15%", "Research speed (Psionics)",],
-    ],
-  },
-  {
-    trait: "111",
+    trait: "leader_trait_expertise_statecraft",
     icon: "../src/icons/leader-traits/scientist-statecraft.png",
     nameEN: "Expertise: Statecraft",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Statecraft)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_military_theory",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_industry",
     icon: "../src/icons/leader-traits/scientist-industry.png",
     nameEN: "Expertise: Industry",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Industry)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_military_theory",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_materials",
     icon: "../src/icons/leader-traits/scientist-materials.png",
     nameEN: "Expertise: Materials",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Materials)",],
     ],
+    exclude: [
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_military_theory",
+      "leader_trait_expertise_new_worlds",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_propulsion",
     icon: "../src/icons/leader-traits/scientist-propulsion.png",
     nameEN: "Expertise: Propulsion",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Propulsion)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_voidcraft",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_military_theory",
+    ],
   },
   {
-    trait: "111",
+    trait: "leader_trait_expertise_voidcraft",
     icon: "../src/icons/leader-traits/scientist-voidcraft.png",
     nameEN: "Expertise: Voidcraft",
     nameRU: "",
     traits: [
       ["good", "+15%", "Research speed (Voidcraft)",],
     ],
+    exclude: [
+      "leader_trait_expertise_materials",
+      "leader_trait_expertise_propulsion",
+      "leader_trait_expertise_industry",
+      "leader_trait_expertise_field_manipulation",
+      "leader_trait_expertise_particles",
+      "leader_trait_expertise_psionics",
+      "leader_trait_expertise_computing",
+      "leader_trait_expertise_new_worlds",
+      "leader_trait_expertise_statecraft",
+      "leader_trait_expertise_biology",
+      "leader_trait_expertise_military_theory",
+    ]
   },
 ]
 
-export { leaderScientistBiological, leaderScientistHiveMind }
+export { leaderScientistBiological,  }

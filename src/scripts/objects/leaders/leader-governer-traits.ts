@@ -406,7 +406,7 @@ const leaderGovernorHiveMind: Array<ITraits> = [
 const leaderGovernorSynthitic: Array<ITraits> = [
   {
     trait: "leader_trait_governor_synthetic",
-    icon: "../src/icons/leader-traits/chosen-composer.png",
+    icon: "../src/icons/leader-traits/synthetic.png",
     nameEN: "Synthetic",
     nameRU: "",
     traits: [
