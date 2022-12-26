@@ -5,6 +5,7 @@
 @import url("src/scripts/main-section/climate-traits/climate-trait.css");
 @import url("src/scripts//main-section/biological-traits/biological-trait.css");
 @import url("src/scripts/main-section/leaders/leader.css");
+@import url("src/scripts/main-section/leaders-traits/leader-traits.css");
 
 @font-face {
     font-family: "Orbitron";
