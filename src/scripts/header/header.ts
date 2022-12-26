@@ -1,7 +1,7 @@
 import { headerContent } from "../objects/header-content.js";
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
 import { createSpecies } from "../main-section/species/species-create.js";
-import { createLeader } from "../main-section/leader-traits/leader-create.js"
+import { createLeader } from "../main-section/leaders/leader-create.js"
 
 function createHeader(): void {
 

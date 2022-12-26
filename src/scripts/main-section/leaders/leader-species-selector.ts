@@ -1,5 +1,6 @@
 import { createTraitList } from "../../create-worked-place.js";
 import { species, leaders, } from "../../objects/leaders/leader.js";
+import { createLeaderTraits } from "../leaders-traits/leader-traits-create.js";
 
 function selectLeaderSpecies(): void {
 
@@ -27,7 +28,7 @@ function selectLeaderSpecies(): void {
       if (leaderButton) {
         leaderButton.classList.add("leader__button_active");
         leaderButton.classList.remove("leader__button");
-//        speciesButton.addEventListener("click", nextStage);
+        leaderButton.addEventListener("click", createLeaderTraits);
       }
     })
   })

@@ -36,7 +36,7 @@ const species: Array<ITraits> = [
 
 const leaders : Array<ITraits> = [
   {
-    trait: "trait_machine_unit",
+    trait: "Ruler",
     nameEN: "Ruler",
     nameRU: "",
     icon: "../src/icons/ruler.png",
@@ -47,7 +47,7 @@ const leaders : Array<ITraits> = [
     ]
   },
   {
-    trait: "trait_machine_unit",
+    trait: "Governor",
     nameEN: "Governor",
     nameRU: "",
     icon: "../src/icons/governor.png",
@@ -58,7 +58,7 @@ const leaders : Array<ITraits> = [
     ]
   },
   {
-    trait: "trait_machine_unit",
+    trait: "Scientist",
     nameEN: "Scientist",
     nameRU: "",
     icon: "../src/icons/scientist.png",
@@ -69,7 +69,7 @@ const leaders : Array<ITraits> = [
     ]
   },
   {
-    trait: "trait_machine_unit",
+    trait: "Admiral",
     nameEN: "Admiral",
     nameRU: "",
     icon: "../src/icons/admiral.png",
@@ -80,7 +80,7 @@ const leaders : Array<ITraits> = [
     ]
   },
   {
-    trait: "trait_machine_unit",
+    trait: "General",
     nameEN: "General",
     nameRU: "",
     icon: "../src/icons/general.png",

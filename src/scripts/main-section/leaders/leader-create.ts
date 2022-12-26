@@ -5,7 +5,7 @@ import { createNewSimpleElement } from "../../create-functions.js";
 import { selectLeaderSpecies } from "./leader-species-selector.js";
 
 function createLeader() {
-
+  
   createWorkedPlace("leader", leaderSectionText);
   const workedplace = document.querySelector(".leader__workedplace");
   const traitlistBlock = createNewSimpleElement("div", "leader__traitlist-block", workedplace);
