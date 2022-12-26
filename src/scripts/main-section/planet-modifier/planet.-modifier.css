@@ -1,0 +1,134 @@
+.planet__workedplace {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.planet__traitlist-block {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.planet-__traitlist,
+.planet__traitlist {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+.planet-__trait-container,
+.planet__trait-container {
+  display: flex;
+  align-items: center;
+  width: 20vw;
+  height: 3.5vw;
+  margin: 0.5vw;
+  cursor: pointer;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+}
+
+.planet-__trait-container:hover,
+.planet__trait-container:hover {
+  background-color: #58b698;
+  color: black;
+}
+
+.planet-__trait-container_active,
+.planet__trait-container_active {
+  background-color: #58b698;
+  color: black;
+}
+
+.planet-__trait-container-image,
+.planet__trait-container-image {
+  width: 3vw;
+  height: 3vw;
+  margin: 0px 1vw;
+}
+
+.planet-__trait-container-name,
+.planet__trait-container-name {
+  display: block;
+  align-self: center;
+  height: auto;
+}
+
+.planet__descr-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.planet__descr-title {
+  margin: 0.5vw auto;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.planet__descr-image {
+  display: block;
+  width: 15vw;
+  height: 15vw;
+  border: 0.25vw solid #58b698;
+  border-radius: 50%;
+}
+
+.planet__descr-planet {
+  font-size: 1vw;
+  text-align: justify;
+  border: 0.25vw solid #58b698;
+  width: 100%;
+  height: auto;
+  min-height: 5vw;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.planet__button {
+  font-size: 1.5vw;
+  text-align: center;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+  padding: 1vw;
+  width: auto;
+  height: 2vw;
+  cursor: pointer;
+  color: red;
+}
+
+.planet__button_active {
+  color: white
+}
+
+.planet__button:hover {
+  background-color: #58b698;
+}
+
+.planet__descr__trait {
+  background-color: black;
+  padding: 1vw;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+}
+
+.green {
+  color: green;
+  padding-right: 0.5vw;
+}
+
+.red {
+  color: red;
+  padding-right: 0.5vw;
+}
+
+.white {
+  color: white;
+}
