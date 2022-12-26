@@ -6,9 +6,8 @@ import { planetModifier } from "../../objects/planet-modifier.js";
 function createPlanetModifier() {
   
   createWorkedPlace("planet", planetModifierText);
-  const workedplace = document.querySelector(".planet__workedplace");
-  const traitlistBlock = createNewSimpleElement("div", "planet__traitlist-block", workedplace);
-  createTraitList(traitlistBlock, planetModifier, "planet");
+  const workedplace: HTMLElement = document.querySelector(".planet__workedplace");
+  createTraitList(workedplace, planetModifier, "planet");
   createDescrBlock("planet", planetModifierText);
 
   const speciesContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".planet__trait-container");
