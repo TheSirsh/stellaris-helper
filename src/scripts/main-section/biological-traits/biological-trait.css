@@ -37,6 +37,7 @@
 }
 
 .biological__trait-container-image {
+  border-radius: 50%;
   width: 3vw;
   height: 3vw;
   margin: 0px 1vw;

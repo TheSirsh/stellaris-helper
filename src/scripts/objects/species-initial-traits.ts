@@ -139,7 +139,7 @@ const speciesBiologicalTraits: Array<ITraits> = [
   },
   {
     trait: "trait_conservational",
-    icon: "../src/icons/initial-traits/conservationist.png",
+    icon: "../src/icons/initial-traits/conservational.png",
     nameEN: "Conservationist",
     nameRU: "Бережливые",
     traits: [
@@ -607,7 +607,7 @@ const speciesBotanicalTraits: Array<ITraits> = [
   },
   {
     trait: "trait_advanced_radiotrophic",
-    icon: "../src/icons/initial-traits/plantoid-radiotrophic.png",
+    icon: "../src/icons/initial-traits/advanced-radiotrophic.png",
     nameEN: "Radiotrophic",
     nameRU: "",
     traits: [
@@ -645,8 +645,8 @@ const speciesBotanicalTraits: Array<ITraits> = [
     ],
   },
   {
-    trait: "trait_plantoid_budding",
-    icon: "../src/icons/initial-traits/plantoid-budding.png",
+    trait: "trait_advanced_budding",
+    icon: "../src/icons/initial-traits/advanced-budding.png",
     nameEN: "Budding",
     nameRU: "",
     traits: [
@@ -733,7 +733,7 @@ const speciesLithoidTraits: Array<ITraits> = [
   },
   {
     trait: "trait_advanced_scintillating",
-    icon: "../src/icons/initial-traits/lithoid-scintillating.png",
+    icon: "../src/icons/initial-traits/advanced-scintillating.png",
     nameEN: "Scintillating Skin",
     nameRU: "",
     traits: [
@@ -767,7 +767,7 @@ const speciesLithoidTraits: Array<ITraits> = [
   },
   {
     trait: "trait_advanced_volatile_excretions",
-    icon: "../src/icons/initial-traits/lithoid-volatile-excretions.png",
+    icon: "../src/icons/initial-traits/advanced-volatile-excretions.png",
     nameEN: "Volatile Excretions",
     nameRU: "",
     traits: [
@@ -786,18 +786,30 @@ const speciesLithoidTraits: Array<ITraits> = [
     trait: "trait_lithoid_budding",
     icon: "../src/icons/initial-traits/lithoid-budding.png",
     nameEN: "Crystallization",
-    nameRU: "Кристаллизация",
+    nameRU: "",
     traits: [
       ["good", "+0.02", "Monthly Organic Pop Assembly per Pop",],
+    ],
+    exclude: [
+      "trait_slow_breeders",
+      "trait_rapid_breeders",
+      "trait_rapid_breeders_lithoid",
+      "trait_necrophage",
+      "trait_clone_soldier_infertile",
+      "trait_clone_soldier_infertile_full_potential",
+      "trait_incubator",
+      "trait_plantoid_budding",
+      "trait_advanced_budding",
+      "trait_tiyanki",
     ],
   },
   {
     trait: "trait_adaptive_lithoid",
-    icon: "../src/icons/initial-traits/.png",
-    nameEN: "",
+    icon: "../src/icons/initial-traits/adaptive.png",
+    nameEN: "Adaptive",
     nameRU: "",
     traits: [
-      ["good", "+10%", "pop_environment_tolerance",],
+      ["good", "+10%", "Habitability",],
     ],
     exclude: [
       "trait_nonadaptive",
@@ -808,11 +820,11 @@ const speciesLithoidTraits: Array<ITraits> = [
   },
   {
     trait: "trait_rapid_breeders_lithoid",
-    icon: "../src/icons/initial-traits/.png",
-    nameEN: "",
+    icon: "../src/icons/initial-traits/rapid-breeders.png",
+    nameEN: "Rapid Breeders",
     nameRU: "",
     traits: [
-      ["good", "+10%", "pop_growth_speed",],
+      ["good", "+10%", "Growth Speed",],
     ],
     exclude: [
       "trait_slow_breeders",
