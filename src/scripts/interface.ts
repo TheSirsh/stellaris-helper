@@ -23,6 +23,7 @@ interface ITraits {
   trait: string,
   icon: string,
   image?: string,
+  border?: string,
   nameEN: string,
   nameRU: string,
   descrEN?: string,

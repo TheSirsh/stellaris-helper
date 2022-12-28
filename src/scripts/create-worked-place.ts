@@ -21,7 +21,7 @@ function createTraitList(parentElemnet: HTMLElement, arrayOfTraits: Array<ITrait
   for (let i = 0; i < arrayOfTraits.length; i++) {
     const traitContainer = createNewSimpleElement("li", `${cssClass}__trait-container`, mainSectionTraitList);
     traitContainer.classList.add(`${arrayOfTraits[i].trait}`)
-    if (arrayOfTraits[i].image) { createNewImageElement(`${cssClass}__trait-container-image_${arrayOfTraits[i].image}`, traitContainer, arrayOfTraits[i].icon, arrayOfTraits[i].nameEN);} 
+    if (arrayOfTraits[i].border) { createNewImageElement(`${cssClass}__trait-container-image_${arrayOfTraits[i].border}`, traitContainer, arrayOfTraits[i].icon, arrayOfTraits[i].nameEN);} 
       else { createNewImageElement(`${cssClass}__trait-container-image`, traitContainer, arrayOfTraits[i].icon, arrayOfTraits[i].nameEN); }
     createNewTextElement("span", `${cssClass}__trait-container-name`, traitContainer, arrayOfTraits[i].nameEN);
   }

@@ -6,7 +6,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Hazardous Weather",
     nameRU: "",
     icon: "../src/icons/planet-modifier/hazardous-weather.png",
-    image: "yellow",
+    border: "yellow",
     traits : [
       ["bad", "-10%", "Habitability"],
       ["bad", "-5%", "Happiness"],
@@ -19,7 +19,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Hostile Fauna",
     nameRU: "",
     icon: "../src/icons/planet-modifier/hostile-fauna.png",
-    image: "yellow",
+    border: "yellow",
     traits : [
       ["bad", "-10%", "Habitability"],
       ["bad", "-5%", "Happiness"],
@@ -31,7 +31,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Weak Magnetic Field",
     nameRU: "",
     icon: "../src/icons/planet-modifier/weak-magnetic-field.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-5%", "Habitability"],
       ["good", "-5%", "Pop Growth speed"],
@@ -42,7 +42,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Strong Magnetic Field",
     nameRU: "",
     icon: "../src/icons/planet-modifier/strong-magetic-field.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+5%", "Energy from Jobs"],
       ["good", "+5%", "Physics from Jobs"],
@@ -54,7 +54,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Unstable Tectonics",
     nameRU: "",
     icon: "../src/icons/planet-modifier/unstable-tectonics.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-10%", "Habitability"],
       ["bad", "-5%", "Happiness"],
@@ -66,7 +66,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Tidal Locked",
     nameRU: "",
     icon: "../src/icons/planet-modifier/tidal-locked.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-30%", "Max Districts"],
     ],
@@ -76,7 +76,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Asteroid Impacts",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-impacts.png",
-    image: "yellow",
+    border: "yellow",
     traits : [
       ["bad", "-5%", "Habitability"],
       ["good", "+5%", "Minerals from Jobs"],
@@ -88,7 +88,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Extensive Moon System",
     nameRU: "",
     icon: "../src/icons/planet-modifier/extensive-moon-system.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+10%", "Minerals from Jobs"],
       ["good", "+1", "Max Mining Districts"],
@@ -99,7 +99,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Carbon World",
     nameRU: "",
     icon: "../src/icons/planet-modifier/carbon-world.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+15%", "Minerals from Jobs"],
     ],
@@ -109,7 +109,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Wild Storms",
     nameRU: "",
     icon: "../src/icons/planet-modifier/wild-storms.png",
-    image: "yellow",
+    border: "yellow",
     traits : [
       ["bad", "-5%", "Habitability"],
       ["bad", "-5%", "Happiness"],
@@ -121,7 +121,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Low Gravity",
     nameRU: "",
     icon: "../src/icons/planet-modifier/low-gravity.png",
-    image: "yellow",
+    border: "yellow",
     traits : [
       ["good", "-10%", "Building cost"],
       ["bad", "-5%", "Habitability"],
@@ -132,7 +132,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "High Gravity",
     nameRU: "",
     icon: "../src/icons/planet-modifier/high-gravity.png",
-    image: "yellow",
+    border: "yellow",
     traits : [
       ["bad", "+10%", "Building cost"],
       ["bad", "+10%", "District cost"],
@@ -145,7 +145,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "High Quality Minerals",
     nameRU: "",
     icon: "../src/icons/planet-modifier/high-quality-minerals.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+15%", "Minerals from Jobs"],
       ["good", "+4", "Max Mining Districts"],
@@ -156,7 +156,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Exceptional Quality Minerals",
     nameRU: "",
     icon: "../src/icons/planet-modifier/exceptional-quality-minerals.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+25%", "Minerals from Jobs"],
       ["good", "+8", "Max Mining Districts"],
@@ -167,7 +167,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Poor Quality Minerals",
     nameRU: "",
     icon: "../src/icons/planet-modifier/poor-quality-minerals.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-25%", "Minerals from Jobs"],
       ["bad", "-3", "Max Mining Districts"],
@@ -178,7 +178,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Titanic Life",
     nameRU: "",
     icon: "../src/icons/planet-modifier/titanic-life.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+25%", "Society from Jobs"],
     ],
@@ -188,7 +188,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Delicious Titans",
     nameRU: "",
     icon: "../src/icons/planet-modifier/titanic-life.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+6", "Max Agriculture Districts"],
       ["good", "+30%", "Food from Jobs"],
@@ -201,7 +201,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Asteroid Belt",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-belt.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+10%", "Minerals from Jobs"],
       ["good", "+3", "Max Mining Districts"],
@@ -212,7 +212,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Natural Beauty",
     nameRU: "",
     icon: "../src/icons/planet-modifier/natural-beauty.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+5%", "Happiness"],
       ["good", "+25%", "Migration Pull"],
@@ -223,7 +223,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Atmospheric Aphrodisiac",
     nameRU: "",
     icon: "../src/icons/planet-modifier/atmospheric-aphrodisiac.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+5%", "Habitability"],
       ["good", "+10%", "Pop Growth speed"],
@@ -235,7 +235,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Atmospheric Hallucinogen",
     nameRU: "",
     icon: "../src/icons/planet-modifier/atmospheric-hallucinogen.png",
-    image: "yellow",
+    border: "yellow",
     traits : [
       ["good", "+5%", "Happiness"],
       ["good", "+10%", "Physics from Jobs"],
@@ -247,7 +247,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Filtered Atmospheric Hallucinogen",
     nameRU: "",
     icon: "../src/icons/planet-modifier/atmospheric-hallucinogen.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+10%", "Happiness"],
       ["good", "+10%", "Physics from Jobs"],
@@ -258,7 +258,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Lush",
     nameRU: "",
     icon: "../src/icons/planet-modifier/lush.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+10%", "Habitability"],
       ["good", "+20%", "Food from Jobs"],
@@ -270,7 +270,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Bleak",
     nameRU: "",
     icon: "../src/icons/planet-modifier/bleak.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-5%", "Habitability"],
       ["bad", "-10%", "Food from Jobs"],
@@ -282,7 +282,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Irradiated",
     nameRU: "",
     icon: "../src/icons/planet-modifier/irradiated-planet.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "−10%", "Habitability"],
       ["bad", "-20%", "Happiness"],
@@ -296,7 +296,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/lush.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-1", "Max Districts"],
     ],
@@ -306,7 +306,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-from-space.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-30%", "Minerals from Jobs"],
     ],
@@ -316,7 +316,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-from-space.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-10%", "Minerals from Jobs"],
     ],
@@ -326,7 +326,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/wasteland.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-20%", "Happiness"],
     ],
@@ -336,7 +336,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/lush.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+20%", "Happiness"],
     ],
@@ -346,7 +346,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Subterranean Civilization",
     nameRU: "",
     icon: "../src/icons/planet-modifier/hollow-planet.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+10%", "Society from Jobs"],
     ],
@@ -356,7 +356,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Subterranean Cities",
     nameRU: "",
     icon: "../src/icons/planet-modifier/hollow-planet.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+3", "Max Districts"],
     ],
@@ -366,7 +366,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "Abandoned Terraforming Project",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-impacts.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-20%", "Food from Jobs"],
       ["bad", "-10%", "Happiness"],
@@ -377,7 +377,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/lush.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+20%", "Pop Growth Speed"],
     ],
@@ -387,7 +387,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/hostile-fauna.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-10%", "Happiness"],
     ],
@@ -397,7 +397,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/factory.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "-0.25", "planet_districts_cost_mult"],
     ],
@@ -407,7 +407,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/irradiated-planet.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.1", "biological_pop_happiness"],
       ["bad", "-0.1", "lithoid_pop_happiness"],
@@ -418,7 +418,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-impacts.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+0.1", "planet_buildings_cost_mult"],
     ],
@@ -428,7 +428,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/irradiated-planet.png",
-    image: "yellow",
+    border: "yellow",
     traits : [
       ["good", "+0.1", "planet_jobs_physics_research_produces_mult"],
       ["good", "+0.1", "planet_jobs_society_research_produces_mult"],
@@ -441,7 +441,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/unstable-tectonics.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.05", "pop_happiness"],
     ],
@@ -451,7 +451,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-belt.png",
-    image: "green",
+    border: "green",
     traits : [
       ["bad", "+0.1", "pop_happiness"],
     ],
@@ -461,7 +461,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-impacts.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.05", "pop_happiness"],
     ],
@@ -471,7 +471,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/strong-magetic-field.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+0.2", "planet_jobs_physics_research_produces_mult"],
       ["good", "+0.2", "planet_jobs_society_research_produces_mult"],
@@ -483,7 +483,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/wasteland.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.2", "planet_jobs_food_produces_mult"],
     ],
@@ -493,7 +493,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/nationalist-corruption.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.1", "planet_jobs_produces_mult"],
     ],
@@ -503,7 +503,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-separatist-supporter.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.4", "planet_jobs_produces_mult"],
     ],
@@ -513,7 +513,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-separatist-supporter.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.1", "pop_happiness"],
     ],
@@ -523,7 +523,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/unstable-tectonics.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.25", "pop_happiness"],
       ["bad", "-0.25", "pop_environment_tolerance"],
@@ -534,7 +534,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/carbon-world.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-0.25", "pop_happiness"],
       ["bad", "-0.25", "pop_environment_tolerance"],
@@ -545,7 +545,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/factory.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "+10", "country_first_league_homeworld_society_research_produces_add"],
       ["good", "+10", "country_first_league_homeworld_physics_research_produces_add"],
@@ -557,7 +557,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-surface.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "-0.1", "planet_housing_mult"],
       ["good", "0.15", "planet_jobs_society_research_produces_mult"],
@@ -568,7 +568,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-surface.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "-0.1", "planet_housing_mult"],
       ["good", "0.15", "planet_jobs_society_research_produces_mult"],
@@ -580,7 +580,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-surface.png",
-    image: "green",
+    border: "green",
     traits : [
       ["good", "-0.1", "planet_housing_mult"],
       ["good", "0.15", "planet_jobs_society_research_produces_mult"],
@@ -593,7 +593,7 @@ const planetModifier: Array<ITraits> = [
     nameEN: "123456789",
     nameRU: "",
     icon: "../src/icons/planet-modifier/starvation.png",
-    image: "red",
+    border: "red",
     traits : [
       ["bad", "-20", "planet_stability_add"],
     ],
