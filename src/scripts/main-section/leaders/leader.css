@@ -16,6 +16,7 @@
 .leader-species__traitlist,
 .leader__traitlist {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   height: auto;
@@ -23,15 +24,23 @@
 }
 
 .leader-species__trait-container,
+.leader__trait-container,
+.leader-species__descr-text,
+.leader__button,
+.leader__button_active {
+  background-color: #1d2b25;
+  border: 0.25vw solid #131d1c;
+  border-radius: 1vw;
+}
+
+.leader-species__trait-container,
 .leader__trait-container {
   display: flex;
   align-items: center;
-  width: 20vw;
+  width: 14vw;
   height: 3.5vw;
   margin: 0.5vw;
   cursor: pointer;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
 }
 
 .leader-species__trait-container:hover,
@@ -41,16 +50,23 @@
 }
 
 .leader-species__trait-container_active,
-.leader__trait-container_active {
-  background-color: #58b698;
-  color: black;
+.leader__trait-container_active,
+.leader__button_active {
+  border: 0.25vw solid #ec9240;
 }
 
 .leader-species__trait-container-image,
 .leader__trait-container-image {
-  width: 3vw;
   height: 3vw;
   margin: 0px 1vw;
+}
+
+.leader-species__trait-container-image {
+  width: 3vw;
+}
+
+.leader__trait-container-image {
+  width: 2vw;
 }
 
 .leader-species__trait-container-name,
@@ -77,58 +93,32 @@
   display: block;
   width: 15vw;
   height: 15vw;
-  border: 0.25vw solid #58b698;
-  border-radius: 50%;
 }
 
-.leader__descr-planet {
-  font-size: 1vw;
-  text-align: justify;
-  border: 0.25vw solid #58b698;
-  width: 100%;
-  height: auto;
-  min-height: 5vw;
-  padding: 1vw;
-  border-radius: 1vw;
-}
-
-.leader__button {
+.leader__button,
+.leader__button_active {
   font-size: 1.5vw;
   text-align: center;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
   padding: 1vw;
   width: auto;
   height: 2vw;
   cursor: pointer;
-  color: red;
+}
+
+.leader__button {
+  cursor: no-drop;
 }
 
 .leader__button_active {
-  color: white
+  cursor: pointer;
 }
 
-.leader__button:hover {
+.leader__button:hover,
+.leader__button_active:hover {
   background-color: #58b698;
 }
 
 .leader__descr__trait {
   background-color: black;
   padding: 1vw;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
-}
-
-.green {
-  color: green;
-  padding-right: 0.5vw;
-}
-
-.red {
-  color: red;
-  padding-right: 0.5vw;
-}
-
-.white {
-  color: white;
 }
