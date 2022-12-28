@@ -45,11 +45,27 @@
   border: 0.25vw solid #ec9240;
 }
 
-.planet-__trait-container-image,
-.planet__trait-container-image {
+.planet__trait-container-image_yellow,
+.planet__trait-container-image_green,
+.planet__trait-container-image_red {
   width: 3vw;
   height: 3vw;
   margin: 0px 1vw;
+}
+
+.planet__trait-container-image_yellow {
+  background-color: #968835;
+  border-radius: 50%;
+}
+
+.planet__trait-container-image_green {
+  background-color: #4a725d;
+  border-radius: 50%;
+}
+
+.planet__trait-container-image_red {
+  background-color: #903b38;
+  border-radius: 50%;
 }
 
 .planet-__trait-container-name,
