@@ -240,7 +240,7 @@ const leaderScientistBiological: Array<ITraits> = [
   {
     trait: "leader_trait_mindful",
     icon: "../src/icons/leader-traits/careful.png",
-    nameEN: "Archaeologist",
+    nameEN: "Careful",
     nameRU: "",
     traits: [
       ["good", "+5%", "Anomaly Discovery Chance",],

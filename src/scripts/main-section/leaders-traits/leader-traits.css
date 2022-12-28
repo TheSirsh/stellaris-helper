@@ -9,21 +9,29 @@
 
 .leader-traits__traitlist {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 65%;
   height: auto;
   padding: 0px;
 }
 
+.leader-traits__trait-container,
+.leader-traits__descr-text,
+.leader-traits__descr__trait,
+.leader-traits__button,
+.leader-traits__button_active {
+  background-color: #1d2b25;
+  border: 0.25vw solid #131d1c;
+  border-radius: 1vw;
+}
+
 .leader-traits__trait-container {
   display: flex;
   align-items: center;
-  width: 20vw;
-  height: 3.5vw;
+  width: 15vw;
+  height: 3vw;
   margin: 0.5vw;
   cursor: pointer;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
 }
 
 .leader-traits__trait-container:hover {
@@ -31,14 +39,14 @@
   color: black;
 }
 
-.leader-traits__trait-container_active {
-  background-color: #58b698;
-  color: black;
+.leader-traits__trait-container_active,
+.leader-traits__button_active  {
+  border: 0.25vw solid #ec9240;
 }
 
 .leader-traits__trait-container-image {
-  width: 3vw;
-  height: 3vw;
+  width: 2.5vw;
+  height: 2.5vw;
   margin: 0px 1vw;
 }
 
@@ -64,55 +72,29 @@
 .leader-traits__descr-text {
   font-size: 1vw;
   text-align: justify;
-  border: 0.25vw solid #58b698;
   width: 100%;
   height: auto;
-  min-height: 5vw;
+  min-height: 8vw;
   padding: 1vw;
-  border-radius: 1vw;
 }
 
 .leader-traits__button {
   font-size: 1.5vw;
   text-align: center;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
   padding: 1vw;
   width: auto;
   height: 2vw;
-  cursor: pointer;
-  color: red;
+}
+
+.leader-traits__button {
+  cursor: no-drop;
 }
 
 .leader-traits__button_active {
-  color: white
+  cursor: pointer;
 }
 
-.leader-traits__button:hover {
+.leader-traits__button:hover,
+.leader-traits__button_active:hover {
   background-color: #58b698;
-}
-
-.leader-traits__descr__trait {
-  background-color: black;
-  padding: 1vw;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
-}
-
-.green {
-  color: green;
-  padding-right: 0.5vw;
-}
-
-.red {
-  color: red;
-  padding-right: 0.5vw;
-}
-
-.white {
-  color: white;
-}
-
-.yellow {
-  color: yellow;
 }

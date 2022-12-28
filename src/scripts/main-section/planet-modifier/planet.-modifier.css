@@ -112,17 +112,3 @@
   border: 0.25vw solid #58b698;
   border-radius: 1vw;
 }
-
-.green {
-  color: green;
-  padding-right: 0.5vw;
-}
-
-.red {
-  color: red;
-  padding-right: 0.5vw;
-}
-
-.white {
-  color: white;
-}
