@@ -132,7 +132,7 @@ const planetModifier: Array<ITraits> = [
     trait: "mineral_rich",
     nameEN: "High Quality Minerals",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/high-quality-minerals.png",
     traits : [
       ["good", "+15%", "Minerals from Jobs"],
       ["good", "+4", "Max Mining Districts"],
@@ -142,7 +142,7 @@ const planetModifier: Array<ITraits> = [
     trait: "ultra_rich",
     nameEN: "Exceptional Quality Minerals",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/exceptional-quality-minerals.png",
     traits : [
       ["good", "+25%", "Minerals from Jobs"],
       ["good", "+8", "Max Mining Districts"],
@@ -171,7 +171,7 @@ const planetModifier: Array<ITraits> = [
     trait: "eat_the_titans",
     nameEN: "Delicious Titans",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/delicious-titans.png",
+    icon: "../src/icons/planet-modifier/titanic-life.png",
     traits : [
       ["good", "+6", "Max Agriculture Districts"],
       ["good", "+30%", "Food from Jobs"],
@@ -225,7 +225,7 @@ const planetModifier: Array<ITraits> = [
     trait: "atmospheric_hallucinogen_good",
     nameEN: "Filtered Atmospheric Hallucinogen",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/filtred-atmospheric-hallucinogen.png",
+    icon: "../src/icons/planet-modifier/atmospheric-hallucinogen.png",
     traits : [
       ["good", "+10%", "Happiness"],
       ["good", "+10%", "Physics from Jobs"],
@@ -270,7 +270,7 @@ const planetModifier: Array<ITraits> = [
     trait: "migrating_forests_2",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/migrating-forest.png",
+    icon: "../src/icons/planet-modifier/lush.png",
     traits : [
       ["bad", "-1", "Max Districts"],
     ],
@@ -279,18 +279,16 @@ const planetModifier: Array<ITraits> = [
     trait: "colony_enclaves",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/colony-enclaves.png",
+    icon: "../src/icons/planet-modifier/planet-from-space.png",
     traits : [
       ["bad", "-30%", "Minerals from Jobs"],
     ],
   },
-
-
   {
     trait: "primitive_reservation",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/primitive-reservation.png",
+    icon: "../src/icons/planet-modifier/planet-from-space.png",
     traits : [
       ["bad", "-10%", "Minerals from Jobs"],
     ],
@@ -299,7 +297,7 @@ const planetModifier: Array<ITraits> = [
     trait: "damaged_ecology",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/damaged-ecology.png",
+    icon: "../src/icons/planet-modifier/wasteland.png",
     traits : [
       ["bad", "-20%", "Happiness"],
     ],
@@ -308,7 +306,7 @@ const planetModifier: Array<ITraits> = [
     trait: "friendly_trees",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/friendly-trees.png",
+    icon: "../src/icons/planet-modifier/lush.png",
     traits : [
       ["good", "+20%", "Happiness"],
     ],
@@ -317,7 +315,7 @@ const planetModifier: Array<ITraits> = [
     trait: "subterranean_civilization",
     nameEN: "Subterranean Civilization",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/subterranean-civilization.png",
+    icon: "../src/icons/planet-modifier/hollow-planet.png",
     traits : [
       ["good", "+10%", "Society from Jobs"],
     ],
@@ -326,7 +324,7 @@ const planetModifier: Array<ITraits> = [
     trait: "subterranean_expansion",
     nameEN: "Subterranean Cities",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/subterranean-expansion.png",
+    icon: "../src/icons/planet-modifier/hollow-planet.png",
     traits : [
       ["good", "+3", "Max Districts"],
     ],
@@ -335,7 +333,7 @@ const planetModifier: Array<ITraits> = [
     trait: "abandoned_terraforming",
     nameEN: "Abandoned Terraforming Project",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/abandoned-terraforming.png",
+    icon: "../src/icons/planet-modifier/asteroid-impacts.png",
     traits : [
       ["bad", "-20%", "Food from Jobs"],
       ["bad", "-10%", "Happiness"],
@@ -345,7 +343,7 @@ const planetModifier: Array<ITraits> = [
     trait: "gaia_world",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/lush.png",
     traits : [
       ["good", "+20%", "Pop Growth Speed"],
     ],
@@ -354,7 +352,7 @@ const planetModifier: Array<ITraits> = [
     trait: "mutant_stalker",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/hostile-fauna.png",
     traits : [
       ["bad", "-10%", "Happiness"],
     ],
@@ -363,7 +361,7 @@ const planetModifier: Array<ITraits> = [
     trait: "wasteland_infrastructure",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/factory.png",
     traits : [
       ["good", "-0.25", "planet_districts_cost_mult"],
     ],
@@ -372,7 +370,7 @@ const planetModifier: Array<ITraits> = [
     trait: "wasteland_radiation",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/irradiated-planet.png",
     traits : [
       ["bad", "-0.1", "biological_pop_happiness"],
       ["bad", "-0.1", "lithoid_pop_happiness"],
@@ -382,27 +380,16 @@ const planetModifier: Array<ITraits> = [
     trait: "wasteland_orbital_debris",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/asteroid-impacts.png",
     traits : [
       ["good", "+0.1", "planet_buildings_cost_mult"],
-    ],
-  },
-  {
-    trait: "assist_research",
-    nameEN: "123456789",
-    nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
-    traits : [
-      ["good", "+0.1", "planet_jobs_physics_research_produces_mult"],
-      ["good", "+0.1", "planet_jobs_society_research_produces_mult"],
-      ["good", "+0.1", "planet_jobs_engineering_research_produces_mult"],
     ],
   },
   {
     trait: "planet_uncertain_past",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/irradiated-planet.png",
     traits : [
       ["good", "+0.1", "planet_jobs_physics_research_produces_mult"],
       ["good", "+0.1", "planet_jobs_society_research_produces_mult"],
@@ -414,7 +401,7 @@ const planetModifier: Array<ITraits> = [
     trait: "recent_quake",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/unstable-tectonics.png",
     traits : [
       ["bad", "-0.05", "pop_happiness"],
     ],
@@ -423,7 +410,7 @@ const planetModifier: Array<ITraits> = [
     trait: "recent_comet",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/asteroid-belt.png",
     traits : [
       ["bad", "+0.1", "pop_happiness"],
     ],
@@ -432,7 +419,7 @@ const planetModifier: Array<ITraits> = [
     trait: "recent_impact",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/asteroid-impacts.png",
     traits : [
       ["bad", "-0.05", "pop_happiness"],
     ],
@@ -441,7 +428,7 @@ const planetModifier: Array<ITraits> = [
     trait: "magnetic_research_boost",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/strong-magetic-field.png",
     traits : [
       ["good", "+0.2", "planet_jobs_physics_research_produces_mult"],
       ["good", "+0.2", "planet_jobs_society_research_produces_mult"],
@@ -452,7 +439,7 @@ const planetModifier: Array<ITraits> = [
     trait: "forest_fire",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/wasteland.png",
     traits : [
       ["bad", "-0.2", "planet_jobs_food_produces_mult"],
     ],
@@ -461,7 +448,7 @@ const planetModifier: Array<ITraits> = [
     trait: "nationalist_corruption",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/nationalist-corruption.png",
     traits : [
       ["bad", "-0.1", "planet_jobs_produces_mult"],
     ],
@@ -470,7 +457,7 @@ const planetModifier: Array<ITraits> = [
     trait: "planet_separatist_strikes",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/planet-separatist-supporter.png",
     traits : [
       ["bad", "-0.4", "planet_jobs_produces_mult"],
     ],
@@ -479,7 +466,7 @@ const planetModifier: Array<ITraits> = [
     trait: "planet_separatist_supporter",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/planet-separatist-supporter.png",
     traits : [
       ["bad", "-0.1", "pop_happiness"],
     ],
@@ -488,7 +475,7 @@ const planetModifier: Array<ITraits> = [
     trait: "stellarite_high_temp",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/unstable-tectonics.png",
     traits : [
       ["bad", "-0.25", "pop_happiness"],
       ["bad", "-0.25", "pop_environment_tolerance"],
@@ -498,7 +485,7 @@ const planetModifier: Array<ITraits> = [
     trait: "stellarite_low_temp",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/carbon-world.png",
     traits : [
       ["bad", "-0.25", "pop_happiness"],
       ["bad", "-0.25", "pop_environment_tolerance"],
@@ -508,7 +495,7 @@ const planetModifier: Array<ITraits> = [
     trait: "first_league_homeworld",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/factory.png",
     traits : [
       ["good", "+10", "country_first_league_homeworld_society_research_produces_add"],
       ["good", "+10", "country_first_league_homeworld_physics_research_produces_add"],
@@ -519,7 +506,7 @@ const planetModifier: Array<ITraits> = [
     trait: "turtle_world_modifier",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/planet-surface.png",
     traits : [
       ["good", "-0.1", "planet_housing_mult"],
       ["good", "0.15", "planet_jobs_society_research_produces_mult"],
@@ -529,7 +516,7 @@ const planetModifier: Array<ITraits> = [
     trait: "turtle_world_modifier_alone",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/planet-surface.png",
     traits : [
       ["good", "-0.1", "planet_housing_mult"],
       ["good", "0.15", "planet_jobs_society_research_produces_mult"],
@@ -540,7 +527,7 @@ const planetModifier: Array<ITraits> = [
     trait: "turtle_world_slaves_modifier",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/planet-surface.png",
     traits : [
       ["good", "-0.1", "planet_housing_mult"],
       ["good", "0.15", "planet_jobs_society_research_produces_mult"],
@@ -549,25 +536,25 @@ const planetModifier: Array<ITraits> = [
     ],
   },
   {
-    trait: "123456789",
+    trait: "relentless_industrialists_tomb",
     nameEN: "123456789",
     nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
+    icon: "../src/icons/planet-modifier/starvation.png",
     traits : [
-      ["good", "123456789", "123456789"],
+      ["bad", "-20", "planet_stability_add"],
     ],
   },
 
   
-  {
-    trait: "123456789",
-    nameEN: "123456789",
-    nameRU: "",
-    icon: "../src/icons/planet-modifier/123456789.png",
-    traits : [
-      ["good", "123456789", "123456789"],
-    ],
-  },
+  //{
+ //   trait: "123456789",
+ //   nameEN: "123456789",
+ //   nameRU: "",
+ //   icon: "../src/icons/planet-modifier/123456789.png",
+//    traits : [
+//      ["good", "123456789", "123456789"],
+//    ],
+//  },
 
 
 
