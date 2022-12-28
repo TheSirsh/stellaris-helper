@@ -9,21 +9,29 @@
 
 .climate__traitlist {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 65%;
   height: auto;
   padding: 0px;
 }
 
+.climate__trait-container,
+.climate__descr-text,
+.climate__descr__trait,
+.climate__button,
+.climate__button_active {
+  background-color: #1d2b25;
+  border: 0.25vw solid #131d1c;
+  border-radius: 1vw;
+}
+
 .climate__trait-container {
   display: flex;
   align-items: center;
-  width: 20vw;
-  height: 3.5vw;
+  width: 15vw;
+  height: 3vw;
   margin: 0.5vw;
   cursor: pointer;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
 }
 
 .climate__trait-container:hover {
@@ -31,14 +39,14 @@
   color: black;
 }
 
-.climate__trait-container_active {
-  background-color: #58b698;
-  color: black;
+.climate__trait-container_active,
+.climate__button_active {
+  border: 0.25vw solid #ec9240;
 }
 
 .climate__trait-container-image {
-  width: 3vw;
-  height: 3vw;
+  width: 2.5vw;
+  height: 2.5vw;
   margin: 0px 1vw;
 }
 
@@ -70,54 +78,34 @@
   border-radius: 50%;
 }
 
-.climate__descr-planet {
+.climate__descr-text {
   font-size: 1vw;
   text-align: justify;
-  border: 0.25vw solid #58b698;
   width: 100%;
   height: auto;
-  min-height: 5vw;
+  min-height: 10vw;
   padding: 1vw;
-  border-radius: 1vw;
 }
 
-.climate__button {
+.climate__button,
+.climate__button_active  {
   font-size: 1.5vw;
   text-align: center;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
   padding: 1vw;
   width: auto;
   height: 2vw;
-  cursor: pointer;
-  color: red;
 }
 
-.climate__button_active {
-  color: white
-}
-
-.climate__button:hover {
+.climate__button:hover,
+.climate__button_active:hover {
   background-color: #58b698;
 }
 
-.climate__descr__trait {
-  background-color: black;
-  padding: 1vw;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
+.climate__button {
+  cursor: no-drop;
 }
 
-.green {
-  color: green;
-  padding-right: 0.5vw;
-}
 
-.red {
-  color: red;
-  padding-right: 0.5vw;
-}
-
-.white {
-  color: white;
+.climate__button_active {
+  cursor: pointer;
 }
