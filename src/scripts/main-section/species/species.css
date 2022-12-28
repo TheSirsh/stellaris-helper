@@ -93,14 +93,6 @@
   min-height: 5vw;
 }
 
-.green {
-  color: green;
-}
-
-.red {
-  color: red;
-}
-
 .species__button,
 .species__button_active {
   background-color: #1d2b25;

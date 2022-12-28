@@ -9,21 +9,28 @@
 
 .biological__traitlist {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 65%;
   height: auto;
   padding: 0px;
 }
 
+.biological__trait-container,
+.biological__descr-text,
+.biological__button,
+.biological__button_active  {
+  background-color: #1d2b25;
+  border: 0.25vw solid #131d1c;
+  border-radius: 1vw;
+}
+
 .biological__trait-container {
   display: flex;
   align-items: center;
-  width: 20vw;
+  width: 15vw;
   height: 3.5vw;
   margin: 0.5vw;
   cursor: pointer;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
 }
 
 .biological__trait-container:hover {
@@ -31,9 +38,9 @@
   color: black;
 }
 
-.biological__trait-container_active {
-  background-color: #58b698;
-  color: black;
+.biological__trait-container_active,
+.biological__button_active {
+  border: 0.25vw solid #ec9240;
 }
 
 .biological__trait-container-image {
@@ -65,32 +72,33 @@
 .biological__descr-text {
   font-size: 1vw;
   text-align: justify;
-  border: 0.25vw solid #58b698;
   width: 100%;
   height: auto;
-  min-height: 5vw;
+  min-height: 9vw;
   padding: 1vw;
-  border-radius: 1vw;
 }
 
-.biological__button {
+.biological__button,
+.biological__button_active {
   font-size: 1.5vw;
   text-align: center;
-  border: 0.25vw solid #58b698;
-  border-radius: 1vw;
   padding: 1vw;
   width: auto;
   height: 2vw;
   cursor: pointer;
-  color: red;
+}
+
+.biological__button:hover,
+.biological__button_active:hover {
+  background-color: #58b698;
+}
+
+.biological__button {
+  cursor: no-drop;
 }
 
 .biological__button_active {
-  color: white
-}
-
-.biological__button:hover {
-  background-color: #58b698;
+  cursor: pointer;
 }
 
 .biological__descr__trait {
@@ -98,18 +106,4 @@
   padding: 1vw;
   border: 0.25vw solid #58b698;
   border-radius: 1vw;
-}
-
-.green {
-  color: green;
-  padding-right: 0.5vw;
-}
-
-.red {
-  color: red;
-  padding-right: 0.5vw;
-}
-
-.white {
-  color: white;
 }
