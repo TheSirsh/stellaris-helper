@@ -26,22 +26,21 @@
 .species__trait-container,
 .species-bio__trait-container,
 .species-hm__trait-container {
+  background-color: #1d2b25;
   display: flex;
   align-items: center;
   width: 30%;
   height: 3.5vw;
   margin: 0.5vw;
   cursor: pointer;
-  border: 0.25vw solid #58b698;
+  border: 0.25vw solid #131d1c;
   border-radius: 1vw;
 }
 
 .species__trait-container_active,
 .species-bio__trait-container_active,
 .species-hm__trait-container_active {
-  background-color: #58b698;
-  border: 0.25vw solid darkgreen;
-  color: black;
+  border: 0.25vw solid #ec9240;
 }
 
 .species__trait-container:hover,
@@ -86,7 +85,12 @@
 .species__descr-text {
   text-align: justify;
   width: 100%;
-  font-size: 1vw
+  font-size: 1vw;
+  background-color: #1d2b25;
+  border: 0.25vw solid #131d1c;
+  border-radius: 1vw;
+  padding: 1vw;
+  min-height: 5vw;
 }
 
 .green {
@@ -99,6 +103,7 @@
 
 .species__button,
 .species__button_active {
+  background-color: #1d2b25;
   text-align: center;
   font-size: 1.5vw;
   width: 9vw;
@@ -108,16 +113,17 @@
 }
 
 .species__button {
-  border: 0.25vw solid red;
+  border: 0.25vw solid #131d1c;
   cursor: no-drop;
 }
 
 .species__button_active {
-  border: 0.25vw solid #58b698;
+  border: 0.25vw solid #ec9240;
   cursor: pointer;
 }
 
-.species__button:hover {
+.species__button:hover,
+.species__button_active:hover {
   background-color: #58b698;
   color: black;
 }

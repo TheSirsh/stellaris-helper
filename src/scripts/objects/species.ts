@@ -25,9 +25,9 @@ const species: Array<ITraits> = [
     },
     {
       trait: "NOTVALUEABLE-biological",
-      nameEN: "Not Hive-Minded",
+      nameEN: "Biological",
       nameRU: "",
-      icon: "../src/icons/species/not-hive-mind.png",
+      icon: "../src/icons/species/biological.png",
       traits : [
         ["empty", "", "Additional Traits are Available"]
       ]
