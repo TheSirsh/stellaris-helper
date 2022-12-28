@@ -65,7 +65,8 @@
   display: block;
   width: 15vw;
   height: 15vw;
-  border: 0.25vw solid #58b698;
+  border: 0.25vw solid #5086d0;
+  background-color: #31494d;
   border-radius: 50%;
 }
 
