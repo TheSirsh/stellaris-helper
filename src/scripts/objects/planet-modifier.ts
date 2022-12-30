@@ -293,7 +293,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "migrating_forests_2",
-    nameEN: "123456789",
+    nameEN: "Docile Migration Forests",
     nameRU: "",
     icon: "../src/icons/planet-modifier/lush.png",
     border: "red",
@@ -303,7 +303,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "colony_enclaves",
-    nameEN: "123456789",
+    nameEN: "Fortifiled Enclaves",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-from-space.png",
     border: "red",
@@ -313,7 +313,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "primitive_reservation",
-    nameEN: "123456789",
+    nameEN: "Allien Reservation",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-from-space.png",
     border: "red",
@@ -323,7 +323,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "damaged_ecology",
-    nameEN: "123456789",
+    nameEN: "Damaged Ecology",
     nameRU: "",
     icon: "../src/icons/planet-modifier/wasteland.png",
     border: "red",
@@ -333,7 +333,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "friendly_trees",
-    nameEN: "123456789",
+    nameEN: "Forest Adaptation",
     nameRU: "",
     icon: "../src/icons/planet-modifier/lush.png",
     border: "green",
@@ -374,7 +374,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "gaia_world",
-    nameEN: "123456789",
+    nameEN: "Ancient Terraforming",
     nameRU: "",
     icon: "../src/icons/planet-modifier/lush.png",
     border: "green",
@@ -384,7 +384,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "mutant_stalker",
-    nameEN: "123456789",
+    nameEN: "Marauding Creature",
     nameRU: "",
     icon: "../src/icons/planet-modifier/hostile-fauna.png",
     border: "red",
@@ -394,7 +394,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "wasteland_infrastructure",
-    nameEN: "123456789",
+    nameEN: "Surviving Infrastructure",
     nameRU: "",
     icon: "../src/icons/planet-modifier/factory.png",
     border: "green",
@@ -404,7 +404,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "wasteland_radiation",
-    nameEN: "123456789",
+    nameEN: "Wasteland Radiation",
     nameRU: "",
     icon: "../src/icons/planet-modifier/irradiated-planet.png",
     border: "red",
@@ -415,17 +415,17 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "wasteland_orbital_debris",
-    nameEN: "123456789",
+    nameEN: "Orbital Debris",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-impacts.png",
     border: "green",
     traits : [
-      ["good", "+0.1", "planet_buildings_cost_mult"],
+      ["bad", "-0.1", "planet_buildings_cost_mult"],
     ],
   },
   {
     trait: "planet_uncertain_past",
-    nameEN: "123456789",
+    nameEN: "Uncertain History",
     nameRU: "",
     icon: "../src/icons/planet-modifier/irradiated-planet.png",
     border: "yellow",
@@ -438,7 +438,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "recent_quake",
-    nameEN: "123456789",
+    nameEN: "Recent Tectonic Event",
     nameRU: "",
     icon: "../src/icons/planet-modifier/unstable-tectonics.png",
     border: "red",
@@ -448,7 +448,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "recent_comet",
-    nameEN: "123456789",
+    nameEN: "Comet Signted",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-belt.png",
     border: "green",
@@ -458,7 +458,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "recent_impact",
-    nameEN: "123456789",
+    nameEN: "Recent Impact",
     nameRU: "",
     icon: "../src/icons/planet-modifier/asteroid-impacts.png",
     border: "red",
@@ -468,7 +468,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "magnetic_research_boost",
-    nameEN: "123456789",
+    nameEN: "Magnetic Miracle",
     nameRU: "",
     icon: "../src/icons/planet-modifier/strong-magetic-field.png",
     border: "green",
@@ -480,7 +480,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "forest_fire",
-    nameEN: "123456789",
+    nameEN: "Forest Fire",
     nameRU: "",
     icon: "../src/icons/planet-modifier/wasteland.png",
     border: "red",
@@ -490,7 +490,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "nationalist_corruption",
-    nameEN: "123456789",
+    nameEN: "Nationalist Corruption",
     nameRU: "",
     icon: "../src/icons/planet-modifier/nationalist-corruption.png",
     border: "red",
@@ -500,7 +500,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "planet_separatist_strikes",
-    nameEN: "123456789",
+    nameEN: "Separatist Strikes",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-separatist-supporter.png",
     border: "red",
@@ -510,7 +510,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "planet_separatist_supporter",
-    nameEN: "123456789",
+    nameEN: "planet separatist Supporter",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-separatist-supporter.png",
     border: "red",
@@ -520,7 +520,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "stellarite_high_temp",
-    nameEN: "123456789",
+    nameEN: "Increased Temperature",
     nameRU: "",
     icon: "../src/icons/planet-modifier/unstable-tectonics.png",
     border: "red",
@@ -531,7 +531,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "stellarite_low_temp",
-    nameEN: "123456789",
+    nameEN: "Lowered Temperature",
     nameRU: "",
     icon: "../src/icons/planet-modifier/carbon-world.png",
     border: "red",
@@ -542,7 +542,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "first_league_homeworld",
-    nameEN: "123456789",
+    nameEN: "First League Capital",
     nameRU: "",
     icon: "../src/icons/planet-modifier/factory.png",
     border: "green",
@@ -554,7 +554,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "turtle_world_modifier",
-    nameEN: "123456789",
+    nameEN: "Moving Islands",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-surface.png",
     border: "green",
@@ -565,7 +565,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "turtle_world_modifier_alone",
-    nameEN: "123456789",
+    nameEN: "On the Backs of Nemma",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-surface.png",
     border: "green",
@@ -577,7 +577,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "turtle_world_slaves_modifier",
-    nameEN: "123456789",
+    nameEN: "Enslaved Nemma",
     nameRU: "",
     icon: "../src/icons/planet-modifier/planet-surface.png",
     border: "green",
@@ -590,7 +590,7 @@ const planetModifier: Array<ITraits> = [
   },
   {
     trait: "relentless_industrialists_tomb",
-    nameEN: "123456789",
+    nameEN: "Environmental Deterioration",
     nameRU: "",
     icon: "../src/icons/planet-modifier/starvation.png",
     border: "red",
@@ -598,20 +598,6 @@ const planetModifier: Array<ITraits> = [
       ["bad", "-20", "planet_stability_add"],
     ],
   },
-
-  
-  //{
- //   trait: "123456789",
- //   nameEN: "123456789",
- //   nameRU: "",
- //   icon: "../src/icons/planet-modifier/123456789.png",
-//    traits : [
-//      ["good", "123456789", "123456789"],
-//    ],
-//  },
-
-
-
 ]
 
 export { planetModifier }
