@@ -1,7 +1,7 @@
 import { createWorkedPlace, createTraitList, createDescrBlock }from "../../create-worked-place.js";
-import { createNewSimpleElement } from "../../create-functions.js";
 import { planetModifierText } from "../../objects/planet-modifier-text.js";
 import { planetModifier } from "../../objects/planet-modifier.js";
+import { selectPlanetModifier } from "./planet-modifier-selector.js";
 
 function createPlanetModifier() {
   
@@ -14,7 +14,7 @@ function createPlanetModifier() {
 
   speciesContainerArray.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
-//      selectLeaderSpecies()
+      selectPlanetModifier(i);
       localStorage.setItem("planet", planetModifier[i].trait);
       elem.classList.toggle("planet__trait-container_active");
     })
