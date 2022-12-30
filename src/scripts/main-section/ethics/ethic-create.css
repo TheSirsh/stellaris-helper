@@ -1,4 +1,4 @@
-.goverment__workedplace {
+.ethic__workedplace {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -7,7 +7,7 @@
   padding: 0px;
 }
 
-.goverment__traitlist {
+.ethic__traitlist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
@@ -16,7 +16,7 @@
   padding: 0px;
 }
 
-.goverment__trait-container {
+.ethic__trait-container {
   display: flex;
   align-items: center;
   width: 15vw;
@@ -26,51 +26,51 @@
   border: 0.25vw solid #58b698;
 }
 
-.goverment__trait-container,
-.goverment__descr-goverment,
-.goverment__button,
-.goverment__button_active {
+.ethic__trait-container,
+.ethic__descr-ethic,
+.ethic__button,
+.ethic__button_active {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
 }
 
-.goverment__trait-container:hover {
+.ethic__trait-container:hover {
   background-color: #58b698;
   color: black;
 }
 
-.goverment__trait-container_active,
-.goverment__button_active {
+.ethic__trait-container_active,
+.ethic__button_active {
   border: 0.25vw solid #ec9240;
 }
 
-.goverment__trait-container-image {
+.ethic__trait-container-image {
   width: 3vw;
   height: 3vw;
   margin: 0px 1vw;
 }
 
-.goverment__trait-container-name {
+.ethic__trait-container-name {
   display: block;
   align-self: center;
   height: auto;
 }
 
-.goverment__descr-block {
+.ethic__descr-block {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 30%;
 }
 
-.goverment__descr-title {
+.ethic__descr-title {
   margin: 0.5vw auto;
   font-size: 1.5vw;
   text-align: center;
 }
 
-.goverment__descr-goverment {
+.ethic__descr-ethic {
   font-size: 1vw;
   text-align: justify;
   width: 100%;
@@ -79,7 +79,7 @@
   padding: 1vw;
 }
 
-.goverment__button {
+.ethic__button {
   font-size: 1.5vw;
   text-align: center;
   padding: 1vw;
@@ -88,15 +88,15 @@
   cursor: pointer;
 }
 
-.goverment__button {
+.ethic__button {
   cursor: no-drop;
 }
 
-.goverment__button_active {
+.ethic__button_active {
   cursor: pointer;
 }
 
-.goverment__button:hover,
-.goverment__button_active {
+.ethic__button:hover,
+.ethic__button_active {
   background-color: #58b698;
 }

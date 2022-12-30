@@ -1,6 +1,6 @@
 import { IMainText } from "../interface.js"
 
-const govermentSectionText: IMainText = {
+const ethicSectionText: IMainText = {
   titleEN : "Ethics",
   titleRU: "",
   subtitleEN: "Choose Empire ethics",
@@ -13,4 +13,4 @@ const govermentSectionText: IMainText = {
   buttonRU: "",
 }
 
-export { govermentSectionText }
+export { ethicSectionText }
