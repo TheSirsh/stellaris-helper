@@ -1,4 +1,4 @@
-.planet__workedplace {
+.goverment__workedplace {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -7,7 +7,7 @@
   padding: 0px;
 }
 
-.planet__traitlist {
+.goverment__traitlist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
@@ -16,7 +16,7 @@
   padding: 0px;
 }
 
-.planet__trait-container {
+.goverment__trait-container {
   display: flex;
   align-items: center;
   width: 15vw;
@@ -26,68 +26,51 @@
   border: 0.25vw solid #58b698;
 }
 
-.planet__trait-container,
-.planet__descr-planet,
-.planet__button,
-.planet__button_active {
+.goverment__trait-container,
+.goverment__descr-goverment,
+.goverment__button,
+.goverment__button_active {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
 }
 
-.planet__trait-container:hover {
+.goverment__trait-container:hover {
   background-color: #58b698;
   color: black;
 }
 
-.planet__trait-container_active,
-.planet__button_active {
+.goverment__trait-container_active,
+.goverment__button_active {
   border: 0.25vw solid #ec9240;
 }
 
-.planet__trait-container-image_yellow,
-.planet__trait-container-image_green,
-.planet__trait-container-image_red {
+.goverment__trait-container-image {
   width: 3vw;
   height: 3vw;
   margin: 0px 1vw;
 }
 
-.planet__trait-container-image_yellow {
-  background-color: #968835;
-  border-radius: 50%;
-}
-
-.planet__trait-container-image_green {
-  background-color: #4a725d;
-  border-radius: 50%;
-}
-
-.planet__trait-container-image_red {
-  background-color: #903b38;
-  border-radius: 50%;
-}
-
-.planet__trait-container-name {
+.goverment__trait-container-name {
   display: block;
   align-self: center;
   height: auto;
 }
 
-.planet__descr-block {
+.goverment__descr-block {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 30%;
 }
 
-.planet__descr-title {
+.goverment__descr-title {
   margin: 0.5vw auto;
   font-size: 1.5vw;
   text-align: center;
 }
 
-.planet__descr-planet {
+.goverment__descr-goverment {
   font-size: 1vw;
   text-align: justify;
   width: 100%;
@@ -96,7 +79,7 @@
   padding: 1vw;
 }
 
-.planet__button {
+.goverment__button {
   font-size: 1.5vw;
   text-align: center;
   padding: 1vw;
@@ -105,15 +88,15 @@
   cursor: pointer;
 }
 
-.planet__button {
+.goverment__button {
   cursor: no-drop;
 }
 
-.planet__button_active {
+.goverment__button_active {
   cursor: pointer;
 }
 
-.planet__button:hover,
-.planet__button_active {
+.goverment__button:hover,
+.goverment__button_active {
   background-color: #58b698;
 }

@@ -3,7 +3,7 @@ import { createNewSimpleElement, createNewTextElement, createNewImageElement } f
 import { createSpecies } from "../main-section/species/species-create.js";
 import { createLeader } from "../main-section/leaders/leader-create.js";
 import { createPlanetModifier } from "../main-section/planet-modifier/planet-create.js";
-import { createEthics } from "../main-section/civics/goverment-create.js";
+import { createEthics } from "../main-section/ethics/goverment-create.js";
 
 function createHeader(): void {
 
