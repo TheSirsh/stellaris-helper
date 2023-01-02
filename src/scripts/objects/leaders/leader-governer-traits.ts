@@ -370,7 +370,7 @@ const leaderGovernorBiological: Array<ITraits> = [
   },
   {
     trait: "leader_trait_prospectorium_extractor",
-    icon: "../src/icons/leader-traits/chosenone.png",
+    icon: "../src/icons/leader-traits/governor-prospectorium-extractor.png",
     nameEN: "Prospectorium Extractor",
     nameRU: "",
     traits: [
@@ -381,7 +381,7 @@ const leaderGovernorBiological: Array<ITraits> = [
   },
   {
     trait: "leader_trait_prospectorium_optimizer",
-    icon: "../src/icons/leader-traits/chosenone.png",
+    icon: "../src/icons/leader-traits/governor-prospectorium-optimizer.png",
     nameEN: "Prospectorium Optimizer",
     nameRU: "",
     traits: [
@@ -390,7 +390,7 @@ const leaderGovernorBiological: Array<ITraits> = [
   },
   {
     trait: "leader_trait_prospectorium_refiner",
-    icon: "../src/icons/leader-traits/chosenone.png",
+    icon: "../src/icons/leader-traits/governor-prospectorium-refiner.png",
     nameEN: "Prospectorium Refiner",
     nameRU: "",
     traits: [
@@ -568,7 +568,7 @@ const leaderGovernorSynthitic: Array<ITraits> = [
   },
   {
     trait: "leader_trait_prospectorium_extractor",
-    icon: "../src/icons/leader-traits/chosenone.png",
+    icon: "../src/icons/leader-traits/governor-prospectorium-extractor.png",
     nameEN: "Prospectorium Extractor",
     nameRU: "",
     traits: [
@@ -579,7 +579,7 @@ const leaderGovernorSynthitic: Array<ITraits> = [
   },
   {
     trait: "leader_trait_prospectorium_optimizer",
-    icon: "../src/icons/leader-traits/chosenone.png",
+    icon: "../src/icons/leader-traits/governor-prospectorium-optimizer.png",
     nameEN: "Prospectorium Optimizer",
     nameRU: "",
     traits: [
@@ -588,7 +588,7 @@ const leaderGovernorSynthitic: Array<ITraits> = [
   },
   {
     trait: "leader_trait_prospectorium_refiner",
-    icon: "../src/icons/leader-traits/chosenone.png",
+    icon: "../src/icons/leader-traits/governor-prospectorium-refiner.png",
     nameEN: "Prospectorium Refiner",
     nameRU: "",
     traits: [
