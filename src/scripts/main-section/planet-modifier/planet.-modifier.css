@@ -27,7 +27,7 @@
 }
 
 .planet__trait-container,
-.planet__descr-planet,
+.planet__descr-text,
 .planet__button,
 .planet__button_active {
   background-color: #1d2b25;
@@ -85,14 +85,15 @@
   margin: 0.5vw auto;
   font-size: 1.5vw;
   text-align: center;
+  height: 3vw;
 }
 
-.planet__descr-planet {
+.planet__descr-text {
   font-size: 1vw;
   text-align: justify;
   width: 100%;
   height: auto;
-  min-height: 5vw;
+  min-height: 7vw;
   padding: 1vw;
 }
 

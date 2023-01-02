@@ -27,7 +27,7 @@
 }
 
 .ethic__trait-container,
-.ethic__descr-ethic,
+.ethic__descr-text,
 .ethic__button,
 .ethic__button_active {
   background-color: #1d2b25;
@@ -68,14 +68,15 @@
   margin: 0.5vw auto;
   font-size: 1.5vw;
   text-align: center;
+  height: 3vw;
 }
 
-.ethic__descr-ethic {
+.ethic__descr-text {
   font-size: 1vw;
   text-align: justify;
   width: 100%;
   height: auto;
-  min-height: 5vw;
+  min-height: 20vw;
   padding: 1vw;
 }
 
