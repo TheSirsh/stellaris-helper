@@ -1,4 +1,4 @@
-import { ITraits } from "../interface.js"
+import { ITraits } from "../interface"
 
 const civicsStandart: Array<ITraits> = [
   {
@@ -446,7 +446,7 @@ const civicsStandart: Array<ITraits> = [
     trait: "civic_crafters",
     nameEN: "Masterful Crafters",
     nameRU: "",
-    icon: "../src/icons/civics/masterful-crafters.png",
+    icon: "../src/icons/civics/crafters.png",
     descrEN: "A penchant for meticulous crafting lies at the heart of this society. Deft appendages and keen sensory organs aid them in creating truly wondrous treasures even in the most basic of trades.",
     traits : [
       ["empty", "", "Replaces Artisan jobs with Artificer jobs"],
