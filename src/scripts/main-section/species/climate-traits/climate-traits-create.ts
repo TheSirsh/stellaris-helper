@@ -1,5 +1,5 @@
 import { climateSectionText } from "./climate-section-text.js";
-import { climateTraits } from "./climate-traits.js";
+import { climateTraits } from "./climate-traits-list.js";
 import { selectClimateTrait } from "./climate-trait-selector.js";
 import { nextTraitStage } from "../biological-traits/biological-traits-create.js";
 import { ITraits } from "../../../interface.js";

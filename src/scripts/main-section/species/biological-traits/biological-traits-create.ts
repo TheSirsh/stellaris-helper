@@ -4,7 +4,7 @@ import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, 
 import { selectBiologicalTrait } from "./biological-trait-selector.js";
 import { createValidArray } from "../../../create-valid-array-function.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
-import { completeSpeciesTrait } from "../../complete-species-traits/complete-species-traits.js";
+import { completeSpeciesTrait } from "../complete-species-traits/complete-species-traits.js"; 
 
 function nextTraitStage(): void {
 
