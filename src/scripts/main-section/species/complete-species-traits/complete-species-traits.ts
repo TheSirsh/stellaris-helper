@@ -9,7 +9,7 @@ function completeSpeciesTrait() {
   
   let resultArray: Array<ITraits> = [];
 
-  checkLocalStorage(resultArray, classes, "species", "NOTVALUEABLE-biological");
+  checkLocalStorage(resultArray, classes, "classes", "NOTVALUEABLE-biological");
   checkLocalStorage(resultArray, classesTraitsBiological, "origin")
   checkLocalStorage(resultArray, classesTraitsHimeMind, "bio", "NOTVALUEABLE-botanical");
   checkLocalStorage(resultArray, climateTraits, "climate");
@@ -24,18 +24,43 @@ function completeSpeciesTrait() {
   textBlock.textContent = "";
 
 
-  for (let i=0; i < resultArray.length; i++) {
-    for (let j = 0; j < resultArray[i].traits.length; j++) {
-      if (resultArray[i].traits[j][0] === "bad") {
-        createNewTextElement("span", "red", textBlock, resultArray[i].traits[j][1]);
-      } else if (resultArray[i].traits[j][0] === "good") {
-        createNewTextElement("span", "green", textBlock, resultArray[i].traits[j][1]);
-      }
-      textBlock.innerHTML += " " + resultArray[i].traits[j][2] + "<br>";
-    }
-    }
-    
+  let traitList: Array<Array<string>> = [];
 
+    for (let i = 0; i < resultArray.length; i++) {
+      for (let j = 0; j < resultArray[i].traits.length; j++) {
+        traitList.push(resultArray[i].traits[j])
+      }
+    }
+
+  let reducedTraitList: Array<Array<string>> = [];
+
+
+  for (let i = 0; i < traitList.length; i++) {
+    reducedTraitList[i] = traitList[i]
+    if (traitList[i]) {
+      for (let j = i + 1; j < traitList.length; j++) {
+        if (traitList[j]) {
+          if (traitList[i][2] === traitList[j][2]) {
+            reducedTraitList[i][1] += traitList[j][1];
+            delete traitList[j]
+          }
+        }
+      }
+    }
+  }
+
+
+  for (let i = 0; i < reducedTraitList.length; i++) 
+  if (reducedTraitList[i]) {
+    {
+      if (reducedTraitList[i][0] === "bad") {
+        createNewTextElement("span", "red", textBlock, reducedTraitList[i][1]);
+      } else if (reducedTraitList[i][0] === "good") {
+        createNewTextElement("span", "green", textBlock, reducedTraitList[i][1]);
+      }
+      textBlock.innerHTML += " " + reducedTraitList[i][2] + "<br>";
+    }
+  }
 
 }
 
