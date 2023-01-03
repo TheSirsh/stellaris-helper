@@ -1,4 +1,4 @@
-import { ITraits } from "../interface.js"
+import { ITraits } from "../../../interface.js";
 
 const speciesBiologicalTraits: Array<ITraits> = [
   {
@@ -531,8 +531,8 @@ const speciesBiologicalTraits: Array<ITraits> = [
       ["good", "+0.02", "Happiness per non-Noxious Pop",],
       ["good", "+5%", "Happiness",],
       ["good", "+50%", "Army Damage",],
-      ["good", "+30%", "Species Minimum Habitability",],
-      ["bad", "−30%", "Species Habitability Cap",],
+      ["good", "+30%", "Classes Minimum Habitability",],
+      ["bad", "−30%", "Classes Habitability Cap",],
       ["bad", "+10%", "Pop Housing Usage",],
       ["bad", "−0.01", "Happiness per Noxious Pop",],
     ],

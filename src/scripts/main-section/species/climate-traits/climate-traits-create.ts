@@ -1,15 +1,15 @@
-import { climateSectionText } from "../../objects/climate-section-text.js";
-import { speciesClimateTraits } from "../../objects/species-climate-traits.js";
-import { selectClimateTrait } from "./climate-trait-selector.js"
-import { nextTraitStage } from "../biological-traits/biological-traits-create.js"
-import { ITraits } from "../../interface.js";
-import { createValidArray } from "../../create-valid-array-function.js";
-import { createWorkedPlace, createTraitList, createDescrBlock } from "../../create-worked-place.js";
+import { climateSectionText } from "./climate-section-text.js";
+import { climateTraits } from "./climate-traits.js";
+import { selectClimateTrait } from "./climate-trait-selector.js";
+import { nextTraitStage } from "../biological-traits/biological-traits-create.js";
+import { ITraits } from "../../../interface.js";
+import { createValidArray } from "../../../create-valid-array-function.js";
+import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
 
 function createMainSectionClimateTrait(): void { 
 
-  let validPlanet: Array<ITraits> = createValidArray(speciesClimateTraits, "species");
-  if (localStorage.getItem("bio") !== undefined) {validPlanet = createValidArray(speciesClimateTraits, "bio");}
+  let validPlanet: Array<ITraits> = createValidArray(climateTraits, "species");
+  if (localStorage.getItem("bio") !== undefined) {validPlanet = createValidArray(climateTraits, "bio");}
 
   createWorkedPlace("climate", climateSectionText);
   createTraitList(document.querySelector(".climate__workedplace"), validPlanet, "climate");

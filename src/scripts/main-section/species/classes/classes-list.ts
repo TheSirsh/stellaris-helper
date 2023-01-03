@@ -1,11 +1,11 @@
-import { ITraits } from "../interface.js"
+import { ITraits } from "../../../interface.js";
 
-const species: Array<ITraits> = [
+const classes: Array<ITraits> = [
   {
     trait: "trait_machine_unit",
     nameEN: "Machine",
     nameRU: "",
-    icon: "../src/icons/species/machine.png",
+    icon: "./src/icons/species/machine.png",
     traits: [
       ["empty", "", "Not affected by Happiness"],
       ["good", "+200%", "Habitability"],
@@ -34,7 +34,7 @@ const species: Array<ITraits> = [
     }
 ]
 
-const speciesTraitsBiological: Array<ITraits> = [
+const classesTraitsBiological: Array<ITraits> = [
   {
     trait: "trait_psionic",
     nameEN: "Psionic",
@@ -71,7 +71,7 @@ const speciesTraitsBiological: Array<ITraits> = [
   }
 ]
 
-const speciesTraitsHimeMind: Array<ITraits> = [
+const classesTraitsHimeMind: Array<ITraits> = [
   {
     trait: "NOTVALUEABLE-botanical",
     nameEN: "Botanical",
@@ -111,4 +111,4 @@ const speciesTraitsHimeMind: Array<ITraits> = [
   }
 ]
 
-export { species, speciesTraitsBiological, speciesTraitsHimeMind}
+export { classes, classesTraitsBiological, classesTraitsHimeMind }

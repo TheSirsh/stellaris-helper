@@ -1,5 +1,5 @@
-import { createNewTextElement } from "../../create-functions.js";
-import { ITraits } from "../../interface";
+import { createNewTextElement } from "../../../create-functions.js";
+import { ITraits } from "../../../interface.js";
 
 function selectBiologicalTrait(i: number, arr: Array<ITraits>, active: boolean): void { 
 

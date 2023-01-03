@@ -1,9 +1,10 @@
-import { ITraits } from "../../interface";
-import { mainSectionContent } from "../../objects/main-section-text.js";
-import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesCyborgTraits, speciesRobotTraits } from "../../objects/species-initial-traits.js"
+import { ITraits } from "../../../interface.js";
+import { mainSectionContent } from "../../../objects/main-section-text.js";
+import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesCyborgTraits, speciesRobotTraits } from "../classes/classes-initial-traits.js";
 import { selectBiologicalTrait } from "./biological-trait-selector.js";
-import { createValidArray } from "../../create-valid-array-function.js";
-import { createWorkedPlace, createTraitList, createDescrBlock } from "../../create-worked-place.js";
+import { createValidArray } from "../../../create-valid-array-function.js";
+import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
+import { completeSpeciesTrait } from "../../complete-species-traits/complete-species-traits.js";
 
 function nextTraitStage(): void {
 
@@ -27,6 +28,25 @@ function nextTraitStage(): void {
   createWorkedPlace("biological", mainSectionContent);
   createTraitList(document.querySelector(".biological__workedplace"), validTraits, "biological");
   createDescrBlock("biological", mainSectionContent);
+
+  
+  const button: HTMLElement = document.querySelector(".biological__button");
+  button.addEventListener("click", function() {
+    let traits = document.querySelectorAll(".biological__trait-container");
+    let traitsActive: Array<ITraits> = [];
+    for (let i = 0; i < traits.length; i++) {
+      if (traits[i].classList.contains("biological__trait-container_active")) {
+        traitsActive.push(validTraits[i])
+      }
+    }
+    localStorage.setItem("traits", JSON.stringify(traitsActive))
+
+
+    completeSpeciesTrait()
+  })
+  
+  
+  
 
   const traitContainerArr = document.querySelectorAll(".biological__trait-container");
 

@@ -1,9 +1,9 @@
 @import url("/src/scripts/footer/footer.css");
 @import url("/src/scripts/header/header.css");
 @import url("/src/scripts/main-section/main-section.css");
-@import url("src/scripts/main-section/species/species.css");
-@import url("src/scripts/main-section/climate-traits/climate-trait.css");
-@import url("src/scripts//main-section/biological-traits/biological-trait.css");
+@import url("src/scripts/main-section/species/biological-traits/biological-trait.css");
+@import url("src/scripts/main-section/species/classes/classes.css");
+@import url("src/scripts/main-section/species/climate-traits/climate-trait.css");
 @import url("src/scripts/main-section/leaders/leader.css");
 @import url("src/scripts/main-section/leaders-traits/leader-traits.css");
 @import url("src/scripts/main-section/planet-modifier/planet.-modifier.css");
