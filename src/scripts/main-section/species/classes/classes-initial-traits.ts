@@ -143,7 +143,7 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameEN: "Conservationist",
     nameRU: "Бережливые",
     traits: [
-      ["good", "−10%", "Pop consumer goods upkeep",],
+      ["good", "-10%", "Pop consumer goods upkeep",],
     ],
     exclude: [
       "trait_wasteful",
@@ -169,7 +169,7 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameEN: "Docile",
     nameRU: "Покорные",
     traits: [
-      ["good", "−10%", "Empire Size from Pops",],
+      ["good", "-10%", "Empire Size from Pops",],
     ],
     exclude: [
       "trait_unruly",
@@ -222,7 +222,7 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameEN: "Fleeting",
     nameRU: "Скоротечные",
     traits: [
-      ["bad", "-10", "years Leader Lifespan if Biological",],
+      ["bad", "-10", "years Leader Lifespan",],
     ],
     exclude: [
       "trait_enduring",
@@ -510,7 +510,7 @@ const speciesBiologicalTraits: Array<ITraits> = [
     nameRU: "Инкубаторы",
     traits: [
       ["good", "+1%", "Pop Growth Speed per pops below 37 (max +30%)",],
-      ["bad", "-1%", "Pop Growth Speed per pops above 37 (max −10%)",]
+      ["bad", "-1%", "Pop Growth Speed per pops above 37 (max -10%)",]
     ],
     exclude: [
       "trait_slow_breeders",
@@ -532,9 +532,9 @@ const speciesBiologicalTraits: Array<ITraits> = [
       ["good", "+5%", "Happiness",],
       ["good", "+50%", "Army Damage",],
       ["good", "+30%", "Classes Minimum Habitability",],
-      ["bad", "−30%", "Classes Habitability Cap",],
+      ["bad", "-30%", "Classes Habitability Cap",],
       ["bad", "+10%", "Pop Housing Usage",],
-      ["bad", "−0.01", "Happiness per Noxious Pop",],
+      ["bad", "-0.01", "Happiness per Noxious Pop",],
     ],
   },
   {
@@ -672,7 +672,7 @@ const speciesLithoidTraits: Array<ITraits> = [
     nameEN: "Fleeting",
     nameRU: "Скоротечные",
     traits: [
-      ["bad", "-25", "years Leader Lifespan if Lithoid",],
+      ["bad", "-25", "years Leader Lifespan",],
     ],
     exclude: [
       "trait_enduring",
@@ -845,7 +845,7 @@ const speciesCyborgTraits: Array<ITraits> = [
     nameRU: "",
     traits: [
       ["good", "+15%", "Pop Growth from Immigration",],
-      ["good", "−25%", "Resettlement Cost",],
+      ["good", "-25%", "Resettlement Cost",],
       ["bad", "+0.3", "Energy Upkeep",],
     ],
   },
@@ -975,7 +975,7 @@ const speciesRobotTraits: Array<ITraits> = [
     nameEN: "Double Jointed",
     nameRU: "Гибкие",
     traits: [
-      ["good", "−10%", "Pop Housing Usage",],
+      ["good", "-10%", "Pop Housing Usage",],
     ],
     exclude: [
       "trait_bulky"

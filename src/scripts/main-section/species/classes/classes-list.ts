@@ -20,7 +20,7 @@ const classes: Array<ITraits> = [
       traits: [
         ["empty", "", "Not affected by Happiness"],
         ["good", "+20", "years Leader Lifespan"],
-        ["good", "−10", "years Leader Initial Age"]
+        ["good", "-10", "years Leader Initial Age"]
       ]
     },
     {
@@ -87,8 +87,8 @@ const classesTraitsHimeMind: Array<ITraits> = [
     nameRU: "",
     icon: "../src/icons/species/lithoid.png",
     traits : [
-      ["bad", "−25%", "Pop Growth Speed"],
-      ["bad", "−25%", "Pop assembly speed"],
+      ["bad", "-25%", "Pop Growth Speed"],
+      ["bad", "-25%", "Pop assembly speed"],
       ["good", "+50%", "Habitability"],
       ["good", "+50%", "Army health"],
       ["good", "+50", "years Leader Lifespan"],
@@ -102,9 +102,9 @@ const classesTraitsHimeMind: Array<ITraits> = [
     icon: "../src/icons/species/aquatic.png",
     traits : [
       ["good", "+20%", "Ocean Habitability"],
-      ["good",  "−10%", "Housing Usage on Ocean Worlds"],
+      ["good",  "-10%", "Housing Usage on Ocean Worlds"],
       ["good", "+10%", "Worker Output on Ocean Worlds"],
-      ["bad", "−20%", "Dry and Frozen planet Habitability"],
+      ["bad", "-20%", "Dry and Frozen planet Habitability"],
       ["bad", "+30%", "Housing Usage on Dry and Frozen planets"],
       ["good", "+50%", "Hydrocentric ascension boosts"]
     ]

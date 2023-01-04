@@ -8,7 +8,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Arid",
     nameRU: "Засушливый мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Dry, rocky world with a nitrogen-oxygen atmosphere. The dust-covered terrain consists largely of mesas and canyons. Forests can be found in the more temperate polar regions, but vegetation is otherwise scarce.",
     exclude: [
@@ -22,7 +22,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Desert",
     nameRU: "Пустынный мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Dry, rocky world with a nitrogen-oxygen atmosphere. Precipitation and major bodies of surface water are relatively rare. Significant temperature variations between day and night cycles. Vegetation is scarce, but even moderate precipitation can make the desert bloom.",
     exclude: [
@@ -36,7 +36,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Savannah",
     nameRU: "Мир саванны",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Rocky world dominated by dry, arid plains covered by a nitrogen-oxygen atmosphere. The small hydrosphere allows for brief wet seasons, but aside from a few ubiquitous grasses vegetation is largely concentrated around shallow oases.",
     exclude: [
@@ -50,7 +50,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Alpine",
     nameRU: "Высокогорный мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Mountainous world with a nitrogen-oxygen atmosphere. Snow covers the mountaintops and frozen-over lakes dot the valleys. While the planet experiences the minimal seasonal variations, the still-liquid water beneath the frozen surface of the lakes is enough to sustain some hardy vegetation.",
     exclude: [
@@ -64,7 +64,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Arctic",
     nameRU: "Арктический мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Frigid, rocky world with a nitrogen-oxygen atmosphere. The poles are big, and significant water deposits can be found permanently frozen as glacial ice. However, the planet experiences seasonal variations and the equatorial band is covered by vegetation.",
     exclude: [
@@ -78,7 +78,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Tundra",
     nameRU: "Тундровый мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Cold and rocky world with a nitrogen-oxygen atmosphere. Permafrost covers most of the surface except for the more temperate equatorial regions. A stable biosphere exists but vegetation is mostly limited to mosses and lichens.",
     exclude: [
@@ -92,7 +92,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Continental",
     nameRU: "Континентальный мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Rocky world with a nitrogen-oxygen atmosphere. Active and stable hydrosphere. Great landmasses are separated by oceans, with large climate variations depending on latitude and precipitation.",
     exclude: [
@@ -106,7 +106,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Ocean",
     nameRU: "Океанический мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Rocky world with a nitrogen-oxygen atmosphere and a significant hydrosphere. Oceans cover more than 90% of the surface, with scattered islands making up the remaining percentage.",
   },
@@ -117,7 +117,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Tropical",
     nameRU: "Тропический мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "Humid, rocky world with a thick nitrogen-oxygen atmosphere. Seasons with significant precipitation are interchanged with drier periods. Most landmasses are covered in dense vegetation.",
     exclude: [
@@ -131,7 +131,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Tomb World",
     nameRU: "Пустыня",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "",
     exclude: [
@@ -145,7 +145,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Gaia World",
     nameRU: "Идеальный мир",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "",
     exclude: [
@@ -159,7 +159,7 @@ const climateTraits: Array<ITraits> = [
     nameEN: "Ring World",
     nameRU: "Мир-кольцо",
     traits: [
-      ["good", "80%", "Arid Habitability"]
+      ["good", "+80%", "Arid Habitability"]
     ],
     descrEN: "An immense band encircling the system's sun. Built to allow for numerous artificial habitation zones along its inner span, freed from the restrictions and mundanity of planet-bound, spherical existence.",
     exclude: [
