@@ -1,8 +1,8 @@
 import { classes, classesTraitsBiological, classesTraitsHimeMind } from "./classes-list.js";
-import { createNewTextElement } from "../../../create-functions.js";
 import { selectClassesNotHM } from "./classes-selector-nothm.js";
 import { selectClassesBio } from "./classes-selector-bio.js";
 import { createTraitList } from "../../../create-worked-place.js";
+import { activateTrait } from "../../../activate-trait.js";
 
 function selectClasses(i: number): void {
 
@@ -44,18 +44,7 @@ function selectClasses(i: number): void {
     })
   }
 
-  const classesDescriptionTitle: HTMLElement = document.querySelector(".classes__descr-title");
-  classesDescriptionTitle.textContent = classes[i].nameEN;
-  const classesDescriptionText: HTMLElement = document.querySelector(".classes__descr-text");
-  classesDescriptionText.textContent = "";
-  for (let j = 0; j < classes[i].traits.length; j++) {
-    if (classes[i].traits[j][0] === "bad") {
-      createNewTextElement("span", "red", classesDescriptionText, classes[i].traits[j][1]);
-    } else if (classes[i].traits[j][0] === "good") {
-      createNewTextElement("span", "green", classesDescriptionText, classes[i].traits[j][1]);
-    }
-   classesDescriptionText.innerHTML += " " + classes[i].traits[j][2] + "<br>";
-  }
+  activateTrait(document.querySelector(".classes__descr-title"), document.querySelector(".classes__descr-text"), classes, i)
 }
 
 export { selectClasses }
