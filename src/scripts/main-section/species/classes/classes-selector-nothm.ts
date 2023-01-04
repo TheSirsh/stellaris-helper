@@ -16,7 +16,7 @@ function selectClassesNotHM(i: number): void {
     } else if (classesTraitsBiological[i].traits[j][0] === "good") {
       createNewTextElement("span", "green", classesDescriptionText, classesTraitsBiological[i].traits[j][1]);
     }
-   classesDescriptionText.innerHTML += " " + classesTraitsBiological[i].traits[j][2] + "<br>.js";
+   classesDescriptionText.innerHTML += " " + classesTraitsBiological[i].traits[j][2] + "<br>";
   }
 }
 
