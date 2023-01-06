@@ -22,7 +22,7 @@
   width: 15vw;
   height: 3.5vw;
   margin: 0.5vw;
-  cursor: pointer;
+  cursor: url("../../../icons/cursors/ponter.png"), pointer;
   border: 0.25vw solid #58b698;
 }
 
@@ -103,15 +103,15 @@
   padding: 1vw;
   width: auto;
   height: 2vw;
-  cursor: pointer;
+  cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .planet__button {
-  cursor: no-drop;
+  cursor: url("../../../icons/cursors/no-drop.png"), no-drop;
 }
 
 .planet__button_active {
-  cursor: pointer;
+  cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .planet__button:hover,

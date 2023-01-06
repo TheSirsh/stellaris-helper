@@ -31,7 +31,7 @@
   width: 15vw;
   height: 3vw;
   margin: 0.5vw;
-  cursor: pointer;
+  cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .leader-traits__trait-container:hover {
@@ -91,7 +91,7 @@
 }
 
 .leader-traits__button_active {
-  cursor: pointer;
+  cursor: url("../../icons/cursors/ponter.png"), pointer;
 }
 
 .leader-traits__button:hover,

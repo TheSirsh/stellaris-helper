@@ -26,5 +26,6 @@
     width: 100vw;
     height: 100vh;
     font-family: "Orbitron";
+    cursor: url("./src/icons/cursors/normal.png"), auto;
 }
 

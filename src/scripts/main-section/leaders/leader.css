@@ -40,7 +40,7 @@
   width: 14vw;
   height: 3.5vw;
   margin: 0.5vw;
-  cursor: pointer;
+  cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .leader-species__trait-container:hover,
@@ -102,15 +102,15 @@
   padding: 1vw;
   width: auto;
   height: 2vw;
-  cursor: pointer;
+  cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .leader__button {
-  cursor: no-drop;
+  cursor: url("../../../icons/cursors/no-drop.png"), no-drop;
 }
 
 .leader__button_active {
-  cursor: pointer;
+  cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .leader__button:hover,

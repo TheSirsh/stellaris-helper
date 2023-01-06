@@ -32,7 +32,7 @@
   width: 30%;
   height: 3.5vw;
   margin: 0.5vw;
-  cursor: pointer;
+  cursor: url("../../../../icons/cursors/ponter.png"), pointer;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
 }
@@ -106,12 +106,12 @@
 
 .classes__button {
   border: 0.25vw solid #131d1c;
-  cursor: no-drop;
+  cursor: url("../../../../icons/cursors/no-drop.png"), no-drop;
 }
 
 .classes__button_active {
   border: 0.25vw solid #ec9240;
-  cursor: pointer;
+  cursor: url("../../../../icons/cursors/ponter.png"), pointer;
 }
 
 .classes__button:hover,
