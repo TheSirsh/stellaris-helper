@@ -9,8 +9,6 @@ const planetModifierText: IMainText = {
   descriptionBlockTitleRU : "",
   descriptionBlockTextEN : "Choose Species",
   descriptionBlockTextRU : "",
-  buttonEN: "Climate =>",
-  buttonRU: "",
 }
 
 export { planetModifierText }

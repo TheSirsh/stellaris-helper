@@ -2,6 +2,7 @@ import { createWorkedPlace, createTraitList, createDescrBlock }from "../../creat
 import { ethicSectionText } from "../../objects/ethic-section-text.js";
 import { ethics } from "../../objects/ethic.js"; 
 import { selectEthic } from "./ethics-selector.js";
+import { changeButton } from "../../change-button.js";
 
 function createEthics() {
   
@@ -16,6 +17,12 @@ function createEthics() {
       selectEthic(i);
       localStorage.setItem("ethic", ethics[i].trait);
       elem.classList.toggle("ethic__trait-container_active");
+
+      const classesButton: HTMLElement = document.querySelector(".ethic__button");
+      if (classesButton) {
+        changeButton(classesButton, "ethic");
+//        classesButton.addEventListener("click", ethicFunc);
+      }
     })
   })
 }

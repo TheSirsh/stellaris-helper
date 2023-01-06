@@ -25,9 +25,7 @@
 
 .leader-species__trait-container,
 .leader__trait-container,
-.leader-species__descr-text,
-.leader__button,
-.leader__button_active {
+.leader-species__descr-text {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
@@ -50,8 +48,7 @@
 }
 
 .leader-species__trait-container_active,
-.leader__trait-container_active,
-.leader__button_active {
+.leader__trait-container_active {
   border: 0.25vw solid #ec9240;
 }
 
@@ -98,18 +95,23 @@
 .leader__button,
 .leader__button_active {
   font-size: 1.5vw;
+  background-color: #1d2b25;
+  border-radius: 1vw;
   text-align: center;
+  display: flex;
   padding: 1vw;
-  width: auto;
+  width: 9vw;
   height: 2vw;
   cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .leader__button {
+  border: 0.25vw solid #ce4b3d;
   cursor: url("../../../icons/cursors/no-drop.png"), no-drop;
 }
 
 .leader__button_active {
+  border: 0.25vw solid #ec9240;
   cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
@@ -121,4 +123,10 @@
 .leader__descr__trait {
   background-color: black;
   padding: 1vw;
+}
+
+.leader__button-image {
+  margin-left: 1vw;
+  width: 110%;
+  height: 110%;
 }

@@ -9,8 +9,6 @@ const climateSectionText: IMainText = {
   descriptionBlockTitleRU: "",
   descriptionBlockTextEN: "Choose your planet",
   descriptionBlockTextRU: "",
-  buttonEN: "Traits =>",
-  buttonRU: "",
   image: "../src/images/planets/shroud.png",
   imageAltEN: "shroud",
   imageAltRU: "",

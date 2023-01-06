@@ -9,8 +9,6 @@ const leaderSectionText: IMainText = {
   descriptionBlockTitleRU : "",
   descriptionBlockTextEN : "Choose Classes",
   descriptionBlockTextRU : "",
-  buttonEN: "Climate =>",
-  buttonRU: "",
 }
 
 export { leaderSectionText }

@@ -1,3 +1,4 @@
+import { changeButton } from "../../change-button.js";
 import { createWorkedPlace, createTraitList, createDescrBlock }from "../../create-worked-place.js";
 import { planetModifierText } from "../../objects/planet-modifier-text.js";
 import { planetModifier } from "../../objects/planet-modifier.js";
@@ -17,6 +18,11 @@ function createPlanetModifier() {
       selectPlanetModifier(i);
       localStorage.setItem("planet", planetModifier[i].trait);
       elem.classList.toggle("planet__trait-container_active");
+
+      const button: HTMLElement = document.querySelector(".planet__button");
+      if (button) {
+        changeButton(button, "planet")
+      }
     })
   })
 }

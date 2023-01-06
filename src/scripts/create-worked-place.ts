@@ -35,7 +35,8 @@ function createDescrBlock(cssClass: string, workedplaceText: IMainText, isImage?
   createNewTextElement("h3", `${cssClass}__descr-title`, mainSectionTraitDescription, workedplaceText.descriptionBlockTitleEN);
   if (isImage) {createNewImageElement(`${cssClass}__descr-image`, mainSectionTraitDescription, workedplaceText["image"], workedplaceText["imageAltEN"]);}
   createNewTextElement("p", `${cssClass}__descr-text`, mainSectionTraitDescription, workedplaceText.descriptionBlockTextEN);
-  createNewTextElement("div", `${cssClass}__button`, mainSectionTraitDescription, workedplaceText["buttonEN"]);
+  const button = createNewTextElement("div", `${cssClass}__button`, mainSectionTraitDescription, "",);
+    createNewImageElement(`${cssClass}__button-image`, button, "../src/icons/next-block.png", "Next =>")
 }
 
 export { createWorkedPlace, createTraitList, createDescrBlock }

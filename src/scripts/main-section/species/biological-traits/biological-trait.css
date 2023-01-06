@@ -16,9 +16,7 @@
 }
 
 .biological__trait-container,
-.biological__descr-text,
-.biological__button,
-.biological__button_active  {
+.biological__descr-text  {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
@@ -80,10 +78,13 @@
 
 .biological__button,
 .biological__button_active {
+  display: flex;
+  background-color: #1d2b25;
+  border-radius: 1vw;
   font-size: 1.5vw;
   text-align: center;
   padding: 1vw;
-  width: auto;
+  width: 9vw;
   height: 2vw;
   cursor: url("../../../../icons/cursors/ponter.png"), pointer;
 }
@@ -94,10 +95,12 @@
 }
 
 .biological__button {
+  border: 0.25vw solid #ce4b3d;
   cursor: url("../../../../icons/cursors/no-drop.png"), no-drop;
 }
 
 .biological__button_active {
+  border: 0.25vw solid #ec9240;
   cursor: url("../../../../icons/cursors/ponter.png"), pointer;
 }
 
@@ -106,4 +109,10 @@
   padding: 1vw;
   border: 0.25vw solid #58b698;
   border-radius: 1vw;
+}
+
+.biological__button-image {
+  margin-left: 1vw;
+  width: 110%;
+  height: 110%;
 }

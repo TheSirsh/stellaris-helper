@@ -9,8 +9,6 @@ const mainSectionContent: IMainText = {
   descriptionBlockTitleRU : "",
   descriptionBlockTextEN: "Choose your trait",
   descriptionBlockTextRU : "",
-  buttonEN: "",
-  buttonRU: "",
 }
 
 export { mainSectionContent }

@@ -9,8 +9,6 @@ const ethicSectionText: IMainText = {
   descriptionBlockTitleRU: "",
   descriptionBlockTextEN: "Choose your planet",
   descriptionBlockTextRU: "",
-  buttonEN: "Traits =>",
-  buttonRU: "",
 }
 
 export { ethicSectionText }

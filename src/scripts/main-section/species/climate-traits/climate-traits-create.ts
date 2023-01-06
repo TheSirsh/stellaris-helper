@@ -5,6 +5,7 @@ import { nextTraitStage } from "../biological-traits/biological-traits-create.js
 import { ITraits } from "../../../interface.js";
 import { createValidArray } from "../../../create-valid-array-function.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
+import { changeButton } from "../../../change-button.js";
 
 function createMainSectionClimateTrait(): void { 
 
@@ -25,11 +26,9 @@ function createMainSectionClimateTrait(): void {
 
       const traitDescriptionButton: HTMLElement = document.querySelector(".climate__button");
       if (traitDescriptionButton) {
-        traitDescriptionButton.classList.add("climate__button_active")
-        traitDescriptionButton.classList.remove("climate__button");
+        changeButton(traitDescriptionButton, "climate");
         traitDescriptionButton.addEventListener("click", nextTraitStage)
       }
-
     })
   })
 }

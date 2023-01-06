@@ -17,9 +17,7 @@
 
 .leader-traits__trait-container,
 .leader-traits__descr-text,
-.leader-traits__descr__trait,
-.leader-traits__button,
-.leader-traits__button_active {
+.leader-traits__descr__trait {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
@@ -39,8 +37,7 @@
   color: black;
 }
 
-.leader-traits__trait-container_active,
-.leader-traits__button_active  {
+.leader-traits__trait-container_active {
   border: 0.25vw solid #ec9240;
 }
 
@@ -79,22 +76,33 @@
 }
 
 .leader-traits__button {
+  display: flex;
+  background-color: #1d2b25;
+  border-radius: 1vw;
   font-size: 1.5vw;
   text-align: center;
   padding: 1vw;
-  width: auto;
+  width: 9vw;
   height: 2vw;
 }
 
 .leader-traits__button {
-  cursor: no-drop;
+  border: 0.25vw solid #ce4b3d;
+  cursor: url("../../../icons/cursors/no-drop.png"), no-drop;
 }
 
 .leader-traits__button_active {
-  cursor: url("../../icons/cursors/ponter.png"), pointer;
+  border: 0.25vw solid #ec9240;
+  cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .leader-traits__button:hover,
 .leader-traits__button_active:hover {
   background-color: #58b698;
+}
+
+.leader-traits__button-image {
+  margin-left: 1vw;
+  width: 110%;
+  height: 110%;
 }

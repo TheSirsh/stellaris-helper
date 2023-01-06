@@ -27,9 +27,7 @@
 }
 
 .ethic__trait-container,
-.ethic__descr-text,
-.ethic__button,
-.ethic__button_active {
+.ethic__descr-text {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
@@ -40,8 +38,7 @@
   color: black;
 }
 
-.ethic__trait-container_active,
-.ethic__button_active {
+.ethic__trait-container_active {
   border: 0.25vw solid #ec9240;
 }
 
@@ -80,24 +77,36 @@
   padding: 1vw;
 }
 
-.ethic__button {
+.ethic__button,
+.ethic__button_active {
   font-size: 1.5vw;
   text-align: center;
+  display: flex;
+  background-color: #1d2b25;
+  border-radius: 1vw;
   padding: 1vw;
-  width: auto;
+  width: 9vw;
   height: 2vw;
   cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .ethic__button {
+  border: 0.25vw solid #ce4b3d;
   cursor: url("../../../icons/cursors/no-drop.png"), no-drop;
 }
 
 .ethic__button_active {
+  border: 0.25vw solid #ec9240;
   cursor: url("../../../icons/cursors/ponter.png"), pointer;
 }
 
 .ethic__button:hover,
-.ethic__button_active {
+.ethic__button_active:hover {
   background-color: #58b698;
+}
+
+.ethic__button-image {
+  margin-left: 1vw;
+  width: 110%;
+  height: 110%;
 }

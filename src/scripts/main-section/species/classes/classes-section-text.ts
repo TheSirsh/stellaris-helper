@@ -9,8 +9,6 @@ const classesSectionText: IMainText = {
   descriptionBlockTitleRU : "",
   descriptionBlockTextEN : "Choose Classes",
   descriptionBlockTextRU : "",
-  buttonEN: "Climate =>",
-  buttonRU: "",
 }
 
 export { classesSectionText }

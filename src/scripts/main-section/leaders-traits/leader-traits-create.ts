@@ -5,6 +5,7 @@ import { createWorkedPlace, createTraitList, createDescrBlock } from "../../crea
 import { checkingLeader } from "../../checking-leader-function.js";
 import { ITraits } from "../../interface.js";
 import { selectLeaderTrait } from "./leader-traits-selector.js";
+import { changeButton } from "../../change-button.js";
 
 function createLeaderTraits(): void {
 
@@ -32,6 +33,11 @@ function createLeaderTraits(): void {
         traitContainerArr[i].classList.add("leader-traits__trait-container_active");
       }
       selectLeaderTrait(i, validTraits, isActive);
+
+      const button : HTMLElement = document.querySelector(".leader-traits__button");
+      if (button) {
+        changeButton(button, "leader-traits")
+      }
     })
   })
 }

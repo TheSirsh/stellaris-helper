@@ -12,8 +12,6 @@ interface IMainText {
   descriptionBlockTitleRU : string,
   descriptionBlockTextEN : string,
   descriptionBlockTextRU : string,
-  buttonEN: string,
-  buttonRU: string,
   image?: string,
   imageAltEN?: string,
   imageAltRU?: string,
