@@ -1,4 +1,5 @@
 @import url("/src/scripts/footer/footer.css");
+@import url("src/scripts/audio-player/audio-player.css");
 @import url("/src/scripts/header/header.css");
 @import url("/src/scripts/main-section/main-section.css");
 @import url("src/scripts/main-section/species/initial-traits/initial-trait.css");
