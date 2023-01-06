@@ -1,7 +1,7 @@
 @import url("/src/scripts/footer/footer.css");
 @import url("/src/scripts/header/header.css");
 @import url("/src/scripts/main-section/main-section.css");
-@import url("src/scripts/main-section/species/biological-traits/biological-trait.css");
+@import url("src/scripts/main-section/species/initial-traits/initial-trait.css");
 @import url("src/scripts/main-section/species/classes/classes.css");
 @import url("src/scripts/main-section/species/climate-traits/climate-trait.css");
 @import url("src/scripts/main-section/species/complete-species-traits/complete-species-traits.css");

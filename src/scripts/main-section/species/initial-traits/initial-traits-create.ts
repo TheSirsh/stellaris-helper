@@ -1,7 +1,7 @@
 import { ITraits } from "../../../interface.js";
-import { mainSectionContent } from "../../../objects/main-section-text.js";
-import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesCyborgTraits, speciesRobotTraits } from "../classes/classes-initial-traits.js";
-import { selectBiologicalTrait } from "./biological-trait-selector.js";
+import { initialTraitSectionContent } from "./initial-trait-text.js";
+import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesCyborgTraits, speciesRobotTraits } from "./initial-traits-list.js";
+import { selectBiologicalTrait } from "./initial-trait-selector.js";
 import { createValidArray } from "../../../create-valid-array-function.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
 import { completeSpeciesTrait } from "../complete-species-traits/complete-species-traits.js"; 
@@ -25,9 +25,9 @@ function nextTraitStage(): void {
     validTraits = validTraits.concat(speciesBotanicalTraits);
   }
 
-  createWorkedPlace("biological", mainSectionContent);
+  createWorkedPlace("biological", initialTraitSectionContent);
   createTraitList(document.querySelector(".biological__workedplace"), validTraits, "biological");
-  createDescrBlock("biological", mainSectionContent);
+  createDescrBlock("biological", initialTraitSectionContent);
 
   
   const button: HTMLElement = document.querySelector(".biological__button");

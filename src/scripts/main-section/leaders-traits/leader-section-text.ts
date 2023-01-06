@@ -1,13 +1,13 @@
 import { IMainText } from "../../interface.js";
 
 const leaderSectionText: IMainText = {
-  titleEN: "Classes",
+  titleEN: "Leader",
   titleRU: "",
-  subtitleEN : "Choose Classes",
+  subtitleEN : "Leader Traits",
   subtitleRU: "",
-  descriptionBlockTitleEN : "Classes",
+  descriptionBlockTitleEN : "Trait Name",
   descriptionBlockTitleRU : "",
-  descriptionBlockTextEN : "Choose Classes",
+  descriptionBlockTextEN : "Trait effects",
   descriptionBlockTextRU : "",
 }
 

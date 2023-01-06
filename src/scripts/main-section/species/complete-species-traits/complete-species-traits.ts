@@ -2,7 +2,7 @@ import { ITraits } from "../../../interface.js";
 import { classes, classesTraitsBiological, classesTraitsHimeMind } from "../classes/classes-list.js"
 import { climateTraits } from "../climate-traits/climate-traits-list.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
-import { mainSectionContent } from "../../../objects/main-section-text.js";
+import { completeTraitSectionContent } from "./compete-species-trait-text.js";
 import { createNewTextElement } from "../../../create-functions.js";
 
 function completeSpeciesTrait() {
@@ -16,9 +16,9 @@ function completeSpeciesTrait() {
   let arr = JSON.parse(localStorage.getItem("traits"))
   resultArray = resultArray.concat(arr)
 
-  createWorkedPlace("completed", mainSectionContent);
+  createWorkedPlace("completed", completeTraitSectionContent);
   createTraitList(document.querySelector(".completed__workedplace"), resultArray, "completed");
-  createDescrBlock("completed", mainSectionContent);
+  createDescrBlock("completed", completeTraitSectionContent);
 
   const textBlock = document.querySelector(".completed__descr-text");
   textBlock.textContent = "";

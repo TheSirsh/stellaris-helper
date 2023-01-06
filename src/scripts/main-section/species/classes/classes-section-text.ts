@@ -1,13 +1,13 @@
 import { IMainText } from "../../../interface.js";
 
 const classesSectionText: IMainText = {
-  titleEN: "Classes",
+  titleEN: "Species Traits",
   titleRU: "",
-  subtitleEN : "Choose Classes",
+  subtitleEN : "Choose Species Classes",
   subtitleRU: "",
-  descriptionBlockTitleEN : "Classes",
+  descriptionBlockTitleEN : "Class Name",
   descriptionBlockTitleRU : "",
-  descriptionBlockTextEN : "Choose Classes",
+  descriptionBlockTextEN : "Class traits",
   descriptionBlockTextRU : "",
 }
 

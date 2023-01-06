@@ -1,5 +1,5 @@
 import { createWorkedPlace, createTraitList, createDescrBlock }from "../../create-worked-place.js";
-import { leaderSectionText } from "../../objects/leaders/leader-section-text.js";
+import { leaderSectionText } from "./leader-section-text.js";
 import { species, leaders, } from "../../objects/leaders/leader.js";
 import { createNewSimpleElement } from "../../create-functions.js";
 import { selectLeaderSpecies } from "./leader-species-selector.js";

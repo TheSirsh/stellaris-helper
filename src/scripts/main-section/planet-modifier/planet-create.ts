@@ -1,6 +1,6 @@
 import { changeButton } from "../../change-button.js";
 import { createWorkedPlace, createTraitList, createDescrBlock }from "../../create-worked-place.js";
-import { planetModifierText } from "../../objects/planet-modifier-text.js";
+import { planetModifierText } from "./planet-modifier-text.js";
 import { planetModifier } from "../../objects/planet-modifier.js";
 import { selectPlanetModifier } from "./planet-modifier-selector.js";
 

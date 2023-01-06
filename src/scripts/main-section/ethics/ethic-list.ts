@@ -1,4 +1,4 @@
-import { ITraits } from "../interface.js"
+import { ITraits } from "../../interface.js"
 
 const ethics: Array<ITraits> = [
   {

@@ -1,17 +1,14 @@
 import { IMainText } from "../../interface.js"
 
 const leaderSectionText: IMainText = {
-  titleEN : "Leader Traits",
+  titleEN : "Leader",
   titleRU: "",
   subtitleEN: "Choose Species",
   subtitleRU: "",
-  descriptionBlockTitleEN: "Choose your trait",
+  descriptionBlockTitleEN: "Choose your species",
   descriptionBlockTitleRU: "",
-  descriptionBlockTextEN: "Choose your planet",
+  descriptionBlockTextEN: "",
   descriptionBlockTextRU: "",
-  image: "../src/images/planets/shroud.png",
-  imageAltEN: "shroud",
-  imageAltRU: "",
 }
 
 export { leaderSectionText }

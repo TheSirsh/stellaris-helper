@@ -1,6 +1,6 @@
 import { createWorkedPlace, createTraitList, createDescrBlock }from "../../create-worked-place.js";
-import { ethicSectionText } from "../../objects/ethic-section-text.js";
-import { ethics } from "../../objects/ethic.js"; 
+import { ethicSectionText } from "./ethic-section-text.js";
+import { ethics } from "./ethic-list.js"; 
 import { selectEthic } from "./ethics-selector.js";
 import { changeButton } from "../../change-button.js";
 

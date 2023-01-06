@@ -2,19 +2,19 @@ import { IHeader } from "../interface.js"
 
 const headerContent: Array<IHeader> = [
   {  
-    nameEN: "Species Traits",
+    nameEN: "Species",
     nameRU: "",
   },
   {
-    nameEN: "Government Civics",
+    nameEN: "Government",
     nameRU: "",
   },
   {
-    nameEN: "Leaders Traits",
+    nameEN: "Leaders",
     nameRU: "",
   },
   {
-    nameEN: "Planet modifiers",
+    nameEN: "Planets",
     nameRU: "",
   }, 
   {

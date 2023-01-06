@@ -1,13 +1,13 @@
-import { IMainText } from "../interface.js"
+import { IMainText } from "../../interface"
 
 const ethicSectionText: IMainText = {
-  titleEN : "Ethics",
+  titleEN : "Government",
   titleRU: "",
   subtitleEN: "Choose Empire ethics",
   subtitleRU: "",
-  descriptionBlockTitleEN: "Choose your ethic",
+  descriptionBlockTitleEN: "Ethic Name",
   descriptionBlockTitleRU: "",
-  descriptionBlockTextEN: "Choose your planet",
+  descriptionBlockTextEN: "Ethic effects",
   descriptionBlockTextRU: "",
 }
 

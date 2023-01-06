@@ -1,4 +1,4 @@
-import { ethics } from "../../objects/ethic.js";
+import { ethics } from "./ethic-list.js";
 import { activateTrait } from "../../activate-trait.js";
 
 
