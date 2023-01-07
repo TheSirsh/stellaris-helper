@@ -13,7 +13,7 @@
 .next,
 .progress-bar-empty,
 .duration,
-.trackName {
+.track-name {
   height: 1.5vw;
   margin: 0px 0.5vw;
 }
@@ -42,6 +42,6 @@
 }
 
 .duration,
-.trackName {
+.track-name {
   color: white;
 }
