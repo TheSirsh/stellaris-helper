@@ -26,11 +26,19 @@
 }
 
 .progress-bar-empty {
+  background-image: url("../../icons/audio-player/progress-bar-empty.png");
+  background-size: contain;
   width: 30vw;
 }
 
 .progress-bar {
   height: 1.5vw;
+  width: 0vw;
+}
+
+.duration {
+  min-width: 10vw;
+  text-align: center;
 }
 
 .duration,
