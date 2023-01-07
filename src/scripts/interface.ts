@@ -3,6 +3,18 @@ interface IHeader {
   nameRU: string,
 }
 
+interface IAudioPlayer {
+  name: string,
+  src: string,
+  alt: string,
+}
+
+interface ITrack {
+  name: string,
+  src: string,
+  duration: number,
+}
+
 interface IMainText {
   titleEN: string,
   titleRU: string
@@ -35,4 +47,4 @@ interface IFooter {
   src: string,
 }
 
-export { IHeader, IMainText, ITraits, IFooter }
+export { IHeader, IAudioPlayer, ITrack, IMainText, ITraits, IFooter }

@@ -1,5 +1,39 @@
 .audio-player-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 5vw;
   background-color: #1d2b25;
+}
+
+.prev,
+.play,
+.pause,
+.next,
+.progress-bar-empty,
+.duration,
+.trackName {
+  height: 1.5vw;
+  margin: 0px 0.5vw;
+}
+
+.prev,
+.play,
+.pause,
+.next {
+  width: 1.5vw;
+}
+
+.progress-bar-empty {
+  width: 30vw;
+}
+
+.progress-bar {
+  height: 1.5vw;
+}
+
+.duration,
+.trackName {
+  color: white;
 }
