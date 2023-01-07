@@ -1,7 +1,7 @@
 import { createNewImageElement, createNewSimpleElement, createNewTextElement } from "../create-functions.js";
 import { audioPlayerText } from "./audio-player-text.js";
 import { trackList } from "./audio-player-track-list.js";
-import { convertTime } from "./audio-player-support-function.js";
+import { convertTime, randomizer } from "./audio-player-support-function.js";
 
 function createAudioPlayer() {
 
@@ -16,20 +16,21 @@ function createAudioPlayer() {
       createNewImageElement(`${audioPlayerText[i].name}`, audioPlayer, `${audioPlayerText[i].src}`, `${audioPlayerText[i].alt}`)
     }
 
-    let audioTrack = new Audio(trackList[0].src)
-    let duration = convertTime(trackList[0].duration)
+    let trackNumber: number = randomizer(0, trackList.length - 1)
+    let audioTrack = new Audio(trackList[trackNumber].src)
+    let duration = convertTime(trackList[trackNumber].duration)
     createNewTextElement("span", "duration", audioPlayer, "00:00 / " + duration);
-    createNewTextElement("span", "trackName", audioPlayer, trackList[0].name);
+    createNewTextElement("span", "trackName", audioPlayer, trackList[trackNumber].name);
 
     const playButton = document.querySelector(".play");
     localStorage.setItem("trackTime", "0")
     playButton.addEventListener("click", function() {
-      tooglePlay(isPlay, audioTrack)
+      tooglePlay(isPlay, audioTrack, trackNumber)
       isPlay = !isPlay
     })
 }
 
-function tooglePlay(playStatus: boolean, track: HTMLAudioElement) {
+function tooglePlay(playStatus: boolean, track: HTMLAudioElement, trackNumber: number) {
   let button: HTMLImageElement = document.querySelector(".play");
   let time = parseFloat(localStorage.getItem("trackTime"))
   if (playStatus === false) {
@@ -38,7 +39,7 @@ function tooglePlay(playStatus: boolean, track: HTMLAudioElement) {
     button.src = "../src/icons/audio-player/pause.png";
     let player = setInterval(function() {
       time++;
-      updateTime(time);
+      updateTime(time, trackNumber);
       button.addEventListener("click", function() {
         clearInterval(player);
       })
@@ -51,12 +52,12 @@ function tooglePlay(playStatus: boolean, track: HTMLAudioElement) {
   }
 }
 
-function updateTime(time: number) {
+function updateTime(time: number, trackNumber: number) {
   let duration = document.querySelector(".duration");
-  duration.textContent = convertTime(time) + " / " + convertTime(trackList[0].duration);
+  duration.textContent = convertTime(time) + " / " + convertTime(trackList[trackNumber].duration);
 
   let progressBar: HTMLImageElement = document.querySelector(".progress-bar");
-  progressBar.style.width = (time * 100) / trackList[0].duration + "%"
+  progressBar.style.width = (time * 100) / trackList[trackNumber].duration + "%"
 
 }
 

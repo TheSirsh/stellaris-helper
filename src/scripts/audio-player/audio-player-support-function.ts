@@ -7,4 +7,8 @@ function convertTime(value: number): string {
       }
 }
 
-export { convertTime }
+function randomizer(min: number, max: number) {
+  return Math.round(Math.random() * (max - min) + min);
+}
+
+export { convertTime, randomizer }
