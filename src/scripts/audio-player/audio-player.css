@@ -56,12 +56,12 @@
 .volume-bar-empty,
 .volume-bar {
   height: 1vw;
-  margin: 0px 0.5vw;
 }
 
 .volume-bar-empty {
   background-image: url("../../icons/audio-player/volume-bar-empty.png");
   background-size: cover;
+  margin: 0px 0.5vw;
   width: 10vw;
 }
 

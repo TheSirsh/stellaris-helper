@@ -6,6 +6,7 @@ import { convertTime, randomizer } from "./audio-player-support-function.js";
 function createAudioPlayer() {
 
   let isPlay: boolean = false;
+  let isSound: boolean = true;
 
   const body: Element | null = document.querySelector(".body");
     const audioPlayer = createNewSimpleElement("section", "audio-player-bg", body)
@@ -51,6 +52,12 @@ function createAudioPlayer() {
     prevButton.addEventListener("click", function() {
       prevTrack(audioTrack, isPlay)
       isPlay = true
+    })
+
+    const soundButton = document.querySelector(".sound");
+    soundButton.addEventListener("click", function() {
+      toogleSound(audioTrack, isSound);
+      isSound = !isSound
     })
 }
 
@@ -122,6 +129,19 @@ function updateTime(track: HTMLAudioElement) {
   let progressBar: HTMLImageElement = document.querySelector(".progress-bar");
   progressBar.style.width = (time * 100) / trackList[trackNumber].duration + "%";
   if (time === trackList[trackNumber].duration) { nextTrack(track, true) }
+}
+
+function toogleSound(track: HTMLAudioElement, soundStatus: boolean) {
+  const soundButton: HTMLImageElement = document.querySelector(".sound");
+  const volumeBar: HTMLImageElement = document.querySelector(".volume-bar")
+  if (soundStatus) {
+    soundButton.src ="../src/icons/audio-player/mute.png";
+    track.volume = 0;
+  } else {
+    soundButton.src ="../src/icons/audio-player/sound.png";
+    track.volume = 0.3
+  }
+  volumeBar.style.width = track.volume * 100 + "%"
 }
 
 export { createAudioPlayer }
