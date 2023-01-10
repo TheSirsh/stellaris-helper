@@ -30,9 +30,15 @@ function createAudioPlayer() {
 
     let trackNumber: number = randomizer(0, trackList.length - 1);
     localStorage.setItem("trackNumber", trackNumber.toString());
+    localStorage.setItem("volume", "0.3");
     let audioTrack = new Audio(trackList[trackNumber].src);
+    audioTrack.volume = parseFloat(localStorage.getItem("volume"));
     document.querySelector(".track-name").textContent = trackList[trackNumber].name;
-    document.querySelector(".duration").textContent = "00:00 / " + convertTime(trackList[trackNumber].duration)
+    document.querySelector(".duration").textContent = "00:00 / " + convertTime(trackList[trackNumber].duration);
+
+    const volumeBasic: HTMLImageElement = document.querySelector(".volume-bar");
+    volumeBasic.style.width = parseFloat(localStorage.getItem("volume")) * 100 + "%";
+
 
     let playButton = document.querySelector(".play");
     localStorage.setItem("trackTime", "0")
@@ -54,9 +60,14 @@ function createAudioPlayer() {
       isPlay = true
     })
 
+    const trackBar = document.querySelector(".progress-bar-empty");
+    trackBar.addEventListener("click", function(elem: PointerEvent) {
+      setTrackPoint(audioTrack, elem)
+    })
+
     const volumeBar = document.querySelector(".volume-bar-empty");
     volumeBar.addEventListener("click", function(elem: PointerEvent) {
-      setTrackPoint(audioTrack, elem)
+      setVolumePoint(audioTrack, elem)
     })
 
     const soundButton = document.querySelector(".sound");
@@ -137,6 +148,16 @@ function updateTime(track: HTMLAudioElement) {
 }
 
 function setTrackPoint(track: HTMLAudioElement, point: PointerEvent) {
+  const trackBar: HTMLImageElement = document.querySelector(".progress-bar");
+  const trackWidth: string = window.getComputedStyle(document.querySelector(".progress-bar-empty")).width;
+  track.currentTime = point.offsetX / parseInt(trackWidth) * track.duration;
+  let trackNumber = parseInt(localStorage.getItem("trackNumber"))
+  trackBar.style.width = point.offsetX / parseInt(trackWidth) * 100 + '%';
+  let duration = document.querySelector(".duration");
+  duration.textContent = convertTime(track.currentTime) + " / " + convertTime(trackList[trackNumber].duration);
+}
+
+function setVolumePoint(track: HTMLAudioElement, point: PointerEvent) {
   const volumeBar: HTMLImageElement = document.querySelector(".volume-bar")
   const volumeWidth: string = window.getComputedStyle(document.querySelector(".volume-bar-empty")).width;
   track.volume = point.offsetX / parseInt(volumeWidth);
