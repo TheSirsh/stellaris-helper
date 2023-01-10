@@ -8,6 +8,7 @@ function createWorkedPlace(cssClass: string, workedplaceText: IMainText): void {
 
   const mainSection: HTMLElement = document.querySelector(".main-section")!;
 
+  
   const mainSectionContainer = createNewSimpleElement("div", "main-section__container", mainSection);
     createNewTextElement("h2", "main-section__title", mainSectionContainer, workedplaceText.titleEN);
     createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, workedplaceText.subtitleEN);
@@ -24,6 +25,11 @@ function createTraitList(parentElemnet: HTMLElement, arrayOfTraits: Array<ITrait
     if (arrayOfTraits[i].border) { createNewImageElement(`${cssClass}__trait-container-image_${arrayOfTraits[i].border}`, traitContainer, arrayOfTraits[i].icon, arrayOfTraits[i].nameEN);} 
       else { createNewImageElement(`${cssClass}__trait-container-image`, traitContainer, arrayOfTraits[i].icon, arrayOfTraits[i].nameEN); }
     createNewTextElement("span", `${cssClass}__trait-container-name`, traitContainer, arrayOfTraits[i].nameEN);
+
+    let topEl = document.querySelector(".main-section__subtitle")
+    let topPos = topEl.getBoundingClientRect().top;
+
+    window.scrollTo({top: topPos, behavior: "smooth"})
   }
 }
 

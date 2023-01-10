@@ -106,7 +106,6 @@ function tooglePlay(playStatus: boolean, track: HTMLAudioElement) {
 };
 
 function nextTrack(track: HTMLAudioElement, playStatus: boolean) {
-  
   if (!playStatus) {
     let button: HTMLImageElement = document.querySelector(".play");
       button.src = "../src/icons/audio-player/play.png";
