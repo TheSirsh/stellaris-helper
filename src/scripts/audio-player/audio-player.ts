@@ -9,19 +9,24 @@ function createAudioPlayer() {
 
   const body: Element | null = document.querySelector(".body");
     const audioPlayer = createNewSimpleElement("section", "audio-player-bg", body)
+
     for (let i = 0; i < audioPlayerText.length; i++) {
-      if (audioPlayerText[i].name === "pause") { continue }
-       else if (audioPlayerText[i].name === "progress-bar-empty") { createNewSimpleElement("div", "progress-bar-empty", audioPlayer); continue}
-          else if (audioPlayerText[i].name === "progress-bar") { createNewImageElement(`${audioPlayerText[i].name}`, document.querySelector(".progress-bar-empty"), `${audioPlayerText[i].src}`, `${audioPlayerText[i].alt}`); continue }
-      createNewImageElement(`${audioPlayerText[i].name}`, audioPlayer, `${audioPlayerText[i].src}`, `${audioPlayerText[i].alt}`)
+      if (`${audioPlayerText[i].name}` === "progress-bar-empty") {
+        createNewSimpleElement("div", `${audioPlayerText[i].name}`, audioPlayer);
+        i++;
+        createNewImageElement(`${audioPlayerText[i].name}`, document.querySelector(".progress-bar-empty"), `${audioPlayerText[i].src}`, `${audioPlayerText[i].alt}`);
+      }
+    else if (audioPlayerText[i].type === "none") { continue }
+        else if (audioPlayerText[i].type === "image") { createNewImageElement(`${audioPlayerText[i].name}`, audioPlayer, `${audioPlayerText[i].src}`, `${audioPlayerText[i].alt}`); }
+          else if (audioPlayerText[i].type === "text") { createNewTextElement("span", `${audioPlayerText[i].name}`, audioPlayer, `${audioPlayerText[i].text}`); }
     }
 
+
     let trackNumber: number = randomizer(0, trackList.length - 1);
-    localStorage.setItem("trackNumber", trackNumber.toString())
-    let audioTrack = new Audio(trackList[trackNumber].src)
-    let duration = convertTime(trackList[trackNumber].duration)
-    createNewTextElement("span", "duration", audioPlayer, "00:00 / " + duration);
-    createNewTextElement("span", "track-name", audioPlayer, trackList[trackNumber].name);
+    localStorage.setItem("trackNumber", trackNumber.toString());
+    let audioTrack = new Audio(trackList[trackNumber].src);
+    document.querySelector(".track-name").textContent = trackList[trackNumber].name;
+    document.querySelector(".duration").textContent = "00:00 / " + convertTime(trackList[trackNumber].duration)
 
     let playButton = document.querySelector(".play");
     localStorage.setItem("trackTime", "0")
@@ -29,8 +34,7 @@ function createAudioPlayer() {
     playButton.addEventListener("click", () => {
       tooglePlay(isPlay, audioTrack, trackNumber)
       isPlay = !isPlay
-    }
-    )
+    })
 
     const nextButton = document.querySelector(".next")
     nextButton.addEventListener("click", function() {
@@ -67,12 +71,7 @@ function tooglePlay(playStatus: boolean, track: HTMLAudioElement, trackNumber2: 
     setInterval(function() {
       updateTime(track)
     }, 1000)
-  
   }
-
-
-
-
 }
 
 function nextTrack(track: HTMLAudioElement, playStatus: boolean) {

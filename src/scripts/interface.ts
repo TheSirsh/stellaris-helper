@@ -4,9 +4,11 @@ interface IHeader {
 }
 
 interface IAudioPlayer {
+  type: string,
   name: string,
-  src: string,
-  alt: string,
+  text?: string,
+  src?: string,
+  alt?: string,
 }
 
 interface ITrack {
