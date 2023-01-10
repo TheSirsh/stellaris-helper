@@ -16,6 +16,11 @@ function createAudioPlayer() {
         i++;
         createNewImageElement(`${audioPlayerText[i].name}`, document.querySelector(".progress-bar-empty"), `${audioPlayerText[i].src}`, `${audioPlayerText[i].alt}`);
       }
+      if (`${audioPlayerText[i].name}` === "volume-bar-empty") {
+        createNewSimpleElement("div", `${audioPlayerText[i].name}`, audioPlayer);
+        i++;
+        createNewImageElement(`${audioPlayerText[i].name}`, document.querySelector(".volume-bar-empty"), `${audioPlayerText[i].src}`, `${audioPlayerText[i].alt}`);
+      }
     else if (audioPlayerText[i].type === "none") { continue }
         else if (audioPlayerText[i].type === "image") { createNewImageElement(`${audioPlayerText[i].name}`, audioPlayer, `${audioPlayerText[i].src}`, `${audioPlayerText[i].alt}`); }
           else if (audioPlayerText[i].type === "text") { createNewTextElement("span", `${audioPlayerText[i].name}`, audioPlayer, `${audioPlayerText[i].text}`); }

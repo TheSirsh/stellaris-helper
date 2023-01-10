@@ -32,7 +32,7 @@ const audioPlayerText: Array<IAudioPlayer> = [
     alt: "Empty progress bar",
   },
   {
-    type: "image",
+    type: "none",
     name: "progress-bar",
     src: "../src/icons/audio-player/progress-bar.png",
     alt: "Progress bar",
@@ -60,7 +60,7 @@ const audioPlayerText: Array<IAudioPlayer> = [
     alt: "Mute"
   },
   {
-    type: "image",
+    type: "none",
     name: "volume-bar-empty",
     src: "../src/icons/audio-player/volume-bar-empty.png",
     alt: "Empty volume bar"
