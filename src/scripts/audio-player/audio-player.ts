@@ -37,6 +37,12 @@ function createAudioPlayer() {
       nextTrack(audioTrack, isPlay)
       isPlay = true
     })
+
+    const prevButton = document.querySelector(".prev")
+    prevButton.addEventListener("click", function() {
+      prevTrack(audioTrack, isPlay)
+      isPlay = true
+    })
 }
 
 function tooglePlay(playStatus: boolean, track: HTMLAudioElement, trackNumber2: number) {
@@ -86,6 +92,23 @@ function nextTrack(track: HTMLAudioElement, playStatus: boolean) {
   tooglePlay(false, track, trackNumber)
 }
 
+function prevTrack(track: HTMLAudioElement, playStatus: boolean) {
+  if (!playStatus) {
+    let button: HTMLImageElement = document.querySelector(".play");
+    button.src = "../src/icons/audio-player/play.png";
+  }
+
+  localStorage.setItem("trackTime", "0");
+  let trackNumber = parseInt(localStorage.getItem("trackNumber"))
+  if (trackNumber ===  0 ) { trackNumber = trackList.length - 1; }
+    else { trackNumber-- }
+  localStorage.setItem("stopTimer", "yes")
+  track.src = trackList[trackNumber].src;
+  updateTime(track);
+  localStorage.setItem("trackNumber", trackNumber.toString())
+  tooglePlay(false, track, trackNumber)
+}
+
 function updateTime(track: HTMLAudioElement) {
   let time = track.currentTime;
   
@@ -93,7 +116,8 @@ function updateTime(track: HTMLAudioElement) {
   let duration = document.querySelector(".duration");
   duration.textContent = convertTime(time) + " / " + convertTime(trackList[trackNumber].duration);
   let progressBar: HTMLImageElement = document.querySelector(".progress-bar");
-  progressBar.style.width = (time * 100) / trackList[trackNumber].duration + "%"
+  progressBar.style.width = (time * 100) / trackList[trackNumber].duration + "%";
+  if (time === trackList[trackNumber].duration) { nextTrack(track, true) }
 }
 
 export { createAudioPlayer }
