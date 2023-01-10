@@ -54,6 +54,11 @@ function createAudioPlayer() {
       isPlay = true
     })
 
+    const volumeBar = document.querySelector(".volume-bar-empty");
+    volumeBar.addEventListener("click", function(elem: PointerEvent) {
+      setTrackPoint(audioTrack, elem)
+    })
+
     const soundButton = document.querySelector(".sound");
     soundButton.addEventListener("click", function() {
       toogleSound(audioTrack, isSound);
@@ -131,6 +136,14 @@ function updateTime(track: HTMLAudioElement) {
   if (time === trackList[trackNumber].duration) { nextTrack(track, true) }
 }
 
+function setTrackPoint(track: HTMLAudioElement, point: PointerEvent) {
+  const volumeBar: HTMLImageElement = document.querySelector(".volume-bar")
+  const volumeWidth: string = window.getComputedStyle(document.querySelector(".volume-bar-empty")).width;
+  track.volume = point.offsetX / parseInt(volumeWidth);
+  volumeBar.style.width = point.offsetX / parseInt(volumeWidth) * 100 + '%';
+  localStorage.setItem("volume", (track.volume).toString())
+}
+
 function toogleSound(track: HTMLAudioElement, soundStatus: boolean) {
   const soundButton: HTMLImageElement = document.querySelector(".sound");
   const volumeBar: HTMLImageElement = document.querySelector(".volume-bar")
@@ -139,7 +152,7 @@ function toogleSound(track: HTMLAudioElement, soundStatus: boolean) {
     track.volume = 0;
   } else {
     soundButton.src ="../src/icons/audio-player/sound.png";
-    track.volume = 0.3
+    track.volume = parseFloat(localStorage.getItem("volume"));
   }
   volumeBar.style.width = track.volume * 100 + "%"
 }
