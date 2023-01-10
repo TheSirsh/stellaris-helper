@@ -13,7 +13,8 @@
 .next,
 .progress-bar-empty,
 .duration,
-.track-name {
+.track-name,
+.volume {
   height: 1.5vw;
   margin: 0px 0.5vw;
 }
@@ -42,7 +43,8 @@
 }
 
 .duration,
-.track-name {
+.track-name,
+.volume {
   color: white;
 }
 

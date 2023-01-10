@@ -71,6 +71,11 @@ const audioPlayerText: Array<IAudioPlayer> = [
     src: "../src/icons/audio-player/volume-bar.png",
     alt: "Volume bar"
   },
+  {
+    type: "text",
+    name: "volume",
+    text: "0%",
+  },
 ]
 
 export { audioPlayerText }

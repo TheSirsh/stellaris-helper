@@ -39,6 +39,9 @@ function createAudioPlayer() {
     const volumeBasic: HTMLImageElement = document.querySelector(".volume-bar");
     volumeBasic.style.width = parseFloat(localStorage.getItem("volume")) * 100 + "%";
 
+    const volumeText: HTMLImageElement = document.querySelector(".volume");
+    volumeText.textContent = parseFloat(localStorage.getItem("volume")) * 100 + "%"
+
 
     let playButton = document.querySelector(".play");
     localStorage.setItem("trackTime", "0")
@@ -160,14 +163,17 @@ function setTrackPoint(track: HTMLAudioElement, point: PointerEvent) {
 function setVolumePoint(track: HTMLAudioElement, point: PointerEvent) {
   const volumeBar: HTMLImageElement = document.querySelector(".volume-bar")
   const volumeWidth: string = window.getComputedStyle(document.querySelector(".volume-bar-empty")).width;
+  const volumeText: HTMLImageElement = document.querySelector(".volume");
   track.volume = point.offsetX / parseInt(volumeWidth);
   volumeBar.style.width = point.offsetX / parseInt(volumeWidth) * 100 + '%';
+  volumeText.textContent = Math.round(point.offsetX / parseInt(volumeWidth) * 100)  + "%"
   localStorage.setItem("volume", (track.volume).toString())
 }
 
 function toogleSound(track: HTMLAudioElement, soundStatus: boolean) {
   const soundButton: HTMLImageElement = document.querySelector(".sound");
-  const volumeBar: HTMLImageElement = document.querySelector(".volume-bar")
+  const volumeBar: HTMLImageElement = document.querySelector(".volume-bar");
+  const volumeText: HTMLImageElement = document.querySelector(".volume");
   if (soundStatus) {
     soundButton.src ="../src/icons/audio-player/mute.png";
     track.volume = 0;
@@ -176,6 +182,7 @@ function toogleSound(track: HTMLAudioElement, soundStatus: boolean) {
     track.volume = parseFloat(localStorage.getItem("volume"));
   }
   volumeBar.style.width = track.volume * 100 + "%"
+  volumeText.textContent = Math.round(track.volume * 100)  + "%"
 }
 
 export { createAudioPlayer }
