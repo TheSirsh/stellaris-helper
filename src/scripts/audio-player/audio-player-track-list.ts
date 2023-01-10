@@ -4,7 +4,7 @@ const trackList: Array<ITrack> = [
   {
     name: "Creation and beyond",
     src: "../src/audio/creation-and-beyond.mp3",
-    duration: 570,
+    duration: 510,
   },
   {
     name: "Faster than light",

@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  padding: 0px 5%;
+  width: 90%;
   height: 5vw;
   background-color: #1d2b25;
 }
@@ -33,18 +34,20 @@
 }
 
 .progress-bar {
+  margin: auto 0px;
   height: 1.5vw;
   width: 0vw;
 }
 
 .duration {
+  text-align: right;
   min-width: 10vw;
-  text-align: center;
 }
 
 .duration,
 .track-name,
 .volume {
+  display: block;
   color: white;
 }
 
@@ -61,6 +64,8 @@
 }
 
 .volume-bar-empty {
+  display: flex;
+  align-items: center;
   background-image: url("../../icons/audio-player/volume-bar-empty.png");
   background-size: cover;
   margin: 0px 0.5vw;
@@ -68,5 +73,10 @@
 }
 
 .volume-bar {
+  margin: auto 0px;
   width: 0vw;
+}
+
+.volume {
+  min-width: 3vw
 }
