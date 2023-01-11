@@ -1,3 +1,0 @@
-function completeLeaderTrait() {
-}
-export { completeLeaderTrait };
