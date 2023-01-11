@@ -1,0 +1,5 @@
+function completeLeaderTrait() {
+
+}
+
+export{ completeLeaderTrait }

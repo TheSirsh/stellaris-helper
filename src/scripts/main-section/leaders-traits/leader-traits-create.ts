@@ -1,11 +1,11 @@
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../../create-functions.js";
 import { leaderSectionText } from "./leader-section-text.js";
-// import { selectSpecies } from "./species-selector.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../create-worked-place.js";
 import { checkingLeader } from "../../checking-leader-function.js";
 import { ITraits } from "../../interface.js";
 import { selectLeaderTrait } from "./leader-traits-selector.js";
 import { changeButton } from "../../change-button.js";
+import { completeLeaderTrait } from "./leader-traits-completed.js";
 
 function createLeaderTraits(): void {
 
@@ -18,6 +18,20 @@ function createLeaderTraits(): void {
 
   createTraitList(traitlistBlock, validTraits, "leader-traits");
   createDescrBlock("leader-traits", leaderSectionText);
+
+  const button : HTMLElement = document.querySelector(".leader-traits__button");
+    changeButton(button, "leader-traits");
+  button.addEventListener("click", function() {
+    let traits = document.querySelectorAll(".leader-traits__trait-container");
+    let traitsActive: Array<ITraits> = [];
+    for (let i = 0; i < traits.length; i++) {
+      if (traits[i].classList.contains("leader-traits__trait-container_active")) {
+        traitsActive.push(validTraits[i])
+      }
+    }
+    localStorage.setItem("traits", JSON.stringify(traitsActive))
+    completeLeaderTrait()
+  })
 
   const traitContainerArr = document.querySelectorAll(".leader-traits__trait-container");
 
@@ -33,11 +47,6 @@ function createLeaderTraits(): void {
         traitContainerArr[i].classList.add("leader-traits__trait-container_active");
       }
       selectLeaderTrait(i, validTraits, isActive);
-
-      const button : HTMLElement = document.querySelector(".leader-traits__button");
-      if (button) {
-        changeButton(button, "leader-traits")
-      }
     })
   })
 }

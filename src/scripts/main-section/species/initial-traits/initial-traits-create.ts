@@ -1,7 +1,7 @@
 import { ITraits } from "../../../interface.js";
 import { initialTraitSectionContent } from "./initial-trait-text.js";
 import { speciesBiologicalTraits, speciesBotanicalTraits, speciesLithoidTraits, speciesCyborgTraits, speciesRobotTraits } from "./initial-traits-list.js";
-import { selectBiologicalTrait } from "./initial-trait-selector.js";
+import { mutuallyChecking } from "../../../mutually-checking.js";
 import { createValidArray } from "../../../create-valid-array-function.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
 import { completeSpeciesTrait } from "../complete-species-traits/complete-species-traits.js"; 
@@ -59,7 +59,7 @@ function nextTraitStage(): void {
         isActive = false;
         traitContainerArr[i].classList.add("biological__trait-container_active");
       }
-      selectBiologicalTrait(i, validTraits, isActive);
+      mutuallyChecking(i, validTraits, isActive, "biological");
     })
   })
 }
