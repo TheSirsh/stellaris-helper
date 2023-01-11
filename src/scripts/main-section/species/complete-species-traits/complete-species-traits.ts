@@ -19,10 +19,10 @@ function completeSpeciesTrait() {
   createWorkedPlace("completed", completeTraitSectionContent);
   createTraitList(document.querySelector(".completed__workedplace"), resultArray, "completed");
   createDescrBlock("completed", completeTraitSectionContent);
+    document.querySelector(".completed__button").remove()
 
   const textBlock = document.querySelector(".completed__descr-text");
-  textBlock.textContent = "";
-
+    textBlock.textContent = "";
 
   let traitList: Array<Array<string>> = [];
 

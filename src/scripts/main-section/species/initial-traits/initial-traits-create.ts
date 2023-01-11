@@ -5,6 +5,7 @@ import { selectBiologicalTrait } from "./initial-trait-selector.js";
 import { createValidArray } from "../../../create-valid-array-function.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
 import { completeSpeciesTrait } from "../complete-species-traits/complete-species-traits.js"; 
+import { changeButton } from "../../../change-button.js";
 
 function nextTraitStage(): void {
 
@@ -31,6 +32,8 @@ function nextTraitStage(): void {
 
   
   const button: HTMLElement = document.querySelector(".biological__button");
+  changeButton(button, "biological")
+
   button.addEventListener("click", function() {
     let traits = document.querySelectorAll(".biological__trait-container");
     let traitsActive: Array<ITraits> = [];
@@ -40,13 +43,8 @@ function nextTraitStage(): void {
       }
     }
     localStorage.setItem("traits", JSON.stringify(traitsActive))
-
-
     completeSpeciesTrait()
   })
-  
-  
-  
 
   const traitContainerArr = document.querySelectorAll(".biological__trait-container");
 
