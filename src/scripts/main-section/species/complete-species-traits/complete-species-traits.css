@@ -8,10 +8,10 @@
 }
 
 .completed__traitlist {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  width: 100%;
+  width: 45%;
   height: auto;
   padding: 0px;
 }
@@ -27,7 +27,8 @@
 }
 
 .completed__trait-container,
-.completed__descr-text {
+.completed__descr-text,
+.code-block__text {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
@@ -54,58 +55,35 @@
   height: auto;
 }
 
-.completed__descr-block {
+.completed__descr-block,
+.code-block {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 30%;
 }
 
-.completed__descr-title {
+.completed__descr-block {
+  width: 25%;
+}
+
+.code-block {
+  width: 20%;
+}
+
+.completed__descr-title,
+.code-block__title {
   margin: 0.5vw auto;
   font-size: 1.5vw;
   text-align: center;
   height: 3vw;
 }
 
-.completed__descr-text {
+.completed__descr-text,
+.code-block__text {
   font-size: 1vw;
   text-align: justify;
   width: 100%;
   height: auto;
   min-height: 7vw;
   padding: 1vw;
-}
-
-.completed__button,
-.completed__button_active {
-  background-color: #1d2b25;
-  border-radius: 1vw;
-  display: flex;
-  font-size: 1.5vw;
-  text-align: center;
-  padding: 1vw;
-  width: 9vw;
-  height: 2vw;
-}
-
-.completed__button {
-  border: 0.25vw solid #ce4b3d;
-  cursor: url("../../../../icons/cursors/no-drop.png"), no-drop;
-}
-
-.completed__button_active {
-  border: 0.25vw solid #ec9240;
-  cursor: url("../../../../icons/cursors/ponter.png"), pointer;
-}
-
-.completed__button:hover,
-.completed__button_active {
-  background-color: #58b698;
-}
-
-.completed__button-image {
-  margin-left: 1vw;
-  width: 110%;
-  height: 110%;
 }

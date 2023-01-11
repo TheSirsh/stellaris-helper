@@ -4,6 +4,7 @@ import { climateTraits } from "../climate-traits/climate-traits-list.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
 import { completeTraitSectionContent } from "./compete-species-trait-text.js";
 import { createNewTextElement } from "../../../create-functions.js";
+import { createCodeBlock } from "../../../create-code-block.js";
 
 function completeSpeciesTrait() {
   
@@ -19,7 +20,9 @@ function completeSpeciesTrait() {
   createWorkedPlace("completed", completeTraitSectionContent);
   createTraitList(document.querySelector(".completed__workedplace"), resultArray, "completed");
   createDescrBlock("completed", completeTraitSectionContent);
-    document.querySelector(".completed__button").remove()
+    document.querySelector(".completed__button").remove();
+
+  createCodeBlock("completed", "Stellaris Inner Code", "traits", resultArray);
 
   const textBlock = document.querySelector(".completed__descr-text");
     textBlock.textContent = "";
@@ -33,8 +36,6 @@ function completeSpeciesTrait() {
     }
 
   let reducedTraitList: Array<Array<string>> = [];
-
-
 
   for (let i = 0; i < traitList.length; i++) {
     if (traitList[i]) {
