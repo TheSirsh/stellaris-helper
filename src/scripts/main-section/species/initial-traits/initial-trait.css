@@ -28,7 +28,7 @@
   width: 15vw;
   height: 3.5vw;
   margin: 0.5vw;
-  cursor: url("../../../../icons/cursors/ponter.png"), pointer;
+  cursor: url("../../../../icons/cursors/pointer.png"), pointer;
 }
 
 .biological__trait-container:hover {
@@ -86,7 +86,7 @@
   padding: 1vw;
   width: 9vw;
   height: 2vw;
-  cursor: url("../../../../icons/cursors/ponter.png"), pointer;
+  cursor: url("../../../../icons/cursors/pointer.png"), pointer;
 }
 
 .biological__button:hover,
@@ -101,7 +101,7 @@
 
 .biological__button_active {
   border: 0.25vw solid #ec9240;
-  cursor: url("../../../../icons/cursors/ponter.png"), pointer;
+  cursor: url("../../../../icons/cursors/pointer.png"), pointer;
 }
 
 .biological__descr__trait {

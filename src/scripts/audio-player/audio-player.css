@@ -25,12 +25,14 @@
 .pause,
 .next {
   width: 1.5vw;
+  cursor: url("../../icons/cursors/pointer.png"), pointer;
 }
 
 .progress-bar-empty {
   background-image: url("../../icons/audio-player/progress-bar-empty.png");
   background-size: contain;
   width: 30vw;
+  cursor: url("../../icons/cursors/pointer.png"), pointer;
 }
 
 .progress-bar {
@@ -56,6 +58,7 @@
   height: 2vw;
   width: 2vw;
   margin: 0px 0.5vw;
+  cursor: url("../../icons/cursors/pointer.png"), pointer;
 }
 
 .volume-bar-empty,
@@ -70,6 +73,7 @@
   background-size: cover;
   margin: 0px 0.5vw;
   width: 10vw;
+  cursor: url("../../icons/cursors/pointer.png"), pointer;
 }
 
 .volume-bar {

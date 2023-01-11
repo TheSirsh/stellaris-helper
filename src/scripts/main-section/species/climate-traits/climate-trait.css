@@ -29,7 +29,7 @@
   width: 15vw;
   height: 3vw;
   margin: 0.5vw;
-  cursor: url("../../../../icons/cursors/ponter.png"), pointer;
+  cursor: url("../../../../icons/cursors/pointer.png"), pointer;
 }
 
 .climate__trait-container:hover {
@@ -108,7 +108,7 @@
 
 .climate__button_active {
   border: 0.25vw solid #ec9240;
-  cursor: url("../../../../icons/cursors/ponter.png"), pointer;
+  cursor: url("../../../../icons/cursors/pointer.png"), pointer;
 }
 
 .climate__button-image {
