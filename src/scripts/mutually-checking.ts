@@ -22,7 +22,7 @@ function mutuallyChecking(i: number, arr: Array<ITraits>, active: boolean, secti
     if (arr[i].exclude !== undefined) {
       for (let j = 0; j < arr[i].exclude.length; j++) {
         if (elem.classList.contains(`${arr[i].exclude[j]}`))
-          if (active) {elem.classList.remove("red");} 
+          if (active) { elem.classList.remove("red");} 
             else { elem.classList.add("red"); }
       }
     }
@@ -35,7 +35,9 @@ function mutuallyChecking(i: number, arr: Array<ITraits>, active: boolean, secti
       createNewTextElement("span", "red", traitDescriptionTrait, arr[i].traits[j][1]);
     } else if (arr[i].traits[j][0] === "good") {
        createNewTextElement("span", "green", traitDescriptionTrait, arr[i].traits[j][1]);
-    }
+    } else if (arr[i].traits[j][0] === "neutral") {
+      createNewTextElement("span", "yellow", traitDescriptionTrait, arr[i].traits[j][1]);
+   }
     traitDescriptionTrait.innerHTML += " " + arr[i].traits[j][2] + "<br>";
   }
 }
