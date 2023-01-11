@@ -35,7 +35,7 @@ const ethics: Array<ITraits> = [
       ["empty", "", "Cannot use Citizen Rights AI policy"],
     ],
     exclude: [
-      "ethic_spiritualist",
+      "ethic_fanatic_spiritualist",
       "ethic_gestalt_consciousness",
       "ethic_fanatic_materialist",
       "ethic_materialist",

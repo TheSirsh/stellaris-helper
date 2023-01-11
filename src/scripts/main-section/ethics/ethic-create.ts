@@ -1,8 +1,8 @@
 import { createWorkedPlace, createTraitList, createDescrBlock }from "../../create-worked-place.js";
 import { ethicSectionText } from "./ethic-section-text.js";
 import { ethics } from "./ethic-list.js"; 
-import { selectEthic } from "./ethics-selector.js";
 import { changeButton } from "../../change-button.js";
+import { mutuallyChecking } from "../../mutually-checking.js";
 
 function createEthics() {
   
@@ -14,14 +14,20 @@ function createEthics() {
 
   speciesContainerArray.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
-      selectEthic(i);
-      localStorage.setItem("ethic", ethics[i].trait);
-      elem.classList.toggle("ethic__trait-container_active");
+      speciesContainerArray[i].classList.remove("red");
+      let isActive: boolean;
+      if (speciesContainerArray[i].classList.contains("ethic__trait-container_active")) {
+        isActive = true;
+        speciesContainerArray[i].classList.remove("ethic__trait-container_active");
+      } else {
+        isActive = false;
+        speciesContainerArray[i].classList.add("ethic__trait-container_active");
+      }
+      mutuallyChecking(i, ethics, isActive, "ethic");
 
-      const classesButton: HTMLElement = document.querySelector(".ethic__button");
-      if (classesButton) {
-        changeButton(classesButton, "ethic");
-//        classesButton.addEventListener("click", ethicFunc);
+      const button: HTMLElement = document.querySelector(".ethic__button");
+      if (button) {
+        changeButton(button, "ethic")
       }
     })
   })

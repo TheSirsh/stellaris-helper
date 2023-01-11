@@ -1,7 +1,7 @@
 import { createNewTextElement } from "./create-functions.js";
 import { ITraits } from "./interface.js";
 
-function activateTrait(destrTitle: HTMLElement, descrText: HTMLElement, traitArray: Array<ITraits>, i: number):void {
+function activateTrait(destrTitle: HTMLElement, descrText: HTMLElement, traitArray: Array<ITraits>, i: number): void {
   destrTitle.textContent = traitArray[i].nameEN;
   descrText.textContent = "";
   for (let j = 0; j < traitArray[i].traits.length; j++) {
