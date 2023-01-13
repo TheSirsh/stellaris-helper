@@ -16,7 +16,7 @@ const authority: Array<ITraits> = [
       "ethic_gestalt_consciousness",
       "ethic_authoritarian",
       "ethic_fanatic_authoritarian",
-  ],
+    ],
   },
   {
     trait: "auth_oligarchic",

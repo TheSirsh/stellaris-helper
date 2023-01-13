@@ -3,6 +3,8 @@ import { ethicSectionText } from "./ethic-section-text.js";
 import { ethics } from "./ethic-list.js"; 
 import { changeButton } from "../../change-button.js";
 import { mutuallyChecking } from "../../mutually-checking.js";
+import { createAutority } from "../autority/autority-create.js";
+import { ITraits } from "../../interface.js";
 
 function createEthics() {
   
@@ -27,10 +29,24 @@ function createEthics() {
 
       const button: HTMLElement = document.querySelector(".ethic__button");
       if (button) {
-        changeButton(button, "ethic")
+        changeButton(button, "ethic");
       }
-    })
+
+      button.addEventListener("click", btnClick);
   })
+  })
+}
+
+function btnClick() {
+  let eticArr = document.querySelectorAll(".ethic__trait-container");
+  let traitsActive: Array<ITraits> = [];
+  for (let i = 0; i < eticArr.length; i++) {
+    if (eticArr[i].classList.contains("ethic__trait-container_active")) {
+      traitsActive.push(ethics[i])
+    }
+  }
+  localStorage.setItem("ethics", JSON.stringify(traitsActive));
+  createAutority()
 }
 
 export { createEthics }
