@@ -5,6 +5,7 @@ import { ITraits } from "../../interface.js";
 import { mutuallyChecking } from "../../mutually-checking.js";
 import { changeButton } from "../../change-button.js";
 import { activateTrait } from "../../activate-trait.js";
+import { createCivics } from "../civics/create-civic.js";
 
 function createAutority(): void {
 
@@ -31,7 +32,7 @@ function createAutority(): void {
         changeButton(button, "authority");
       }
 
-    //  button.addEventListener("click", btnClick);
+      button.addEventListener("click", createCivics);
   })
   })
 
