@@ -45,4 +45,15 @@ function createDescrBlock(cssClass: string, workedplaceText: IMainText, isImage?
     createNewImageElement(`${cssClass}__button-image`, button, "../src/icons/next-block.png", "Next =>")
 }
 
-export { createWorkedPlace, createTraitList, createDescrBlock }
+function createCodeBlock(codeBlockTitle: string, valueName: string, arrayOfValue: Array<ITraits> ) {
+  const codeBlock =  createNewSimpleElement("div", "code-block", document.querySelector(".workedplace"));
+    createNewTextElement("h3", "code-block__title", codeBlock, codeBlockTitle);
+    const text = createNewTextElement("pre", "code-block__text", codeBlock, "");
+      text.innerHTML = `${valueName} = {` + "<br>"
+      for (let i = 0; i < arrayOfValue.length; i++) {
+        text.innerHTML += " " + arrayOfValue[i].trait + "<br>"
+      }
+      text.innerHTML += "}"
+}
+
+export { createWorkedPlace, createTraitList, createDescrBlock, createCodeBlock }

@@ -1,10 +1,9 @@
 import { ITraits } from "../../../interface.js";
 import { classes, classesTraitsBiological, classesTraitsHimeMind } from "../classes/classes-list.js"
 import { climateTraits } from "../climate-traits/climate-traits-list.js";
-import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
+import { createWorkedPlace, createTraitList, createDescrBlock, createCodeBlock } from "../../../create-worked-place.js";
 import { completeTraitSectionContent } from "./compete-species-trait-text.js";
 import { createNewTextElement } from "../../../create-functions.js";
-import { createCodeBlock } from "../../../create-code-block.js";
 import { summarizeArray } from "../../../summarize-array.js";
 import { checkLocalStorage } from "../../../checking-local-storage.js";
 
@@ -24,7 +23,7 @@ function completeSpeciesTrait() {
   createDescrBlock("completed", completeTraitSectionContent);
     document.querySelector(".completed__button").remove();
 
-  createCodeBlock("completed", "Stellaris Inner Code", "traits", resultArray);
+  createCodeBlock("Stellaris Inner Code", "traits", resultArray);
 
   const textBlock = document.querySelector(".completed__descr-text");
     textBlock.textContent = "";

@@ -1,7 +1,6 @@
 import { ITraits } from "../../interface.js";
-import { createWorkedPlace, createTraitList, createDescrBlock } from "../../create-worked-place.js";
+import { createWorkedPlace, createTraitList, createDescrBlock, createCodeBlock } from "../../create-worked-place.js";
 import { createNewTextElement } from "../../create-functions.js";
-import { createCodeBlock } from "../../create-code-block.js";
 import { leaderSectionText } from "./leader-section-text.js";
 import { summarizeArray } from "../../summarize-array.js";
 
@@ -15,7 +14,7 @@ function completeLeaderTrait() {
   createDescrBlock("completed", leaderSectionText);
     document.querySelector(".completed__button").remove();
 
-  createCodeBlock("completed", "Stellaris Inner Code", "traits", resultArray);
+  createCodeBlock("Stellaris Inner Code", "traits", resultArray);
 
   const textBlock = document.querySelector(".completed__descr-text");
     textBlock.textContent = "";
