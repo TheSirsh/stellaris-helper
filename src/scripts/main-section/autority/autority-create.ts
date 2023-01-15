@@ -11,8 +11,8 @@ function createAutority(): void {
 
   let validArray = createValidArray();
 
-  createWorkedPlace("authority", autoritySectionText);
-  createTraitList(document.querySelector(".authority__workedplace"), validArray, "authority");
+  createWorkedPlace(autoritySectionText);
+  createTraitList(document.querySelector(".workedplace"), validArray, "authority");
   createDescrBlock("authority", autoritySectionText);
 
   const autorityContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".authority__trait-container");

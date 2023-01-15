@@ -19,8 +19,8 @@ function completeSpeciesTrait() {
   let arr = JSON.parse(localStorage.getItem("traits"))
   resultArray = resultArray.concat(arr)
 
-  createWorkedPlace("completed", completeTraitSectionContent);
-  createTraitList(document.querySelector(".completed__workedplace"), resultArray, "completed");
+  createWorkedPlace(completeTraitSectionContent);
+  createTraitList(document.querySelector(".workedplace"), resultArray, "completed");
   createDescrBlock("completed", completeTraitSectionContent);
     document.querySelector(".completed__button").remove();
 

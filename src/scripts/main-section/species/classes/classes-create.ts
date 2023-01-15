@@ -8,8 +8,8 @@ import { changeButton } from "../../../change-button.js";
 
 function createClasses(): void {
 
-  createWorkedPlace("classes", classesSectionText);
-  const workedplace = document.querySelector(".classes__workedplace");
+  createWorkedPlace(classesSectionText);
+  const workedplace = document.querySelector(".workedplace");
 
   const traitlistBlock = createNewSimpleElement("div", "classes__traitlist-block", workedplace)
 

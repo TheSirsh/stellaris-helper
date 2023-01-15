@@ -8,8 +8,8 @@ import { ITraits } from "../../interface.js";
 
 function createEthics() {
   
-  createWorkedPlace("ethic", ethicSectionText);
-  createTraitList(document.querySelector(".ethic__workedplace"), ethics, "ethic");
+  createWorkedPlace(ethicSectionText);
+  createTraitList(document.querySelector(".workedplace"), ethics, "ethic");
   createDescrBlock("ethic", ethicSectionText);
 
   const speciesContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".ethic__trait-container");

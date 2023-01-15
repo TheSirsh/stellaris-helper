@@ -1,12 +1,3 @@
-.classes__workedplace {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  height: 30vw;
-  margin: 0px auto;
-  padding: 0px;
-}
-
 .classes__traitlist-block {
   display: flex;
   flex-direction: column;

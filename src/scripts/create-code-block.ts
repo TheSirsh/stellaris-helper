@@ -2,7 +2,7 @@ import { createNewSimpleElement, createNewTextElement } from "./create-functions
 import { ITraits } from "./interface.js";
 
 function createCodeBlock(stageName: string, codeBlockTitle: string, valueName: string, arrayOfValue: Array<ITraits> ) {
-  const codeBlock =  createNewSimpleElement("div", "code-block", document.querySelector(`.${stageName}__workedplace`));
+  const codeBlock =  createNewSimpleElement("div", "code-block", document.querySelector(".workedplace"));
     createNewTextElement("h3", "code-block__title", codeBlock, codeBlockTitle);
     const text = createNewTextElement("pre", "code-block__text", codeBlock, "");
       text.innerHTML = `${valueName} = {` + "<br>"

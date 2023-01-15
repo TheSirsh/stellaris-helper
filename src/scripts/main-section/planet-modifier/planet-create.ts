@@ -6,8 +6,8 @@ import { mutuallyChecking } from "../../mutually-checking.js";
 
 function createPlanetModifier() {
   
-  createWorkedPlace("planet", planetModifierText);
-  const workedplace: HTMLElement = document.querySelector(".planet__workedplace");
+  createWorkedPlace(planetModifierText);
+  const workedplace: HTMLElement = document.querySelector(".workedplace");
   createTraitList(workedplace, planetModifier, "planet");
   createDescrBlock("planet", planetModifierText);
 

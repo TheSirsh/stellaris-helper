@@ -17,8 +17,8 @@ function createCivics() {
       else (validArray = civicsStandart)
 
   
-  createWorkedPlace("civic", civicSectionText);
-  createTraitList(document.querySelector(".civic__workedplace"), validArray, "civic");
+  createWorkedPlace(civicSectionText);
+  createTraitList(document.querySelector(".workedplace"), validArray, "civic");
   createDescrBlock("civic", civicSectionText);
 
   const traitContainerArr = document.querySelectorAll(".civic__trait-container");

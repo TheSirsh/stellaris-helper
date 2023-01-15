@@ -10,8 +10,8 @@ function completeLeaderTrait() {
   let arr = JSON.parse(localStorage.getItem("traits"));
   resultArray = resultArray.concat(arr);
 
-  createWorkedPlace("completed", leaderSectionText);
-  createTraitList(document.querySelector(".completed__workedplace"), resultArray, "completed");
+  createWorkedPlace(leaderSectionText);
+  createTraitList(document.querySelector(".workedplace"), resultArray, "completed");
   createDescrBlock("completed", leaderSectionText);
     document.querySelector(".completed__button").remove();
 

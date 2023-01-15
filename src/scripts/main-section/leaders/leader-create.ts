@@ -6,8 +6,8 @@ import { selectLeaderSpecies } from "./leader-species-selector.js";
 
 function createLeader() {
   
-  createWorkedPlace("leader", leaderSectionText);
-  const workedplace = document.querySelector(".leader__workedplace");
+  createWorkedPlace(leaderSectionText);
+  const workedplace = document.querySelector(".workedplace");
   const traitlistBlock = createNewSimpleElement("div", "leader__traitlist-block", workedplace);
   createTraitList(traitlistBlock, species, "leader-species");
   createDescrBlock("leader", leaderSectionText);

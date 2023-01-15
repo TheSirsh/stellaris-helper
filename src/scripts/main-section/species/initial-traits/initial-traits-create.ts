@@ -26,8 +26,8 @@ function nextTraitStage(): void {
     validTraits = validTraits.concat(speciesBotanicalTraits);
   }
 
-  createWorkedPlace("biological", initialTraitSectionContent);
-  createTraitList(document.querySelector(".biological__workedplace"), validTraits, "biological");
+  createWorkedPlace(initialTraitSectionContent);
+  createTraitList(document.querySelector(".workedplace"), validTraits, "biological");
   createDescrBlock("biological", initialTraitSectionContent);
 
   

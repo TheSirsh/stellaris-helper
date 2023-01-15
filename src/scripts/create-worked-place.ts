@@ -1,7 +1,7 @@
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js";
 import { IMainText, ITraits } from "./interface";
 
-function createWorkedPlace(cssClass: string, workedplaceText: IMainText): void {
+function createWorkedPlace(workedplaceText: IMainText): void {
 
   const container: HTMLElement = document.querySelector(".main-section__container")!;
   container.remove();
@@ -13,7 +13,7 @@ function createWorkedPlace(cssClass: string, workedplaceText: IMainText): void {
     createNewTextElement("h2", "main-section__title", mainSectionContainer, workedplaceText.titleEN);
     createNewTextElement("h3", "main-section__subtitle", mainSectionContainer, workedplaceText.subtitleEN);
 
-  createNewSimpleElement("div", `${cssClass}__workedplace`, mainSectionContainer);
+  createNewSimpleElement("div", "workedplace", mainSectionContainer);
 }
 
 function createTraitList(parentElemnet: HTMLElement, arrayOfTraits: Array<ITraits>, cssClass: string): void {
@@ -35,7 +35,7 @@ function createTraitList(parentElemnet: HTMLElement, arrayOfTraits: Array<ITrait
 
 function createDescrBlock(cssClass: string, workedplaceText: IMainText, isImage?: boolean): void {
 
-  const mainSectionWorkedPlace = document.querySelector(`.${cssClass}__workedplace`);
+  const mainSectionWorkedPlace = document.querySelector(".workedplace");
 
   const mainSectionTraitDescription = createNewSimpleElement("div", `${cssClass}__descr-block`, mainSectionWorkedPlace);
   createNewTextElement("h3", `${cssClass}__descr-title`, mainSectionTraitDescription, workedplaceText.descriptionBlockTitleEN);

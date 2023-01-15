@@ -29,6 +29,15 @@
   text-align: center;
 }
 
+.workedplace {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  padding: 0px;
+}
+
 .green {
   color: #28d725;
 }

@@ -1,12 +1,3 @@
-.authority__workedplace {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  height: auto;
-  margin: 0px auto;
-  padding: 0px;
-}
-
 .authority__traitlist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

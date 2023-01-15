@@ -11,8 +11,8 @@ function createLeaderTraits(): void {
 
   let validTraits: Array<ITraits> = checkingLeader()
 
-  createWorkedPlace("leader-traits", leaderSectionText);
-  const workedplace = document.querySelector(".leader-traits__workedplace");
+  createWorkedPlace(leaderSectionText);
+  const workedplace = document.querySelector(".workedplace");
 
   const traitlistBlock = createNewSimpleElement("div", "leader-traits__traitlist-block", workedplace)
 
