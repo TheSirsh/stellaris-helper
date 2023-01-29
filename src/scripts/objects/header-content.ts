@@ -18,7 +18,7 @@ const headerContent: Array<IHeader> = [
     nameRU: "",
   }, 
   {
-    nameEN: "Other",
+    nameEN: "Relics",
     nameRU: "",
   }
 ]

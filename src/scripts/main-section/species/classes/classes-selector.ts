@@ -34,7 +34,7 @@ function selectClasses(i: number): void {
 
     createTraitList(classesTraitBlock, classesTraitsHimeMind, "hm__")
 
-    const classesTraitBio: NodeListOf<HTMLElement> | null = document.querySelectorAll(".-hm__trait-container");
+    const classesTraitBio: NodeListOf<HTMLElement> | null = document.querySelectorAll(".hm__trait-container");
     classesTraitBio.forEach(function(elem: Element, n: number) {
       elem.addEventListener("click", function(): void {
         selectClassesBio(n);

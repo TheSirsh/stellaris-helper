@@ -46,14 +46,24 @@
   padding: 0px;
 }
 
+.comp__traitlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  height: auto;
+  padding: 0px;
+}
+
 .trait-container,
+.comp__trait-container,
 .descr-text  {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
 }
 
-.trait-container {
+.trait-container,
+.comp__trait-container {
   display: flex;
   align-items: center;
   width: 15vw;
@@ -72,14 +82,16 @@
   border: 0.25vw solid #ec9240;
 }
 
-.trait-container-image {
+.trait-container-image,
+.comp__trait-container-image {
   border-radius: 50%;
   width: 3vw;
   height: 3vw;
   margin: 0px 1vw;
 }
 
-.trait-container-name {
+.trait-container-name,
+.comp__trait-container-name {
   display: block;
   align-self: center;
   height: auto;

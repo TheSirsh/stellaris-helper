@@ -19,7 +19,7 @@ function completeSpeciesTrait() {
   resultArray = resultArray.concat(arr)
 
   createWorkedPlace(completeTraitSectionContent);
-  createTraitList(document.querySelector(".workedplace"), resultArray, "");
+  createTraitList(document.querySelector(".workedplace"), resultArray, "comp__");
   createDescrBlock("", completeTraitSectionContent);
     document.querySelector(".button").remove();
 
