@@ -43,10 +43,14 @@ interface ITraits {
   exclude?: Array<string>,
 }
 
+interface IRelics extends ITraits {
+  triumph: Array<Array<string>>,
+}
+
 interface IFooter {
   nameEN: string,
   nameRU: string,
   src: string,
 }
 
-export { IHeader, IAudioPlayer, ITrack, IMainText, ITraits, IFooter }
+export { IHeader, IAudioPlayer, ITrack, IMainText, ITraits, IRelics, IFooter, }
