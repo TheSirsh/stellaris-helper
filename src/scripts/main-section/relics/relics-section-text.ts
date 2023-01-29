@@ -1,4 +1,4 @@
-import { IMainText } from "../../interface.js"
+import { IMainText } from "../../interface"
 
 const relicsSectionText: IMainText = {
   titleEN : "Relics",

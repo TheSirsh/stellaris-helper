@@ -4,7 +4,7 @@ import { createClasses } from "../main-section/species/classes/classes-create.js
 import { createLeader } from "../main-section/leaders/leader-create.js";
 import { createPlanetModifier } from "../main-section/planet-modifier/planet-create.js";
 import { createEthics } from "../main-section/ethics/ethic-create.js";
-import { createRelics } from "../main-section/relics/create-relics.js";
+import { createRelics } from "../main-section/relics/relics-create.js";
 
 function createHeader(): void {
 

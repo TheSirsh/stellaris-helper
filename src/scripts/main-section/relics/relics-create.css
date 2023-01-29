@@ -1,0 +1,103 @@
+.relics__traitlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+.relics__trait-container {
+  display: flex;
+  align-items: center;
+  width: 15vw;
+  height: 3.5vw;
+  margin: 0.5vw;
+  cursor: url("../../../icons/cursors/pointer.png"), pointer;
+  border: 0.25vw solid #58b698;
+}
+
+.relics__trait-container,
+.relics__descr-text {
+  background-color: #1d2b25;
+  border: 0.25vw solid #131d1c;
+  border-radius: 1vw;
+}
+
+.relics__trait-container:hover {
+  background-color: #58b698;
+  color: black;
+}
+
+.relics__trait-container_active {
+  border: 0.25vw solid #ec9240;
+}
+
+.relics__trait-container-image {
+  width: 3vw;
+  height: 3vw;
+  margin: 0px 1vw;
+}
+
+.relics__trait-container-name {
+  display: block;
+  align-self: center;
+  height: auto;
+}
+
+.relics__descr-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.relics__descr-title {
+  margin: 0.5vw auto;
+  font-size: 1.5vw;
+  text-align: center;
+  height: 3vw;
+}
+
+.relics__descr-text {
+  font-size: 1vw;
+  text-align: justify;
+  width: 100%;
+  height: auto;
+  min-height: 20vw;
+  padding: 1vw;
+}
+
+.relics__button,
+.relics__button_active {
+  font-size: 1.5vw;
+  text-align: center;
+  display: flex;
+  background-color: #1d2b25;
+  border-radius: 1vw;
+  padding: 1vw;
+  width: 9vw;
+  height: 2vw;
+  cursor: url("../../../icons/cursors/pointer.png"), pointer;
+}
+
+.relics__button {
+  border: 0.25vw solid #ce4b3d;
+  cursor: url("../../../icons/cursors/no-drop.png"), no-drop;
+}
+
+.relics__button_active {
+  border: 0.25vw solid #ec9240;
+  cursor: url("../../../icons/cursors/pointer.png"), pointer;
+}
+
+.relics__button:hover,
+.relics__button_active:hover {
+  background-color: #58b698;
+}
+
+.relics__button-image {
+  margin-left: 1vw;
+  width: 110%;
+  height: 110%;
+}
