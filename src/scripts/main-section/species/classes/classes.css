@@ -1,12 +1,5 @@
-.classes__traitlist-block {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-}
-
-.classes__traitlist,
-.classes-bio__traitlist,
-.classes-hm__traitlist {
+.bio__traitlist,
+.hm__traitlist {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -14,9 +7,8 @@
   padding: 0px;
 }
 
-.classes__trait-container,
-.classes-bio__trait-container,
-.classes-hm__trait-container {
+.bio__trait-container,
+.hm__trait-container {
   background-color: #1d2b25;
   display: flex;
   align-items: center;
@@ -28,92 +20,27 @@
   border-radius: 1vw;
 }
 
-.classes__trait-container_active,
-.classes-bio__trait-container_active,
-.classes-hm__trait-container_active {
+.bio__trait-container_active,
+.hm__trait-container_active {
   border: 0.25vw solid #ec9240;
 }
 
-.classes__trait-container:hover,
-.classes-bio__trait-container:hover,
-.classes-hm__trait-container:hover {
+.bio__trait-container:hover,
+.hm__trait-container:hover {
   background-color: #58b698;
   color: black;
 }
 
-.classes__trait-container-image,
-.classes-bio__trait-container-image,
-.classes-hm__trait-container-image {
+.bio__trait-container-image,
+.hm__trait-container-image {
   width: 3vw;
   height: 3vw;
   margin: 0px 1vw;
 }
 
-.classes__trait-container-name,
-.classes-bio__trait-container-name,
-.classes-hm__trait-container-name {
+.bio__trait-container-name,
+.hm__trait-container-name {
   display: block;
   align-self: center;
   height: auto;
-}
-
-
-.classes__descr-block {
-  display: flex;
-  height: 90%;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 30%;
-}
-
-.classes__descr-title {
-  text-align: center;
-  width: 100%;
-  font-size: 1.5vw
-}
-
-.classes__descr-text {
-  text-align: justify;
-  width: 100%;
-  font-size: 1vw;
-  background-color: #1d2b25;
-  border: 0.25vw solid #131d1c;
-  border-radius: 1vw;
-  padding: 1vw;
-  min-height: 5vw;
-}
-
-.classes__button,
-.classes__button_active {
-  background-color: #1d2b25;
-  display: flex;
-  text-align: center;
-  font-size: 1.5vw;
-  width: 9vw;
-  height: 2vw;
-  padding: 1vw;
-  border-radius: 1vw;
-}
-
-.classes__button {
-  border: 0.25vw solid #ce4b3d;
-  cursor: url("../../../../icons/cursors/no-drop.png"), no-drop;
-}
-
-.classes__button_active {
-  border: 0.25vw solid #ec9240;
-  cursor: url("../../../../icons/cursors/pointer.png"), pointer;
-}
-
-.classes__button:hover,
-.classes__button_active:hover {
-  background-color: #58b698;
-  color: black;
-}
-
-.classes__button-image {
-  margin-left: 1vw;
-  width: 110%;
-  height: 110%;
 }

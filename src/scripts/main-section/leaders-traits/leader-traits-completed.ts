@@ -10,13 +10,13 @@ function completeLeaderTrait() {
   resultArray = resultArray.concat(arr);
 
   createWorkedPlace(leaderSectionText);
-  createTraitList(document.querySelector(".workedplace"), resultArray, "completed");
-  createDescrBlock("completed", leaderSectionText);
-    document.querySelector(".completed__button").remove();
+  createTraitList(document.querySelector(".workedplace"), resultArray, "");
+  createDescrBlock("", leaderSectionText);
+    document.querySelector(".button").remove();
 
   createCodeBlock("Stellaris Inner Code", "traits", resultArray);
 
-  const textBlock = document.querySelector(".completed__descr-text");
+  const textBlock = document.querySelector(".descr-text");
     textBlock.textContent = "";
 
   let traitList: Array<Array<string>> = [];

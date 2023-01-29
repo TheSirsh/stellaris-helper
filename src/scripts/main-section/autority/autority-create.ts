@@ -12,24 +12,24 @@ function createAutority(): void {
   let validArray = createValidArray();
 
   createWorkedPlace(autoritySectionText);
-  createTraitList(document.querySelector(".workedplace"), validArray, "authority");
-  createDescrBlock("authority", autoritySectionText);
+  createTraitList(document.querySelector(".workedplace"), validArray, "");
+  createDescrBlock("", autoritySectionText);
 
-  const autorityContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".authority__trait-container");
+  const autorityContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".trait-container");
 
   autorityContainerArray.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
-      const autorityActive: HTMLElement | null = document.querySelector(".authority__trait-container_active");
-      if (autorityActive) {autorityActive.classList.toggle("authority__trait-container_active")}
+      const autorityActive: HTMLElement | null = document.querySelector(".trait-container_active");
+      if (autorityActive) {autorityActive.classList.toggle("trait-container_active")}
 
-      activateTrait(document.querySelector(".authority__descr-title"), document.querySelector(".authority__descr-text"), validArray, i)
+      activateTrait(document.querySelector(".descr-title"), document.querySelector(".descr-text"), validArray, i)
     
       localStorage.setItem("authority", validArray[i].trait);
-      elem.classList.toggle("authority__trait-container_active");
+      elem.classList.toggle("trait-container_active");
 
-      const button: HTMLElement = document.querySelector(".authority__button");
+      const button: HTMLElement = document.querySelector(".button");
       if (button) {
-        changeButton(button, "authority");
+        changeButton(button, "");
       }
 
       button.addEventListener("click", createCivics);

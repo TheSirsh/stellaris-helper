@@ -11,22 +11,22 @@ function createClasses(): void {
   createWorkedPlace(classesSectionText);
   const workedplace = document.querySelector(".workedplace");
 
-  const traitlistBlock = createNewSimpleElement("div", "classes__traitlist-block", workedplace)
+  const traitlistBlock = createNewSimpleElement("div", "traitlist-block", workedplace)
 
-  createTraitList(traitlistBlock, classes, "classes");
-  createDescrBlock("classes", classesSectionText);
+  createTraitList(traitlistBlock, classes, "");
+  createDescrBlock("", classesSectionText);
 
-  const classesContainerArr: NodeListOf<HTMLElement> | null = document.querySelectorAll(".classes__trait-container");
+  const classesContainerArr: NodeListOf<HTMLElement> | null = document.querySelectorAll(".trait-container");
 
   classesContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
       selectClasses(i);
       localStorage.setItem("classes", classes[i].trait);
-      classesContainerArr[i].classList.toggle("classes__trait-container_active");
+      classesContainerArr[i].classList.toggle("trait-container_active");
 
-      const classesButton: HTMLElement = document.querySelector(".classes__button");
+      const classesButton: HTMLElement = document.querySelector(".button");
       if (classesButton) {
-        changeButton(classesButton, "classes")
+        changeButton(classesButton, "")
         classesButton.addEventListener("click", createMainSectionClimateTrait);
       }
     })

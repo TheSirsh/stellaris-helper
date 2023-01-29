@@ -1,11 +1,4 @@
-.leader__traitlist-block {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-}
-
-.leader-species__traitlist,
-.leader__traitlist {
+.species__traitlist {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,16 +7,14 @@
   padding: 0px;
 }
 
-.leader-species__trait-container,
-.leader__trait-container,
-.leader-species__descr-text {
+.species__trait-container,
+.species__descr-text {
   background-color: #1d2b25;
   border: 0.25vw solid #131d1c;
   border-radius: 1vw;
 }
 
-.leader-species__trait-container,
-.leader__trait-container {
+.species__trait-container {
   display: flex;
   align-items: center;
   width: 14vw;
@@ -32,92 +23,27 @@
   cursor: url("../../../icons/cursors/pointer.png"), pointer;
 }
 
-.leader-species__trait-container:hover,
-.leader__trait-container:hover {
+.species__trait-container:hover {
   background-color: #58b698;
   color: black;
 }
 
-.leader-species__trait-container_active,
-.leader__trait-container_active {
+.species__trait-container_active {
   border: 0.25vw solid #ec9240;
 }
 
-.leader-species__trait-container-image,
-.leader__trait-container-image {
+.species__trait-container-image {
   height: 3vw;
   margin: 0px 1vw;
 }
 
-.leader-species__trait-container-image {
+.species__trait-container-image {
   width: 3vw;
 }
 
-.leader__trait-container-image {
-  width: 2vw;
-}
 
-.leader-species__trait-container-name,
-.leader__trait-container-name {
+.species__trait-container-name {
   display: block;
   align-self: center;
   height: auto;
-}
-
-.leader__descr-block {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 30%;
-}
-
-.leader__descr-title {
-  margin: 0.5vw auto;
-  font-size: 1.5vw;
-  text-align: center;
-}
-
-.leader__descr-image {
-  display: block;
-  width: 15vw;
-  height: 15vw;
-}
-
-.leader__button,
-.leader__button_active {
-  font-size: 1.5vw;
-  background-color: #1d2b25;
-  border-radius: 1vw;
-  text-align: center;
-  display: flex;
-  padding: 1vw;
-  width: 9vw;
-  height: 2vw;
-  cursor: url("../../../icons/cursors/pointer.png"), pointer;
-}
-
-.leader__button {
-  border: 0.25vw solid #ce4b3d;
-  cursor: url("../../../icons/cursors/no-drop.png"), no-drop;
-}
-
-.leader__button_active {
-  border: 0.25vw solid #ec9240;
-  cursor: url("../../../icons/cursors/pointer.png"), pointer;
-}
-
-.leader__button:hover,
-.leader__button_active:hover {
-  background-color: #58b698;
-}
-
-.leader__descr__trait {
-  background-color: black;
-  padding: 1vw;
-}
-
-.leader__button-image {
-  margin-left: 1vw;
-  width: 110%;
-  height: 110%;
 }

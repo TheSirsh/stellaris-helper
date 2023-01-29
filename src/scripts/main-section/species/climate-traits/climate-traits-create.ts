@@ -13,20 +13,20 @@ function createMainSectionClimateTrait(): void {
   if (localStorage.getItem("bio") !== undefined) {validPlanet = createValidArray(climateTraits, "bio");}
 
   createWorkedPlace(climateSectionText);
-  createTraitList(document.querySelector(".workedplace"), validPlanet, "climate");
-  createDescrBlock("climate", climateSectionText, true);
+  createTraitList(document.querySelector(".workedplace"), validPlanet, "");
+  createDescrBlock("", climateSectionText, true);
       
-  const traitContainerArr = document.querySelectorAll(".climate__trait-container");
+  const traitContainerArr = document.querySelectorAll(".trait-container");
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void{
       selectClimateTrait(i, validPlanet);
       localStorage.setItem("climate", validPlanet[i].trait);
-      elem.classList.toggle("climate__trait-container_active");
+      elem.classList.toggle("trait-container_active");
 
-      const traitDescriptionButton: HTMLElement = document.querySelector(".climate__button");
+      const traitDescriptionButton: HTMLElement = document.querySelector(".button");
       if (traitDescriptionButton) {
-        changeButton(traitDescriptionButton, "climate");
+        changeButton(traitDescriptionButton, "");
         traitDescriptionButton.addEventListener("click", nextTraitStage)
       }
     })

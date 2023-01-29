@@ -18,23 +18,23 @@ function createCivics() {
 
   
   createWorkedPlace(civicSectionText);
-  createTraitList(document.querySelector(".workedplace"), validArray, "civic");
-  createDescrBlock("civic", civicSectionText);
+  createTraitList(document.querySelector(".workedplace"), validArray, "");
+  createDescrBlock("", civicSectionText);
 
-  const traitContainerArr = document.querySelectorAll(".civic__trait-container");
+  const traitContainerArr = document.querySelectorAll(".trait-container");
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
       traitContainerArr[i].classList.remove("red");
       let isActive: boolean;
-      if (traitContainerArr[i].classList.contains("civic__trait-container_active")) {
+      if (traitContainerArr[i].classList.contains("trait-container_active")) {
         isActive = true;
-        traitContainerArr[i].classList.remove("civic__trait-container_active");
+        traitContainerArr[i].classList.remove("trait-container_active");
       } else {
         isActive = false;
-        traitContainerArr[i].classList.add("civic__trait-container_active");
+        traitContainerArr[i].classList.add("trait-container_active");
       }
-      mutuallyChecking(i, validArray, isActive, "civic");
+      mutuallyChecking(i, validArray, isActive, "");
     })
   })
 }

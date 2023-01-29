@@ -38,6 +38,150 @@
   padding: 0px;
 }
 
+.traitlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 65%;
+  height: auto;
+  padding: 0px;
+}
+
+.trait-container,
+.descr-text  {
+  background-color: #1d2b25;
+  border: 0.25vw solid #131d1c;
+  border-radius: 1vw;
+}
+
+.trait-container {
+  display: flex;
+  align-items: center;
+  width: 15vw;
+  height: 3.5vw;
+  margin: 0.5vw;
+  cursor: url("../../icons/cursors/pointer.png"), pointer;
+}
+
+.trait-container:hover {
+  background-color: #58b698;
+  color: black;
+}
+
+.trait-container_active,
+.button_active {
+  border: 0.25vw solid #ec9240;
+}
+
+.trait-container-image {
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  margin: 0px 1vw;
+}
+
+.trait-container-name {
+  display: block;
+  align-self: center;
+  height: auto;
+}
+
+.descr-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.descr-title {
+  margin: 0.5vw auto;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.descr-text {
+  font-size: 1vw;
+  text-align: justify;
+  width: 100%;
+  height: auto;
+  min-height: 9vw;
+  padding: 1vw;
+}
+
+.descr-image {
+  display: block;
+  width: 15vw;
+  height: 15vw;
+  border: 0.25vw solid #5086d0;
+  background-color: #31494d;
+  border-radius: 50%;
+}
+
+.code-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  background-color: #1d2b25;
+  border: 0.25vw solid #131d1c;
+  border-radius: 1vw;
+}
+
+.code-block__title {
+  margin: 0.5vw auto;
+  font-size: 1.5vw;
+  text-align: center;
+  height: 3vw;
+}
+
+.code-block__text {
+  font-size: 1vw;
+  text-align: justify;
+  width: 100%;
+  height: auto;
+  min-height: 7vw;
+  padding: 1vw;
+}
+
+.button,
+.button_active {
+  display: flex;
+  background-color: #1d2b25;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 1vw;
+  width: 9vw;
+  height: 2vw;
+  cursor: url("../../icons/cursors/pointer.png"), pointer;
+}
+
+.button:hover,
+.button_active:hover {
+  background-color: #58b698;
+}
+
+.button {
+  border: 0.25vw solid #ce4b3d;
+  cursor: url("../../icons/cursors/no-drop.png"), no-drop; 
+}
+
+.button_active {
+  border: 0.25vw solid #ec9240;
+  cursor: url("../../icons/cursors/pointer.png"), pointer;
+}
+
+.descr__trait {
+  background-color: black;
+  padding: 1vw;
+  border: 0.25vw solid #58b698;
+  border-radius: 1vw;
+}
+
+.button-image {
+  margin-left: 1vw;
+  width: 110%;
+  height: 110%;
+}
 .green {
   color: #28d725;
 }

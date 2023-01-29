@@ -5,29 +5,29 @@ import { changeButton } from "../../change-button.js";
 
 function selectLeaderSpecies(): void {
 
-  const speciesActive: HTMLElement | null = document.querySelector(".leader-species__trait-container_active");
-  if (speciesActive) { speciesActive.classList.toggle("leader-species__trait-container_active"); }
+  const speciesActive: HTMLElement | null = document.querySelector(".species__trait-container_active");
+  if (speciesActive) { speciesActive.classList.toggle("species__trait-container_active"); }
 
-  const leadersList : HTMLElement | null = document.querySelector(".leader__traitlist");
+  const leadersList : HTMLElement | null = document.querySelector(".traitlist");
   if (leadersList) { leadersList.remove() } 
 
-  const speciesTraitBlock: HTMLElement = document.querySelector(".leader__traitlist-block");
+  const speciesTraitBlock: HTMLElement = document.querySelector(".species__traitlist-block");
 
-  createTraitList(speciesTraitBlock, leaders, "leader");
+  createTraitList(speciesTraitBlock, leaders, "");
 
-  const leaderContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".leader__trait-container");
+  const leaderContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".trait-container");
 
   leaderContainerArray.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
-      const leaderActive: HTMLElement | null = document.querySelector(".leader__trait-container_active");
-      if (leaderActive) {leaderActive.classList.toggle("leader__trait-container_active")}
+      const leaderActive: HTMLElement | null = document.querySelector(".trait-container_active");
+      if (leaderActive) {leaderActive.classList.toggle("trait-container_active")}
 
       localStorage.setItem("leader", leaders[i].trait);
-      elem.classList.toggle("leader__trait-container_active");
+      elem.classList.toggle("trait-container_active");
 
-      const leaderButton: HTMLElement = document.querySelector(".leader__button");
+      const leaderButton: HTMLElement = document.querySelector(".button");
       if (leaderButton) {
-        changeButton(leaderButton, "leader")
+        changeButton(leaderButton, "")
         leaderButton.addEventListener("click", createLeaderTraits);
       }
     })

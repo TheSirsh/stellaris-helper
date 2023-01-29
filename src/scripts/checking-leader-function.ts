@@ -7,7 +7,7 @@ import { createValidArray } from "./create-valid-array-function.js";
 import { ITraits } from "./interface.js";
 
 function checkingLeader(): Array<ITraits> {
-  const species: string = localStorage.getItem("leader-species");
+  const species: string = localStorage.getItem("species");
   const leader: string = localStorage.getItem("leader");
   if (species === "Synthitic") {
     if (leader === "Ruler") { return leaderRulerSynthitic; } 

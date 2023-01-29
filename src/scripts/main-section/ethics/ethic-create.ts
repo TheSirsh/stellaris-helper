@@ -9,27 +9,27 @@ import { ITraits } from "../../interface.js";
 function createEthics() {
   
   createWorkedPlace(ethicSectionText);
-  createTraitList(document.querySelector(".workedplace"), ethics, "ethic");
-  createDescrBlock("ethic", ethicSectionText);
+  createTraitList(document.querySelector(".workedplace"), ethics, "");
+  createDescrBlock("", ethicSectionText);
 
-  const speciesContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".ethic__trait-container");
+  const speciesContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".trait-container");
 
   speciesContainerArray.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
       speciesContainerArray[i].classList.remove("red");
       let isActive: boolean;
-      if (speciesContainerArray[i].classList.contains("ethic__trait-container_active")) {
+      if (speciesContainerArray[i].classList.contains("trait-container_active")) {
         isActive = true;
-        speciesContainerArray[i].classList.remove("ethic__trait-container_active");
+        speciesContainerArray[i].classList.remove("trait-container_active");
       } else {
         isActive = false;
-        speciesContainerArray[i].classList.add("ethic__trait-container_active");
+        speciesContainerArray[i].classList.add("_trait-container_active");
       }
-      mutuallyChecking(i, ethics, isActive, "ethic");
+      mutuallyChecking(i, ethics, isActive, "");
 
-      const button: HTMLElement = document.querySelector(".ethic__button");
+      const button: HTMLElement = document.querySelector(".button");
       if (button) {
-        changeButton(button, "ethic");
+        changeButton(button, "");
       }
 
       button.addEventListener("click", btnClick);
@@ -38,10 +38,10 @@ function createEthics() {
 }
 
 function btnClick() {
-  let eticArr = document.querySelectorAll(".ethic__trait-container");
+  let eticArr = document.querySelectorAll(".trait-container");
   let traitsActive: Array<ITraits> = [];
   for (let i = 0; i < eticArr.length; i++) {
-    if (eticArr[i].classList.contains("ethic__trait-container_active")) {
+    if (eticArr[i].classList.contains("trait-container_active")) {
       traitsActive.push(ethics[i])
     }
   }

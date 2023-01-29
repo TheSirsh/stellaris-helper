@@ -8,28 +8,28 @@ function createPlanetModifier() {
   
   createWorkedPlace(planetModifierText);
   const workedplace: HTMLElement = document.querySelector(".workedplace");
-  createTraitList(workedplace, planetModifier, "planet");
-  createDescrBlock("planet", planetModifierText);
+  createTraitList(workedplace, planetModifier, "");
+  createDescrBlock("", planetModifierText);
 
-  const speciesContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".planet__trait-container");
+  const speciesContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".trait-container");
 
   speciesContainerArray.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
 
       speciesContainerArray[i].classList.remove("red");
       let isActive: boolean;
-      if (speciesContainerArray[i].classList.contains("planet__trait-container_active")) {
+      if (speciesContainerArray[i].classList.contains("trait-container_active")) {
         isActive = true;
-        speciesContainerArray[i].classList.remove("planet__trait-container_active");
+        speciesContainerArray[i].classList.remove("trait-container_active");
       } else {
         isActive = false;
-        speciesContainerArray[i].classList.add("planet__trait-container_active");
+        speciesContainerArray[i].classList.add("trait-container_active");
       }
-      mutuallyChecking(i, planetModifier, isActive, "planet");
+      mutuallyChecking(i, planetModifier, isActive, "");
 
-      const button: HTMLElement = document.querySelector(".planet__button");
+      const button: HTMLElement = document.querySelector(".button");
       if (button) {
-        changeButton(button, "planet")
+        changeButton(button, "")
       }
     })
   })

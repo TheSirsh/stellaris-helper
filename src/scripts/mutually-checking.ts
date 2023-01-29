@@ -3,21 +3,21 @@ import { ITraits } from "./interface.js";
 
 function mutuallyChecking(i: number, arr: Array<ITraits>, active: boolean, sectionName: string): void { 
 
-  const traitDescriptionTitle: HTMLElement = document.querySelector(`.${sectionName}__descr-title`)!;
+  const traitDescriptionTitle: HTMLElement = document.querySelector(`.${sectionName}descr-title`)!;
   traitDescriptionTitle.textContent = arr[i].nameEN;
 
   if (arr[i].exclude !== undefined) {
-    const traitActive: NodeListOf<HTMLElement> = document.querySelectorAll(`.${sectionName}__trait-container_active`);
+    const traitActive: NodeListOf<HTMLElement> = document.querySelectorAll(`.${sectionName}trait-container_active`);
     for (let j = 0; j < traitActive.length; j++) {
       for (let k = 0; k < arr[i].exclude.length; k++) {
         if (traitActive[j].classList.contains(`${arr[i].exclude[k]}`)) {
-          traitActive[j].classList.remove(`${sectionName}__trait-container_active`)
+          traitActive[j].classList.remove(`${sectionName}trait-container_active`)
         }
       }
     }
   }
 
-  const notActiveArr: NodeListOf<HTMLElement> = document.querySelectorAll(`.${sectionName}__trait-container`);
+  const notActiveArr: NodeListOf<HTMLElement> = document.querySelectorAll(`.${sectionName}trait-container`);
   notActiveArr.forEach(function(elem) {
     if (arr[i].exclude !== undefined) {
       for (let j = 0; j < arr[i].exclude.length; j++) {
@@ -28,7 +28,7 @@ function mutuallyChecking(i: number, arr: Array<ITraits>, active: boolean, secti
     }
   })
 
-  const traitDescriptionTrait: HTMLElement = document.querySelector(`.${sectionName}__descr-text`)!;
+  const traitDescriptionTrait: HTMLElement = document.querySelector(`.${sectionName}descr-text`)!;
   traitDescriptionTrait.textContent = "";
   for (let j = 0; j < arr[i].traits.length; j++) {
     if (arr[i].traits[j][0] === "bad") {

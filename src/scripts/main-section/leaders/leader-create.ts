@@ -8,17 +8,17 @@ function createLeader() {
   
   createWorkedPlace(leaderSectionText);
   const workedplace = document.querySelector(".workedplace");
-  const traitlistBlock = createNewSimpleElement("div", "leader__traitlist-block", workedplace);
-  createTraitList(traitlistBlock, species, "leader-species");
-  createDescrBlock("leader", leaderSectionText);
+  const traitlistBlock = createNewSimpleElement("div", "species__traitlist-block", workedplace);
+  createTraitList(traitlistBlock, species, "species__");
+  createDescrBlock("", leaderSectionText);
 
-  const speciesContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".leader-species__trait-container");
+  const speciesContainerArray: NodeListOf<HTMLElement> = document.querySelectorAll(".species__trait-container");
 
   speciesContainerArray.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
       selectLeaderSpecies()
-      localStorage.setItem("leader-species", species[i].trait);
-      elem.classList.toggle("leader-species__trait-container_active");
+      localStorage.setItem("species", species[i].trait);
+      elem.classList.toggle("species__trait-container_active");
     })
   })
 }

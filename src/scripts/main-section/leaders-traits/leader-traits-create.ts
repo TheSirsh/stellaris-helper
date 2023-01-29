@@ -14,19 +14,19 @@ function createLeaderTraits(): void {
   createWorkedPlace(leaderSectionText);
   const workedplace = document.querySelector(".workedplace");
 
-  const traitlistBlock = createNewSimpleElement("div", "leader-traits__traitlist-block", workedplace)
+  const traitlistBlock = createNewSimpleElement("div", "species__traitlist-block", workedplace)
 
-  createTraitList(traitlistBlock, validTraits, "leader-traits");
-  createDescrBlock("leader-traits", leaderSectionText);
+  createTraitList(traitlistBlock, validTraits, "");
+  createDescrBlock("", leaderSectionText);
 
-  const button : HTMLElement = document.querySelector(".leader-traits__button");
-    changeButton(button, "leader-traits");
+  const button : HTMLElement = document.querySelector(".button");
+    changeButton(button, "");
     
   button.addEventListener("click", function() {
-    let traits = document.querySelectorAll(".leader-traits__trait-container");
+    let traits = document.querySelectorAll(".trait-container");
     let traitsActive: Array<ITraits> = [];
     for (let i = 0; i < traits.length; i++) {
-      if (traits[i].classList.contains("leader-traits__trait-container_active")) {
+      if (traits[i].classList.contains("trait-container_active")) {
         traitsActive.push(validTraits[i])
       }
     }
@@ -34,20 +34,20 @@ function createLeaderTraits(): void {
     completeLeaderTrait()
   })
 
-  const traitContainerArr = document.querySelectorAll(".leader-traits__trait-container");
+  const traitContainerArr = document.querySelectorAll(".trait-container");
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
       traitContainerArr[i].classList.remove("red");
       let isActive: boolean;
-      if (traitContainerArr[i].classList.contains("leader-traits__trait-container_active")) {
+      if (traitContainerArr[i].classList.contains("trait-container_active")) {
         isActive = true;
-        traitContainerArr[i].classList.remove("leader-traits__trait-container_active");
+        traitContainerArr[i].classList.remove("trait-container_active");
       } else {
         isActive = false;
-        traitContainerArr[i].classList.add("leader-traits__trait-container_active");
+        traitContainerArr[i].classList.add("trait-container_active");
       }
-      mutuallyChecking(i, validTraits, isActive, "leader-traits");
+      mutuallyChecking(i, validTraits, isActive, "");
     })
   })
 }

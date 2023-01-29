@@ -1,0 +1,22 @@
+.trait-container-image_yellow,
+.trait-container-image_green,
+.trait-container-image_red {
+  width: 3vw;
+  height: 3vw;
+  margin: 0px 1vw;
+}
+
+.trait-container-image_yellow {
+  background-color: #968835;
+  border-radius: 50%;
+}
+
+.trait-container-image_green {
+  background-color: #4a725d;
+  border-radius: 50%;
+}
+
+.trait-container-image_red {
+  background-color: #903b38;
+  border-radius: 50%;
+}

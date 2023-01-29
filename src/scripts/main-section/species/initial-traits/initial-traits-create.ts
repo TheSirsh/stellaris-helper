@@ -27,18 +27,18 @@ function nextTraitStage(): void {
   }
 
   createWorkedPlace(initialTraitSectionContent);
-  createTraitList(document.querySelector(".workedplace"), validTraits, "biological");
-  createDescrBlock("biological", initialTraitSectionContent);
+  createTraitList(document.querySelector(".workedplace"), validTraits, "");
+  createDescrBlock("", initialTraitSectionContent);
 
   
-  const button: HTMLElement = document.querySelector(".biological__button");
-  changeButton(button, "biological")
+  const button: HTMLElement = document.querySelector(".button");
+  changeButton(button, "")
 
   button.addEventListener("click", function() {
-    let traits = document.querySelectorAll(".biological__trait-container");
+    let traits = document.querySelectorAll(".trait-container");
     let traitsActive: Array<ITraits> = [];
     for (let i = 0; i < traits.length; i++) {
-      if (traits[i].classList.contains("biological__trait-container_active")) {
+      if (traits[i].classList.contains("trait-container_active")) {
         traitsActive.push(validTraits[i])
       }
     }
@@ -46,20 +46,20 @@ function nextTraitStage(): void {
     completeSpeciesTrait()
   })
 
-  const traitContainerArr = document.querySelectorAll(".biological__trait-container");
+  const traitContainerArr = document.querySelectorAll(".trait-container");
 
   traitContainerArr.forEach(function(elem: Element, i: number) {
     elem.addEventListener("click", function(): void {
       traitContainerArr[i].classList.remove("red");
       let isActive: boolean;
-      if (traitContainerArr[i].classList.contains("biological__trait-container_active")) {
+      if (traitContainerArr[i].classList.contains("trait-container_active")) {
         isActive = true;
-        traitContainerArr[i].classList.remove("biological__trait-container_active");
+        traitContainerArr[i].classList.remove("trait-container_active");
       } else {
         isActive = false;
-        traitContainerArr[i].classList.add("biological__trait-container_active");
+        traitContainerArr[i].classList.add("trait-container_active");
       }
-      mutuallyChecking(i, validTraits, isActive, "biological");
+      mutuallyChecking(i, validTraits, isActive, "");
     })
   })
 }
