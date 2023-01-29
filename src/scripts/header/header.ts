@@ -4,6 +4,7 @@ import { createClasses } from "../main-section/species/classes/classes-create.js
 import { createLeader } from "../main-section/leaders/leader-create.js";
 import { createPlanetModifier } from "../main-section/planet-modifier/planet-create.js";
 import { createEthics } from "../main-section/ethics/ethic-create.js";
+import { createRelics } from "../main-section/relics/create-relics.js";
 
 function createHeader(): void {
 
@@ -17,8 +18,8 @@ function createHeader(): void {
             else if (i === 1) { headerCell.addEventListener("click", createEthics); }
               else if (i === 2) { headerCell.addEventListener("click", createLeader); }
                 else if (i === 3) { headerCell.addEventListener("click", createPlanetModifier); }
-        }
-        
+                 else if (i === 4) { headerCell.addEventListener("click", createRelics); }
+      }
 }
 
 export {createHeader}
