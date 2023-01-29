@@ -5,7 +5,7 @@ const relics: Array<ITraits> = [
     trait: "r_odryskan_crystal",
     nameEN: "Crystal of Odryskia",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/odryskan-crystal.png",
     descrEN: "Archaeology Site excavation",
     traits : [
       ["good", "+15%", "Monthly Rare Crystals"],
@@ -15,7 +15,7 @@ const relics: Array<ITraits> = [
     trait: "r_unbidden_warlock",
     nameEN: "Extradimensional Warlock",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/unbidden-warlock.png",
     descrEN: "Destroying the last Extradimensional Invaders portal",
     traits : [
       ["good", "+30%", "Sublight Speed"],
@@ -26,7 +26,7 @@ const relics: Array<ITraits> = [
     trait: "r_contingency_core",
     nameEN: "Isolated Contingency Core",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/contingency-core.png",
     descrEN: "Destroying the Contingency secret lair",
     traits : [
       ["good", "+100%", "Mechanical Pop Assembly Speed"],
@@ -37,7 +37,7 @@ const relics: Array<ITraits> = [
     trait: "r_prethoryn_queen",
     nameEN: "Prethoryn Brood-Queen",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/prethoryn-queen.png",
     descrEN: "Capturing the Prethoryn Queen",
     traits : [
       ["good", "+50%", "Society Research Speed"],
@@ -48,7 +48,7 @@ const relics: Array<ITraits> = [
     trait: "r_dragon_trophy",
     nameEN: "Ether Drake Trophy",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/dragon-trophy.png",
     descrEN: "Defeating the Ether Drake",
     traits : [
       ["good", "+10%", "Monthly Unity"],
@@ -58,7 +58,7 @@ const relics: Array<ITraits> = [
     trait: "r_khans_throne",
     nameEN: "Khan's Throne",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/khans-throne.png",
     descrEN: "Defeating the Great Khan's fleet a second time",
     traits : [
       ["good", "-20%", "Claim influence cost"],
@@ -69,7 +69,7 @@ const relics: Array<ITraits> = [
     trait: "r_toxic_god",
     nameEN: "Maw of the Toxic Entity",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/toxic-god.png",
     descrEN: "Defeating the Toxic God",
     traits : [
       ["good", "+15%", "Strike craft damage"],
@@ -79,7 +79,7 @@ const relics: Array<ITraits> = [
     trait: "r_war_forge",
     nameEN: "Cybrex War Forge",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/war-forge.png",
     descrEN: "Finishing the Cybrex precursor chain",
     traits : [
       ["empty", "", "Can recruit Cybrex Warform armies at the capital"],
@@ -89,7 +89,7 @@ const relics: Array<ITraits> = [
     trait: "r_pox_sample",
     nameEN: "Javorian Pox Sample",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/pox-sample.png",
     descrEN: "Finishing the Irassian Concordat precursor chain",
     traits : [
       ["good", "+20", "Leader lifespan"],
@@ -101,7 +101,7 @@ const relics: Array<ITraits> = [
     trait: "r_reality_perforator",
     nameEN: "Vultaum Reality Perforator",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/reality-perforator.png",
     descrEN: "Finishing the Vultaum Star Assembly precursor chain",
     traits : [
       ["good", "-10%", "Pop Amenities Usage"],
@@ -111,7 +111,7 @@ const relics: Array<ITraits> = [
     trait: "r_cryo_core",
     nameEN: "Yuht Cryo Core",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/cryo-core.png",
     descrEN: "Finishing the Yuht Empire precursor chain",
     traits : [
       ["good", "+1", "Extra pops when establishing colony"],
@@ -122,7 +122,7 @@ const relics: Array<ITraits> = [
     trait: "r_zro_crystal",
     nameEN: "Psionic Archive",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/zro-crystal.png",
     descrEN: "Finishing the Zroni precursor chain",
     traits : [
       ["good", "-50%", "Breach into the Shroud Cooldown"],
@@ -134,7 +134,7 @@ const relics: Array<ITraits> = [
     trait: "r_the_last_baol",
     nameEN: "The Last Baol",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/the-last-baol.png",
     descrEN: "Finishing the Baol precursor chain",
     traits : [
       ["good", "+10%", "Pop Growth Speed"],
@@ -145,7 +145,7 @@ const relics: Array<ITraits> = [
     trait: "r_ancient_sword",
     nameEN: "Blade of the Huntress",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/ancient-sword.png",
     descrEN: "Archaeology Site excavation",
     traits : [
       ["good", "+25%", "Army Morale"],
@@ -157,7 +157,7 @@ const relics: Array<ITraits> = [
     trait: "r_severed_head",
     nameEN: "Head of Zarqlan",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/severed-head.png",
     descrEN: "Archaeology Site excavation",
     traits : [
       ["good", "+150", "opinion with Holy Guardians"],
@@ -168,7 +168,7 @@ const relics: Array<ITraits> = [
     trait: "r_galaxy",
     nameEN: "Miniature Galaxy",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/galaxy.png",
     descrEN: "Archaeology Site excavation",
     traits : [
       ["good", "+5%", "Research Speed"],
@@ -178,7 +178,7 @@ const relics: Array<ITraits> = [
     trait: "r_the_defragmentor",
     nameEN: "The Defragmentor",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/the-defragmentor.png",
     descrEN: "Archaeology Site excavation. Develop A Cure For The Ferrophage Special Project.",
     traits : [
       ["good", "-10%", "Building and District Energy Upkeep"],
@@ -191,7 +191,7 @@ const relics: Array<ITraits> = [
     trait: "r_omnicodex",
     nameEN: "The Omnicodex",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/omnicodex.png",
     descrEN: "Archaeology Site excavation",
     traits : [
       ["good", "+1", "Gene Modification Points"],
@@ -202,7 +202,7 @@ const relics: Array<ITraits> = [
     trait: "r_worm_scales",
     nameEN: "Scales of the Worm",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/worm-scales.png",
     descrEN: "Defeating the Worm",
     traits : [
       ["good", "+10%", "Physics Research Speed"],
@@ -212,7 +212,7 @@ const relics: Array<ITraits> = [
     trait: "r_rubricator",
     nameEN: "The Rubricator",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/rubricator.png",
     descrEN: "Defeating Shard",
     traits : [
       ["good", "+20%", "Society Research"],
@@ -222,7 +222,7 @@ const relics: Array<ITraits> = [
     trait: "r_surveyor",
     nameEN: "The Surveyor",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/surveyor.png",
     descrEN: "Defeating the Home Base Ore Grinder",
     traits : [
       ["good", "+1", "Sensor Range"],
@@ -233,7 +233,7 @@ const relics: Array<ITraits> = [
     trait: "r_galatron",
     nameEN: "The Galatron",
     nameRU: "",
-    icon: "../src/icons/civics/123456789.png",
+    icon: "../src/icons/relics/galatron.png",
     descrEN: "	Reliquary reward (0.5% chance). Can be captured with the Take Galatron Wargoal",
     traits : [
       ["good", "+3", "Influence"],
