@@ -20,7 +20,7 @@
   width: 14vw;
   height: 3.5vw;
   margin: 0.5vw;
-  cursor: url("../../../icons/cursors/pointer.png"), pointer;
+  cursor: url("../../../../icons/cursors/pointer.png"), pointer;
 }
 
 .species__trait-container:hover {

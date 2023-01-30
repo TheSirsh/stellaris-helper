@@ -1,5 +1,5 @@
 import { createTraitList } from "../../../create-worked-place.js";
-import { species, leaders, } from "../../../objects/leaders/leader.js";
+import { leaders, } from "./leaders-list.js";
 import { createLeaderTraits } from "../leaders-traits/leader-traits-create.js";
 import { changeButton } from "../../../change-button.js";
 

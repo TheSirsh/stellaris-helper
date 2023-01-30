@@ -1,7 +1,7 @@
 import { createNewSimpleElement } from "../../../create-functions.js";
 import { leaderSectionText } from "./leader-section-text.js";
 import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
-import { checkingLeader } from "../../../checking-leader-function.js";
+import { checkingLeader } from "../support-data/checking-leader-function.js";
 import { ITraits } from "../../../interface.js";
 import { changeButton } from "../../../change-button.js";
 import { completeLeaderTrait } from "./leader-traits-completed.js";

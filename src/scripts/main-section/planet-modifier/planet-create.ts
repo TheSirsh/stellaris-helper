@@ -1,7 +1,7 @@
 import { changeButton } from "../../change-button.js";
 import { createWorkedPlace, createTraitList, createDescrBlock }from "../../create-worked-place.js";
 import { planetModifierText } from "./planet-modifier-text.js";
-import { planetModifier } from "../../objects/planet-modifier.js";
+import { planetModifier } from "./planet-modifier-list.js";
 import { mutuallyChecking } from "../../mutually-checking.js";
 
 function createPlanetModifier() {
