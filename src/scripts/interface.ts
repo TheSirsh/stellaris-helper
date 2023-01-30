@@ -1,6 +1,7 @@
-interface IHeader {
+interface IHeaderFooter {
   nameEN: string,
   nameRU: string,
+  src?: string,
 }
 
 interface IAudioPlayer {
@@ -27,8 +28,6 @@ interface IMainText {
   descriptionBlockTextEN : string,
   descriptionBlockTextRU : string,
   image?: string,
-  imageAltEN?: string,
-  imageAltRU?: string,
 }
 
 interface ITraits {
@@ -43,6 +42,8 @@ interface ITraits {
 
 interface IPlanets extends ITraits {
   image: string,
+  imageAltEN?: string,
+  imageAltRU?: string,
 }
 
 interface IPlanetsMod extends ITraits {
@@ -53,10 +54,4 @@ interface IRelics extends ITraits {
   triumph: Array<Array<string>>,
 }
 
-interface IFooter {
-  nameEN: string,
-  nameRU: string,
-  src: string,
-}
-
-export { IHeader, IAudioPlayer, ITrack, IMainText, ITraits, IPlanetsMod, IPlanets, IRelics, IFooter, }
+export { IHeaderFooter, IAudioPlayer, ITrack, IMainText, ITraits, IPlanetsMod, IPlanets, IRelics, }

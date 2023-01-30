@@ -1,6 +1,6 @@
-import { IHeader } from "../interface.js"
+import { IHeaderFooter } from "../interface.js"
 
-const headerContent: Array<IHeader> = [
+const headerContent: Array<IHeaderFooter> = [
   {  
     nameEN: "Species",
     nameRU: "",

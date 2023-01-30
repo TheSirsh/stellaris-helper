@@ -1,4 +1,4 @@
-import { footerContent } from "../objects/footer-content.js";
+import { footerContent } from "./footer-content";
 import { createNewSimpleElement, createNewImageElement } from "../create-functions.js";
 
 function createFooter(): void {

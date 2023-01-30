@@ -1,4 +1,4 @@
-import { headerContent } from "../objects/header-content.js";
+import { headerContent } from "./header-content";
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "../create-functions.js";
 import { createClasses } from "../main-section/species/classes/classes-create.js";
 import { createLeader } from "../main-section/leaders/leader-create.js";

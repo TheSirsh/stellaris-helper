@@ -1,6 +1,6 @@
-import { IFooter } from "../interface.js"
+import { IHeaderFooter } from "../interface.js"
 
-const footerContent: Array<IFooter> = [
+const footerContent: Array<IHeaderFooter> = [
   {  
     nameEN: "GitHub",
     nameRU: "",
