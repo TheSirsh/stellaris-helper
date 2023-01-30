@@ -28,6 +28,8 @@ interface IMainText {
   descriptionBlockTextEN : string,
   descriptionBlockTextRU : string,
   image?: string,
+  imageAltEN?: string,
+  imageAltRU?: string,
 }
 
 interface ITraits {
@@ -38,20 +40,14 @@ interface ITraits {
   descrEN?: string,
   traits : Array<Array<string>>,
   exclude?: Array<string>,
-}
-
-interface IPlanets extends ITraits {
-  image: string,
+  border?: string,
+  image?: string,
   imageAltEN?: string,
   imageAltRU?: string,
-}
-
-interface IPlanetsMod extends ITraits {
-  border: string,
 }
 
 interface IRelics extends ITraits {
   triumph: Array<Array<string>>,
 }
 
-export { IHeaderFooter, IAudioPlayer, ITrack, IMainText, ITraits, IPlanetsMod, IPlanets, IRelics, }
+export { IHeaderFooter, IAudioPlayer, ITrack, IMainText, ITraits, IRelics, }

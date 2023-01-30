@@ -1,5 +1,5 @@
 import { createNewSimpleElement, createNewTextElement, createNewImageElement } from "./create-functions.js";
-import { IMainText, ITraits } from "./interface";
+import { IMainText, ITraits } from "./interface.js";
 
 function createWorkedPlace(workedplaceText: IMainText): void {
 

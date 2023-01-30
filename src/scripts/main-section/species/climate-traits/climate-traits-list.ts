@@ -1,6 +1,6 @@
-import { IPlanets } from "../../../interface";
+import { ITraits } from "../../../interface";
 
-const climateTraits: Array<IPlanets> = [
+const climateTraits: Array<ITraits> = [
   {
     trait: "trait_pc_arid_preference",
     icon: "../src/icons/climate-preference-traits/arid.png",
