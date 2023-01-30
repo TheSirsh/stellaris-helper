@@ -1,4 +1,4 @@
-import { IMainText } from "../../interface"
+import { IMainText } from "../../../interface.js"
 
 const civicSectionText: IMainText = {
   titleEN : "Government",

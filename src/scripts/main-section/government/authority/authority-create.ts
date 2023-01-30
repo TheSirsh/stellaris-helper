@@ -1,10 +1,10 @@
-import { createWorkedPlace, createTraitList, createDescrBlock } from "../../create-worked-place.js";
-import { autoritySectionText } from "./autority-section-text.js";
-import { authority } from "./autority-list.js";
-import { ITraits } from "../../interface.js";
-import { mutuallyChecking } from "../../mutually-checking.js";
-import { changeButton } from "../../change-button.js";
-import { activateTrait } from "../../activate-trait.js";
+import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
+import { autoritySectionText } from "./authority-section-text.js";
+import { authority } from "./authority-list.js";
+import { ITraits } from "../../../interface.js";
+import { mutuallyChecking } from "../../../mutually-checking.js";
+import { changeButton } from "../../../change-button.js";
+import { activateTrait } from "../../../activate-trait.js";
 import { createCivics } from "../civics/create-civic.js";
 
 function createAutority(): void {

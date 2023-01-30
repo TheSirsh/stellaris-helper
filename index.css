@@ -3,7 +3,7 @@
 @import url("/src/scripts/header/header.css");
 @import url("/src/scripts/main-section/main-section.css");
 @import url("src/scripts/main-section/species/classes/classes.css");
-@import url("src/scripts/main-section/leaders/leader.css");
+@import url("src/scripts/main-section/leaders/leaders-select/leader.css");
 @import url("src/scripts/main-section/planet-modifier/planet-modifier.css");
 
 @font-face {

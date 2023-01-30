@@ -1,10 +1,10 @@
-import { createWorkedPlace, createTraitList, createDescrBlock }from "../../create-worked-place.js";
+import { createWorkedPlace, createTraitList, createDescrBlock }from "../../../create-worked-place.js";
 import { ethicSectionText } from "./ethic-section-text.js";
 import { ethics } from "./ethic-list.js"; 
-import { changeButton } from "../../change-button.js";
-import { mutuallyChecking } from "../../mutually-checking.js";
-import { createAutority } from "../autority/autority-create.js";
-import { ITraits } from "../../interface.js";
+import { changeButton } from "../../../change-button.js";
+import { mutuallyChecking } from "../../../mutually-checking.js";
+import { createAutority } from "../authority/authority-create.js";
+import { ITraits } from "../../../interface.js";
 
 function createEthics() {
   

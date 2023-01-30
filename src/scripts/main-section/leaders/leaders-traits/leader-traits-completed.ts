@@ -1,8 +1,8 @@
-import { ITraits } from "../../interface.js";
-import { createWorkedPlace, createTraitList, createDescrBlock, createCodeBlock } from "../../create-worked-place.js";
-import { createNewTextElement } from "../../create-functions.js";
+import { ITraits } from "../../../interface.js";
+import { createWorkedPlace, createTraitList, createDescrBlock, createCodeBlock } from "../../../create-worked-place.js";
+import { createNewTextElement } from "../../../create-functions.js";
 import { leaderSectionText } from "./leader-section-text.js";
-import { summarizeArray } from "../../summarize-array.js";
+import { summarizeArray } from "../../../summarize-array.js";
 
 function completeLeaderTrait() {
   let resultArray: Array<ITraits> = [];

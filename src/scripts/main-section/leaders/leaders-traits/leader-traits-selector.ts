@@ -1,5 +1,5 @@
-import { ITraits } from "../../interface.js";
-import { activateTrait } from "../../activate-trait.js";
+import { ITraits } from "../../../interface.js";
+import { activateTrait } from "../../../activate-trait.js";
 
 function selectLeaderTrait(i: number, traitArray: Array<ITraits>, active: boolean): void { 
 

@@ -1,4 +1,4 @@
-import { IMainText } from "../../interface"
+import { IMainText } from "../../../interface.js"
 
 const ethicSectionText: IMainText = {
   titleEN : "Government",

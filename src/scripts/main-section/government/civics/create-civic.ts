@@ -1,11 +1,11 @@
-import { createWorkedPlace, createTraitList, createDescrBlock } from "../../create-worked-place.js";
+import { createWorkedPlace, createTraitList, createDescrBlock } from "../../../create-worked-place.js";
 import { civicSectionText } from "./civic-section-text.js";
-import { civicsStandart } from "../../objects/civics-standart.js";
-import { civicsCorporate } from "../../objects/civics-corporate.js";
-import { civicsHiveMind } from "../../objects/civics-hive-mind.js";
-import { civicsMachine } from "../../objects/civics-machine.js";
-import { ITraits } from "../../interface.js";
-import { mutuallyChecking } from "../../mutually-checking.js";
+import { civicsStandart } from "../../../objects/civics-standart.js";
+import { civicsCorporate } from "../../../objects/civics-corporate.js";
+import { civicsHiveMind } from "../../../objects/civics-hive-mind.js";
+import { civicsMachine } from "../../../objects/civics-machine.js";
+import { ITraits } from "../../../interface.js";
+import { mutuallyChecking } from "../../../mutually-checking.js";
 
 function createCivics() {
 
