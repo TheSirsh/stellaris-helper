@@ -1,6 +1,6 @@
-import { ITraits } from "../interface.js";
+import { IPlanetsMod } from "../interface.js";
 
-const planetModifier: Array<ITraits> = [
+const planetModifier: Array<IPlanetsMod> = [
   {
     trait: "hazardous_weather",
     nameEN: "Hazardous Weather",

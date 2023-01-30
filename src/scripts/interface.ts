@@ -34,13 +34,19 @@ interface IMainText {
 interface ITraits {
   trait: string,
   icon: string,
-  image?: string,
-  border?: string,
   nameEN: string,
   nameRU: string,
   descrEN?: string,
-  traits? : Array<Array<string>>,
+  traits : Array<Array<string>>,
   exclude?: Array<string>,
+}
+
+interface IPlanets extends ITraits {
+  image: string,
+}
+
+interface IPlanetsMod extends ITraits {
+  border: string,
 }
 
 interface IRelics extends ITraits {
@@ -53,4 +59,4 @@ interface IFooter {
   src: string,
 }
 
-export { IHeader, IAudioPlayer, ITrack, IMainText, ITraits, IRelics, IFooter, }
+export { IHeader, IAudioPlayer, ITrack, IMainText, ITraits, IPlanetsMod, IPlanets, IRelics, IFooter, }
